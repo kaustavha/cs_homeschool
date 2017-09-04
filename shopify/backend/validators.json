@@ -1,0 +1,30 @@
+{  "validations": [
+    {
+      "name": {
+        "required": true,
+        "length": {
+          "min": 5,
+          "max": 20
+        }
+      }
+    },
+    {
+      "email": {
+        "required": true
+      }
+    },
+    {
+      "age": {
+        "type": "number"
+      }
+    },
+    {
+      "password": {
+        "required": true,
+        "length": {
+          "min": 8
+        }
+      }
+    }
+  ]
+}
