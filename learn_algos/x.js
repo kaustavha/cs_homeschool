@@ -115,4 +115,19 @@ function apply() {
   }
 }
 
-
+  out = [];
+  for (var i = 1; i <= n; i++) {
+    temp = "";
+    if (n[i]%p == 0) {
+      temp += "OUT";
+    }
+    if (n[i].toString().indexOf(q) > -1) {
+      temp += "THINK"
+    }
+    if (temp.length != 0) {
+      out.push(temp);
+      temp = "";
+    } else {
+      out.push(i);
+    }
+  }
