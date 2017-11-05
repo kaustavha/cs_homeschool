@@ -61,19 +61,6 @@ var input = `5
 3,76,146.2,SF 
 2,14,141.1,San Jose `;
 
-// input = `3
-// 9
-// 1,28,100.3,Paris
-// 4,5,99.2,Paris
-// 2,7,90.5,Paris
-// 8,8,87.6,Paris
-// 6,10,85.6,Paris
-// 3,16,82.1,Paris
-// 7,29,81.1,Paris
-// 9,20,78.9,Paris
-// 12,21,74.3,Paris `;
-
-
 console.log(input);
 
 console.log('===================');
@@ -171,8 +158,6 @@ console.log(pages);
 
 // Solution using linked lists?
 
-var qmap = {}, len = 0;
-
 class Node {
 	constructor(prev, txt, hostId, next) {
 		this.next = next;
@@ -194,50 +179,13 @@ class Page {
 		this.next = null;
 	}
 	insert(hostId, line) {
-		console.log(line);
 		this.hostIds[hostId] = true;
 		this.lines += line + '\n';
 		this.length++;
 	}
 }
 
-function newPage(LL, pg) {
-	let pg2;
-	if (pg.next) {
-		pg2 = pg.next;
-	} else {
-		pg2 = new Page();
-		pg.next = pg2;
-	}
-	let ret = insertUniqs(LL, pg2);
-	LL = ret[0];
-	pg = ret[1];
-	return [LL,pg];
-}
 
-function insertUniqs(LL, pg) {
-	let ptr = pg,
-		tn = LL;
-	while (tn.next) {
-		tn = tn.next;
-
-		if (!ptr.hostIds[tn.hostId] && ptr.length < itemsPerPg) {
-			ptr.insert(tn.hostId, tn.txt);
-			tn.remove();
-			if (qmap[tn.hostId]) {
-				if (qmap[tn.hostId].length == 1) {
-					delete qmap[tn.hostId];
-				} else {
-					qmap[tn.hostId].shift();
-				}
-			}
-		}
-
-
-		if (ptr.length == itemsPerPg) ptr = newPage(LL, ptr);
-	}
-	return [LL, pg];
-}
 
 var totalPages = Math.round(totalItems/itemsPerPg);
 
@@ -250,8 +198,9 @@ var page = new Page();
 // }
 // page = tmpPg;
 
+var qmap = {}, len = 0;
 var pre = new Node();
-var l = pre; // maintain root ptr
+var l = pre;
 
 var tmpPg = page;
 for (var i in lines) {
@@ -260,81 +209,98 @@ for (var i in lines) {
 		hostId = line[0],
 		pts = line[2];
 
-	// console.log(txt);
 	if (tmpPg.length == itemsPerPg) {
-		let ret = newPage(l, tmpPg);
-		tmpPg = ret[1];
-		l = ret[0];
+		let pg2 = new Page();
+		tmpPg.next = pg2;
+		tmpPg = pg2;
 	}
 
-	if (!tmpPg.hostIds[hostId]) {
-		tmpPg.insert(hostId, txt);
+	if (!tmpPg.hostIds[hostId] && tempPg.length < itemsPerPg) {
+		tempPg.insert(hostId, txt);
 	} else {
-		let tn = new Node(pre, txt, hostId);
-		if (!qmap[hostId]) {
-			qmap[hostId] = [];
-		}
-		// track all ids to save time inserting uniqs
-		qmap[hostId].push(tn);
-		// if (qmap[hostId]) {
-		// 	qmap[hostId].next = tn;
-		// } else {
-		// 	qmap[hostId] = tn;
-		// } // keep track of all hostids in list
+		let tn = new Node(null, txt, hostId);
+		if (qmap[hostId]) {
+			qmap[hostId].next = tn;
+		} else {
+			qmap[hostId] = tn;
+		} // keep track of all hostids in list
+		tn.prev = pre;
 		pre.next = tn;
 		pre = pre.next;
+		len++;
 	}
 }
 
-
+console.log('debug');
 let tmp = page;
-for (var i = 0; i < totalPages; i++) {
-		if (tmp.length == itemsPerPg) {
-			tmp = tmp.next;
-			continue;
-		}
-		var uniqsExist = false;
-		for (let k in qmap) {
-			if (!tmp.hostIds[k]) uniqsExist = true;
-			break;
-		}
-		let tn = l;
-		if (uniqsExist) {
-			while (tn.next && tmp.length < itemsPerPg) {
-				tn = tn.next;
-				if (!tmpPg.hostIds[hostId]) {
-					tmp.insert(tn.hostId, tn.txt);
-					tn.remove();
-					if (qmap[tn.hostId].length > 1) {
-						qmap[tn.hostId].shift();
-					} else {
-						delete qmap[tn.hostId];
-					}
-				}
-			}
-		}
-
-		tn = l;
-		while (tn.next && tmp.length < itemsPerPg) {
-			tn = tn.next;
-			tmp.insert(tn.hostId, tn.txt);
-			tn.remove();
-			if (qmap[tn.hostId].length > 1) {
-				qmap[tn.hostId].shift();
-			} else {
-				delete qmap[tn.hostId];
-			}
-		}
-		if (!tmp.next && tmp.length == itemsPerPg && i < totalPages) {
-			let ret = newPage(l,tmp);
-			tmp.next = ret[1];
-			l = ret[0];
-		}
-		tmp = tmp.next;
-
+while (page) {
+	console.log(page.lines);
+	page = page.next;
 }
-// return to head
-tmp = page;
+page = tmp;
+
+let tn = l.next;
+let ptr = page;
+while (tn) {
+	if (ptr.length == itemsPerPg) {
+		while (ptr.length == itemsPerPg) {
+			ptr = ptr.next;
+		}
+	}
+
+	var uniqsExist = false;
+	// if no uniq vals exist in ll we can insert otherwise try to insert disctinct and keep moving
+	for (let k in qmap) {
+		if (!ptr.hostIds[k]) uniqsExist = true;
+	}
+
+	if (!uniqsExist) {
+		ptr.insert(tn.hostId, tn.txt);
+		tn.remove();
+	} else if (!ptr.hostIds[tn.hostId] && ptr.length < itemsPerPg) { 
+		ptr.insert(tn.hostId, tn.txt);
+		tn.remove();
+		if (qmap[hostId].next) {
+			qmap[hostId].remove();
+			qmap[hostId] = qmap[hostId].next;
+		} else {
+			delete qmap[k];
+		}
+	}
+	if (!tn.next) tn = l; // restart at start if we run out
+	tn = tn.next;
+}
+
+// while (tn) {
+// 	let ptr = page;
+// 	while (ptr) {
+// 		// check if we have uniques in q not in page
+// 		// if we do, traverse LL otherwise insert whats at hand
+// 		var suc = false;
+// 		for (let k in qmap) {
+// 			if (!ptr.hostIds[k] && ptr.length < itemsPerPg) {
+// 				ptr.insert(qmap[k].hostId, qmap[k].txt);
+// 				if (qmap[k].next) {
+// 					qmap[k] = qmap[k].next;
+// 				} else {
+// 					delete qmap[k];
+// 				}
+// 				suc = true;
+// 				break;
+// 			}
+// 		}
+
+// 		if (!suc) {
+// 			if (ptr.length < itemsPerPg) {
+// 				ptr.insert(tn.hostId, tn.txt);
+// 				break;
+// 			}
+// 			ptr = ptr.next;
+// 		}
+
+// 	}
+// 	tn = tn.next;
+// }
 
 console.log('\n Linked list solution set: \n');
 while (page) {
