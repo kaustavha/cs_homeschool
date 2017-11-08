@@ -181,11 +181,11 @@ class Node {
 		this.hostId = hostId;
 	}
 	remove() {
-		if (this.next && this.next.prev && this.prev) this.next.prev = this.prev;
-		if (this.prev && this.prev.next && this.next) this.prev.next = this.next;
+		if (this.next) this.next.prev = this.prev;
+		if (this.prev) this.prev.next = this.next;
+		if (!this.next && !this.prev) this = null;
 	}
 }
-
 class Page {
 	constructor() {
 		this.hostIds = {};
@@ -276,11 +276,6 @@ for (var i in lines) {
 		}
 		// track all ids to save time inserting uniqs
 		qmap[hostId].push(tn);
-		// if (qmap[hostId]) {
-		// 	qmap[hostId].next = tn;
-		// } else {
-		// 	qmap[hostId] = tn;
-		// } // keep track of all hostids in list
 		pre.next = tn;
 		pre = pre.next;
 	}

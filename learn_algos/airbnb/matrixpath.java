@@ -1,8 +1,30 @@
 // given an m*n matrix a of 1s & 0s, count how many valid paths exist
 // from top left (0,0) to bottom right (m,n)
 // if matrix ele is 1 we can walkthere, if 0 we cant traverse
-// must be fast, since solution w/ O(n) fails
+// must be fast, since solution w/ O(nlogn) fails
 
+/*
+e.g.
+in:
+
+3
+4
+1 1 1 1
+1 1 1 1
+1 1 1 1
+
+
+2
+2
+1 1
+0 1
+=========
+out:
+
+10
+
+1
+*/
 
 
 // slow, only timesout 7-10
@@ -73,6 +95,6 @@ static int numberOfPaths(int[][] a) {
             if (a[i][j] == 0) count[i][j] = 0;
         }
     }
-    return count[m-1][n-1];
+    return count[m-1][n-1]%1000000007;
 
 }

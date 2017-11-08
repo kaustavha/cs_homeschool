@@ -3,6 +3,7 @@
 var exampleInputs = [],
 	exampleOutputs = [];
 
+// passes 9/10 test cases, but really shit
 
 
 function main(input) {

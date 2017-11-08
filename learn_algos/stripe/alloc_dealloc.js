@@ -1,9 +1,144 @@
+
+class Node {
+	constructor(name,id,prev,next) {
+		this.name = name;
+		this.id = parseInt(id);
+		this.prev = prev;
+		this.next = next;
+	}
+}
+
+class LL {
+	constructor() {
+		this.list = [];
+	}
+	appendEarliest(name) {
+		let prev = this.list[0];
+
+		for (var i = 1; i < this.list.length; i++) {
+			let tn =this.list[i], nn = this.list[i+1];
+			if (nn) {
+				if ();
+			}
+		}
+	}
+}
+
+class ServerManager {
+	constructor() {
+		this.servers = {};
+	}
+	allocate(name) {
+		if (!this.servers[name]) this.servers[name] = new singlyLinkedList();
+		let tn = this.servers[name], allocd = false;
+		let id = tn.appendEarliest(name);
+		return name+id;
+	}
+	deallocate(str) {
+		let name = str.match(/^[a-z]*/gi),
+			id = str.match(/[0-9]*$/gi);
+		if (this.servers[name]) {
+			this.servers[name].deleteNode(id);
+		}
+	}
+
+}
+
+class ServerManager {
+	constructor(){
+		this.servers = {};
+	}
+	allocate(str) {
+		// api1 or api2 or api
+		// => api1, api2, api3
+		let name = str.match(/^[a-z]*/gi)[0],
+			id = str.match(/[0-9]*$/gi)[0],
+			hasId = id.length > 0,
+			allocd;
+		if (!this.servers[name]) {
+			if (!hasId) id = 1;
+			this.servers[name] = new Node(name, id);
+		} else {
+			let tn = this.servers[name];
+			if (!hasId) {
+				while (tn.next) {
+					if (tn.next.id > tn.id+1) {
+						id = tn.id+1;
+						let nn = new Node(name, id, tn, tn.next);
+						nn.next = tn.next;
+						if (tn.next) tn.next.prev = nn;
+						tn.next = nn;
+						allocd = true;
+						break;
+					}
+					tn = tn.next;
+				}
+				if (!allocd) {
+					id = tn.id + 1;
+					tn.next = new Node(name, id, tn);
+				}
+			} else {
+				while (tn.next) {
+					if (tn.id == id) {
+						allocd=true;
+						break;
+					}
+					if (tn.id > id && tn.prev.id ) {
+						let op = tn.prev,
+							on = tn.next,
+							nn = new Node(name, id, op, tn);
+						tn.prev = nn;
+						op.next = nn;
+						allocd= true;
+						break;
+					}
+					tn = tn.next;
+				}
+				if (!allocd) {
+					tn.next = new Node(name, id, tn);
+				}
+			}
+		}
+		return name+id;
+	}
+	deallocate(str) {
+		let name = str.match(/^[a-z]*/gi)[0],
+			id = str.match(/[0-9]*$/gi)[0],
+			hasId = id.length > 0,
+			res = name+id,
+			allocd;
+		let tn = this.servers[name];
+		while (tn) {
+			if (tn.id == id) {
+				if (tn.next) {
+					tn.next.prev = tn.prev;
+				}
+				if (tn.prev) tn.prev.next = tn.next;
+				break;
+			}
+			tn = tn.next;
+		}
+	}
+}
+
+let SM = new ServerManager();
+console.log(SM.allocate('apibox'));
+console.log(SM.allocate('apibox'));
+console.log(SM.allocate('sitebox'));
+console.log(SM.allocate('apibox'));
+SM.deallocate('apibox2');
+console.log(SM.allocate('apibox'));
+
+
+
 class Node {
 	constructor(data) {
 		this.data = data;
 		this.next = null;
 	}
 }
+
+
 
 class singlyLinkedList {
 	constructor() {
@@ -181,33 +316,3 @@ class singlyLinkedList {
 		}
 	}
 }
-
-let sll = new singlyLinkedList();
-sll.appendToTail(1);
-sll.appendToTail(2);
-sll.appendToTail(2);
-sll.print();
-sll.removeDups();
-sll.print();
-sll.appendToTail(1);
-sll.appendToTail(3);
-sll.removeDupsNobuffer();
-sll.print();
-sll.deleteNode(3);
-sll.appendEarliest(1);
-sll.appendEarliest(4);
-sll.appendEarliest(3);
-sll.deleteNode(2);
-sll.deleteNode(1);
-sll.appendEarliest(2);
-sll.appendToTail(2);
-sll.appendEarliest(1);
-sll.appendToTail(3);
-sll.appendToTail(2);
-sll.appendToTail(4);
-sll.print(); // 1 -> 1 -> 2 -> 3 -> 4 -> 2
-sll.mergeSortSelf();
-sll.print(); // 1 -> 1 -> 2 -> 3 -> 4
-sll.deleteAtPos(0);
-sll.deleteAtPos(6);
-sll.print(); // 1 2 3 4
