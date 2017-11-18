@@ -1,0 +1,103 @@
+Name:		db-1662469141-4lfx1
+Namespace:	shopify
+Node:		minikube/192.168.99.101
+Start Time:	Tue, 22 Aug 2017 22:11:12 -0400
+Labels:		pod-template-hash=1662469141
+		service=db
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"ReplicaSet","namespace":"shopify","name":"db-1662469141","uid":"55ea8e59-87a8-11e7-af88-080027096088","api...
+Status:		Running
+IP:		172.17.0.6
+Created By:	ReplicaSet/db-1662469141
+Controlled By:	ReplicaSet/db-1662469141
+Containers:
+  db:
+    Container ID:	docker://8812f67765ad654839947ffb66bb5b2f3d138e2426db3e63968059bc82db1203
+    Image:		mysql
+    Image ID:		docker://sha256:c73c7527c03a13729a6bba88a3251c95629e8036c0ccf17dadefb4c5f077a315
+    Port:		<none>
+    State:		Running
+      Started:		Tue, 22 Aug 2017 22:11:15 -0400
+    Ready:		True
+    Restart Count:	0
+    Environment:
+      MYSQL_ROOT_PASSWORD:	password
+    Mounts:
+      /var/lib/mysql from mysql-persistent-storage (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-cgpgd (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  mysql-persistent-storage:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	mysql-pv-claim
+    ReadOnly:	false
+  default-token-cgpgd:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-cgpgd
+    Optional:	false
+QoS Class:	BestEffort
+Node-Selectors:	<none>
+Tolerations:	<none>
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath		Type		Reason			Message
+  ---------	--------	-----	----			-------------		--------	------			-------
+  12m		12m		1	default-scheduler				Normal		Scheduled		Successfully assigned db-1662469141-4lfx1 to minikube
+  12m		12m		1	kubelet, minikube				Normal		SuccessfulMountVolume	MountVolume.SetUp succeeded for volume "local-pv-2" 
+  12m		12m		1	kubelet, minikube				Normal		SuccessfulMountVolume	MountVolume.SetUp succeeded for volume "default-token-cgpgd" 
+  12m		12m		1	kubelet, minikube	spec.containers{db}	Normal		Pulling			pulling image "mysql"
+  12m		12m		1	kubelet, minikube	spec.containers{db}	Normal		Pulled			Successfully pulled image "mysql"
+  12m		12m		1	kubelet, minikube	spec.containers{db}	Normal		Created			Created container
+  12m		12m		1	kubelet, minikube	spec.containers{db}	Normal		Started			Started container
+
+
+Name:		web-mxj84
+Namespace:	shopify
+Node:		minikube/192.168.99.101
+Start Time:	Tue, 22 Aug 2017 22:11:12 -0400
+Labels:		service=web
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"ReplicationController","namespace":"shopify","name":"web","uid":"55fc440a-87a8-11e7-af88-080027096088","ap...
+Status:		Running
+IP:		172.17.0.2
+Created By:	ReplicationController/web
+Controlled By:	ReplicationController/web
+Containers:
+  web:
+    Container ID:	docker://7b3f2de16138c4414b80bd031fdbac197db09fb21b94b04d1e927f1bfbdb6d4a
+    Image:		benjamincaldwell/hello-docker-rails
+    Image ID:		docker://sha256:69d77baf9ab2e7979155801664b49c29dd639613538c88dd1d47e0732632d1e1
+    Port:		3000/TCP
+    State:		Running
+      Started:		Tue, 22 Aug 2017 22:11:14 -0400
+    Ready:		True
+    Restart Count:	0
+    Environment:
+      MYSQL_USER:	root
+      MYSQL_PASSWORD:	password
+      MYSQL_HOST:	db
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-cgpgd (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  default-token-cgpgd:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-cgpgd
+    Optional:	false
+QoS Class:	BestEffort
+Node-Selectors:	<none>
+Tolerations:	<none>
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath		Type		Reason			Message
+  ---------	--------	-----	----			-------------		--------	------			-------
+  12m		12m		1	default-scheduler				Normal		Scheduled		Successfully assigned web-mxj84 to minikube
+  12m		12m		1	kubelet, minikube				Normal		SuccessfulMountVolume	MountVolume.SetUp succeeded for volume "default-token-cgpgd" 
+  12m		12m		1	kubelet, minikube	spec.containers{web}	Normal		Pulling			pulling image "benjamincaldwell/hello-docker-rails"
+  12m		12m		1	kubelet, minikube	spec.containers{web}	Normal		Pulled			Successfully pulled image "benjamincaldwell/hello-docker-rails"
+  12m		12m		1	kubelet, minikube	spec.containers{web}	Normal		Created			Created container
+  12m		12m		1	kubelet, minikube	spec.containers{web}	Normal		Started			Started container

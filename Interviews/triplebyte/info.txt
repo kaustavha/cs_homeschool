@@ -1,0 +1,56 @@
+data base indexes
+compound indexes
+multicolumn index
+
+http
+-> get
+-> POST
+
+caching -> 
+ how to
+ localStorage
+ etag = 
+
+ ds & algos:
+  how are hashmaps implemented under the hood
+  amortized?
+  hash collision? how then what
+  hashmap run out of memory?
+  hashmap
+
+ bloom filter:
+ why over hashmaps
+
+bst:
+  lookup or insert
+
+  avl trees
+
+
+kth smallest element
+
+low level systems:
+  c - malloc free
+  where does malloc get its mem
+  c: int n = 10; return n*;
+  c: mutexes
+  deadlock 
+  reader writer locks 
+  condition varialbes
+  monitor - in context of threading
+
+comment: - 
+
+SYSTEM ARCHITECTURE:
+ - webscrape - cars.com - gets cars, 20m cars, kv pairs like make model etc
+ - API - red honda civics
+ - ranges 20-30k
+ - 
+
+
+interviewing at companies:
+	- 
+
+
+referall program - pref, intro, 
+
