@@ -2,9 +2,6 @@
 const fs = require('fs');
 var txt = fs.readFileSync('./t.js');
 // console.log(txt+'');
-
-
-const emailRx = /[a-z0-9\.\@\-\_\+]+/gi;
 txt += '';
 let lines = txt.split('\n');
 txt = txt.split('\n');
@@ -97,29 +94,21 @@ fs.writeFileSync("rejects.txt", rejects.join("\n"));
 fs.writeFileSync("emails.txt", emails.join("\n"));
 
 function parseEmailFromBlock(t, iteration) {
-	console.log(t);
+	// console.log(t);
+	let emailRx = /[a-z0-9\.\@\-\_\+]+/gi;
 	let l = t.split('\n'), buf='';
-
-	// console.log("line", l.length);
-	// console.log("line", l[2]);
-	// console.log("line", l[2].match(emailRx));
-	// return;
 	for (var i = 0; i < l.length; i++) {
-
-		// console.log(l[i]);
-
-
 		let tl = l[i];
 		// console.log(tl);
 		let words = tl.match(emailRx);
-// console.log(words);
+
 	// if (t.length > 0) console.log(tl.match(/[a-z0-9.@-_+]+/gi));
 		if (!words) words = [];
 		for (var j = 0; j < words.length; j++) {
 			let word = words[j], tb='';
 
 			// if (word.match(/advocacy/)) console.log(words.slice(0, j+5));
-// console.log("tl", tl);
+
 
 			if (word.match(/email/gi) ||
 				word.match(/e-mail/gi)) {
@@ -128,12 +117,16 @@ function parseEmailFromBlock(t, iteration) {
 console.log('email', word);
 				tb += words.slice(start, end).join(" ");
 
-			} else if ((word.match(/\[at\]/gi) || 
+			} else if (word.match(/\[at\]/gi) || 
 				word.match(/\(at\)/gi) ||
 				word.match(/\<at\>/gi) ||
 				word.match(/\{at\}/gi) ||
-				word.indexOf("@") > -1) &&
-			(word.match(/\[dot\]/gi) || 
+				word.indexOf("@") > -1) {
+console.log('at');
+				let start = j-5 < 0 ? 0 : j-5,
+					end = j+5 > words.length ? words.length : j+5;
+				tb += words.slice(start, end).join(" ");
+			} else if (word.match(/\[dot\]/gi) || 
 				word.match(/\(dot\)/gi) ||
 				 word.match(/\s*dot\s*/gi) ||
 				 word.match(/\s*\[\.\]\s*/gi) ||
@@ -141,8 +134,7 @@ console.log('email', word);
 				word.match(/\{dot\}/gi) ||
 				word.match(/\<.\>/gi) ||
 				word.match(/\{.\}/gi) ||
-				  word.match(/\s*\(\.\)\s*/gi) ||
-				  word.match(/[a-z0-9]\.[a-z0-9]/gi))) {
+				  word.match(/\s*\(\.\)\s*/gi)) {
 console.log('dot', word);
 				let start = j-5 < 0 ? 0 : j-5,
 					end = j+5 > words.length ? words.length : j+5;
@@ -184,7 +176,6 @@ if (tb.length > 0) console.log('2',tb);
 
 		}
 
-
 		// if (tl.indexOf('email') > -1) {
 		// 	//snip snip
 		// 	let i = tl.indexOf('email'),
@@ -196,46 +187,16 @@ if (tb.length > 0) console.log('2',tb);
 
 	}
 
-	console.log(buf);
-
-	let posems = dedupeArr(parseEmails(buf));
-
-
-	console.log('end', posems.length, iteration);
-	if (posems.length == 0) {
-		if (!iteration==1) posems = parseEmailFromBlock(parseLine2(t), 1);
-	}
-
-	console.log('end2', posems.length, iteration);
-
-	// posems = dedupeArr(posems);
-	// let out =[];
-	// if (sentEmails.indexOf(posems.join(",")) == -1) out = posems;
-	// do not email peope again************************************8\\
-	//IMPORTANT
-	// for (var i = 0; i < posems.length; i++) {
-	// 	if (sentEmails.indexOf(posems[i] == -1)) out.push(posems[i]); 
-	// }
-
-
-// if (posems.length > 0) console.log(posems);
-	// return out;
-	return posems;
-}
-
-function parseEmails(txt) {
-
-	let buf = txt.trim();
-	if (buf.length > 0) console.log('3',buf);
+	buf = buf.trim();
+// if (buf.length > 0) console.log('3',buf);
 	let posems = [];
-
 	if (buf.indexOf('@') > -1 && buf.indexOf(".") > -1) {
 		let ws = buf.match(emailRx);
 		for (var i = 0; i < ws.length; i++) {
 			let w = ws[i];
 			if (w.indexOf('@') > -1 && w.indexOf(".") > -1) {
 				if (w.match(/@/gi).length > 1) {
-					w = w.split("@").splice(1,2).join("@");
+				w = w.split("@").splice(1,2).join("@");
 				// if (w.match())
 				w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
 				
@@ -250,11 +211,26 @@ function parseEmails(txt) {
 			}
 		}
 	}
-	return posems;
+
+	if (posems.length == 0) {
+		if (!iteration==1) posems = parseEmailFromBlock(parseLine2(t), 1);
+	}
+	posems = dedupeArr(posems);
+	let out =[];
+	if (sentEmails.indexOf(posems.join(",")) == -1) out = posems;
+	// do not email peope again************************************8\\
+	//IMPORTANT
+	// for (var i = 0; i < posems.length; i++) {
+	// 	if (sentEmails.indexOf(posems[i] == -1)) out.push(posems[i]); 
+	// }
+
+
+// if (posems.length > 0) console.log(posems);
+	return out;
 }
 
 function parseLine2(tb) {
-	console.log("parseline2 inp: ", tb);
+	console.log(tb);
 
 	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
 	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
@@ -274,7 +250,7 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
 	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 
-	console.log("parseline2 out: ", tb);
+	console.log(tb);
 	return tb;
 }
 
