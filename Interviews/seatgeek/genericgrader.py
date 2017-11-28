@@ -25,28 +25,31 @@ def grade_match(match, verbose=False):
 
     if e_valid:
         if sm and rm and vm:
-            if verbose:
-                print ".. ok"
+            # if verbose:
+            #     print ".. ok"
             pts = 1
 
         if not vm:
             if verbose:
+                print match
                 print ".. {}:{} marked invalid, should be {}:{}".format(i_s, i_r, e_sid, e_rid)
             pts = 0
 
         if vm and (not sm or not rm):
             if verbose:
+                print match
                 print ".. {}:{} WRONG!, marked {}:{}, should be {}:{}".format(i_s, i_r, o_sid, o_rid, e_sid, e_rid)
             pts = -5
 
     if not e_valid:
         if not o_valid:
-            if verbose:
-                print ".. ok"
+            # if verbose:
+                # print ".. ok"
             pts = 1
 
         else:
             if verbose:
+                print match
                 print ".. {}:{} WRONG! Marked valid, should be invalid".format(i_s, i_r)
             pts = -5
     return pts

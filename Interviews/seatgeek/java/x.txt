@@ -1,0 +1,1002 @@
+.
+Reading from ../manifests/dodgerstadium_sections.csv
+{"input":{"section":"311PL","row":"G"},"expected":{"section_id":160,"row_id":6,"valid":true},"output":{"section_id":160,"row_id":6,"valid":true}}
+{"input":{"section":"41FD","row":"K"},"expected":{"section_id":60,"row_id":9,"valid":true},"output":{"section_id":60,"row_id":9,"valid":true}}
+{"input":{"section":"56RS","row":"B"},"expected":{"section_id":78,"row_id":1,"valid":true},"output":{"section_id":78,"row_id":1,"valid":true}}
+{"input":{"section":"Pavilion 314","row":"C"},"expected":{"section_id":137,"row_id":2,"valid":true},"output":{"section_id":137,"row_id":2,"valid":true}}
+{"input":{"section":"38RS","row":"FF"},"expected":{"section_id":248,"row_id":4,"valid":true},"output":{"section_id":248,"row_id":4,"valid":true}}
+{"input":{"section":"Pavilion 307","row":"O"},"expected":{"section_id":89,"row_id":13,"valid":true},"output":{"section_id":89,"row_id":13,"valid":true}}
+{"input":{"section":"Infield Loge Box 146","row":"N"},"expected":{"section_id":40,"row_id":12,"valid":true},"output":{"section_id":40,"row_id":12,"valid":true}}
+{"input":{"section":"7RS","row":"N"},"expected":{"section_id":107,"row_id":12,"valid":true},"output":{"section_id":107,"row_id":12,"valid":true}}
+{"input":{"section":"Preferred Field Box 44","row":"O"},"expected":{"section_id":212,"row_id":13,"valid":true},"output":{"section_id":212,"row_id":13,"valid":true}}
+{"input":{"section":"49FD","row":"B"},"expected":{"section_id":215,"row_id":2,"valid":true},"output":{"section_id":215,"row_id":2,"valid":true}}
+{"input":{"section":"Field Box FB45","row":"S"},"expected":{"section_id":211,"row_id":16,"valid":true},"output":{"section_id":211,"row_id":16,"valid":true}}
+{"input":{"section":"101LG","row":"G"},"expected":{"section_id":183,"row_id":6,"valid":true},"output":{"section_id":183,"row_id":6,"valid":true}}
+{"input":{"section":"Field Box FB45","row":"L"},"expected":{"section_id":211,"row_id":10,"valid":true},"output":{"section_id":211,"row_id":10,"valid":true}}
+{"input":{"section":"Reserve R54","row":"GG"},"expected":{"section_id":76,"row_id":6,"valid":true},"output":{"section_id":76,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Reserve VIP 55","row":"B"},"expected":{"section_id":77,"row_id":1,"valid":true},"output":{"section_id":77,"row_id":1,"valid":true}}
+{"input":{"section":"146LG","row":"O"},"expected":{"section_id":40,"row_id":13,"valid":true},"output":{"section_id":40,"row_id":13,"valid":true}}
+{"input":{"section":"312PR","row":"D"},"expected":{"section_id":141,"row_id":3,"valid":true},"output":{"section_id":141,"row_id":3,"valid":true}}
+{"input":{"section":"26RS","row":"EE"},"expected":{"section_id":194,"row_id":3,"valid":true},"output":{"section_id":194,"row_id":3,"valid":true}}
+{"input":{"section":"Infield Box Value 36","row":"H"},"expected":{"section_id":230,"row_id":7,"valid":true},"output":{"section_id":230,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box MVP 11","row":"D"},"expected":{"section_id":272,"row_id":3,"valid":true},"output":{"section_id":272,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"C"},"expected":{"section_id":284,"row_id":2,"valid":true},"output":{"section_id":284,"row_id":2,"valid":true}}
+{"input":{"section":"48FD","row":"L"},"expected":{"section_id":216,"row_id":11,"valid":true},"output":{"section_id":216,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Reserve IFR10","row":"D"},"expected":{"section_id":217,"row_id":3,"valid":true},"output":{"section_id":217,"row_id":3,"valid":true}}
+{"input":{"section":"159LG","row":"P"},"expected":{"section_id":13,"row_id":14,"valid":true},"output":{"section_id":13,"row_id":14,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP17","row":"P"},"expected":{"section_id":263,"row_id":14,"valid":true},"output":{"section_id":263,"row_id":14,"valid":true}}
+{"input":{"section":"43FD","row":"O"},"expected":{"section_id":241,"row_id":13,"valid":true},"output":{"section_id":241,"row_id":13,"valid":true}}
+{"input":{"section":"58RS","row":"DD"},"expected":{"section_id":86,"row_id":3,"valid":true},"output":{"section_id":86,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 56","row":"D"},"expected":{"section_id":78,"row_id":3,"valid":true},"output":{"section_id":78,"row_id":3,"valid":true}}
+{"input":{"section":"161LG","row":"O"},"expected":{"section_id":63,"row_id":13,"valid":true},"output":{"section_id":63,"row_id":13,"valid":true}}
+{"input":{"section":"158LG","row":"A"},"expected":{"section_id":12,"row_id":0,"valid":true},"output":{"section_id":12,"row_id":0,"valid":true}}
+{"input":{"section":"Top Deck 6","row":"L"},"expected":{"section_id":1,"row_id":10,"valid":true},"output":{"section_id":1,"row_id":10,"valid":true}}
+{"input":{"section":"Top Deck 10","row":"M"},"expected":{"section_id":209,"row_id":11,"valid":true},"output":{"section_id":209,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Reserve IFR9","row":"C"},"expected":{"section_id":118,"row_id":2,"valid":true},"output":{"section_id":118,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 167","row":"F"},"expected":{"section_id":135,"row_id":5,"valid":true},"output":{"section_id":135,"row_id":5,"valid":true}}
+{"input":{"section":"Pavilion 312","row":"B"},"expected":{"section_id":141,"row_id":1,"valid":true},"output":{"section_id":141,"row_id":1,"valid":true}}
+{"input":{"section":"Loge 164","row":"A"},"expected":{"section_id":277,"row_id":0,"valid":true},"output":{"section_id":277,"row_id":0,"valid":true}}
+{"input":{"section":"Left Field Pavilion 315","row":"N"},"expected":{"section_id":172,"row_id":12,"valid":true},"output":{"section_id":172,"row_id":12,"valid":true}}
+{"input":{"section":"Left Field Pavilion 305","row":"C"},"expected":{"section_id":101,"row_id":2,"valid":true},"output":{"section_id":101,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Field Value 50","row":"J"},"expected":{"section_id":179,"row_id":9,"valid":true},"output":{"section_id":179,"row_id":9,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"E"},"expected":{"section_id":197,"row_id":4,"valid":true},"output":{"section_id":197,"row_id":4,"valid":true}}
+{"input":{"section":"Infield Box 27","row":"N"},"expected":{"section_id":285,"row_id":12,"valid":true},"output":{"section_id":285,"row_id":12,"valid":true}}
+{"input":{"section":"Lower Reserve LR27","row":"B"},"expected":{"section_id":193,"row_id":1,"valid":true},"output":{"section_id":193,"row_id":1,"valid":true}}
+{"input":{"section":"148LG","row":"R"},"expected":{"section_id":36,"row_id":15,"valid":true},"output":{"section_id":36,"row_id":15,"valid":true}}
+{"input":{"section":"44RS","row":"T"},"expected":{"section_id":189,"row_id":17,"valid":true},"output":{"section_id":189,"row_id":17,"valid":true}}
+{"input":{"section":"137LG","row":"H"},"expected":{"section_id":75,"row_id":7,"valid":true},"output":{"section_id":75,"row_id":7,"valid":true}}
+{"input":{"section":"47FD","row":"S"},"expected":{"section_id":213,"row_id":16,"valid":true},"output":{"section_id":213,"row_id":16,"valid":true}}
+{"input":{"section":"307PL","row":"L"},"expected":{"section_id":89,"row_id":10,"valid":true},"output":{"section_id":89,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 160","row":"P"},"expected":{"section_id":281,"row_id":14,"valid":true},"output":{"section_id":281,"row_id":14,"valid":true}}
+{"input":{"section":"All You Can Eat Right Field Pavilion VIP 302","row":"D"},"expected":{"section_id":114,"row_id":3,"valid":true},"output":{"section_id":114,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 117","row":"M"},"expected":{"section_id":143,"row_id":11,"valid":true},"output":{"section_id":143,"row_id":11,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 126","row":"A"},"expected":{"section_id":130,"row_id":0,"valid":true},"output":{"section_id":130,"row_id":0,"valid":true}}
+{"input":{"section":"Pavilion 307","row":"K"},"expected":{"section_id":89,"row_id":9,"valid":true},"output":{"section_id":89,"row_id":9,"valid":true}}
+{"input":{"section":"46RS","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"N"},"expected":{"section_id":13,"row_id":12,"valid":true},"output":{"section_id":13,"row_id":12,"valid":true}}
+{"input":{"section":"Lower Reserve LR55","row":"E"},"expected":{"section_id":77,"row_id":4,"valid":true},"output":{"section_id":77,"row_id":4,"valid":true}}
+{"input":{"section":"Infield Reserve 24","row":"R"},"expected":{"section_id":255,"row_id":15,"valid":true},"output":{"section_id":255,"row_id":15,"valid":true}}
+{"input":{"section":"Top Deck 8","row":"L"},"expected":{"section_id":52,"row_id":10,"valid":true},"output":{"section_id":52,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value Front Row 166","row":"A"},"expected":{"section_id":275,"row_id":0,"valid":true},"output":{"section_id":275,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Reserve Value 50","row":"GG"},"expected":{"section_id":80,"row_id":6,"valid":true},"output":{"section_id":80,"row_id":6,"valid":true}}
+{"input":{"section":"Lower Reserve LR24","row":"B"},"expected":{"section_id":255,"row_id":1,"valid":true},"output":{"section_id":255,"row_id":1,"valid":true}}
+{"input":{"section":"Top Deck 4","row":"A"},"expected":{"section_id":229,"row_id":0,"valid":true},"output":{"section_id":229,"row_id":0,"valid":true}}
+{"input":{"section":"28FD","row":"K"},"expected":{"section_id":232,"row_id":9,"valid":true},"output":{"section_id":232,"row_id":9,"valid":true}}
+{"input":{"section":"24RS","row":"S"},"expected":{"section_id":255,"row_id":16,"valid":true},"output":{"section_id":255,"row_id":16,"valid":true}}
+{"input":{"section":"6RS","row":"G"},"expected":{"section_id":106,"row_id":6,"valid":true},"output":{"section_id":106,"row_id":6,"valid":true}}
+{"input":{"section":"Upper Reserve 58","row":"AA"},"expected":{"section_id":86,"row_id":0,"valid":true},"output":{"section_id":86,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Loge Box 138","row":"B"},"expected":{"section_id":65,"row_id":1,"valid":true},"output":{"section_id":65,"row_id":1,"valid":true}}
+{"input":{"section":"305PL","row":"C"},"expected":{"section_id":101,"row_id":2,"valid":true},"output":{"section_id":101,"row_id":2,"valid":true}}
+{"input":{"section":"44FD","row":"H"},"expected":{"section_id":212,"row_id":7,"valid":true},"output":{"section_id":212,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 128","row":"J"},"expected":{"section_id":121,"row_id":8,"valid":true},"output":{"section_id":121,"row_id":8,"valid":true}}
+{"input":{"section":"33FD","row":"A"},"expected":{"section_id":292,"row_id":0,"valid":true},"output":{"section_id":292,"row_id":0,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"M"},"expected":{"section_id":13,"row_id":11,"valid":true},"output":{"section_id":13,"row_id":11,"valid":true}}
+{"input":{"section":"40RS","row":"G"},"expected":{"section_id":264,"row_id":6,"valid":true},"output":{"section_id":264,"row_id":6,"valid":true}}
+{"input":{"section":"FIELD BOX 29","row":"A-X"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP3","row":"D"},"expected":{"section_id":164,"row_id":3,"valid":true},"output":{"section_id":164,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB42","row":"A"},"expected":{"section_id":140,"row_id":0,"valid":true},"output":{"section_id":140,"row_id":0,"valid":true}}
+{"input":{"section":"47FD","row":"H"},"expected":{"section_id":213,"row_id":7,"valid":true},"output":{"section_id":213,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP15","row":"O"},"expected":{"section_id":265,"row_id":13,"valid":true},"output":{"section_id":265,"row_id":13,"valid":true}}
+{"input":{"section":"Top Deck 7","row":"F"},"expected":{"section_id":201,"row_id":5,"valid":true},"output":{"section_id":201,"row_id":5,"valid":true}}
+{"input":{"section":"120LG","row":"J"},"expected":{"section_id":126,"row_id":8,"valid":true},"output":{"section_id":126,"row_id":8,"valid":true}}
+{"input":{"section":"49FD","row":"G"},"expected":{"section_id":215,"row_id":7,"valid":true},"output":{"section_id":215,"row_id":7,"valid":true}}
+{"input":{"section":"Left Field Pavilion 309","row":"B"},"expected":{"section_id":88,"row_id":1,"valid":true},"output":{"section_id":88,"row_id":1,"valid":true}}
+{"input":{"section":"37FD","row":"S"},"expected":{"section_id":186,"row_id":16,"valid":true},"output":{"section_id":186,"row_id":16,"valid":true}}
+{"input":{"section":"Lower Reserve LR56","row":"A"},"expected":{"section_id":78,"row_id":0,"valid":true},"output":{"section_id":78,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Box IFB26","row":"J"},"expected":{"section_id":218,"row_id":8,"valid":true},"output":{"section_id":218,"row_id":8,"valid":true}}
+{"input":{"section":"Top Deck 6","row":"G"},"expected":{"section_id":1,"row_id":6,"valid":true},"output":{"section_id":1,"row_id":6,"valid":true}}
+{"input":{"section":"Loge Box 160","row":"E"},"expected":{"section_id":281,"row_id":4,"valid":true},"output":{"section_id":281,"row_id":4,"valid":true}}
+{"input":{"section":"7TD","row":"G"},"expected":{"section_id":201,"row_id":6,"valid":true},"output":{"section_id":201,"row_id":6,"valid":true}}
+{"input":{"section":"40FD","row":"F"},"expected":{"section_id":208,"row_id":5,"valid":true},"output":{"section_id":208,"row_id":5,"valid":true}}
+{"input":{"section":"TOP DECK VIP 6","row":"B"},"expected":{"section_id":1,"row_id":1,"valid":true},"output":{"section_id":1,"row_id":1,"valid":true}}
+{"input":{"section":"Preferred Field Box 45","row":"J"},"expected":{"section_id":211,"row_id":8,"valid":true},"output":{"section_id":211,"row_id":8,"valid":true}}
+{"input":{"section":"44FD","row":"C"},"expected":{"section_id":212,"row_id":2,"valid":true},"output":{"section_id":212,"row_id":2,"valid":true}}
+{"input":{"section":"11RS","row":"N"},"expected":{"section_id":199,"row_id":12,"valid":true},"output":{"section_id":199,"row_id":12,"valid":true}}
+{"input":{"section":"Loge Box MVP 123","row":"F"},"expected":{"section_id":123,"row_id":5,"valid":true},"output":{"section_id":123,"row_id":5,"valid":true}}
+{"input":{"section":"Upper Reserve 42","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 102","row":"F"},"expected":{"section_id":247,"row_id":5,"valid":true},"output":{"section_id":247,"row_id":5,"valid":true}}
+{"input":{"section":"159LG","row":"A"},"expected":{"section_id":13,"row_id":0,"valid":true},"output":{"section_id":13,"row_id":0,"valid":true}}
+{"input":{"section":"126LG","row":"C"},"expected":{"section_id":130,"row_id":2,"valid":true},"output":{"section_id":130,"row_id":2,"valid":true}}
+{"input":{"section":"34FD","row":"C"},"expected":{"section_id":159,"row_id":2,"valid":true},"output":{"section_id":159,"row_id":2,"valid":true}}
+{"input":{"section":"153LG","row":"K"},"expected":{"section_id":4,"row_id":9,"valid":true},"output":{"section_id":4,"row_id":9,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 114","row":"M"},"expected":{"section_id":144,"row_id":11,"valid":true},"output":{"section_id":144,"row_id":11,"valid":true}}
+{"input":{"section":"Top Deck TD3","row":"J"},"expected":{"section_id":249,"row_id":8,"valid":true},"output":{"section_id":249,"row_id":8,"valid":true}}
+{"input":{"section":"Lower Reserve LR28","row":"R"},"expected":{"section_id":133,"row_id":15,"valid":true},"output":{"section_id":133,"row_id":15,"valid":true}}
+{"input":{"section":"Top Deck TD10","row":"A"},"expected":{"section_id":209,"row_id":0,"valid":true},"output":{"section_id":209,"row_id":0,"valid":true}}
+{"input":{"section":"145LG","row":"U"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"Infield Box Value VIP 39","row":"E"},"expected":{"section_id":196,"row_id":4,"valid":true},"output":{"section_id":196,"row_id":4,"valid":true}}
+{"input":{"section":"11RS","row":"H"},"expected":{"section_id":199,"row_id":7,"valid":true},"output":{"section_id":199,"row_id":7,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"K"},"expected":{"section_id":289,"row_id":9,"valid":true},"output":{"section_id":289,"row_id":9,"valid":true}}
+{"input":{"section":"2TD","row":"L"},"expected":{"section_id":182,"row_id":10,"valid":true},"output":{"section_id":182,"row_id":10,"valid":true}}
+{"input":{"section":"Pavilion 306","row":"B"},"expected":{"section_id":115,"row_id":1,"valid":true},"output":{"section_id":115,"row_id":1,"valid":true}}
+{"input":{"section":"Top Deck TD13","row":"B"},"expected":{"section_id":237,"row_id":1,"valid":true},"output":{"section_id":237,"row_id":1,"valid":true}}
+{"input":{"section":"Field Box FB48","row":"B"},"expected":{"section_id":216,"row_id":2,"valid":true},"output":{"section_id":216,"row_id":2,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"O"},"expected":{"section_id":289,"row_id":13,"valid":true},"output":{"section_id":289,"row_id":13,"valid":true}}
+{"input":{"section":"Loge 115","row":"E"},"expected":{"section_id":145,"row_id":4,"valid":true},"output":{"section_id":145,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB38","row":"J"},"expected":{"section_id":195,"row_id":8,"valid":true},"output":{"section_id":195,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"A"},"expected":{"section_id":193,"row_id":0,"valid":true},"output":{"section_id":193,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Reserve IFR16","row":"M"},"expected":{"section_id":288,"row_id":11,"valid":true},"output":{"section_id":288,"row_id":11,"valid":true}}
+{"input":{"section":"Reserve MVP 15","row":"C"},"expected":{"section_id":222,"row_id":2,"valid":true},"output":{"section_id":222,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Field Value 49","row":"M"},"expected":{"section_id":215,"row_id":12,"valid":true},"output":{"section_id":215,"row_id":12,"valid":true}}
+{"input":{"section":"Lower Reserve LR39","row":"V"},"expected":{"section_id":149,"row_id":19,"valid":true},"output":{"section_id":149,"row_id":19,"valid":true}}
+{"input":{"section":"39FD","row":"N"},"expected":{"section_id":196,"row_id":12,"valid":true},"output":{"section_id":196,"row_id":12,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"E"},"expected":{"section_id":231,"row_id":4,"valid":true},"output":{"section_id":231,"row_id":4,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 123","row":"R"},"expected":{"section_id":123,"row_id":15,"valid":true},"output":{"section_id":123,"row_id":15,"valid":true}}
+{"input":{"section":"Lower Reserve LR39","row":"N"},"expected":{"section_id":149,"row_id":12,"valid":true},"output":{"section_id":149,"row_id":12,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB36","row":"C"},"expected":{"section_id":230,"row_id":2,"valid":true},"output":{"section_id":230,"row_id":2,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"C"},"expected":{"section_id":13,"row_id":2,"valid":true},"output":{"section_id":13,"row_id":2,"valid":true}}
+{"input":{"section":"35RS","row":"D"},"expected":{"section_id":153,"row_id":3,"valid":true},"output":{"section_id":153,"row_id":3,"valid":true}}
+{"input":{"section":"164LG","row":"M"},"expected":{"section_id":277,"row_id":11,"valid":true},"output":{"section_id":277,"row_id":11,"valid":true}}
+{"input":{"section":"8TD","row":"A-R"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"Preferred Field Value 48","row":"A"},"expected":{"section_id":216,"row_id":1,"valid":true},"output":{"section_id":216,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box 28","row":"K"},"expected":{"section_id":232,"row_id":9,"valid":true},"output":{"section_id":232,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Reserve 24","row":"E"},"expected":{"section_id":255,"row_id":4,"valid":true},"output":{"section_id":255,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Reserve 23","row":"V"},"expected":{"section_id":197,"row_id":19,"valid":true},"output":{"section_id":197,"row_id":19,"valid":true}}
+{"input":{"section":"118LG","row":"M"},"expected":{"section_id":47,"row_id":11,"valid":true},"output":{"section_id":47,"row_id":11,"valid":true}}
+{"input":{"section":"5TD","row":"B"},"expected":{"section_id":289,"row_id":1,"valid":true},"output":{"section_id":289,"row_id":1,"valid":true}}
+{"input":{"section":"120LG","row":"L"},"expected":{"section_id":126,"row_id":10,"valid":true},"output":{"section_id":126,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 162","row":"G"},"expected":{"section_id":279,"row_id":6,"valid":true},"output":{"section_id":279,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 161","row":"O"},"expected":{"section_id":63,"row_id":13,"valid":true},"output":{"section_id":63,"row_id":13,"valid":true}}
+{"input":{"section":"Preferred Field Box Value 51","row":"H"},"expected":{"section_id":180,"row_id":8,"valid":true},"output":{"section_id":180,"row_id":8,"valid":true}}
+{"input":{"section":"Upper Reserve 42","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"39FD","row":"E"},"expected":{"section_id":196,"row_id":4,"valid":true},"output":{"section_id":196,"row_id":4,"valid":true}}
+{"input":{"section":"12FD","row":"A"},"expected":{"section_id":258,"row_id":0,"valid":true},"output":{"section_id":258,"row_id":0,"valid":true}}
+{"input":{"section":"309PL","row":"T"},"expected":{"section_id":88,"row_id":18,"valid":true},"output":{"section_id":88,"row_id":18,"valid":true}}
+{"input":{"section":"39RS","row":"M"},"expected":{"section_id":149,"row_id":11,"valid":true},"output":{"section_id":149,"row_id":11,"valid":true}}
+{"input":{"section":"27RS","row":"O"},"expected":{"section_id":193,"row_id":13,"valid":true},"output":{"section_id":193,"row_id":13,"valid":true}}
+{"input":{"section":"159LG","row":"P"},"expected":{"section_id":13,"row_id":14,"valid":true},"output":{"section_id":13,"row_id":14,"valid":true}}
+{"input":{"section":"41RS","row":"CC"},"expected":{"section_id":125,"row_id":3,"valid":true},"output":{"section_id":125,"row_id":3,"valid":true}}
+{"input":{"section":"28FD","row":"B"},"expected":{"section_id":232,"row_id":1,"valid":true},"output":{"section_id":232,"row_id":1,"valid":true}}
+{"input":{"section":"PREFERRED LOGE BOX V","row":"J"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"5RS","row":"R"},"expected":{"section_id":109,"row_id":15,"valid":true},"output":{"section_id":109,"row_id":15,"valid":true}}
+{"input":{"section":"Field Box FB47","row":"O"},"expected":{"section_id":213,"row_id":13,"valid":true},"output":{"section_id":213,"row_id":13,"valid":true}}
+{"input":{"section":"15RS","row":"M"},"expected":{"section_id":222,"row_id":11,"valid":true},"output":{"section_id":222,"row_id":11,"valid":true}}
+{"input":{"section":"10RS","row":"T"},"expected":{"section_id":217,"row_id":17,"valid":true},"output":{"section_id":217,"row_id":17,"valid":true}}
+{"input":{"section":"10TD","row":"B"},"expected":{"section_id":209,"row_id":1,"valid":true},"output":{"section_id":209,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box Value 35","row":"L"},"expected":{"section_id":184,"row_id":10,"valid":true},"output":{"section_id":184,"row_id":10,"valid":true}}
+{"input":{"section":"RESERVE MVP VALUE 10","row":"R"},"expected":{"section_id":217,"row_id":15,"valid":true},"output":{"section_id":217,"row_id":15,"valid":true}}
+{"input":{"section":"Infield Box IFB29","row":"R"},"expected":{"section_id":231,"row_id":15,"valid":true},"output":{"section_id":231,"row_id":15,"valid":true}}
+{"input":{"section":"148LG","row":"C"},"expected":{"section_id":36,"row_id":2,"valid":true},"output":{"section_id":36,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"L"},"expected":{"section_id":231,"row_id":10,"valid":true},"output":{"section_id":231,"row_id":10,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 117","row":"R"},"expected":{"section_id":143,"row_id":15,"valid":true},"output":{"section_id":143,"row_id":15,"valid":true}}
+{"input":{"section":"149LG","row":"A"},"expected":{"section_id":35,"row_id":0,"valid":true},"output":{"section_id":35,"row_id":0,"valid":true}}
+{"input":{"section":"160LG","row":"S"},"expected":{"section_id":281,"row_id":16,"valid":true},"output":{"section_id":281,"row_id":16,"valid":true}}
+{"input":{"section":"34 FIELD","row":"E"},"expected":{"section_id":159,"row_id":4,"valid":true},"output":{"section_id":159,"row_id":4,"valid":true}}
+{"input":{"section":"Reserve MVP 10","row":"J"},"expected":{"section_id":217,"row_id":8,"valid":true},"output":{"section_id":217,"row_id":8,"valid":true}}
+{"input":{"section":"46FD","row":"P"},"expected":{"section_id":214,"row_id":14,"valid":true},"output":{"section_id":214,"row_id":14,"valid":true}}
+{"input":{"section":"7TD","row":"D"},"expected":{"section_id":201,"row_id":3,"valid":true},"output":{"section_id":201,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 24","row":"S"},"expected":{"section_id":255,"row_id":16,"valid":true},"output":{"section_id":255,"row_id":16,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 167","row":"F"},"expected":{"section_id":135,"row_id":5,"valid":true},"output":{"section_id":135,"row_id":5,"valid":true}}
+{"input":{"section":"Loge Box 160","row":"C"},"expected":{"section_id":281,"row_id":2,"valid":true},"output":{"section_id":281,"row_id":2,"valid":true}}
+{"input":{"section":"120LG","row":"B"},"expected":{"section_id":126,"row_id":1,"valid":true},"output":{"section_id":126,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Loge Box Value 146","row":"F"},"expected":{"section_id":40,"row_id":5,"valid":true},"output":{"section_id":40,"row_id":5,"valid":true}}
+{"input":{"section":"56RS","row":"D"},"expected":{"section_id":78,"row_id":3,"valid":true},"output":{"section_id":78,"row_id":3,"valid":true}}
+{"input":{"section":"Loge 120","row":"L"},"expected":{"section_id":126,"row_id":10,"valid":true},"output":{"section_id":126,"row_id":10,"valid":true}}
+{"input":{"section":"3TD","row":"A"},"expected":{"section_id":249,"row_id":0,"valid":true},"output":{"section_id":249,"row_id":0,"valid":true}}
+{"input":{"section":"24RS","row":"H"},"expected":{"section_id":255,"row_id":7,"valid":true},"output":{"section_id":255,"row_id":7,"valid":true}}
+{"input":{"section":"46RS","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"44 FIELD","row":"A"},"expected":{"section_id":212,"row_id":0,"valid":true},"output":{"section_id":212,"row_id":0,"valid":true}}
+{"input":{"section":"Loge Box 158","row":"J"},"expected":{"section_id":12,"row_id":8,"valid":true},"output":{"section_id":12,"row_id":8,"valid":true}}
+{"input":{"section":"12TD","row":"A"},"expected":{"section_id":207,"row_id":0,"valid":true},"output":{"section_id":207,"row_id":0,"valid":true}}
+{"input":{"section":"312PR","row":"C"},"expected":{"section_id":141,"row_id":2,"valid":true},"output":{"section_id":141,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Reserve IFR11","row":"D"},"expected":{"section_id":199,"row_id":3,"valid":true},"output":{"section_id":199,"row_id":3,"valid":true}}
+{"input":{"section":"5RS","row":"D"},"expected":{"section_id":109,"row_id":3,"valid":true},"output":{"section_id":109,"row_id":3,"valid":true}}
+{"input":{"section":"31FD","row":"M"},"expected":{"section_id":242,"row_id":11,"valid":true},"output":{"section_id":242,"row_id":11,"valid":true}}
+{"input":{"section":"309PL","row":"S"},"expected":{"section_id":88,"row_id":17,"valid":true},"output":{"section_id":88,"row_id":17,"valid":true}}
+{"input":{"section":"Upper Reserve 46","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box 163","row":"N"},"expected":{"section_id":122,"row_id":12,"valid":true},"output":{"section_id":122,"row_id":12,"valid":true}}
+{"input":{"section":"RESERVE MVP 16","row":"A"},"expected":{"section_id":288,"row_id":0,"valid":true},"output":{"section_id":288,"row_id":0,"valid":true}}
+{"input":{"section":"30FD","row":"E"},"expected":{"section_id":239,"row_id":4,"valid":true},"output":{"section_id":239,"row_id":4,"valid":true}}
+{"input":{"section":"26FD","row":"B"},"expected":{"section_id":218,"row_id":1,"valid":true},"output":{"section_id":218,"row_id":1,"valid":true}}
+{"input":{"section":"19FD","row":"C"},"expected":{"section_id":269,"row_id":2,"valid":true},"output":{"section_id":269,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Reserve 23","row":"T"},"expected":{"section_id":197,"row_id":17,"valid":true},"output":{"section_id":197,"row_id":17,"valid":true}}
+{"input":{"section":"27RS","row":"U"},"expected":{"section_id":193,"row_id":18,"valid":true},"output":{"section_id":193,"row_id":18,"valid":true}}
+{"input":{"section":"RESERVE VIP 6","row":"B"},"expected":{"section_id":106,"row_id":1,"valid":true},"output":{"section_id":106,"row_id":1,"valid":true}}
+{"input":{"section":"50FD","row":"AA"},"expected":{"section_id":179,"row_id":0,"valid":true},"output":{"section_id":179,"row_id":0,"valid":true}}
+{"input":{"section":"FIELD BOX MVP 5","row":"J"},"expected":{"section_id":166,"row_id":8,"valid":true},"output":{"section_id":166,"row_id":8,"valid":true}}
+{"input":{"section":"Reserve MVP 8","row":"A"},"expected":{"section_id":61,"row_id":0,"valid":true},"output":{"section_id":61,"row_id":0,"valid":true}}
+{"input":{"section":"36FD","row":"E"},"expected":{"section_id":230,"row_id":4,"valid":true},"output":{"section_id":230,"row_id":4,"valid":true}}
+{"input":{"section":"47RS","row":"A"},"expected":{"section_id":287,"row_id":0,"valid":true},"output":{"section_id":287,"row_id":0,"valid":true}}
+{"input":{"section":"52FD","row":"C"},"expected":{"section_id":177,"row_id":3,"valid":true},"output":{"section_id":177,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP7","row":"B"},"expected":{"section_id":168,"row_id":1,"valid":true},"output":{"section_id":168,"row_id":1,"valid":true}}
+{"input":{"section":"160LG","row":"G"},"expected":{"section_id":281,"row_id":6,"valid":true},"output":{"section_id":281,"row_id":6,"valid":true}}
+{"input":{"section":"9RS","row":"C"},"expected":{"section_id":118,"row_id":2,"valid":true},"output":{"section_id":118,"row_id":2,"valid":true}}
+{"input":{"section":"31FD","row":"X"},"expected":{"section_id":242,"row_id":21,"valid":true},"output":{"section_id":242,"row_id":21,"valid":true}}
+{"input":{"section":"Infield Box 26","row":"K"},"expected":{"section_id":218,"row_id":9,"valid":true},"output":{"section_id":218,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Reserve 24","row":"B"},"expected":{"section_id":255,"row_id":1,"valid":true},"output":{"section_id":255,"row_id":1,"valid":true}}
+{"input":{"section":"28RS","row":"B"},"expected":{"section_id":133,"row_id":1,"valid":true},"output":{"section_id":133,"row_id":1,"valid":true}}
+{"input":{"section":"7TD","row":"J"},"expected":{"section_id":201,"row_id":8,"valid":true},"output":{"section_id":201,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Loge Box Value 146","row":"K"},"expected":{"section_id":40,"row_id":9,"valid":true},"output":{"section_id":40,"row_id":9,"valid":true}}
+{"input":{"section":"Infield Box VIP 30","row":"E"},"expected":{"section_id":239,"row_id":4,"valid":true},"output":{"section_id":239,"row_id":4,"valid":true}}
+{"input":{"section":"35FD","row":"D"},"expected":{"section_id":184,"row_id":3,"valid":true},"output":{"section_id":184,"row_id":3,"valid":true}}
+{"input":{"section":"311LFP","row":"B"},"expected":{"section_id":160,"row_id":1,"valid":true},"output":{"section_id":160,"row_id":1,"valid":true}}
+{"input":{"section":"Top Deck Front Row 8","row":"A"},"expected":{"section_id":52,"row_id":0,"valid":true},"output":{"section_id":52,"row_id":0,"valid":true}}
+{"input":{"section":"3TD","row":"J"},"expected":{"section_id":249,"row_id":8,"valid":true},"output":{"section_id":249,"row_id":8,"valid":true}}
+{"input":{"section":"10TD","row":"A"},"expected":{"section_id":209,"row_id":0,"valid":true},"output":{"section_id":209,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Box IFB34","row":"F"},"expected":{"section_id":159,"row_id":5,"valid":true},"output":{"section_id":159,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box FB45","row":"R"},"expected":{"section_id":211,"row_id":15,"valid":true},"output":{"section_id":211,"row_id":15,"valid":true}}
+{"input":{"section":"28RS","row":"S"},"expected":{"section_id":133,"row_id":16,"valid":true},"output":{"section_id":133,"row_id":16,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 129","row":"H"},"expected":{"section_id":120,"row_id":7,"valid":true},"output":{"section_id":120,"row_id":7,"valid":true}}
+{"input":{"section":"Reserve MVP 2","row":"H"},"expected":{"section_id":110,"row_id":7,"valid":true},"output":{"section_id":110,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Field Box 42","row":"N"},"expected":{"section_id":140,"row_id":12,"valid":true},"output":{"section_id":140,"row_id":12,"valid":true}}
+{"input":{"section":"Lower Reserve LR35","row":"C"},"expected":{"section_id":153,"row_id":2,"valid":true},"output":{"section_id":153,"row_id":2,"valid":true}}
+{"input":{"section":"Lower Reserve LR40","row":"B"},"expected":{"section_id":264,"row_id":1,"valid":true},"output":{"section_id":264,"row_id":1,"valid":true}}
+{"input":{"section":"Preferred Field Box 45","row":"A"},"expected":{"section_id":211,"row_id":0,"valid":true},"output":{"section_id":211,"row_id":0,"valid":true}}
+{"input":{"section":"Top Deck 6","row":"E"},"expected":{"section_id":1,"row_id":4,"valid":true},"output":{"section_id":1,"row_id":4,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP24","row":"D"},"expected":{"section_id":158,"row_id":3,"valid":true},"output":{"section_id":158,"row_id":3,"valid":true}}
+{"input":{"section":"247CL","row":"C"},"expected":{"section_id":276,"row_id":2,"valid":true},"output":{"section_id":276,"row_id":2,"valid":true}}
+{"input":{"section":"Loge 124","row":"C"},"expected":{"section_id":134,"row_id":2,"valid":true},"output":{"section_id":134,"row_id":2,"valid":true}}
+{"input":{"section":"162LG","row":"P"},"expected":{"section_id":279,"row_id":14,"valid":true},"output":{"section_id":279,"row_id":14,"valid":true}}
+{"input":{"section":"11FD","row":"D"},"expected":{"section_id":272,"row_id":3,"valid":true},"output":{"section_id":272,"row_id":3,"valid":true}}
+{"input":{"section":"Lower Reserve LR43","row":"M"},"expected":{"section_id":204,"row_id":11,"valid":true},"output":{"section_id":204,"row_id":11,"valid":true}}
+{"input":{"section":"Loge Box 165","row":"J"},"expected":{"section_id":136,"row_id":8,"valid":true},"output":{"section_id":136,"row_id":8,"valid":true}}
+{"input":{"section":"40FD","row":"F"},"expected":{"section_id":208,"row_id":5,"valid":true},"output":{"section_id":208,"row_id":5,"valid":true}}
+{"input":{"section":"Infield Box IFB32","row":"K"},"expected":{"section_id":85,"row_id":9,"valid":true},"output":{"section_id":85,"row_id":9,"valid":true}}
+{"input":{"section":"Loge Box 166","row":"D"},"expected":{"section_id":275,"row_id":3,"valid":true},"output":{"section_id":275,"row_id":3,"valid":true}}
+{"input":{"section":"159LG","row":"D"},"expected":{"section_id":13,"row_id":3,"valid":true},"output":{"section_id":13,"row_id":3,"valid":true}}
+{"input":{"section":"146LG","row":"F"},"expected":{"section_id":40,"row_id":5,"valid":true},"output":{"section_id":40,"row_id":5,"valid":true}}
+{"input":{"section":"Preferred Reserve 40","row":"O"},"expected":{"section_id":264,"row_id":13,"valid":true},"output":{"section_id":264,"row_id":13,"valid":true}}
+{"input":{"section":"18RS","row":"BB"},"expected":{"section_id":225,"row_id":1,"valid":true},"output":{"section_id":225,"row_id":1,"valid":true}}
+{"input":{"section":"19RS","row":"C"},"expected":{"section_id":34,"row_id":2,"valid":true},"output":{"section_id":34,"row_id":2,"valid":true}}
+{"input":{"section":"303PL","row":"P"},"expected":{"section_id":67,"row_id":14,"valid":true},"output":{"section_id":67,"row_id":14,"valid":true}}
+{"input":{"section":"10TD","row":"M"},"expected":{"section_id":209,"row_id":11,"valid":true},"output":{"section_id":209,"row_id":11,"valid":true}}
+{"input":{"section":"22FD","row":"B"},"expected":{"section_id":161,"row_id":1,"valid":true},"output":{"section_id":161,"row_id":1,"valid":true}}
+{"input":{"section":"29FD","row":"L"},"expected":{"section_id":231,"row_id":10,"valid":true},"output":{"section_id":231,"row_id":10,"valid":true}}
+{"input":{"section":"Reserve MVP 5","row":"H"},"expected":{"section_id":109,"row_id":7,"valid":true},"output":{"section_id":109,"row_id":7,"valid":true}}
+{"input":{"section":"Infield Loge Box 145","row":"A"},"expected":{"section_id":37,"row_id":0,"valid":true},"output":{"section_id":37,"row_id":0,"valid":true}}
+{"input":{"section":"33FD","row":"J"},"expected":{"section_id":292,"row_id":8,"valid":true},"output":{"section_id":292,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Reserve 31","row":"J"},"expected":{"section_id":157,"row_id":8,"valid":true},"output":{"section_id":157,"row_id":8,"valid":true}}
+{"input":{"section":"23RS","row":"R"},"expected":{"section_id":197,"row_id":15,"valid":true},"output":{"section_id":197,"row_id":15,"valid":true}}
+{"input":{"section":"Infield Loge Box 137","row":"H"},"expected":{"section_id":75,"row_id":7,"valid":true},"output":{"section_id":75,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box 165","row":"G"},"expected":{"section_id":136,"row_id":6,"valid":true},"output":{"section_id":136,"row_id":6,"valid":true}}
+{"input":{"section":"42FD","row":"C"},"expected":{"section_id":140,"row_id":2,"valid":true},"output":{"section_id":140,"row_id":2,"valid":true}}
+{"input":{"section":"Left Field Pavilion 301","row":"O"},"expected":{"section_id":261,"row_id":13,"valid":true},"output":{"section_id":261,"row_id":13,"valid":true}}
+{"input":{"section":"Infield Box 33","row":"S"},"expected":{"section_id":292,"row_id":16,"valid":true},"output":{"section_id":292,"row_id":16,"valid":true}}
+{"input":{"section":"Loge 126","row":"F"},"expected":{"section_id":130,"row_id":5,"valid":true},"output":{"section_id":130,"row_id":5,"valid":true}}
+{"input":{"section":"138LG","row":"F"},"expected":{"section_id":65,"row_id":5,"valid":true},"output":{"section_id":65,"row_id":5,"valid":true}}
+{"input":{"section":"147LG","row":"C"},"expected":{"section_id":39,"row_id":2,"valid":true},"output":{"section_id":39,"row_id":2,"valid":true}}
+{"input":{"section":"19RS","row":"G"},"expected":{"section_id":34,"row_id":6,"valid":true},"output":{"section_id":34,"row_id":6,"valid":true}}
+{"input":{"section":"Field Box MVP 23","row":"S"},"expected":{"section_id":221,"row_id":16,"valid":true},"output":{"section_id":221,"row_id":16,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB38","row":"G"},"expected":{"section_id":195,"row_id":6,"valid":true},"output":{"section_id":195,"row_id":6,"valid":true}}
+{"input":{"section":"138LG","row":"D"},"expected":{"section_id":65,"row_id":3,"valid":true},"output":{"section_id":65,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box MVP 1","row":"U"},"expected":{"section_id":162,"row_id":18,"valid":true},"output":{"section_id":162,"row_id":18,"valid":true}}
+{"input":{"section":"32RS","row":"B"},"expected":{"section_id":154,"row_id":1,"valid":true},"output":{"section_id":154,"row_id":1,"valid":true}}
+{"input":{"section":"40RS","row":"R"},"expected":{"section_id":264,"row_id":15,"valid":true},"output":{"section_id":264,"row_id":15,"valid":true}}
+{"input":{"section":"Loge Box 160","row":"P"},"expected":{"section_id":281,"row_id":14,"valid":true},"output":{"section_id":281,"row_id":14,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB37","row":"A"},"expected":{"section_id":186,"row_id":0,"valid":true},"output":{"section_id":186,"row_id":0,"valid":true}}
+{"input":{"section":"Loge 168","row":"E"},"expected":{"section_id":284,"row_id":4,"valid":true},"output":{"section_id":284,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Reserve 40","row":"F"},"expected":{"section_id":264,"row_id":5,"valid":true},"output":{"section_id":264,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box FB44","row":"M"},"expected":{"section_id":212,"row_id":11,"valid":true},"output":{"section_id":212,"row_id":11,"valid":true}}
+{"input":{"section":"28RS","row":"T"},"expected":{"section_id":133,"row_id":17,"valid":true},"output":{"section_id":133,"row_id":17,"valid":true}}
+{"input":{"section":"162LG","row":"A"},"expected":{"section_id":279,"row_id":0,"valid":true},"output":{"section_id":279,"row_id":0,"valid":true}}
+{"input":{"section":"51FD","row":"L"},"expected":{"section_id":180,"row_id":11,"valid":true},"output":{"section_id":180,"row_id":11,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 167","row":"E"},"expected":{"section_id":135,"row_id":4,"valid":true},"output":{"section_id":135,"row_id":4,"valid":true}}
+{"input":{"section":"163LG","row":"K"},"expected":{"section_id":122,"row_id":9,"valid":true},"output":{"section_id":122,"row_id":9,"valid":true}}
+{"input":{"section":"Reserve MVP 7","row":"J"},"expected":{"section_id":107,"row_id":8,"valid":true},"output":{"section_id":107,"row_id":8,"valid":true}}
+{"input":{"section":"34FD","row":"D"},"expected":{"section_id":159,"row_id":3,"valid":true},"output":{"section_id":159,"row_id":3,"valid":true}}
+{"input":{"section":"INFIELD RESERVE 24","row":"U"},"expected":{"section_id":255,"row_id":18,"valid":true},"output":{"section_id":255,"row_id":18,"valid":true}}
+{"input":{"section":"Infield Box Value 39","row":"M"},"expected":{"section_id":196,"row_id":11,"valid":true},"output":{"section_id":196,"row_id":11,"valid":true}}
+{"input":{"section":"7TD","row":"D"},"expected":{"section_id":201,"row_id":3,"valid":true},"output":{"section_id":201,"row_id":3,"valid":true}}
+{"input":{"section":"27RS","row":"K"},"expected":{"section_id":193,"row_id":9,"valid":true},"output":{"section_id":193,"row_id":9,"valid":true}}
+{"input":{"section":"Pavilion 312","row":"D"},"expected":{"section_id":141,"row_id":3,"valid":true},"output":{"section_id":141,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 120","row":"B"},"expected":{"section_id":126,"row_id":1,"valid":true},"output":{"section_id":126,"row_id":1,"valid":true}}
+{"input":{"section":"19 FIELD","row":"M"},"expected":{"section_id":269,"row_id":11,"valid":true},"output":{"section_id":269,"row_id":11,"valid":true}}
+{"input":{"section":"46RS","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box 157","row":"R"},"expected":{"section_id":8,"row_id":15,"valid":true},"output":{"section_id":8,"row_id":15,"valid":true}}
+{"input":{"section":"48FD","row":"A"},"expected":{"section_id":216,"row_id":1,"valid":true},"output":{"section_id":216,"row_id":1,"valid":true}}
+{"input":{"section":"126LG","row":"J"},"expected":{"section_id":130,"row_id":8,"valid":true},"output":{"section_id":130,"row_id":8,"valid":true}}
+{"input":{"section":"Reserve R38","row":"GG"},"expected":{"section_id":248,"row_id":6,"valid":true},"output":{"section_id":248,"row_id":6,"valid":true}}
+{"input":{"section":"28RS","row":"M"},"expected":{"section_id":133,"row_id":11,"valid":true},"output":{"section_id":133,"row_id":11,"valid":true}}
+{"input":{"section":"35FD","row":"L"},"expected":{"section_id":184,"row_id":10,"valid":true},"output":{"section_id":184,"row_id":10,"valid":true}}
+{"input":{"section":"8FD","row":"D"},"expected":{"section_id":169,"row_id":3,"valid":true},"output":{"section_id":169,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 28","row":"L"},"expected":{"section_id":133,"row_id":10,"valid":true},"output":{"section_id":133,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Reserve 40","row":"J"},"expected":{"section_id":264,"row_id":8,"valid":true},"output":{"section_id":264,"row_id":8,"valid":true}}
+{"input":{"section":"16FD","row":"B"},"expected":{"section_id":262,"row_id":1,"valid":true},"output":{"section_id":262,"row_id":1,"valid":true}}
+{"input":{"section":"Upper Reserve 13","row":"AA"},"expected":{"section_id":220,"row_id":0,"valid":true},"output":{"section_id":220,"row_id":0,"valid":true}}
+{"input":{"section":"FIELD BOX MVP 5","row":"J"},"expected":{"section_id":166,"row_id":8,"valid":true},"output":{"section_id":166,"row_id":8,"valid":true}}
+{"input":{"section":"Pavilion 311","row":"K"},"expected":{"section_id":160,"row_id":9,"valid":true},"output":{"section_id":160,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Reserve 44","row":"J"},"expected":{"section_id":189,"row_id":8,"valid":true},"output":{"section_id":189,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Box IFB34","row":"A"},"expected":{"section_id":159,"row_id":0,"valid":true},"output":{"section_id":159,"row_id":0,"valid":true}}
+{"input":{"section":"104LG","row":"E"},"expected":{"section_id":188,"row_id":4,"valid":true},"output":{"section_id":188,"row_id":4,"valid":true}}
+{"input":{"section":"40RS","row":"N"},"expected":{"section_id":264,"row_id":12,"valid":true},"output":{"section_id":264,"row_id":12,"valid":true}}
+{"input":{"section":"Reserve MVP 20","row":"E"},"expected":{"section_id":206,"row_id":4,"valid":true},"output":{"section_id":206,"row_id":4,"valid":true}}
+{"input":{"section":"41 FIELD","row":"V"},"expected":{"section_id":60,"row_id":19,"valid":true},"output":{"section_id":60,"row_id":19,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"E"},"expected":{"section_id":289,"row_id":4,"valid":true},"output":{"section_id":289,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Reserve 35","row":"E"},"expected":{"section_id":153,"row_id":4,"valid":true},"output":{"section_id":153,"row_id":4,"valid":true}}
+{"input":{"section":"Lower Reserve LR27","row":"J"},"expected":{"section_id":193,"row_id":8,"valid":true},"output":{"section_id":193,"row_id":8,"valid":true}}
+{"input":{"section":"46FD","row":"G"},"expected":{"section_id":214,"row_id":6,"valid":true},"output":{"section_id":214,"row_id":6,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"E"},"expected":{"section_id":13,"row_id":4,"valid":true},"output":{"section_id":13,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Field Box 42","row":"W"},"expected":{"section_id":140,"row_id":20,"valid":true},"output":{"section_id":140,"row_id":20,"valid":true}}
+{"input":{"section":"Loge Box 161","row":"E"},"expected":{"section_id":63,"row_id":4,"valid":true},"output":{"section_id":63,"row_id":4,"valid":true}}
+{"input":{"section":"27RS","row":"J"},"expected":{"section_id":193,"row_id":8,"valid":true},"output":{"section_id":193,"row_id":8,"valid":true}}
+{"input":{"section":"RESERVE MVP 7","row":"E"},"expected":{"section_id":107,"row_id":4,"valid":true},"output":{"section_id":107,"row_id":4,"valid":true}}
+{"input":{"section":"5TD","row":"E"},"expected":{"section_id":289,"row_id":4,"valid":true},"output":{"section_id":289,"row_id":4,"valid":true}}
+{"input":{"section":"Lower Reserve LR35","row":"J"},"expected":{"section_id":153,"row_id":8,"valid":true},"output":{"section_id":153,"row_id":8,"valid":true}}
+{"input":{"section":"161LG","row":"M"},"expected":{"section_id":63,"row_id":11,"valid":true},"output":{"section_id":63,"row_id":11,"valid":true}}
+{"input":{"section":"2TD","row":"B"},"expected":{"section_id":182,"row_id":1,"valid":true},"output":{"section_id":182,"row_id":1,"valid":true}}
+{"input":{"section":"50RS","row":"GG"},"expected":{"section_id":80,"row_id":6,"valid":true},"output":{"section_id":80,"row_id":6,"valid":true}}
+{"input":{"section":"10TD","row":"C"},"expected":{"section_id":209,"row_id":2,"valid":true},"output":{"section_id":209,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Box Value VIP 36","row":"E"},"expected":{"section_id":230,"row_id":4,"valid":true},"output":{"section_id":230,"row_id":4,"valid":true}}
+{"input":{"section":"31FD","row":"M"},"expected":{"section_id":242,"row_id":11,"valid":true},"output":{"section_id":242,"row_id":11,"valid":true}}
+{"input":{"section":"134LG","row":"E"},"expected":{"section_id":72,"row_id":4,"valid":true},"output":{"section_id":72,"row_id":4,"valid":true}}
+{"input":{"section":"Lower Reserve LR35","row":"C"},"expected":{"section_id":153,"row_id":2,"valid":true},"output":{"section_id":153,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Reserve 39","row":"F"},"expected":{"section_id":149,"row_id":5,"valid":true},"output":{"section_id":149,"row_id":5,"valid":true}}
+{"input":{"section":"LG 151","row":"D"},"expected":{"section_id":6,"row_id":3,"valid":true},"output":{"section_id":6,"row_id":3,"valid":true}}
+{"input":{"section":"146LG","row":"G"},"expected":{"section_id":40,"row_id":6,"valid":true},"output":{"section_id":40,"row_id":6,"valid":true}}
+{"input":{"section":"160LG","row":"F"},"expected":{"section_id":281,"row_id":5,"valid":true},"output":{"section_id":281,"row_id":5,"valid":true}}
+{"input":{"section":"42RS","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"2RS","row":"G"},"expected":{"section_id":110,"row_id":6,"valid":true},"output":{"section_id":110,"row_id":6,"valid":true}}
+{"input":{"section":"30FD","row":"D"},"expected":{"section_id":239,"row_id":3,"valid":true},"output":{"section_id":239,"row_id":3,"valid":true}}
+{"input":{"section":"119LG","row":"K"},"expected":{"section_id":49,"row_id":9,"valid":true},"output":{"section_id":49,"row_id":9,"valid":true}}
+{"input":{"section":"Loge 162","row":"G"},"expected":{"section_id":279,"row_id":6,"valid":true},"output":{"section_id":279,"row_id":6,"valid":true}}
+{"input":{"section":"Infield Reserve IFR1","row":"N"},"expected":{"section_id":113,"row_id":12,"valid":true},"output":{"section_id":113,"row_id":12,"valid":true}}
+{"input":{"section":"11RS","row":"B"},"expected":{"section_id":199,"row_id":1,"valid":true},"output":{"section_id":199,"row_id":1,"valid":true}}
+{"input":{"section":"Reserve MVP 7","row":"G"},"expected":{"section_id":107,"row_id":6,"valid":true},"output":{"section_id":107,"row_id":6,"valid":true}}
+{"input":{"section":"253CL","row":"F"},"expected":{"section_id":233,"row_id":5,"valid":true},"output":{"section_id":233,"row_id":5,"valid":true}}
+{"input":{"section":"Infield Box Value 34","row":"J"},"expected":{"section_id":159,"row_id":8,"valid":true},"output":{"section_id":159,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 160","row":"K"},"expected":{"section_id":281,"row_id":9,"valid":true},"output":{"section_id":281,"row_id":9,"valid":true}}
+{"input":{"section":"158LG","row":"M"},"expected":{"section_id":12,"row_id":11,"valid":true},"output":{"section_id":12,"row_id":11,"valid":true}}
+{"input":{"section":"11RS","row":"J"},"expected":{"section_id":199,"row_id":8,"valid":true},"output":{"section_id":199,"row_id":8,"valid":true}}
+{"input":{"section":"18RS","row":"AA"},"expected":{"section_id":225,"row_id":0,"valid":true},"output":{"section_id":225,"row_id":0,"valid":true}}
+{"input":{"section":"Reserve R42","row":"CC"},"expected":{"section_id":124,"row_id":4,"valid":true},"output":{"section_id":124,"row_id":4,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"L"},"expected":{"section_id":284,"row_id":10,"valid":true},"output":{"section_id":284,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Field Box 45","row":"M"},"expected":{"section_id":211,"row_id":11,"valid":true},"output":{"section_id":211,"row_id":11,"valid":true}}
+{"input":{"section":"Pavilion 310","row":"D"},"expected":{"section_id":139,"row_id":3,"valid":true},"output":{"section_id":139,"row_id":3,"valid":true}}
+{"input":{"section":"Top Deck 3","row":"C"},"expected":{"section_id":249,"row_id":2,"valid":true},"output":{"section_id":249,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"H"},"expected":{"section_id":193,"row_id":7,"valid":true},"output":{"section_id":193,"row_id":7,"valid":true}}
+{"input":{"section":"40FD","row":"B"},"expected":{"section_id":208,"row_id":1,"valid":true},"output":{"section_id":208,"row_id":1,"valid":true}}
+{"input":{"section":"41FD","row":"U"},"expected":{"section_id":60,"row_id":18,"valid":true},"output":{"section_id":60,"row_id":18,"valid":true}}
+{"input":{"section":"5FD","row":"K"},"expected":{"section_id":166,"row_id":9,"valid":true},"output":{"section_id":166,"row_id":9,"valid":true}}
+{"input":{"section":"Reserve MVP 5","row":"M"},"expected":{"section_id":109,"row_id":11,"valid":true},"output":{"section_id":109,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Box VIP 28","row":"C"},"expected":{"section_id":232,"row_id":2,"valid":true},"output":{"section_id":232,"row_id":2,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"D"},"expected":{"section_id":197,"row_id":3,"valid":true},"output":{"section_id":197,"row_id":3,"valid":true}}
+{"input":{"section":"16RS","row":"D"},"expected":{"section_id":288,"row_id":3,"valid":true},"output":{"section_id":288,"row_id":3,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"T"},"expected":{"section_id":231,"row_id":17,"valid":true},"output":{"section_id":231,"row_id":17,"valid":true}}
+{"input":{"section":"4RS","row":"G"},"expected":{"section_id":108,"row_id":6,"valid":true},"output":{"section_id":108,"row_id":6,"valid":true}}
+{"input":{"section":"51RS","row":"A"},"expected":{"section_id":81,"row_id":0,"valid":true},"output":{"section_id":81,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Reserve 44","row":"K"},"expected":{"section_id":189,"row_id":9,"valid":true},"output":{"section_id":189,"row_id":9,"valid":true}}
+{"input":{"section":"Infield Box Value 38","row":"C"},"expected":{"section_id":195,"row_id":2,"valid":true},"output":{"section_id":195,"row_id":2,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 116","row":"F"},"expected":{"section_id":142,"row_id":5,"valid":true},"output":{"section_id":142,"row_id":5,"valid":true}}
+{"input":{"section":"47FD","row":"J"},"expected":{"section_id":213,"row_id":8,"valid":true},"output":{"section_id":213,"row_id":8,"valid":true}}
+{"input":{"section":"166LG","row":"D"},"expected":{"section_id":275,"row_id":3,"valid":true},"output":{"section_id":275,"row_id":3,"valid":true}}
+{"input":{"section":"2RS","row":"U"},"expected":{"section_id":110,"row_id":18,"valid":true},"output":{"section_id":110,"row_id":18,"valid":true}}
+{"input":{"section":"Reserve MVP 5","row":"J"},"expected":{"section_id":109,"row_id":8,"valid":true},"output":{"section_id":109,"row_id":8,"valid":true}}
+{"input":{"section":"Field Box FB44","row":"A"},"expected":{"section_id":212,"row_id":0,"valid":true},"output":{"section_id":212,"row_id":0,"valid":true}}
+{"input":{"section":"152LG","row":"K"},"expected":{"section_id":3,"row_id":9,"valid":true},"output":{"section_id":3,"row_id":9,"valid":true}}
+{"input":{"section":"10RS","row":"H"},"expected":{"section_id":217,"row_id":7,"valid":true},"output":{"section_id":217,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP12","row":"B"},"expected":{"section_id":258,"row_id":1,"valid":true},"output":{"section_id":258,"row_id":1,"valid":true}}
+{"input":{"section":"43RS","row":"L"},"expected":{"section_id":204,"row_id":10,"valid":true},"output":{"section_id":204,"row_id":10,"valid":true}}
+{"input":{"section":"101LG","row":"J"},"expected":{"section_id":183,"row_id":8,"valid":true},"output":{"section_id":183,"row_id":8,"valid":true}}
+{"input":{"section":"5RS","row":"J"},"expected":{"section_id":109,"row_id":8,"valid":true},"output":{"section_id":109,"row_id":8,"valid":true}}
+{"input":{"section":"21FD","row":"B"},"expected":{"section_id":223,"row_id":1,"valid":true},"output":{"section_id":223,"row_id":1,"valid":true}}
+{"input":{"section":"Upper Reserve 50","row":"CC"},"expected":{"section_id":80,"row_id":3,"valid":true},"output":{"section_id":80,"row_id":3,"valid":true}}
+{"input":{"section":"Reserve MVP 2","row":"B"},"expected":{"section_id":110,"row_id":1,"valid":true},"output":{"section_id":110,"row_id":1,"valid":true}}
+{"input":{"section":"159","row":"O"},"expected":{"section_id":13,"row_id":13,"valid":true},"output":{"section_id":13,"row_id":13,"valid":true}}
+{"input":{"section":"5FD","row":"B"},"expected":{"section_id":166,"row_id":1,"valid":true},"output":{"section_id":166,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"W"},"expected":{"section_id":231,"row_id":20,"valid":true},"output":{"section_id":231,"row_id":20,"valid":true}}
+{"input":{"section":"50FD","row":"J"},"expected":{"section_id":179,"row_id":9,"valid":true},"output":{"section_id":179,"row_id":9,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 114","row":"J"},"expected":{"section_id":144,"row_id":8,"valid":true},"output":{"section_id":144,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"L"},"expected":{"section_id":231,"row_id":10,"valid":true},"output":{"section_id":231,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Field Value 47","row":"S"},"expected":{"section_id":213,"row_id":16,"valid":true},"output":{"section_id":213,"row_id":16,"valid":true}}
+{"input":{"section":"Field Box MVP 16","row":"R"},"expected":{"section_id":262,"row_id":15,"valid":true},"output":{"section_id":262,"row_id":15,"valid":true}}
+{"input":{"section":"Top Deck TD7","row":"G"},"expected":{"section_id":201,"row_id":6,"valid":true},"output":{"section_id":201,"row_id":6,"valid":true}}
+{"input":{"section":"Reserve MVP 1","row":"N"},"expected":{"section_id":113,"row_id":12,"valid":true},"output":{"section_id":113,"row_id":12,"valid":true}}
+{"input":{"section":"Top Deck 13","row":"M"},"expected":{"section_id":237,"row_id":11,"valid":true},"output":{"section_id":237,"row_id":11,"valid":true}}
+{"input":{"section":"137LG","row":"E"},"expected":{"section_id":75,"row_id":4,"valid":true},"output":{"section_id":75,"row_id":4,"valid":true}}
+{"input":{"section":"RESERVE VIP FRONT ROW 8","row":"A"},"expected":{"section_id":61,"row_id":0,"valid":true},"output":{"section_id":61,"row_id":0,"valid":true}}
+{"input":{"section":"Top Deck 13","row":"L"},"expected":{"section_id":237,"row_id":10,"valid":true},"output":{"section_id":237,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 158","row":"K"},"expected":{"section_id":12,"row_id":9,"valid":true},"output":{"section_id":12,"row_id":9,"valid":true}}
+{"input":{"section":"Loge 127","row":"E"},"expected":{"section_id":127,"row_id":4,"valid":true},"output":{"section_id":127,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Field Value 53","row":"E"},"expected":{"section_id":178,"row_id":5,"valid":true},"output":{"section_id":178,"row_id":5,"valid":true}}
+{"input":{"section":"10RS","row":"U"},"expected":{"section_id":217,"row_id":18,"valid":true},"output":{"section_id":217,"row_id":18,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB42","row":"V"},"expected":{"section_id":140,"row_id":19,"valid":true},"output":{"section_id":140,"row_id":19,"valid":true}}
+{"input":{"section":"20RS","row":"E"},"expected":{"section_id":206,"row_id":4,"valid":true},"output":{"section_id":206,"row_id":4,"valid":true}}
+{"input":{"section":"1TD","row":"G"},"expected":{"section_id":226,"row_id":6,"valid":true},"output":{"section_id":226,"row_id":6,"valid":true}}
+{"input":{"section":"Upper Reserve 46","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"253CL","row":"D"},"expected":{"section_id":233,"row_id":3,"valid":true},"output":{"section_id":233,"row_id":3,"valid":true}}
+{"input":{"section":"47FD","row":"J"},"expected":{"section_id":213,"row_id":8,"valid":true},"output":{"section_id":213,"row_id":8,"valid":true}}
+{"input":{"section":"313PL","row":"T"},"expected":{"section_id":62,"row_id":18,"valid":true},"output":{"section_id":62,"row_id":18,"valid":true}}
+{"input":{"section":"131LG","row":"F"},"expected":{"section_id":69,"row_id":5,"valid":true},"output":{"section_id":69,"row_id":5,"valid":true}}
+{"input":{"section":"166LG","row":"A"},"expected":{"section_id":275,"row_id":0,"valid":true},"output":{"section_id":275,"row_id":0,"valid":true}}
+{"input":{"section":"32FD","row":"A"},"expected":{"section_id":85,"row_id":0,"valid":true},"output":{"section_id":85,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Value 49","row":"L"},"expected":{"section_id":215,"row_id":11,"valid":true},"output":{"section_id":215,"row_id":11,"valid":true}}
+{"input":{"section":"Lower Reserve LR44","row":"R"},"expected":{"section_id":189,"row_id":15,"valid":true},"output":{"section_id":189,"row_id":15,"valid":true}}
+{"input":{"section":"Top Deck TD8","row":"K"},"expected":{"section_id":52,"row_id":9,"valid":true},"output":{"section_id":52,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Field Value 47","row":"M"},"expected":{"section_id":213,"row_id":11,"valid":true},"output":{"section_id":213,"row_id":11,"valid":true}}
+{"input":{"section":"Upper Reserve 49","row":"AA"},"expected":{"section_id":246,"row_id":0,"valid":true},"output":{"section_id":246,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Reserve 32","row":"E"},"expected":{"section_id":154,"row_id":4,"valid":true},"output":{"section_id":154,"row_id":4,"valid":true}}
+{"input":{"section":"9TD","row":"O"},"expected":{"section_id":11,"row_id":13,"valid":true},"output":{"section_id":11,"row_id":13,"valid":true}}
+{"input":{"section":"31FD","row":"G"},"expected":{"section_id":242,"row_id":6,"valid":true},"output":{"section_id":242,"row_id":6,"valid":true}}
+{"input":{"section":"34FD","row":"H"},"expected":{"section_id":159,"row_id":7,"valid":true},"output":{"section_id":159,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 158","row":"T"},"expected":{"section_id":12,"row_id":17,"valid":true},"output":{"section_id":12,"row_id":17,"valid":true}}
+{"input":{"section":"Infield Loge Box 138","row":"C"},"expected":{"section_id":65,"row_id":2,"valid":true},"output":{"section_id":65,"row_id":2,"valid":true}}
+{"input":{"section":"18RS","row":"AA"},"expected":{"section_id":225,"row_id":0,"valid":true},"output":{"section_id":225,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB36","row":"C"},"expected":{"section_id":230,"row_id":2,"valid":true},"output":{"section_id":230,"row_id":2,"valid":true}}
+{"input":{"section":"Lower Reserve LR39","row":"E"},"expected":{"section_id":149,"row_id":4,"valid":true},"output":{"section_id":149,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 160","row":"S"},"expected":{"section_id":281,"row_id":16,"valid":true},"output":{"section_id":281,"row_id":16,"valid":true}}
+{"input":{"section":"2RS","row":"F"},"expected":{"section_id":110,"row_id":5,"valid":true},"output":{"section_id":110,"row_id":5,"valid":true}}
+{"input":{"section":"313PL","row":"E"},"expected":{"section_id":62,"row_id":4,"valid":true},"output":{"section_id":62,"row_id":4,"valid":true}}
+{"input":{"section":"40FD","row":"F"},"expected":{"section_id":208,"row_id":5,"valid":true},"output":{"section_id":208,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box VIP 21","row":"D"},"expected":{"section_id":223,"row_id":3,"valid":true},"output":{"section_id":223,"row_id":3,"valid":true}}
+{"input":{"section":"48RS","row":"G"},"expected":{"section_id":132,"row_id":6,"valid":true},"output":{"section_id":132,"row_id":6,"valid":true}}
+{"input":{"section":"117LG","row":"M"},"expected":{"section_id":143,"row_id":11,"valid":true},"output":{"section_id":143,"row_id":11,"valid":true}}
+{"input":{"section":"Loge 118","row":"P"},"expected":{"section_id":47,"row_id":14,"valid":true},"output":{"section_id":47,"row_id":14,"valid":true}}
+{"input":{"section":"51RS","row":"G"},"expected":{"section_id":81,"row_id":6,"valid":true},"output":{"section_id":81,"row_id":6,"valid":true}}
+{"input":{"section":"Upper Reserve 57","row":"DD"},"expected":{"section_id":79,"row_id":3,"valid":true},"output":{"section_id":79,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box 161","row":"J"},"expected":{"section_id":63,"row_id":8,"valid":true},"output":{"section_id":63,"row_id":8,"valid":true}}
+{"input":{"section":"24RS","row":"E"},"expected":{"section_id":255,"row_id":4,"valid":true},"output":{"section_id":255,"row_id":4,"valid":true}}
+{"input":{"section":"156LG","row":"A"},"expected":{"section_id":7,"row_id":0,"valid":true},"output":{"section_id":7,"row_id":0,"valid":true}}
+{"input":{"section":"5RS","row":"H"},"expected":{"section_id":109,"row_id":7,"valid":true},"output":{"section_id":109,"row_id":7,"valid":true}}
+{"input":{"section":"46FD","row":"S"},"expected":{"section_id":214,"row_id":16,"valid":true},"output":{"section_id":214,"row_id":16,"valid":true}}
+{"input":{"section":"Infield Loge Box Value 147","row":"P"},"expected":{"section_id":39,"row_id":14,"valid":true},"output":{"section_id":39,"row_id":14,"valid":true}}
+{"input":{"section":"Preferred Loge Box 148","row":"D"},"expected":{"section_id":36,"row_id":3,"valid":true},"output":{"section_id":36,"row_id":3,"valid":true}}
+{"input":{"section":"Loge 101","row":"H"},"expected":{"section_id":183,"row_id":7,"valid":true},"output":{"section_id":183,"row_id":7,"valid":true}}
+{"input":{"section":"28FD","row":"H"},"expected":{"section_id":232,"row_id":7,"valid":true},"output":{"section_id":232,"row_id":7,"valid":true}}
+{"input":{"section":"Loge 164","row":"F"},"expected":{"section_id":277,"row_id":5,"valid":true},"output":{"section_id":277,"row_id":5,"valid":true}}
+{"input":{"section":"4RS","row":"E"},"expected":{"section_id":108,"row_id":4,"valid":true},"output":{"section_id":108,"row_id":4,"valid":true}}
+{"input":{"section":"INFIELD RESERVE VIP FRONT ROW","row":"A"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"167LG","row":"H"},"expected":{"section_id":135,"row_id":7,"valid":true},"output":{"section_id":135,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP22","row":"D"},"expected":{"section_id":161,"row_id":3,"valid":true},"output":{"section_id":161,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP12","row":"K"},"expected":{"section_id":258,"row_id":9,"valid":true},"output":{"section_id":258,"row_id":9,"valid":true}}
+{"input":{"section":"35RS","row":"B"},"expected":{"section_id":153,"row_id":1,"valid":true},"output":{"section_id":153,"row_id":1,"valid":true}}
+{"input":{"section":"2DG","row":"GG"},"expected":{"section_id":99,"row_id":6,"valid":true},"output":{"section_id":99,"row_id":6,"valid":true}}
+{"input":{"section":"Top Deck TD7","row":"G"},"expected":{"section_id":201,"row_id":6,"valid":true},"output":{"section_id":201,"row_id":6,"valid":true}}
+{"input":{"section":"53 FD","row":"E"},"expected":{"section_id":178,"row_id":5,"valid":true},"output":{"section_id":178,"row_id":5,"valid":true}}
+{"input":{"section":"31FD","row":"X"},"expected":{"section_id":242,"row_id":21,"valid":true},"output":{"section_id":242,"row_id":21,"valid":true}}
+{"input":{"section":"Infield Loge Box 137","row":"J"},"expected":{"section_id":75,"row_id":8,"valid":true},"output":{"section_id":75,"row_id":8,"valid":true}}
+{"input":{"section":"157LG","row":"N"},"expected":{"section_id":8,"row_id":12,"valid":true},"output":{"section_id":8,"row_id":12,"valid":true}}
+{"input":{"section":"162LG","row":"T"},"expected":{"section_id":279,"row_id":17,"valid":true},"output":{"section_id":279,"row_id":17,"valid":true}}
+{"input":{"section":"168LG","row":"A-W"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"27RS","row":"L"},"expected":{"section_id":193,"row_id":10,"valid":true},"output":{"section_id":193,"row_id":10,"valid":true}}
+{"input":{"section":"313PL","row":"G"},"expected":{"section_id":62,"row_id":6,"valid":true},"output":{"section_id":62,"row_id":6,"valid":true}}
+{"input":{"section":"3TD","row":"A"},"expected":{"section_id":249,"row_id":0,"valid":true},"output":{"section_id":249,"row_id":0,"valid":true}}
+{"input":{"section":"4RS","row":"E"},"expected":{"section_id":108,"row_id":4,"valid":true},"output":{"section_id":108,"row_id":4,"valid":true}}
+{"input":{"section":"137LG","row":"D"},"expected":{"section_id":75,"row_id":3,"valid":true},"output":{"section_id":75,"row_id":3,"valid":true}}
+{"input":{"section":"INFIELD RESERVE 23","row":"G"},"expected":{"section_id":197,"row_id":6,"valid":true},"output":{"section_id":197,"row_id":6,"valid":true}}
+{"input":{"section":"48FD","row":"L"},"expected":{"section_id":216,"row_id":11,"valid":true},"output":{"section_id":216,"row_id":11,"valid":true}}
+{"input":{"section":"146LG","row":"R"},"expected":{"section_id":40,"row_id":15,"valid":true},"output":{"section_id":40,"row_id":15,"valid":true}}
+{"input":{"section":"Infield Reserve IFR11","row":"R"},"expected":{"section_id":199,"row_id":15,"valid":true},"output":{"section_id":199,"row_id":15,"valid":true}}
+{"input":{"section":"Reserve MVP 8","row":"E"},"expected":{"section_id":61,"row_id":4,"valid":true},"output":{"section_id":61,"row_id":4,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB43","row":"L"},"expected":{"section_id":241,"row_id":10,"valid":true},"output":{"section_id":241,"row_id":10,"valid":true}}
+{"input":{"section":"303PL","row":"F"},"expected":{"section_id":67,"row_id":5,"valid":true},"output":{"section_id":67,"row_id":5,"valid":true}}
+{"input":{"section":"43FD","row":"L"},"expected":{"section_id":241,"row_id":10,"valid":true},"output":{"section_id":241,"row_id":10,"valid":true}}
+{"input":{"section":"129LG","row":"R"},"expected":{"section_id":120,"row_id":15,"valid":true},"output":{"section_id":120,"row_id":15,"valid":true}}
+{"input":{"section":"Preferred Reserve 36","row":"J"},"expected":{"section_id":150,"row_id":8,"valid":true},"output":{"section_id":150,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Box IFB29","row":"R"},"expected":{"section_id":231,"row_id":15,"valid":true},"output":{"section_id":231,"row_id":15,"valid":true}}
+{"input":{"section":"Loge 104","row":"E"},"expected":{"section_id":188,"row_id":4,"valid":true},"output":{"section_id":188,"row_id":4,"valid":true}}
+{"input":{"section":"Right Field Pavilion 312","row":"C"},"expected":{"section_id":141,"row_id":2,"valid":true},"output":{"section_id":141,"row_id":2,"valid":true}}
+{"input":{"section":"35RS","row":"C"},"expected":{"section_id":153,"row_id":2,"valid":true},"output":{"section_id":153,"row_id":2,"valid":true}}
+{"input":{"section":"Pavilion 311","row":"E"},"expected":{"section_id":160,"row_id":4,"valid":true},"output":{"section_id":160,"row_id":4,"valid":true}}
+{"input":{"section":"RESERVE VIP 6","row":"C"},"expected":{"section_id":106,"row_id":2,"valid":true},"output":{"section_id":106,"row_id":2,"valid":true}}
+{"input":{"section":"RESERVE VIP 8","row":"B"},"expected":{"section_id":61,"row_id":1,"valid":true},"output":{"section_id":61,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box Value 35","row":"D"},"expected":{"section_id":184,"row_id":3,"valid":true},"output":{"section_id":184,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"J"},"expected":{"section_id":193,"row_id":8,"valid":true},"output":{"section_id":193,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve 46","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Reserve 48","row":"B"},"expected":{"section_id":132,"row_id":1,"valid":true},"output":{"section_id":132,"row_id":1,"valid":true}}
+{"input":{"section":"36RS","row":"C"},"expected":{"section_id":150,"row_id":2,"valid":true},"output":{"section_id":150,"row_id":2,"valid":true}}
+{"input":{"section":"Top Deck 6","row":"C"},"expected":{"section_id":1,"row_id":2,"valid":true},"output":{"section_id":1,"row_id":2,"valid":true}}
+{"input":{"section":"114","row":"A"},"expected":{"section_id":144,"row_id":0,"valid":true},"output":{"section_id":144,"row_id":0,"valid":true}}
+{"input":{"section":"157LG","row":"G"},"expected":{"section_id":8,"row_id":6,"valid":true},"output":{"section_id":8,"row_id":6,"valid":true}}
+{"input":{"section":"24RS","row":"T"},"expected":{"section_id":255,"row_id":17,"valid":true},"output":{"section_id":255,"row_id":17,"valid":true}}
+{"input":{"section":"Upper Reserve 46","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"Infield Reserve IFR15","row":"M"},"expected":{"section_id":222,"row_id":11,"valid":true},"output":{"section_id":222,"row_id":11,"valid":true}}
+{"input":{"section":"19RS","row":"H"},"expected":{"section_id":34,"row_id":7,"valid":true},"output":{"section_id":34,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box FB52","row":"E"},"expected":{"section_id":177,"row_id":5,"valid":true},"output":{"section_id":177,"row_id":5,"valid":true}}
+{"input":{"section":"Top Deck 7","row":"F"},"expected":{"section_id":201,"row_id":5,"valid":true},"output":{"section_id":201,"row_id":5,"valid":true}}
+{"input":{"section":"Preferred Reserve Value 57","row":"JJ"},"expected":{"section_id":79,"row_id":8,"valid":true},"output":{"section_id":79,"row_id":8,"valid":true}}
+{"input":{"section":"7RS","row":"E"},"expected":{"section_id":107,"row_id":4,"valid":true},"output":{"section_id":107,"row_id":4,"valid":true}}
+{"input":{"section":"31RS","row":"B"},"expected":{"section_id":157,"row_id":1,"valid":true},"output":{"section_id":157,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box Value 35","row":"V"},"expected":{"section_id":184,"row_id":19,"valid":true},"output":{"section_id":184,"row_id":19,"valid":true}}
+{"input":{"section":"Field Box MVP 23","row":"K"},"expected":{"section_id":221,"row_id":9,"valid":true},"output":{"section_id":221,"row_id":9,"valid":true}}
+{"input":{"section":"26FD","row":"U"},"expected":{"section_id":218,"row_id":18,"valid":true},"output":{"section_id":218,"row_id":18,"valid":true}}
+{"input":{"section":"36FD","row":"L"},"expected":{"section_id":230,"row_id":10,"valid":true},"output":{"section_id":230,"row_id":10,"valid":true}}
+{"input":{"section":"1FD","row":"D"},"expected":{"section_id":162,"row_id":3,"valid":true},"output":{"section_id":162,"row_id":3,"valid":true}}
+{"input":{"section":"Left Field Pavilion 307","row":"L"},"expected":{"section_id":89,"row_id":10,"valid":true},"output":{"section_id":89,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Reserve 55","row":"A"},"expected":{"section_id":77,"row_id":0,"valid":true},"output":{"section_id":77,"row_id":0,"valid":true}}
+{"input":{"section":"Reserve MVP 15","row":"F"},"expected":{"section_id":222,"row_id":5,"valid":true},"output":{"section_id":222,"row_id":5,"valid":true}}
+{"input":{"section":"14RS","row":"AA"},"expected":{"section_id":273,"row_id":0,"valid":true},"output":{"section_id":273,"row_id":0,"valid":true}}
+{"input":{"section":"Left Field Pavilion Front Row 311","row":"A"},"expected":{"section_id":160,"row_id":0,"valid":true},"output":{"section_id":160,"row_id":0,"valid":true}}
+{"input":{"section":"Field Box FB53","row":"A"},"expected":{"section_id":178,"row_id":1,"valid":true},"output":{"section_id":178,"row_id":1,"valid":true}}
+{"input":{"section":"127 LOGE","row":"A"},"expected":{"section_id":127,"row_id":0,"valid":true},"output":{"section_id":127,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Loge Box Value 149","row":"M"},"expected":{"section_id":35,"row_id":11,"valid":true},"output":{"section_id":35,"row_id":11,"valid":true}}
+{"input":{"section":"Preferred Field Value 53","row":"J"},"expected":{"section_id":178,"row_id":9,"valid":true},"output":{"section_id":178,"row_id":9,"valid":true}}
+{"input":{"section":"Infield Box IFB29","row":"R"},"expected":{"section_id":231,"row_id":15,"valid":true},"output":{"section_id":231,"row_id":15,"valid":true}}
+{"input":{"section":"127LG","row":"E"},"expected":{"section_id":127,"row_id":4,"valid":true},"output":{"section_id":127,"row_id":4,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP7","row":"K"},"expected":{"section_id":168,"row_id":9,"valid":true},"output":{"section_id":168,"row_id":9,"valid":true}}
+{"input":{"section":"Infield Reserve Value Front Row 35","row":"A"},"expected":{"section_id":153,"row_id":0,"valid":true},"output":{"section_id":153,"row_id":0,"valid":true}}
+{"input":{"section":"Pavilion 307","row":"O"},"expected":{"section_id":89,"row_id":13,"valid":true},"output":{"section_id":89,"row_id":13,"valid":true}}
+{"input":{"section":"34FD","row":"F"},"expected":{"section_id":159,"row_id":5,"valid":true},"output":{"section_id":159,"row_id":5,"valid":true}}
+{"input":{"section":"40RS","row":"C"},"expected":{"section_id":264,"row_id":2,"valid":true},"output":{"section_id":264,"row_id":2,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"B"},"expected":{"section_id":197,"row_id":1,"valid":true},"output":{"section_id":197,"row_id":1,"valid":true}}
+{"input":{"section":"50FD","row":"J"},"expected":{"section_id":179,"row_id":9,"valid":true},"output":{"section_id":179,"row_id":9,"valid":true}}
+{"input":{"section":"Pavilion 313","row":"O"},"expected":{"section_id":62,"row_id":13,"valid":true},"output":{"section_id":62,"row_id":13,"valid":true}}
+{"input":{"section":"111LG","row":"G"},"expected":{"section_id":20,"row_id":6,"valid":true},"output":{"section_id":20,"row_id":6,"valid":true}}
+{"input":{"section":"26FD","row":"R"},"expected":{"section_id":218,"row_id":15,"valid":true},"output":{"section_id":218,"row_id":15,"valid":true}}
+{"input":{"section":"Preferred Reserve 28","row":"B"},"expected":{"section_id":133,"row_id":1,"valid":true},"output":{"section_id":133,"row_id":1,"valid":true}}
+{"input":{"section":"127LG","row":"O"},"expected":{"section_id":127,"row_id":13,"valid":true},"output":{"section_id":127,"row_id":13,"valid":true}}
+{"input":{"section":"Reserve MVP 19","row":"A"},"expected":{"section_id":34,"row_id":0,"valid":true},"output":{"section_id":34,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Box Value 47","row":"L"},"expected":{"section_id":213,"row_id":10,"valid":true},"output":{"section_id":213,"row_id":10,"valid":true}}
+{"input":{"section":"31RS","row":"E"},"expected":{"section_id":157,"row_id":4,"valid":true},"output":{"section_id":157,"row_id":4,"valid":true}}
+{"input":{"section":"159LG","row":"O"},"expected":{"section_id":13,"row_id":13,"valid":true},"output":{"section_id":13,"row_id":13,"valid":true}}
+{"input":{"section":"15RS","row":"J"},"expected":{"section_id":222,"row_id":8,"valid":true},"output":{"section_id":222,"row_id":8,"valid":true}}
+{"input":{"section":"28FD","row":"C"},"expected":{"section_id":232,"row_id":2,"valid":true},"output":{"section_id":232,"row_id":2,"valid":true}}
+{"input":{"section":"148LG","row":"D"},"expected":{"section_id":36,"row_id":3,"valid":true},"output":{"section_id":36,"row_id":3,"valid":true}}
+{"input":{"section":"Pavilion 305","row":"E"},"expected":{"section_id":101,"row_id":4,"valid":true},"output":{"section_id":101,"row_id":4,"valid":true}}
+{"input":{"section":"Field Box MVP 6","row":"K"},"expected":{"section_id":167,"row_id":9,"valid":true},"output":{"section_id":167,"row_id":9,"valid":true}}
+{"input":{"section":"15RS","row":"M"},"expected":{"section_id":222,"row_id":11,"valid":true},"output":{"section_id":222,"row_id":11,"valid":true}}
+{"input":{"section":"Loge Box 158","row":"O"},"expected":{"section_id":12,"row_id":13,"valid":true},"output":{"section_id":12,"row_id":13,"valid":true}}
+{"input":{"section":"130LG","row":"M"},"expected":{"section_id":68,"row_id":11,"valid":true},"output":{"section_id":68,"row_id":11,"valid":true}}
+{"input":{"section":"43RS","row":"L"},"expected":{"section_id":204,"row_id":10,"valid":true},"output":{"section_id":204,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 125","row":"J"},"expected":{"section_id":129,"row_id":8,"valid":true},"output":{"section_id":129,"row_id":8,"valid":true}}
+{"input":{"section":"39RS","row":"E"},"expected":{"section_id":149,"row_id":4,"valid":true},"output":{"section_id":149,"row_id":4,"valid":true}}
+{"input":{"section":"31RS","row":"J"},"expected":{"section_id":157,"row_id":8,"valid":true},"output":{"section_id":157,"row_id":8,"valid":true}}
+{"input":{"section":"313PL","row":"D"},"expected":{"section_id":62,"row_id":3,"valid":true},"output":{"section_id":62,"row_id":3,"valid":true}}
+{"input":{"section":"42RS","row":"DD"},"expected":{"section_id":124,"row_id":6,"valid":true},"output":{"section_id":124,"row_id":6,"valid":true}}
+{"input":{"section":"36FD","row":"H"},"expected":{"section_id":230,"row_id":7,"valid":true},"output":{"section_id":230,"row_id":7,"valid":true}}
+{"input":{"section":"FIELD BOX MVP 4","row":"A-Z"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"All You Can Eat Right Field Pavilion VIP 312","row":"C"},"expected":{"section_id":141,"row_id":2,"valid":true},"output":{"section_id":141,"row_id":2,"valid":true}}
+{"input":{"section":"8RS","row":"G"},"expected":{"section_id":61,"row_id":6,"valid":true},"output":{"section_id":61,"row_id":6,"valid":true}}
+{"input":{"section":"Loge 111","row":"G"},"expected":{"section_id":20,"row_id":6,"valid":true},"output":{"section_id":20,"row_id":6,"valid":true}}
+{"input":{"section":"2DG","row":"GG"},"expected":{"section_id":99,"row_id":6,"valid":true},"output":{"section_id":99,"row_id":6,"valid":true}}
+{"input":{"section":"42FD","row":"C"},"expected":{"section_id":140,"row_id":2,"valid":true},"output":{"section_id":140,"row_id":2,"valid":true}}
+{"input":{"section":"157LG","row":"R"},"expected":{"section_id":8,"row_id":15,"valid":true},"output":{"section_id":8,"row_id":15,"valid":true}}
+{"input":{"section":"Infield Loge Box 146","row":"F"},"expected":{"section_id":40,"row_id":5,"valid":true},"output":{"section_id":40,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box VIP 4","row":"D"},"expected":{"section_id":165,"row_id":3,"valid":true},"output":{"section_id":165,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP3","row":"B"},"expected":{"section_id":164,"row_id":1,"valid":true},"output":{"section_id":164,"row_id":1,"valid":true}}
+{"input":{"section":"165LG","row":"G"},"expected":{"section_id":136,"row_id":6,"valid":true},"output":{"section_id":136,"row_id":6,"valid":true}}
+{"input":{"section":"8RS","row":"A"},"expected":{"section_id":61,"row_id":0,"valid":true},"output":{"section_id":61,"row_id":0,"valid":true}}
+{"input":{"section":"Reserve MVP 11","row":"K"},"expected":{"section_id":199,"row_id":9,"valid":true},"output":{"section_id":199,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Loge Box 154","row":"H"},"expected":{"section_id":9,"row_id":7,"valid":true},"output":{"section_id":9,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Reserve 43","row":"E"},"expected":{"section_id":204,"row_id":4,"valid":true},"output":{"section_id":204,"row_id":4,"valid":true}}
+{"input":{"section":"19RS","row":"E"},"expected":{"section_id":34,"row_id":4,"valid":true},"output":{"section_id":34,"row_id":4,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 118","row":"P"},"expected":{"section_id":47,"row_id":14,"valid":true},"output":{"section_id":47,"row_id":14,"valid":true}}
+{"input":{"section":"Reserve MVP Value 10","row":"J"},"expected":{"section_id":217,"row_id":8,"valid":true},"output":{"section_id":217,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 158","row":"T"},"expected":{"section_id":12,"row_id":17,"valid":true},"output":{"section_id":12,"row_id":17,"valid":true}}
+{"input":{"section":"Lower Reserve LR52","row":"A"},"expected":{"section_id":82,"row_id":0,"valid":true},"output":{"section_id":82,"row_id":0,"valid":true}}
+{"input":{"section":"48FD","row":"L"},"expected":{"section_id":216,"row_id":11,"valid":true},"output":{"section_id":216,"row_id":11,"valid":true}}
+{"input":{"section":"44FD","row":"D"},"expected":{"section_id":212,"row_id":3,"valid":true},"output":{"section_id":212,"row_id":3,"valid":true}}
+{"input":{"section":"46FD","row":"T"},"expected":{"section_id":214,"row_id":17,"valid":true},"output":{"section_id":214,"row_id":17,"valid":true}}
+{"input":{"section":"15RS","row":"A"},"expected":{"section_id":222,"row_id":0,"valid":true},"output":{"section_id":222,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Value 46","row":"G"},"expected":{"section_id":214,"row_id":6,"valid":true},"output":{"section_id":214,"row_id":6,"valid":true}}
+{"input":{"section":"45FD","row":"R"},"expected":{"section_id":211,"row_id":15,"valid":true},"output":{"section_id":211,"row_id":15,"valid":true}}
+{"input":{"section":"43RS","row":"D"},"expected":{"section_id":204,"row_id":3,"valid":true},"output":{"section_id":204,"row_id":3,"valid":true}}
+{"input":{"section":"5FD","row":"K"},"expected":{"section_id":166,"row_id":9,"valid":true},"output":{"section_id":166,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Field Box 44","row":"F"},"expected":{"section_id":212,"row_id":5,"valid":true},"output":{"section_id":212,"row_id":5,"valid":true}}
+{"input":{"section":"8TD","row":"A"},"expected":{"section_id":52,"row_id":0,"valid":true},"output":{"section_id":52,"row_id":0,"valid":true}}
+{"input":{"section":"154LG","row":"C"},"expected":{"section_id":9,"row_id":2,"valid":true},"output":{"section_id":9,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Field Box 44","row":"C"},"expected":{"section_id":212,"row_id":2,"valid":true},"output":{"section_id":212,"row_id":2,"valid":true}}
+{"input":{"section":"2RS","row":"S"},"expected":{"section_id":110,"row_id":16,"valid":true},"output":{"section_id":110,"row_id":16,"valid":true}}
+{"input":{"section":"44RS","row":"T"},"expected":{"section_id":189,"row_id":17,"valid":true},"output":{"section_id":189,"row_id":17,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP20","row":"T"},"expected":{"section_id":171,"row_id":17,"valid":true},"output":{"section_id":171,"row_id":17,"valid":true}}
+{"input":{"section":"55RS","row":"B"},"expected":{"section_id":77,"row_id":1,"valid":true},"output":{"section_id":77,"row_id":1,"valid":true}}
+{"input":{"section":"7RS","row":"A"},"expected":{"section_id":107,"row_id":0,"valid":true},"output":{"section_id":107,"row_id":0,"valid":true}}
+{"input":{"section":"42RS","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"36FD","row":"F"},"expected":{"section_id":230,"row_id":5,"valid":true},"output":{"section_id":230,"row_id":5,"valid":true}}
+{"input":{"section":"Left Field Pavilion 301","row":"Z"},"expected":{"section_id":261,"row_id":24,"valid":true},"output":{"section_id":261,"row_id":24,"valid":true}}
+{"input":{"section":"147LG","row":"P"},"expected":{"section_id":39,"row_id":14,"valid":true},"output":{"section_id":39,"row_id":14,"valid":true}}
+{"input":{"section":"42RS","row":"CC"},"expected":{"section_id":124,"row_id":4,"valid":true},"output":{"section_id":124,"row_id":4,"valid":true}}
+{"input":{"section":"57RS","row":"DD"},"expected":{"section_id":79,"row_id":3,"valid":true},"output":{"section_id":79,"row_id":3,"valid":true}}
+{"input":{"section":"Infield Reserve IFR4","row":"A"},"expected":{"section_id":108,"row_id":0,"valid":true},"output":{"section_id":108,"row_id":0,"valid":true}}
+{"input":{"section":"Left Field Pavilion 309","row":"Q"},"expected":{"section_id":88,"row_id":15,"valid":true},"output":{"section_id":88,"row_id":15,"valid":true}}
+{"input":{"section":"Field Box FB48","row":"F"},"expected":{"section_id":216,"row_id":6,"valid":true},"output":{"section_id":216,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 164","row":"H"},"expected":{"section_id":277,"row_id":7,"valid":true},"output":{"section_id":277,"row_id":7,"valid":true}}
+{"input":{"section":"118LG","row":"J"},"expected":{"section_id":47,"row_id":8,"valid":true},"output":{"section_id":47,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB41","row":"K"},"expected":{"section_id":60,"row_id":9,"valid":true},"output":{"section_id":60,"row_id":9,"valid":true}}
+{"input":{"section":"Loge 157","row":"R"},"expected":{"section_id":8,"row_id":15,"valid":true},"output":{"section_id":8,"row_id":15,"valid":true}}
+{"input":{"section":"49FD","row":"F"},"expected":{"section_id":215,"row_id":6,"valid":true},"output":{"section_id":215,"row_id":6,"valid":true}}
+{"input":{"section":"146LG","row":"J"},"expected":{"section_id":40,"row_id":8,"valid":true},"output":{"section_id":40,"row_id":8,"valid":true}}
+{"input":{"section":"Upper Reserve 42","row":"FF"},"expected":{"section_id":124,"row_id":3,"valid":true},"output":{"section_id":124,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Field Box 45","row":"C"},"expected":{"section_id":211,"row_id":2,"valid":true},"output":{"section_id":211,"row_id":2,"valid":true}}
+{"input":{"section":"313PL","row":"E"},"expected":{"section_id":62,"row_id":4,"valid":true},"output":{"section_id":62,"row_id":4,"valid":true}}
+{"input":{"section":"Loge 162","row":"T"},"expected":{"section_id":279,"row_id":17,"valid":true},"output":{"section_id":279,"row_id":17,"valid":true}}
+{"input":{"section":"Pavilion 309","row":"N"},"expected":{"section_id":88,"row_id":12,"valid":true},"output":{"section_id":88,"row_id":12,"valid":true}}
+{"input":{"section":"Infield Box IFB26","row":"H"},"expected":{"section_id":218,"row_id":7,"valid":true},"output":{"section_id":218,"row_id":7,"valid":true}}
+{"input":{"section":"134LG","row":"E"},"expected":{"section_id":72,"row_id":4,"valid":true},"output":{"section_id":72,"row_id":4,"valid":true}}
+{"input":{"section":"Upper Reserve 53","row":"AA"},"expected":{"section_id":83,"row_id":0,"valid":true},"output":{"section_id":83,"row_id":0,"valid":true}}
+{"input":{"section":"Infield Reserve IFR16","row":"M"},"expected":{"section_id":288,"row_id":11,"valid":true},"output":{"section_id":288,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Reserve IFR4","row":"C"},"expected":{"section_id":108,"row_id":2,"valid":true},"output":{"section_id":108,"row_id":2,"valid":true}}
+{"input":{"section":"45FD","row":"M"},"expected":{"section_id":211,"row_id":11,"valid":true},"output":{"section_id":211,"row_id":11,"valid":true}}
+{"input":{"section":"12RS","row":"FF"},"expected":{"section_id":219,"row_id":5,"valid":true},"output":{"section_id":219,"row_id":5,"valid":true}}
+{"input":{"section":"168LG","row":"H"},"expected":{"section_id":284,"row_id":7,"valid":true},"output":{"section_id":284,"row_id":7,"valid":true}}
+{"input":{"section":"44FD","row":"O"},"expected":{"section_id":212,"row_id":13,"valid":true},"output":{"section_id":212,"row_id":13,"valid":true}}
+{"input":{"section":"1RS","row":"N"},"expected":{"section_id":113,"row_id":12,"valid":true},"output":{"section_id":113,"row_id":12,"valid":true}}
+{"input":{"section":"28FD","row":"J"},"expected":{"section_id":232,"row_id":8,"valid":true},"output":{"section_id":232,"row_id":8,"valid":true}}
+{"input":{"section":"157LG","row":"N"},"expected":{"section_id":8,"row_id":12,"valid":true},"output":{"section_id":8,"row_id":12,"valid":true}}
+{"input":{"section":"161LG","row":"J"},"expected":{"section_id":63,"row_id":8,"valid":true},"output":{"section_id":63,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve 23","row":"F"},"expected":{"section_id":197,"row_id":5,"valid":true},"output":{"section_id":197,"row_id":5,"valid":true}}
+{"input":{"section":"158 LOGE","row":"C"},"expected":{"section_id":12,"row_id":2,"valid":true},"output":{"section_id":12,"row_id":2,"valid":true}}
+{"input":{"section":"38BL","row":"5"},"expected":{"section_id":283,"row_id":4,"valid":true},"output":{"section_id":283,"row_id":4,"valid":true}}
+{"input":{"section":"159LG","row":"T"},"expected":{"section_id":13,"row_id":17,"valid":true},"output":{"section_id":13,"row_id":17,"valid":true}}
+{"input":{"section":"Preferred Loge Box 154","row":"C"},"expected":{"section_id":9,"row_id":2,"valid":true},"output":{"section_id":9,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value 157","row":"T"},"expected":{"section_id":8,"row_id":17,"valid":true},"output":{"section_id":8,"row_id":17,"valid":true}}
+{"input":{"section":"Loge 168","row":"N"},"expected":{"section_id":284,"row_id":12,"valid":true},"output":{"section_id":284,"row_id":12,"valid":true}}
+{"input":{"section":"Field Box MVP 1","row":"X"},"expected":{"section_id":162,"row_id":21,"valid":true},"output":{"section_id":162,"row_id":21,"valid":true}}
+{"input":{"section":"Preferred Reserve 44","row":"N"},"expected":{"section_id":189,"row_id":12,"valid":true},"output":{"section_id":189,"row_id":12,"valid":true}}
+{"input":{"section":"32FD","row":"K"},"expected":{"section_id":85,"row_id":9,"valid":true},"output":{"section_id":85,"row_id":9,"valid":true}}
+{"input":{"section":"30FD","row":"H"},"expected":{"section_id":239,"row_id":7,"valid":true},"output":{"section_id":239,"row_id":7,"valid":true}}
+{"input":{"section":"60RS","row":"B"},"expected":{"section_id":46,"row_id":1,"valid":true},"output":{"section_id":46,"row_id":1,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"K"},"expected":{"section_id":197,"row_id":9,"valid":true},"output":{"section_id":197,"row_id":9,"valid":true}}
+{"input":{"section":"46 FIELD","row":"K"},"expected":{"section_id":214,"row_id":9,"valid":true},"output":{"section_id":214,"row_id":9,"valid":true}}
+{"input":{"section":"311","row":"S"},"expected":{"section_id":160,"row_id":17,"valid":true},"output":{"section_id":160,"row_id":17,"valid":true}}
+{"input":{"section":"Infield Box 29","row":"F"},"expected":{"section_id":231,"row_id":5,"valid":true},"output":{"section_id":231,"row_id":5,"valid":true}}
+{"input":{"section":"31FD","row":"O"},"expected":{"section_id":242,"row_id":13,"valid":true},"output":{"section_id":242,"row_id":13,"valid":true}}
+{"input":{"section":"13TD","row":"D"},"expected":{"section_id":237,"row_id":3,"valid":true},"output":{"section_id":237,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Field Value 51","row":"M"},"expected":{"section_id":180,"row_id":12,"valid":true},"output":{"section_id":180,"row_id":12,"valid":true}}
+{"input":{"section":"Reserve MVP 6","row":"B"},"expected":{"section_id":106,"row_id":1,"valid":true},"output":{"section_id":106,"row_id":1,"valid":true}}
+{"input":{"section":"Reserve MVP 10","row":"B"},"expected":{"section_id":217,"row_id":1,"valid":true},"output":{"section_id":217,"row_id":1,"valid":true}}
+{"input":{"section":"Loge Box 161","row":"L"},"expected":{"section_id":63,"row_id":10,"valid":true},"output":{"section_id":63,"row_id":10,"valid":true}}
+{"input":{"section":"19RS","row":"A"},"expected":{"section_id":34,"row_id":0,"valid":true},"output":{"section_id":34,"row_id":0,"valid":true}}
+{"input":{"section":"Field Box MVP 4","row":"D"},"expected":{"section_id":165,"row_id":3,"valid":true},"output":{"section_id":165,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 51","row":"P"},"expected":{"section_id":81,"row_id":14,"valid":true},"output":{"section_id":81,"row_id":14,"valid":true}}
+{"input":{"section":"Preferred Loge Box 151","row":"O"},"expected":{"section_id":6,"row_id":13,"valid":true},"output":{"section_id":6,"row_id":13,"valid":true}}
+{"input":{"section":"Field Box MVP 2","row":"O"},"expected":{"section_id":163,"row_id":13,"valid":true},"output":{"section_id":163,"row_id":13,"valid":true}}
+{"input":{"section":"309PL","row":"B"},"expected":{"section_id":88,"row_id":1,"valid":true},"output":{"section_id":88,"row_id":1,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"A"},"expected":{"section_id":289,"row_id":0,"valid":true},"output":{"section_id":289,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Value 52","row":"G"},"expected":{"section_id":177,"row_id":7,"valid":true},"output":{"section_id":177,"row_id":7,"valid":true}}
+{"input":{"section":"49FD","row":"G"},"expected":{"section_id":215,"row_id":7,"valid":true},"output":{"section_id":215,"row_id":7,"valid":true}}
+{"input":{"section":"Infield Box IFB30","row":"E"},"expected":{"section_id":239,"row_id":4,"valid":true},"output":{"section_id":239,"row_id":4,"valid":true}}
+{"input":{"section":"3RS","row":"K"},"expected":{"section_id":111,"row_id":9,"valid":true},"output":{"section_id":111,"row_id":9,"valid":true}}
+{"input":{"section":"Top Deck TD2","row":"L"},"expected":{"section_id":182,"row_id":10,"valid":true},"output":{"section_id":182,"row_id":10,"valid":true}}
+{"input":{"section":"Lower Reserve LR31","row":"G"},"expected":{"section_id":157,"row_id":6,"valid":true},"output":{"section_id":157,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB41","row":"D"},"expected":{"section_id":60,"row_id":3,"valid":true},"output":{"section_id":60,"row_id":3,"valid":true}}
+{"input":{"section":"Loge 157","row":"H"},"expected":{"section_id":8,"row_id":7,"valid":true},"output":{"section_id":8,"row_id":7,"valid":true}}
+{"input":{"section":"26FD","row":"T"},"expected":{"section_id":218,"row_id":17,"valid":true},"output":{"section_id":218,"row_id":17,"valid":true}}
+{"input":{"section":"44RS","row":"T"},"expected":{"section_id":189,"row_id":17,"valid":true},"output":{"section_id":189,"row_id":17,"valid":true}}
+{"input":{"section":"Left Field Pavilion 311","row":"B"},"expected":{"section_id":160,"row_id":1,"valid":true},"output":{"section_id":160,"row_id":1,"valid":true}}
+{"input":{"section":"13FD","row":"H"},"expected":{"section_id":259,"row_id":7,"valid":true},"output":{"section_id":259,"row_id":7,"valid":true}}
+{"input":{"section":"52FD","row":"AA"},"expected":{"section_id":177,"row_id":0,"valid":true},"output":{"section_id":177,"row_id":0,"valid":true}}
+{"input":{"section":"44RS","row":"C"},"expected":{"section_id":189,"row_id":2,"valid":true},"output":{"section_id":189,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Box Value 36","row":"L"},"expected":{"section_id":230,"row_id":10,"valid":true},"output":{"section_id":230,"row_id":10,"valid":true}}
+{"input":{"section":"Preferred Loge Box 151","row":"P"},"expected":{"section_id":6,"row_id":14,"valid":true},"output":{"section_id":6,"row_id":14,"valid":true}}
+{"input":{"section":"20RS","row":"E"},"expected":{"section_id":206,"row_id":4,"valid":true},"output":{"section_id":206,"row_id":4,"valid":true}}
+{"input":{"section":"137 LOGE","row":"B"},"expected":{"section_id":75,"row_id":1,"valid":true},"output":{"section_id":75,"row_id":1,"valid":true}}
+{"input":{"section":"123LG","row":"J"},"expected":{"section_id":123,"row_id":8,"valid":true},"output":{"section_id":123,"row_id":8,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 101","row":"L"},"expected":{"section_id":183,"row_id":10,"valid":true},"output":{"section_id":183,"row_id":10,"valid":true}}
+{"input":{"section":"59RS","row":"E"},"expected":{"section_id":87,"row_id":4,"valid":true},"output":{"section_id":87,"row_id":4,"valid":true}}
+{"input":{"section":"Infield Reserve IFR16","row":"R"},"expected":{"section_id":288,"row_id":15,"valid":true},"output":{"section_id":288,"row_id":15,"valid":true}}
+{"input":{"section":"Preferred Field Value 48","row":"G"},"expected":{"section_id":216,"row_id":7,"valid":true},"output":{"section_id":216,"row_id":7,"valid":true}}
+{"input":{"section":"12FD","row":"C"},"expected":{"section_id":258,"row_id":2,"valid":true},"output":{"section_id":258,"row_id":2,"valid":true}}
+{"input":{"section":"Pavilion 304","row":"D"},"expected":{"section_id":117,"row_id":3,"valid":true},"output":{"section_id":117,"row_id":3,"valid":true}}
+{"input":{"section":"Infield Box Value 34","row":"N"},"expected":{"section_id":159,"row_id":12,"valid":true},"output":{"section_id":159,"row_id":12,"valid":true}}
+{"input":{"section":"Preferred Field Box 44","row":"N"},"expected":{"section_id":212,"row_id":12,"valid":true},"output":{"section_id":212,"row_id":12,"valid":true}}
+{"input":{"section":"31FD","row":"T"},"expected":{"section_id":242,"row_id":17,"valid":true},"output":{"section_id":242,"row_id":17,"valid":true}}
+{"input":{"section":"4TD","row":"A-R"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"18RS","row":"AA"},"expected":{"section_id":225,"row_id":0,"valid":true},"output":{"section_id":225,"row_id":0,"valid":true}}
+{"input":{"section":"Upper Reserve 46","row":"HH"},"expected":{"section_id":128,"row_id":7,"valid":true},"output":{"section_id":128,"row_id":7,"valid":true}}
+{"input":{"section":"40RS","row":"E"},"expected":{"section_id":264,"row_id":4,"valid":true},"output":{"section_id":264,"row_id":4,"valid":true}}
+{"input":{"section":"Top Deck TD2","row":"N"},"expected":{"section_id":182,"row_id":12,"valid":true},"output":{"section_id":182,"row_id":12,"valid":true}}
+{"input":{"section":"122LG","row":"E"},"expected":{"section_id":181,"row_id":4,"valid":true},"output":{"section_id":181,"row_id":4,"valid":true}}
+{"input":{"section":"46FD","row":"S"},"expected":{"section_id":214,"row_id":16,"valid":true},"output":{"section_id":214,"row_id":16,"valid":true}}
+{"input":{"section":"Preferred Field Value 51","row":"N"},"expected":{"section_id":180,"row_id":13,"valid":true},"output":{"section_id":180,"row_id":13,"valid":true}}
+{"input":{"section":"Field Box FB44","row":"B"},"expected":{"section_id":212,"row_id":1,"valid":true},"output":{"section_id":212,"row_id":1,"valid":true}}
+{"input":{"section":"23RS","row":"T"},"expected":{"section_id":197,"row_id":17,"valid":true},"output":{"section_id":197,"row_id":17,"valid":true}}
+{"input":{"section":"34FD","row":"G"},"expected":{"section_id":159,"row_id":6,"valid":true},"output":{"section_id":159,"row_id":6,"valid":true}}
+{"input":{"section":"304","row":"L"},"expected":{"section_id":117,"row_id":10,"valid":true},"output":{"section_id":117,"row_id":10,"valid":true}}
+{"input":{"section":"36FD","row":"F"},"expected":{"section_id":230,"row_id":5,"valid":true},"output":{"section_id":230,"row_id":5,"valid":true}}
+{"input":{"section":"Infield Box IFB29","row":"R"},"expected":{"section_id":231,"row_id":15,"valid":true},"output":{"section_id":231,"row_id":15,"valid":true}}
+{"input":{"section":"146LG","row":"N"},"expected":{"section_id":40,"row_id":12,"valid":true},"output":{"section_id":40,"row_id":12,"valid":true}}
+{"input":{"section":"Field Box FB52","row":"O"},"expected":{"section_id":177,"row_id":14,"valid":true},"output":{"section_id":177,"row_id":14,"valid":true}}
+{"input":{"section":"28RS","row":"F"},"expected":{"section_id":133,"row_id":5,"valid":true},"output":{"section_id":133,"row_id":5,"valid":true}}
+{"input":{"section":"313PL","row":"C"},"expected":{"section_id":62,"row_id":2,"valid":true},"output":{"section_id":62,"row_id":2,"valid":true}}
+{"input":{"section":"15RS","row":"L"},"expected":{"section_id":222,"row_id":10,"valid":true},"output":{"section_id":222,"row_id":10,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"S"},"expected":{"section_id":13,"row_id":16,"valid":true},"output":{"section_id":13,"row_id":16,"valid":true}}
+{"input":{"section":"45FD","row":"L"},"expected":{"section_id":211,"row_id":10,"valid":true},"output":{"section_id":211,"row_id":10,"valid":true}}
+{"input":{"section":"27RS","row":"E"},"expected":{"section_id":193,"row_id":4,"valid":true},"output":{"section_id":193,"row_id":4,"valid":true}}
+{"input":{"section":"Infield Box Value VIP 35","row":"E"},"expected":{"section_id":184,"row_id":4,"valid":true},"output":{"section_id":184,"row_id":4,"valid":true}}
+{"input":{"section":"147LG","row":"C"},"expected":{"section_id":39,"row_id":2,"valid":true},"output":{"section_id":39,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Field Value 49","row":"H"},"expected":{"section_id":215,"row_id":8,"valid":true},"output":{"section_id":215,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Reserve VIP 23","row":"D"},"expected":{"section_id":197,"row_id":3,"valid":true},"output":{"section_id":197,"row_id":3,"valid":true}}
+{"input":{"section":"31FD","row":"W"},"expected":{"section_id":242,"row_id":20,"valid":true},"output":{"section_id":242,"row_id":20,"valid":true}}
+{"input":{"section":"17RS","row":"AA"},"expected":{"section_id":224,"row_id":0,"valid":true},"output":{"section_id":224,"row_id":0,"valid":true}}
+{"input":{"section":"Top Deck 3","row":"J"},"expected":{"section_id":249,"row_id":8,"valid":true},"output":{"section_id":249,"row_id":8,"valid":true}}
+{"input":{"section":"307PL","row":"O"},"expected":{"section_id":89,"row_id":13,"valid":true},"output":{"section_id":89,"row_id":13,"valid":true}}
+{"input":{"section":"314PR","row":"C"},"expected":{"section_id":137,"row_id":2,"valid":true},"output":{"section_id":137,"row_id":2,"valid":true}}
+{"input":{"section":"49 FIELD","row":"B"},"expected":{"section_id":215,"row_id":2,"valid":true},"output":{"section_id":215,"row_id":2,"valid":true}}
+{"input":{"section":"38FD","row":"J"},"expected":{"section_id":195,"row_id":8,"valid":true},"output":{"section_id":195,"row_id":8,"valid":true}}
+{"input":{"section":"2RS","row":"G"},"expected":{"section_id":110,"row_id":6,"valid":true},"output":{"section_id":110,"row_id":6,"valid":true}}
+{"input":{"section":"161LG","row":"L"},"expected":{"section_id":63,"row_id":10,"valid":true},"output":{"section_id":63,"row_id":10,"valid":true}}
+{"input":{"section":"307PL","row":"E"},"expected":{"section_id":89,"row_id":4,"valid":true},"output":{"section_id":89,"row_id":4,"valid":true}}
+{"input":{"section":"40","row":"E"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":208,"row_id":4,"valid":true}}
+{"input":{"section":"43FD","row":"H"},"expected":{"section_id":241,"row_id":7,"valid":true},"output":{"section_id":241,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Reserve 23","row":"J"},"expected":{"section_id":197,"row_id":8,"valid":true},"output":{"section_id":197,"row_id":8,"valid":true}}
+{"input":{"section":"52FD","row":"F"},"expected":{"section_id":177,"row_id":6,"valid":true},"output":{"section_id":177,"row_id":6,"valid":true}}
+{"input":{"section":"Pavilion 306","row":"C"},"expected":{"section_id":115,"row_id":2,"valid":true},"output":{"section_id":115,"row_id":2,"valid":true}}
+{"input":{"section":"165LG","row":"D"},"expected":{"section_id":136,"row_id":3,"valid":true},"output":{"section_id":136,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"H"},"expected":{"section_id":284,"row_id":7,"valid":true},"output":{"section_id":284,"row_id":7,"valid":true}}
+{"input":{"section":"46RS","row":"JJ"},"expected":{"section_id":128,"row_id":8,"valid":true},"output":{"section_id":128,"row_id":8,"valid":true}}
+{"input":{"section":"Loge Box VIP 115","row":"D"},"expected":{"section_id":145,"row_id":3,"valid":true},"output":{"section_id":145,"row_id":3,"valid":true}}
+{"input":{"section":"148LG","row":"C"},"expected":{"section_id":36,"row_id":2,"valid":true},"output":{"section_id":36,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Box IFB27","row":"E"},"expected":{"section_id":285,"row_id":4,"valid":true},"output":{"section_id":285,"row_id":4,"valid":true}}
+{"input":{"section":"164LG","row":"M"},"expected":{"section_id":277,"row_id":11,"valid":true},"output":{"section_id":277,"row_id":11,"valid":true}}
+{"input":{"section":"39FD","row":"M"},"expected":{"section_id":196,"row_id":11,"valid":true},"output":{"section_id":196,"row_id":11,"valid":true}}
+{"input":{"section":"160LG","row":"R"},"expected":{"section_id":281,"row_id":15,"valid":true},"output":{"section_id":281,"row_id":15,"valid":true}}
+{"input":{"section":"Loge 165","row":"L"},"expected":{"section_id":136,"row_id":10,"valid":true},"output":{"section_id":136,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 101","row":"K"},"expected":{"section_id":183,"row_id":9,"valid":true},"output":{"section_id":183,"row_id":9,"valid":true}}
+{"input":{"section":"8RS","row":"D"},"expected":{"section_id":61,"row_id":3,"valid":true},"output":{"section_id":61,"row_id":3,"valid":true}}
+{"input":{"section":"309PL","row":"F"},"expected":{"section_id":88,"row_id":5,"valid":true},"output":{"section_id":88,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP2","row":"S"},"expected":{"section_id":163,"row_id":16,"valid":true},"output":{"section_id":163,"row_id":16,"valid":true}}
+{"input":{"section":"Infield Loge Box Value VIP 147","row":"C"},"expected":{"section_id":39,"row_id":2,"valid":true},"output":{"section_id":39,"row_id":2,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"K"},"expected":{"section_id":284,"row_id":9,"valid":true},"output":{"section_id":284,"row_id":9,"valid":true}}
+{"input":{"section":"11RS","row":"H"},"expected":{"section_id":199,"row_id":7,"valid":true},"output":{"section_id":199,"row_id":7,"valid":true}}
+{"input":{"section":"4TD","row":"M"},"expected":{"section_id":229,"row_id":11,"valid":true},"output":{"section_id":229,"row_id":11,"valid":true}}
+{"input":{"section":"Field Box MVP 14","row":"P"},"expected":{"section_id":18,"row_id":14,"valid":true},"output":{"section_id":18,"row_id":14,"valid":true}}
+{"input":{"section":"31FD","row":"J"},"expected":{"section_id":242,"row_id":8,"valid":true},"output":{"section_id":242,"row_id":8,"valid":true}}
+{"input":{"section":"Right Field Pavilion 302","row":"C"},"expected":{"section_id":114,"row_id":2,"valid":true},"output":{"section_id":114,"row_id":2,"valid":true}}
+{"input":{"section":"39FD","row":"K"},"expected":{"section_id":196,"row_id":9,"valid":true},"output":{"section_id":196,"row_id":9,"valid":true}}
+{"input":{"section":"Pavilion 309","row":"Q"},"expected":{"section_id":88,"row_id":15,"valid":true},"output":{"section_id":88,"row_id":15,"valid":true}}
+{"input":{"section":"42RS","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"36FD","row":"R"},"expected":{"section_id":230,"row_id":15,"valid":true},"output":{"section_id":230,"row_id":15,"valid":true}}
+{"input":{"section":"Preferred Reserve 43","row":"L"},"expected":{"section_id":204,"row_id":10,"valid":true},"output":{"section_id":204,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 165","row":"A"},"expected":{"section_id":136,"row_id":0,"valid":true},"output":{"section_id":136,"row_id":0,"valid":true}}
+{"input":{"section":"Pavilion 311","row":"E"},"expected":{"section_id":160,"row_id":4,"valid":true},"output":{"section_id":160,"row_id":4,"valid":true}}
+{"input":{"section":"Pavilion 309","row":"A"},"expected":{"section_id":88,"row_id":0,"valid":true},"output":{"section_id":88,"row_id":0,"valid":true}}
+{"input":{"section":"6TD","row":"O"},"expected":{"section_id":1,"row_id":13,"valid":true},"output":{"section_id":1,"row_id":13,"valid":true}}
+{"input":{"section":"27RS","row":"S"},"expected":{"section_id":193,"row_id":16,"valid":true},"output":{"section_id":193,"row_id":16,"valid":true}}
+{"input":{"section":"15RS","row":"D"},"expected":{"section_id":222,"row_id":3,"valid":true},"output":{"section_id":222,"row_id":3,"valid":true}}
+{"input":{"section":"Left Field Pavilion 309","row":"B"},"expected":{"section_id":88,"row_id":1,"valid":true},"output":{"section_id":88,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Reserve IFR6","row":"D"},"expected":{"section_id":106,"row_id":3,"valid":true},"output":{"section_id":106,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 43","row":"O"},"expected":{"section_id":204,"row_id":13,"valid":true},"output":{"section_id":204,"row_id":13,"valid":true}}
+{"input":{"section":"4RS","row":"A"},"expected":{"section_id":108,"row_id":0,"valid":true},"output":{"section_id":108,"row_id":0,"valid":true}}
+{"input":{"section":"11RS","row":"A"},"expected":{"section_id":199,"row_id":0,"valid":true},"output":{"section_id":199,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Reserve 40","row":"S"},"expected":{"section_id":264,"row_id":16,"valid":true},"output":{"section_id":264,"row_id":16,"valid":true}}
+{"input":{"section":"Lower Reserve LR36","row":"B"},"expected":{"section_id":150,"row_id":1,"valid":true},"output":{"section_id":150,"row_id":1,"valid":true}}
+{"input":{"section":"110LG","row":"E"},"expected":{"section_id":148,"row_id":4,"valid":true},"output":{"section_id":148,"row_id":4,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP17","row":"G"},"expected":{"section_id":263,"row_id":6,"valid":true},"output":{"section_id":263,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Loge Box 148","row":"C"},"expected":{"section_id":36,"row_id":2,"valid":true},"output":{"section_id":36,"row_id":2,"valid":true}}
+{"input":{"section":"152LG","row":"K"},"expected":{"section_id":3,"row_id":9,"valid":true},"output":{"section_id":3,"row_id":9,"valid":true}}
+{"input":{"section":"Infield Box IFB35","row":"W"},"expected":{"section_id":184,"row_id":20,"valid":true},"output":{"section_id":184,"row_id":20,"valid":true}}
+{"input":{"section":"Preferred Reserve 28","row":"P"},"expected":{"section_id":133,"row_id":14,"valid":true},"output":{"section_id":133,"row_id":14,"valid":true}}
+{"input":{"section":"Infield Box Value 34","row":"M"},"expected":{"section_id":159,"row_id":11,"valid":true},"output":{"section_id":159,"row_id":11,"valid":true}}
+{"input":{"section":"28FD","row":"B"},"expected":{"section_id":232,"row_id":1,"valid":true},"output":{"section_id":232,"row_id":1,"valid":true}}
+{"input":{"section":"34FD","row":"S"},"expected":{"section_id":159,"row_id":16,"valid":true},"output":{"section_id":159,"row_id":16,"valid":true}}
+{"input":{"section":"120LG","row":"B"},"expected":{"section_id":126,"row_id":1,"valid":true},"output":{"section_id":126,"row_id":1,"valid":true}}
+{"input":{"section":"16RS","row":"D"},"expected":{"section_id":288,"row_id":3,"valid":true},"output":{"section_id":288,"row_id":3,"valid":true}}
+{"input":{"section":"36RS","row":"A"},"expected":{"section_id":150,"row_id":0,"valid":true},"output":{"section_id":150,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Field Box 40","row":"B"},"expected":{"section_id":208,"row_id":1,"valid":true},"output":{"section_id":208,"row_id":1,"valid":true}}
+{"input":{"section":"35FD","row":"U"},"expected":{"section_id":184,"row_id":18,"valid":true},"output":{"section_id":184,"row_id":18,"valid":true}}
+{"input":{"section":"53FD","row":"D"},"expected":{"section_id":178,"row_id":4,"valid":true},"output":{"section_id":178,"row_id":4,"valid":true}}
+{"input":{"section":"311PL","row":"P"},"expected":{"section_id":160,"row_id":14,"valid":true},"output":{"section_id":160,"row_id":14,"valid":true}}
+{"input":{"section":"Infield Box 28","row":"H"},"expected":{"section_id":232,"row_id":7,"valid":true},"output":{"section_id":232,"row_id":7,"valid":true}}
+{"input":{"section":"35RS","row":"B"},"expected":{"section_id":153,"row_id":1,"valid":true},"output":{"section_id":153,"row_id":1,"valid":true}}
+{"input":{"section":"TOP DECK VIP 6","row":"B"},"expected":{"section_id":1,"row_id":1,"valid":true},"output":{"section_id":1,"row_id":1,"valid":true}}
+{"input":{"section":"Preferred Field Box 44","row":"O"},"expected":{"section_id":212,"row_id":13,"valid":true},"output":{"section_id":212,"row_id":13,"valid":true}}
+{"input":{"section":"Loge Box VIP 126","row":"C"},"expected":{"section_id":130,"row_id":2,"valid":true},"output":{"section_id":130,"row_id":2,"valid":true}}
+{"input":{"section":"114LG","row":"J"},"expected":{"section_id":144,"row_id":8,"valid":true},"output":{"section_id":144,"row_id":8,"valid":true}}
+{"input":{"section":"Infield Loge Box 138","row":"G"},"expected":{"section_id":65,"row_id":6,"valid":true},"output":{"section_id":65,"row_id":6,"valid":true}}
+{"input":{"section":"51FD","row":"O"},"expected":{"section_id":180,"row_id":14,"valid":true},"output":{"section_id":180,"row_id":14,"valid":true}}
+{"input":{"section":"Lower Reserve LR24","row":"M"},"expected":{"section_id":255,"row_id":11,"valid":true},"output":{"section_id":255,"row_id":11,"valid":true}}
+{"input":{"section":"Preferred Field Value 49","row":"M"},"expected":{"section_id":215,"row_id":12,"valid":true},"output":{"section_id":215,"row_id":12,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP11","row":"D"},"expected":{"section_id":272,"row_id":3,"valid":true},"output":{"section_id":272,"row_id":3,"valid":true}}
+{"input":{"section":"148LG","row":"G"},"expected":{"section_id":36,"row_id":6,"valid":true},"output":{"section_id":36,"row_id":6,"valid":true}}
+{"input":{"section":"Infield Reserve IFR12","row":"BB"},"expected":{"section_id":219,"row_id":1,"valid":true},"output":{"section_id":219,"row_id":1,"valid":true}}
+{"input":{"section":"Top Deck 2","row":"M"},"expected":{"section_id":182,"row_id":11,"valid":true},"output":{"section_id":182,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Box IFB34","row":"N"},"expected":{"section_id":159,"row_id":12,"valid":true},"output":{"section_id":159,"row_id":12,"valid":true}}
+{"input":{"section":"40FD","row":"S"},"expected":{"section_id":208,"row_id":16,"valid":true},"output":{"section_id":208,"row_id":16,"valid":true}}
+{"input":{"section":"Loge Box MVP 119","row":"G"},"expected":{"section_id":49,"row_id":6,"valid":true},"output":{"section_id":49,"row_id":6,"valid":true}}
+{"input":{"section":"Field Box FB44","row":"B"},"expected":{"section_id":212,"row_id":1,"valid":true},"output":{"section_id":212,"row_id":1,"valid":true}}
+{"input":{"section":"Preferred Field Value 51","row":"M"},"expected":{"section_id":180,"row_id":12,"valid":true},"output":{"section_id":180,"row_id":12,"valid":true}}
+{"input":{"section":"Loge 123","row":"O"},"expected":{"section_id":123,"row_id":13,"valid":true},"output":{"section_id":123,"row_id":13,"valid":true}}
+{"input":{"section":"30FD","row":"E"},"expected":{"section_id":239,"row_id":4,"valid":true},"output":{"section_id":239,"row_id":4,"valid":true}}
+{"input":{"section":"Top Deck 4","row":"L"},"expected":{"section_id":229,"row_id":10,"valid":true},"output":{"section_id":229,"row_id":10,"valid":true}}
+{"input":{"section":"29FD","row":"F"},"expected":{"section_id":231,"row_id":5,"valid":true},"output":{"section_id":231,"row_id":5,"valid":true}}
+{"input":{"section":"47FD","row":"A"},"expected":{"section_id":213,"row_id":0,"valid":true},"output":{"section_id":213,"row_id":0,"valid":true}}
+{"input":{"section":"163LG","row":"C"},"expected":{"section_id":122,"row_id":2,"valid":true},"output":{"section_id":122,"row_id":2,"valid":true}}
+{"input":{"section":"5FD","row":"B"},"expected":{"section_id":166,"row_id":1,"valid":true},"output":{"section_id":166,"row_id":1,"valid":true}}
+{"input":{"section":"8TD","row":"K"},"expected":{"section_id":52,"row_id":9,"valid":true},"output":{"section_id":52,"row_id":9,"valid":true}}
+{"input":{"section":"39RS","row":"K"},"expected":{"section_id":149,"row_id":9,"valid":true},"output":{"section_id":149,"row_id":9,"valid":true}}
+{"input":{"section":"7TD","row":"M"},"expected":{"section_id":201,"row_id":11,"valid":true},"output":{"section_id":201,"row_id":11,"valid":true}}
+{"input":{"section":"34FD","row":"T"},"expected":{"section_id":159,"row_id":17,"valid":true},"output":{"section_id":159,"row_id":17,"valid":true}}
+{"input":{"section":"Left Field Pavilion 305","row":"A"},"expected":{"section_id":101,"row_id":0,"valid":true},"output":{"section_id":101,"row_id":0,"valid":true}}
+{"input":{"section":"6TD","row":"B"},"expected":{"section_id":1,"row_id":1,"valid":true},"output":{"section_id":1,"row_id":1,"valid":true}}
+{"input":{"section":"57RS","row":"EE"},"expected":{"section_id":79,"row_id":4,"valid":true},"output":{"section_id":79,"row_id":4,"valid":true}}
+{"input":{"section":"29FD","row":"R"},"expected":{"section_id":231,"row_id":15,"valid":true},"output":{"section_id":231,"row_id":15,"valid":true}}
+{"input":{"section":"11FD","row":"D"},"expected":{"section_id":272,"row_id":3,"valid":true},"output":{"section_id":272,"row_id":3,"valid":true}}
+{"input":{"section":"Loge Box 162","row":"A"},"expected":{"section_id":279,"row_id":0,"valid":true},"output":{"section_id":279,"row_id":0,"valid":true}}
+{"input":{"section":"305PL","row":"A"},"expected":{"section_id":101,"row_id":0,"valid":true},"output":{"section_id":101,"row_id":0,"valid":true}}
+{"input":{"section":"Reserve MVP 11","row":"F"},"expected":{"section_id":199,"row_id":5,"valid":true},"output":{"section_id":199,"row_id":5,"valid":true}}
+{"input":{"section":"40RS","row":"A-W"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"Preferred Loge Box 152","row":"N"},"expected":{"section_id":3,"row_id":12,"valid":true},"output":{"section_id":3,"row_id":12,"valid":true}}
+{"input":{"section":"Loge 159","row":"O"},"expected":{"section_id":13,"row_id":13,"valid":true},"output":{"section_id":13,"row_id":13,"valid":true}}
+{"input":{"section":"INFIELD RESERVE 14","row":"AA"},"expected":{"section_id":273,"row_id":0,"valid":true},"output":{"section_id":273,"row_id":0,"valid":true}}
+{"input":{"section":"311PL","row":"G"},"expected":{"section_id":160,"row_id":6,"valid":true},"output":{"section_id":160,"row_id":6,"valid":true}}
+{"input":{"section":"132LG","row":"H"},"expected":{"section_id":70,"row_id":7,"valid":true},"output":{"section_id":70,"row_id":7,"valid":true}}
+{"input":{"section":"Pavilion 311","row":"R"},"expected":{"section_id":160,"row_id":16,"valid":true},"output":{"section_id":160,"row_id":16,"valid":true}}
+{"input":{"section":"53 FD","row":"F"},"expected":{"section_id":178,"row_id":6,"valid":true},"output":{"section_id":178,"row_id":6,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP1","row":"O"},"expected":{"section_id":162,"row_id":13,"valid":true},"output":{"section_id":162,"row_id":13,"valid":true}}
+{"input":{"section":"Preferred Field Box Value 48","row":"K"},"expected":{"section_id":216,"row_id":10,"valid":true},"output":{"section_id":216,"row_id":10,"valid":true}}
+{"input":{"section":"10RS","row":"J"},"expected":{"section_id":217,"row_id":8,"valid":true},"output":{"section_id":217,"row_id":8,"valid":true}}
+{"input":{"section":"4DG","row":"CC"},"expected":{"section_id":105,"row_id":2,"valid":true},"output":{"section_id":105,"row_id":2,"valid":true}}
+{"input":{"section":"39RS","row":"S"},"expected":{"section_id":149,"row_id":16,"valid":true},"output":{"section_id":149,"row_id":16,"valid":true}}
+{"input":{"section":"RESERVE MVP VAULE 10","row":"O"},"expected":{"section_id":217,"row_id":13,"valid":true},"output":{"section_id":217,"row_id":13,"valid":true}}
+{"input":{"section":"PREFERRED LOGE BOX 164","row":"A-W"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"146LG","row":"N"},"expected":{"section_id":40,"row_id":12,"valid":true},"output":{"section_id":40,"row_id":12,"valid":true}}
+{"input":{"section":"6DG","row":"BB"},"expected":{"section_id":103,"row_id":1,"valid":true},"output":{"section_id":103,"row_id":1,"valid":true}}
+{"input":{"section":"Preferred Reserve 44","row":"H"},"expected":{"section_id":189,"row_id":7,"valid":true},"output":{"section_id":189,"row_id":7,"valid":true}}
+{"input":{"section":"Top Deck 13","row":"M"},"expected":{"section_id":237,"row_id":11,"valid":true},"output":{"section_id":237,"row_id":11,"valid":true}}
+{"input":{"section":"309PL","row":"F"},"expected":{"section_id":88,"row_id":5,"valid":true},"output":{"section_id":88,"row_id":5,"valid":true}}
+{"input":{"section":"314","row":"D"},"expected":{"section_id":137,"row_id":3,"valid":true},"output":{"section_id":137,"row_id":3,"valid":true}}
+{"input":{"section":"21RS","row":"CC"},"expected":{"section_id":267,"row_id":2,"valid":true},"output":{"section_id":267,"row_id":2,"valid":true}}
+{"input":{"section":"310PR","row":"C"},"expected":{"section_id":139,"row_id":2,"valid":true},"output":{"section_id":139,"row_id":2,"valid":true}}
+{"input":{"section":"6TD","row":"M"},"expected":{"section_id":1,"row_id":11,"valid":true},"output":{"section_id":1,"row_id":11,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"E"},"expected":{"section_id":193,"row_id":4,"valid":true},"output":{"section_id":193,"row_id":4,"valid":true}}
+{"input":{"section":"Reserve MVP 2","row":"J"},"expected":{"section_id":110,"row_id":8,"valid":true},"output":{"section_id":110,"row_id":8,"valid":true}}
+{"input":{"section":"Pavilion 305","row":"E"},"expected":{"section_id":101,"row_id":4,"valid":true},"output":{"section_id":101,"row_id":4,"valid":true}}
+{"input":{"section":"44RS","row":"M"},"expected":{"section_id":189,"row_id":11,"valid":true},"output":{"section_id":189,"row_id":11,"valid":true}}
+{"input":{"section":"135LG","row":"F"},"expected":{"section_id":73,"row_id":5,"valid":true},"output":{"section_id":73,"row_id":5,"valid":true}}
+{"input":{"section":"Preferred Field Box PFB41","row":"T"},"expected":{"section_id":60,"row_id":17,"valid":true},"output":{"section_id":60,"row_id":17,"valid":true}}
+{"input":{"section":"15RS","row":"O"},"expected":{"section_id":222,"row_id":13,"valid":true},"output":{"section_id":222,"row_id":13,"valid":true}}
+{"input":{"section":"36RS","row":"A"},"expected":{"section_id":150,"row_id":0,"valid":true},"output":{"section_id":150,"row_id":0,"valid":true}}
+{"input":{"section":"35FD","row":"L"},"expected":{"section_id":184,"row_id":10,"valid":true},"output":{"section_id":184,"row_id":10,"valid":true}}
+{"input":{"section":"146LG","row":"J"},"expected":{"section_id":40,"row_id":8,"valid":true},"output":{"section_id":40,"row_id":8,"valid":true}}
+{"input":{"section":"Field Box FB47","row":"T"},"expected":{"section_id":213,"row_id":17,"valid":true},"output":{"section_id":213,"row_id":17,"valid":true}}
+{"input":{"section":"307PL","row":"F"},"expected":{"section_id":89,"row_id":5,"valid":true},"output":{"section_id":89,"row_id":5,"valid":true}}
+{"input":{"section":"8FD","row":"F"},"expected":{"section_id":169,"row_id":5,"valid":true},"output":{"section_id":169,"row_id":5,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"F"},"expected":{"section_id":197,"row_id":5,"valid":true},"output":{"section_id":197,"row_id":5,"valid":true}}
+{"input":{"section":"Reserve MVP 2","row":"F"},"expected":{"section_id":110,"row_id":5,"valid":true},"output":{"section_id":110,"row_id":5,"valid":true}}
+{"input":{"section":"Infield Box Value VIP 36","row":"D"},"expected":{"section_id":230,"row_id":3,"valid":true},"output":{"section_id":230,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box VIP 12","row":"B"},"expected":{"section_id":258,"row_id":1,"valid":true},"output":{"section_id":258,"row_id":1,"valid":true}}
+{"input":{"section":"Pavilion 304","row":"A"},"expected":{"section_id":117,"row_id":0,"valid":true},"output":{"section_id":117,"row_id":0,"valid":true}}
+{"input":{"section":"9RS","row":"C"},"expected":{"section_id":118,"row_id":2,"valid":true},"output":{"section_id":118,"row_id":2,"valid":true}}
+{"input":{"section":"9FD","row":"O"},"expected":{"section_id":170,"row_id":13,"valid":true},"output":{"section_id":170,"row_id":13,"valid":true}}
+{"input":{"section":"Reserve VIP Value 11","row":"C"},"expected":{"section_id":199,"row_id":2,"valid":true},"output":{"section_id":199,"row_id":2,"valid":true}}
+{"input":{"section":"168LG","row":"F"},"expected":{"section_id":284,"row_id":5,"valid":true},"output":{"section_id":284,"row_id":5,"valid":true}}
+{"input":{"section":"Infield Reserve 27","row":"J"},"expected":{"section_id":193,"row_id":8,"valid":true},"output":{"section_id":193,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve VIP 56","row":"B"},"expected":{"section_id":78,"row_id":1,"valid":true},"output":{"section_id":78,"row_id":1,"valid":true}}
+{"input":{"section":"5FD","row":"F"},"expected":{"section_id":166,"row_id":5,"valid":true},"output":{"section_id":166,"row_id":5,"valid":true}}
+{"input":{"section":"Field Box FB48","row":"F"},"expected":{"section_id":216,"row_id":6,"valid":true},"output":{"section_id":216,"row_id":6,"valid":true}}
+{"input":{"section":"Field Box FB49","row":"L"},"expected":{"section_id":215,"row_id":11,"valid":true},"output":{"section_id":215,"row_id":11,"valid":true}}
+{"input":{"section":"157LG","row":"T"},"expected":{"section_id":8,"row_id":17,"valid":true},"output":{"section_id":8,"row_id":17,"valid":true}}
+{"input":{"section":"44FD","row":"H"},"expected":{"section_id":212,"row_id":7,"valid":true},"output":{"section_id":212,"row_id":7,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 117","row":"O"},"expected":{"section_id":143,"row_id":13,"valid":true},"output":{"section_id":143,"row_id":13,"valid":true}}
+{"input":{"section":"Upper Reserve 21","row":"BB"},"expected":{"section_id":267,"row_id":1,"valid":true},"output":{"section_id":267,"row_id":1,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"F"},"expected":{"section_id":284,"row_id":5,"valid":true},"output":{"section_id":284,"row_id":5,"valid":true}}
+{"input":{"section":"Preferred Field Value 46","row":"G"},"expected":{"section_id":214,"row_id":6,"valid":true},"output":{"section_id":214,"row_id":6,"valid":true}}
+{"input":{"section":"Right Field Pavilion Front Row 312","row":"A"},"expected":{"section_id":141,"row_id":0,"valid":true},"output":{"section_id":141,"row_id":0,"valid":true}}
+{"input":{"section":"23RS","row":"B"},"expected":{"section_id":197,"row_id":1,"valid":true},"output":{"section_id":197,"row_id":1,"valid":true}}
+{"input":{"section":"310PR","row":"D"},"expected":{"section_id":139,"row_id":3,"valid":true},"output":{"section_id":139,"row_id":3,"valid":true}}
+{"input":{"section":"53FD","row":"D"},"expected":{"section_id":178,"row_id":4,"valid":true},"output":{"section_id":178,"row_id":4,"valid":true}}
+{"input":{"section":"46FD","row":"S"},"expected":{"section_id":214,"row_id":16,"valid":true},"output":{"section_id":214,"row_id":16,"valid":true}}
+{"input":{"section":"Infield Reserve 21","row":"CC"},"expected":{"section_id":267,"row_id":2,"valid":true},"output":{"section_id":267,"row_id":2,"valid":true}}
+{"input":{"section":"Field Box FB48","row":"G"},"expected":{"section_id":216,"row_id":7,"valid":true},"output":{"section_id":216,"row_id":7,"valid":true}}
+{"input":{"section":"Loge 165","row":"H"},"expected":{"section_id":136,"row_id":7,"valid":true},"output":{"section_id":136,"row_id":7,"valid":true}}
+{"input":{"section":"Upper Reserve 58","row":"CC"},"expected":{"section_id":86,"row_id":2,"valid":true},"output":{"section_id":86,"row_id":2,"valid":true}}
+{"input":{"section":"35FD","row":"U"},"expected":{"section_id":184,"row_id":18,"valid":true},"output":{"section_id":184,"row_id":18,"valid":true}}
+{"input":{"section":"11RS","row":"K"},"expected":{"section_id":199,"row_id":9,"valid":true},"output":{"section_id":199,"row_id":9,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"K"},"expected":{"section_id":197,"row_id":9,"valid":true},"output":{"section_id":197,"row_id":9,"valid":true}}
+{"input":{"section":"3TD","row":"J"},"expected":{"section_id":249,"row_id":8,"valid":true},"output":{"section_id":249,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve 47","row":"M"},"expected":{"section_id":287,"row_id":11,"valid":true},"output":{"section_id":287,"row_id":11,"valid":true}}
+{"input":{"section":"Preferred Reserve 24","row":"M"},"expected":{"section_id":255,"row_id":11,"valid":true},"output":{"section_id":255,"row_id":11,"valid":true}}
+{"input":{"section":"Infield Reserve 14","row":"CC"},"expected":{"section_id":273,"row_id":2,"valid":true},"output":{"section_id":273,"row_id":2,"valid":true}}
+{"input":{"section":"311PL","row":"A-Z"},"expected":{"section_id":-1,"row_id":-1,"valid":false},"output":{"section_id":-1,"row_id":-1,"valid":false}}
+{"input":{"section":"Preferred Reserve 43","row":"M"},"expected":{"section_id":204,"row_id":11,"valid":true},"output":{"section_id":204,"row_id":11,"valid":true}}
+{"input":{"section":"55RS","row":"C"},"expected":{"section_id":77,"row_id":2,"valid":true},"output":{"section_id":77,"row_id":2,"valid":true}}
+{"input":{"section":"Field Box VIP \u0026 MVP FBMVP21","row":"K"},"expected":{"section_id":223,"row_id":9,"valid":true},"output":{"section_id":223,"row_id":9,"valid":true}}
+{"input":{"section":"Loge 162","row":"H"},"expected":{"section_id":279,"row_id":7,"valid":true},"output":{"section_id":279,"row_id":7,"valid":true}}
+{"input":{"section":"41FD","row":"G"},"expected":{"section_id":60,"row_id":6,"valid":true},"output":{"section_id":60,"row_id":6,"valid":true}}
+{"input":{"section":"Left Field Pavilion 307","row":"L"},"expected":{"section_id":89,"row_id":10,"valid":true},"output":{"section_id":89,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 160","row":"D"},"expected":{"section_id":281,"row_id":3,"valid":true},"output":{"section_id":281,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box MVP 5","row":"K"},"expected":{"section_id":166,"row_id":9,"valid":true},"output":{"section_id":166,"row_id":9,"valid":true}}
+{"input":{"section":"Lower Reserve LR51","row":"B"},"expected":{"section_id":81,"row_id":1,"valid":true},"output":{"section_id":81,"row_id":1,"valid":true}}
+{"input":{"section":"27FD","row":"R"},"expected":{"section_id":285,"row_id":15,"valid":true},"output":{"section_id":285,"row_id":15,"valid":true}}
+{"input":{"section":"Infield Loge Box 146","row":"S"},"expected":{"section_id":40,"row_id":16,"valid":true},"output":{"section_id":40,"row_id":16,"valid":true}}
+{"input":{"section":"11RS","row":"H"},"expected":{"section_id":199,"row_id":7,"valid":true},"output":{"section_id":199,"row_id":7,"valid":true}}
+{"input":{"section":"Field Box MVP 4","row":"D"},"expected":{"section_id":165,"row_id":3,"valid":true},"output":{"section_id":165,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 39","row":"M"},"expected":{"section_id":149,"row_id":11,"valid":true},"output":{"section_id":149,"row_id":11,"valid":true}}
+{"input":{"section":"Top Deck TD2","row":"E"},"expected":{"section_id":182,"row_id":4,"valid":true},"output":{"section_id":182,"row_id":4,"valid":true}}
+{"input":{"section":"Reserve MVP 5","row":"R"},"expected":{"section_id":109,"row_id":15,"valid":true},"output":{"section_id":109,"row_id":15,"valid":true}}
+{"input":{"section":"Preferred Loge Box 153","row":"O"},"expected":{"section_id":4,"row_id":13,"valid":true},"output":{"section_id":4,"row_id":13,"valid":true}}
+{"input":{"section":"49FD","row":"H"},"expected":{"section_id":215,"row_id":8,"valid":true},"output":{"section_id":215,"row_id":8,"valid":true}}
+{"input":{"section":"46FD","row":"N"},"expected":{"section_id":214,"row_id":12,"valid":true},"output":{"section_id":214,"row_id":12,"valid":true}}
+{"input":{"section":"123LG","row":"H"},"expected":{"section_id":123,"row_id":7,"valid":true},"output":{"section_id":123,"row_id":7,"valid":true}}
+{"input":{"section":"61RS","row":"DD"},"expected":{"section_id":45,"row_id":3,"valid":true},"output":{"section_id":45,"row_id":3,"valid":true}}
+{"input":{"section":"11FD","row":"B"},"expected":{"section_id":272,"row_id":1,"valid":true},"output":{"section_id":272,"row_id":1,"valid":true}}
+{"input":{"section":"145LG","row":"A"},"expected":{"section_id":37,"row_id":0,"valid":true},"output":{"section_id":37,"row_id":0,"valid":true}}
+{"input":{"section":"Loge Box 164","row":"A"},"expected":{"section_id":277,"row_id":0,"valid":true},"output":{"section_id":277,"row_id":0,"valid":true}}
+{"input":{"section":"6TD","row":"M"},"expected":{"section_id":1,"row_id":11,"valid":true},"output":{"section_id":1,"row_id":11,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 104","row":"T"},"expected":{"section_id":188,"row_id":17,"valid":true},"output":{"section_id":188,"row_id":17,"valid":true}}
+{"input":{"section":"53 FD","row":"E"},"expected":{"section_id":178,"row_id":5,"valid":true},"output":{"section_id":178,"row_id":5,"valid":true}}
+{"input":{"section":"138LG","row":"G"},"expected":{"section_id":65,"row_id":6,"valid":true},"output":{"section_id":65,"row_id":6,"valid":true}}
+{"input":{"section":"Preferred Reserve 43","row":"S"},"expected":{"section_id":204,"row_id":16,"valid":true},"output":{"section_id":204,"row_id":16,"valid":true}}
+{"input":{"section":"45FD","row":"B"},"expected":{"section_id":211,"row_id":1,"valid":true},"output":{"section_id":211,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Loge Box 137","row":"H"},"expected":{"section_id":75,"row_id":7,"valid":true},"output":{"section_id":75,"row_id":7,"valid":true}}
+{"input":{"section":"127LG","row":"L"},"expected":{"section_id":127,"row_id":10,"valid":true},"output":{"section_id":127,"row_id":10,"valid":true}}
+{"input":{"section":"Lower Reserve LR23","row":"B"},"expected":{"section_id":197,"row_id":1,"valid":true},"output":{"section_id":197,"row_id":1,"valid":true}}
+{"input":{"section":"147LG","row":"F"},"expected":{"section_id":39,"row_id":5,"valid":true},"output":{"section_id":39,"row_id":5,"valid":true}}
+{"input":{"section":"125LG","row":"N"},"expected":{"section_id":129,"row_id":12,"valid":true},"output":{"section_id":129,"row_id":12,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 120","row":"D"},"expected":{"section_id":126,"row_id":3,"valid":true},"output":{"section_id":126,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box FB46","row":"D"},"expected":{"section_id":214,"row_id":3,"valid":true},"output":{"section_id":214,"row_id":3,"valid":true}}
+{"input":{"section":"40FD","row":"F"},"expected":{"section_id":208,"row_id":5,"valid":true},"output":{"section_id":208,"row_id":5,"valid":true}}
+{"input":{"section":"Loge Box 161","row":"L"},"expected":{"section_id":63,"row_id":10,"valid":true},"output":{"section_id":63,"row_id":10,"valid":true}}
+{"input":{"section":"7FD","row":"J"},"expected":{"section_id":168,"row_id":8,"valid":true},"output":{"section_id":168,"row_id":8,"valid":true}}
+{"input":{"section":"5TD","row":"B"},"expected":{"section_id":289,"row_id":1,"valid":true},"output":{"section_id":289,"row_id":1,"valid":true}}
+{"input":{"section":"5RS","row":"C"},"expected":{"section_id":109,"row_id":2,"valid":true},"output":{"section_id":109,"row_id":2,"valid":true}}
+{"input":{"section":"6RS","row":"F"},"expected":{"section_id":106,"row_id":5,"valid":true},"output":{"section_id":106,"row_id":5,"valid":true}}
+{"input":{"section":"167LG","row":"G"},"expected":{"section_id":135,"row_id":6,"valid":true},"output":{"section_id":135,"row_id":6,"valid":true}}
+{"input":{"section":"48FD","row":"G"},"expected":{"section_id":216,"row_id":7,"valid":true},"output":{"section_id":216,"row_id":7,"valid":true}}
+{"input":{"section":"27FD","row":"E"},"expected":{"section_id":285,"row_id":4,"valid":true},"output":{"section_id":285,"row_id":4,"valid":true}}
+{"input":{"section":"Lower Reserve LR55","row":"B"},"expected":{"section_id":77,"row_id":1,"valid":true},"output":{"section_id":77,"row_id":1,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 127","row":"F"},"expected":{"section_id":127,"row_id":5,"valid":true},"output":{"section_id":127,"row_id":5,"valid":true}}
+{"input":{"section":"302PR","row":"C"},"expected":{"section_id":114,"row_id":2,"valid":true},"output":{"section_id":114,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Reserve IFR10","row":"K"},"expected":{"section_id":217,"row_id":9,"valid":true},"output":{"section_id":217,"row_id":9,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"B"},"expected":{"section_id":289,"row_id":1,"valid":true},"output":{"section_id":289,"row_id":1,"valid":true}}
+{"input":{"section":"Infield Box IFB34","row":"P"},"expected":{"section_id":159,"row_id":14,"valid":true},"output":{"section_id":159,"row_id":14,"valid":true}}
+{"input":{"section":"48RS","row":"R"},"expected":{"section_id":132,"row_id":15,"valid":true},"output":{"section_id":132,"row_id":15,"valid":true}}
+{"input":{"section":"Loge Box MVP 133","row":"H"},"expected":{"section_id":71,"row_id":7,"valid":true},"output":{"section_id":71,"row_id":7,"valid":true}}
+{"input":{"section":"11RS","row":"J"},"expected":{"section_id":199,"row_id":8,"valid":true},"output":{"section_id":199,"row_id":8,"valid":true}}
+{"input":{"section":"Loge 162","row":"A"},"expected":{"section_id":279,"row_id":0,"valid":true},"output":{"section_id":279,"row_id":0,"valid":true}}
+{"input":{"section":"Loge 131","row":"E"},"expected":{"section_id":69,"row_id":4,"valid":true},"output":{"section_id":69,"row_id":4,"valid":true}}
+{"input":{"section":"44RS","row":"U"},"expected":{"section_id":189,"row_id":18,"valid":true},"output":{"section_id":189,"row_id":18,"valid":true}}
+{"input":{"section":"16FD","row":"J"},"expected":{"section_id":262,"row_id":8,"valid":true},"output":{"section_id":262,"row_id":8,"valid":true}}
+{"input":{"section":"47RS","row":"R"},"expected":{"section_id":287,"row_id":15,"valid":true},"output":{"section_id":287,"row_id":15,"valid":true}}
+{"input":{"section":"51FD","row":"L"},"expected":{"section_id":180,"row_id":11,"valid":true},"output":{"section_id":180,"row_id":11,"valid":true}}
+{"input":{"section":"Loge 102","row":"A"},"expected":{"section_id":247,"row_id":0,"valid":true},"output":{"section_id":247,"row_id":0,"valid":true}}
+{"input":{"section":"Preferred Loge Box 153","row":"E"},"expected":{"section_id":4,"row_id":4,"valid":true},"output":{"section_id":4,"row_id":4,"valid":true}}
+{"input":{"section":"46FD","row":"O"},"expected":{"section_id":214,"row_id":13,"valid":true},"output":{"section_id":214,"row_id":13,"valid":true}}
+{"input":{"section":"Top Deck 5","row":"E"},"expected":{"section_id":289,"row_id":4,"valid":true},"output":{"section_id":289,"row_id":4,"valid":true}}
+{"input":{"section":"Loge Box 159","row":"S"},"expected":{"section_id":13,"row_id":16,"valid":true},"output":{"section_id":13,"row_id":16,"valid":true}}
+{"input":{"section":"12FD","row":"A"},"expected":{"section_id":258,"row_id":0,"valid":true},"output":{"section_id":258,"row_id":0,"valid":true}}
+{"input":{"section":"Reserve MVP 10","row":"S"},"expected":{"section_id":217,"row_id":16,"valid":true},"output":{"section_id":217,"row_id":16,"valid":true}}
+{"input":{"section":"Loge 118","row":"B"},"expected":{"section_id":47,"row_id":1,"valid":true},"output":{"section_id":47,"row_id":1,"valid":true}}
+{"input":{"section":"Pavilion 306","row":"C"},"expected":{"section_id":115,"row_id":2,"valid":true},"output":{"section_id":115,"row_id":2,"valid":true}}
+{"input":{"section":"36FD","row":"E"},"expected":{"section_id":230,"row_id":4,"valid":true},"output":{"section_id":230,"row_id":4,"valid":true}}
+{"input":{"section":"27RS","row":"M"},"expected":{"section_id":193,"row_id":11,"valid":true},"output":{"section_id":193,"row_id":11,"valid":true}}
+{"input":{"section":"48FD","row":"A"},"expected":{"section_id":216,"row_id":1,"valid":true},"output":{"section_id":216,"row_id":1,"valid":true}}
+{"input":{"section":"INFIELD BOX VALUE 39","row":"K"},"expected":{"section_id":196,"row_id":9,"valid":true},"output":{"section_id":196,"row_id":9,"valid":true}}
+{"input":{"section":"39BL","row":"4"},"expected":{"section_id":174,"row_id":3,"valid":true},"output":{"section_id":174,"row_id":3,"valid":true}}
+{"input":{"section":"148LG","row":"F"},"expected":{"section_id":36,"row_id":5,"valid":true},"output":{"section_id":36,"row_id":5,"valid":true}}
+{"input":{"section":"Preferred Loge Box Value Front Row 164","row":"A"},"expected":{"section_id":277,"row_id":0,"valid":true},"output":{"section_id":277,"row_id":0,"valid":true}}
+{"input":{"section":"28RS","row":"M"},"expected":{"section_id":133,"row_id":11,"valid":true},"output":{"section_id":133,"row_id":11,"valid":true}}
+{"input":{"section":"All You Can Eat Right Field Pavilion VIP 306","row":"C"},"expected":{"section_id":115,"row_id":2,"valid":true},"output":{"section_id":115,"row_id":2,"valid":true}}
+{"input":{"section":"13TD","row":"D"},"expected":{"section_id":237,"row_id":3,"valid":true},"output":{"section_id":237,"row_id":3,"valid":true}}
+{"input":{"section":"Field Box FB47","row":"B"},"expected":{"section_id":213,"row_id":1,"valid":true},"output":{"section_id":213,"row_id":1,"valid":true}}
+{"input":{"section":"Loge Box 158","row":"M"},"expected":{"section_id":12,"row_id":11,"valid":true},"output":{"section_id":12,"row_id":11,"valid":true}}
+{"input":{"section":"Pavilion 309","row":"O"},"expected":{"section_id":88,"row_id":13,"valid":true},"output":{"section_id":88,"row_id":13,"valid":true}}
+{"input":{"section":"26RS","row":"AA"},"expected":{"section_id":194,"row_id":1,"valid":true},"output":{"section_id":194,"row_id":1,"valid":true}}
+{"input":{"section":"Loge Box VIP \u0026 MVP 133","row":"H"},"expected":{"section_id":71,"row_id":7,"valid":true},"output":{"section_id":71,"row_id":7,"valid":true}}
+{"input":{"section":"Left Field Pavilion 305","row":"Q"},"expected":{"section_id":101,"row_id":15,"valid":true},"output":{"section_id":101,"row_id":15,"valid":true}}
+{"input":{"section":"All You Can Eat Right Field Pavilion VIP 304","row":"D"},"expected":{"section_id":117,"row_id":3,"valid":true},"output":{"section_id":117,"row_id":3,"valid":true}}
+{"input":{"section":"Preferred Reserve 28","row":"L"},"expected":{"section_id":133,"row_id":10,"valid":true},"output":{"section_id":133,"row_id":10,"valid":true}}
+{"input":{"section":"Loge 120","row":"L"},"expected":{"section_id":126,"row_id":10,"valid":true},"output":{"section_id":126,"row_id":10,"valid":true}}
+{"input":{"section":"Reserve MVP 2","row":"G"},"expected":{"section_id":110,"row_id":6,"valid":true},"output":{"section_id":110,"row_id":6,"valid":true}}
+{"input":{"section":"Infield Box Value 39","row":"N"},"expected":{"section_id":196,"row_id":12,"valid":true},"output":{"section_id":196,"row_id":12,"valid":true}}
+{"input":{"section":"Infield Loge Box Value 148","row":"L"},"expected":{"section_id":36,"row_id":10,"valid":true},"output":{"section_id":36,"row_id":10,"valid":true}}
+{"input":{"section":"Infield Reserve Value VIP 36","row":"B"},"expected":{"section_id":150,"row_id":1,"valid":true},"output":{"section_id":150,"row_id":1,"valid":true}}
+{"input":{"section":"Reserve R42","row":"JJ"},"expected":{"section_id":124,"row_id":8,"valid":true},"output":{"section_id":124,"row_id":8,"valid":true}}
+{"input":{"section":"39FD","row":"N"},"expected":{"section_id":196,"row_id":12,"valid":true},"output":{"section_id":196,"row_id":12,"valid":true}}
+{"input":{"section":"27FD","row":"G"},"expected":{"section_id":285,"row_id":6,"valid":true},"output":{"section_id":285,"row_id":6,"valid":true}}
+{"input":{"section":"38RS","row":"JJ"},"expected":{"section_id":248,"row_id":8,"valid":true},"output":{"section_id":248,"row_id":8,"valid":true}}
+{"input":{"section":"52FD","row":"D"},"expected":{"section_id":177,"row_id":4,"valid":true},"output":{"section_id":177,"row_id":4,"valid":true}}
+{"input":{"section":"12TD","row":"L"},"expected":{"section_id":207,"row_id":10,"valid":true},"output":{"section_id":207,"row_id":10,"valid":true}}
+{"input":{"section":"Loge Box 162","row":"A"},"expected":{"section_id":279,"row_id":0,"valid":true},"output":{"section_id":279,"row_id":0,"valid":true}}
+{"input":{"section":"160LG","row":"E"},"expected":{"section_id":281,"row_id":4,"valid":true},"output":{"section_id":281,"row_id":4,"valid":true}}
+{"input":{"section":"Infield Reserve IFR11","row":"C"},"expected":{"section_id":199,"row_id":2,"valid":true},"output":{"section_id":199,"row_id":2,"valid":true}}
+{"input":{"section":"306PR","row":"B"},"expected":{"section_id":115,"row_id":1,"valid":true},"output":{"section_id":115,"row_id":1,"valid":true}}
+{"input":{"section":"146LG","row":"P"},"expected":{"section_id":40,"row_id":14,"valid":true},"output":{"section_id":40,"row_id":14,"valid":true}}
+{"input":{"section":"49RS","row":"AA"},"expected":{"section_id":246,"row_id":0,"valid":true},"output":{"section_id":246,"row_id":0,"valid":true}}
+{"input":{"section":"Loge 159","row":"O"},"expected":{"section_id":13,"row_id":13,"valid":true},"output":{"section_id":13,"row_id":13,"valid":true}}
+{"input":{"section":"129LG","row":"C"},"expected":{"section_id":120,"row_id":2,"valid":true},"output":{"section_id":120,"row_id":2,"valid":true}}
+{"input":{"section":"48FD","row":"A"},"expected":{"section_id":216,"row_id":1,"valid":true},"output":{"section_id":216,"row_id":1,"valid":true}}
+{"input":{"section":"29FD","row":"S"},"expected":{"section_id":231,"row_id":16,"valid":true},"output":{"section_id":231,"row_id":16,"valid":true}}
+{"input":{"section":"Loge Box 168","row":"K"},"expected":{"section_id":284,"row_id":9,"valid":true},"output":{"section_id":284,"row_id":9,"valid":true}}
+{"input":{"section":"Preferred Reserve 35","row":"F"},"expected":{"section_id":153,"row_id":5,"valid":true},"output":{"section_id":153,"row_id":5,"valid":true}}
+{"input":{"section":"Loge 159","row":"S"},"expected":{"section_id":13,"row_id":16,"valid":true},"output":{"section_id":13,"row_id":16,"valid":true}}
+{"input":{"section":"10FD","row":"L"},"expected":{"section_id":260,"row_id":10,"valid":true},"output":{"section_id":260,"row_id":10,"valid":true}}
+{"input":{"section":"145LG","row":"F"},"expected":{"section_id":37,"row_id":5,"valid":true},"output":{"section_id":37,"row_id":5,"valid":true}}
+{"input":{"section":"Top Deck TD9","row":"H"},"expected":{"section_id":11,"row_id":7,"valid":true},"output":{"section_id":11,"row_id":7,"valid":true}}
+{"input":{"section":"Top Deck 6","row":"E"},"expected":{"section_id":1,"row_id":4,"valid":true},"output":{"section_id":1,"row_id":4,"valid":true}}
+{"input":{"section":"44RS","row":"C"},"expected":{"section_id":189,"row_id":2,"valid":true},"output":{"section_id":189,"row_id":2,"valid":true}}
+{"input":{"section":"Infield Box IFB29","row":"B"},"expected":{"section_id":231,"row_id":1,"valid":true},"output":{"section_id":231,"row_id":1,"valid":true}}
+{"input":{"section":"2DG","row":"HH"},"expected":{"section_id":99,"row_id":7,"valid":true},"output":{"section_id":99,"row_id":7,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"C"},"expected":{"section_id":193,"row_id":2,"valid":true},"output":{"section_id":193,"row_id":2,"valid":true}}
+{"input":{"section":"51RS","row":"C"},"expected":{"section_id":81,"row_id":2,"valid":true},"output":{"section_id":81,"row_id":2,"valid":true}}
+{"input":{"section":"Preferred Reserve Front Row 52","row":"A"},"expected":{"section_id":82,"row_id":0,"valid":true},"output":{"section_id":82,"row_id":0,"valid":true}}
+{"input":{"section":"RESERVE VIP 4","row":"B"},"expected":{"section_id":108,"row_id":1,"valid":true},"output":{"section_id":108,"row_id":1,"valid":true}}
+{"input":{"section":"148LG","row":"C"},"expected":{"section_id":36,"row_id":2,"valid":true},"output":{"section_id":36,"row_id":2,"valid":true}}
+{"input":{"section":"24RS","row":"E"},"expected":{"section_id":255,"row_id":4,"valid":true},"output":{"section_id":255,"row_id":4,"valid":true}}
+{"input":{"section":"7FD","row":"C"},"expected":{"section_id":168,"row_id":2,"valid":true},"output":{"section_id":168,"row_id":2,"valid":true}}
+{"input":{"section":"4TD","row":"E"},"expected":{"section_id":229,"row_id":4,"valid":true},"output":{"section_id":229,"row_id":4,"valid":true}}
+{"input":{"section":"37FD","row":"S"},"expected":{"section_id":186,"row_id":16,"valid":true},"output":{"section_id":186,"row_id":16,"valid":true}}
+{"input":{"section":"44FD","row":"E"},"expected":{"section_id":212,"row_id":4,"valid":true},"output":{"section_id":212,"row_id":4,"valid":true}}
+{"input":{"section":"Reserve MVP 5","row":"C"},"expected":{"section_id":109,"row_id":2,"valid":true},"output":{"section_id":109,"row_id":2,"valid":true}}
+{"input":{"section":"Top Deck 7","row":"J"},"expected":{"section_id":201,"row_id":8,"valid":true},"output":{"section_id":201,"row_id":8,"valid":true}}
+{"input":{"section":"Preferred Reserve 27","row":"O"},"expected":{"section_id":193,"row_id":13,"valid":true},"output":{"section_id":193,"row_id":13,"valid":true}}
