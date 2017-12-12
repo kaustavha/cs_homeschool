@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tulip Test Script</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+      html, body {
+        height: 100%;
+      }
+
+      #success, #failure {
+        display: none;
+        min-height: 100%;
+        padding: 25px;
+
+        color: white;
+        font-size: 48px;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      #success {
+        background-color: #2ecc71;
+      }
+
+      #failure {
+        background-color: #e74c3c;
+      }
+
+      .content {
+        max-width: 50%;
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 96px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="success">
+      <div class="content">
+        <div class="icon">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </div>
+
+        Success! You're all set for the interview.
+      </div>
+    </div>
+    <div id="failure">
+      <div class="content">
+        <div class="icon">
+          <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+        </div>
+
+        Uh oh! There was an issue: <span id="failure-message"></span><br/><br/>Please contact us for help debugging.
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function getChromeVersion () {
+        // From: https://stackoverflow.com/a/4900484
+        var raw = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./);
+        return raw ? parseInt(raw[2], 10) : false;
+      }
+
+      function pass() {
+        document.getElementById('success').style.display = 'flex';
+      }
+
+      function fail(msg) {
+        document.getElementById('failure-message').innerText = msg;
+        document.getElementById('failure').style.display = 'flex';
+      }
+
+      function runTest() {
+        var version = getChromeVersion();
+        if (!version) {
+          fail('You must use Google Chrome, version 60 or above');
+          return;
+        }
+        if (version < 60) {
+          fail('You must use version 60 or above of Google Chrome');
+          return;
+        }
+
+        fetch('http://localhost:3265/test')
+          .then(response => response.json())
+          .then(json => {
+            if (json.ok) {
+              pass();
+            } else {
+              fail('received invalid response from server');
+            }
+          })
+          .catch(error => {
+            fail('Fetching test data failed. Did you run one of the servers before opening this file?');
+          });
+      }
+
+      runTest();
+    </script>
+  </body>
+</html>

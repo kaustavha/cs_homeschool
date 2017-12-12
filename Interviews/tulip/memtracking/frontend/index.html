@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Tracking</title>
+  </head>
+  <body>
+    <form id="filters" action="#">
+      <h1>Filters</h1>
+      <div class="page-filters">
+        <h3>Pages</h3>
+        <input type="checkbox" id="filterPageHome" name="filterPageHome" value="/" checked>
+        <label for="filterPageHome">/</label>
+        <br />
+
+        <input type="checkbox" id="filterPageProcesses" name="filterPageProcesses" value="/processes" checked>
+        <label for="filterPageProcesses">/processes</label>
+        <br />
+
+        <input type="checkbox" id="filterPageEditor" name="filterPageEditor" value="/processes/editor" checked>
+        <label for="filterPageEditor">/processes/editor</label>
+        <br />
+
+        <input type="checkbox" id="filterPageData" name="filterPageData" value="/data" checked>
+        <label for="filterPageData">/data</label>
+        <br />
+
+        <input type="checkbox" id="filterPageAnalytics" name="filterPageAnalytics" value="/analytics" checked>
+        <label for="filterPageAnalytics">/analytics</label>
+        <br />
+
+        <input type="checkbox" id="filterPagePlayer" name="filterPagePlayer" value="/player" checked>
+        <label for="filterPagePlayer">/player</label>
+      </div>
+
+      <div class="time-filters">
+        <h3>Time Range</h3>
+        <input id="filterTimeStart" type="datetime-local" value="2015-10-02T18:00"> -
+        <input id="filterTimeEnd" type="datetime-local" value="2015-10-03T03:00">
+      </div>
+    </form>
+
+    <h1>Data</h1>
+
+    <div id="statusLoading">
+      Loading...
+    </div>
+
+    <div id="statusLoaded" style="display: none">
+      <div id="scatterPlot" style="height: 450px"></div>
+
+      <h3>Stats</h3>
+      <table>
+        <tr>
+          <td><strong>Total Readings</strong></td>
+          <td><span id="statTotalReadings"></span></td>
+        </tr>
+        <tr>
+          <td><strong>Number of Crashes</strong></td>
+          <td><span id="statNumCrashes"></span></td>
+        </tr>
+        <tr>
+          <td><strong>Average Memory (All Data Points)</strong></td>
+          <td><span id="statAvgMem"></span></td>
+        </tr>
+        <tr>
+          <td><strong>Average Memory (Crashed Data Points)</strong></td>
+          <td><span id="statAvgCrashMem"></span></td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="vendor/plotly-latest.min.js"></script>
+
+    <script type="text/javascript" src="./DataLoader.js"></script>
+    <script type="text/javascript" src="./TableRenderer.js"></script>
+    <script type="text/javascript" src="./ChartRenderer.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
