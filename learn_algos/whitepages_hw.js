@@ -77,6 +77,33 @@ function reportAns() {
     }
 }
 
+function start(arr) {
+    let res = fly2(arr, 0, [], []);
+    if (!res || res.length == 0 || res[res.length-1] != 'out') return 'failure';
+    return res;
+}
+
+function fly2(arr, i, res, answer) {
+    let range = arr[i];
+    res.push(i);
+    for (var j = i+range; j > i; j--) {
+        if (j >= arr.length) {
+            res.push('out');
+            return res;
+            // if (answer.length >= res.length || answer.length == 0) answer = res;
+            // return answer;
+        } else {
+
+            return fly2(arr,j,res,answer)
+
+            // tempAns = fly2(arr, j, res, answer);
+            // if (tempAns.length != 0 && (tempAns.length < answer || answer.length == 0) && tempAns[tempAns.length-1] == 'out') answer = tempAns;
+            
+        }
+    }
+    // return answer;
+}
+
 
 
 // let inp = [0,0,0];
@@ -86,10 +113,20 @@ function reportAns() {
 // let inp = [3,4,0,1,2]; // 0, 1, o
 // let inp = [3,6,0,1,0,2,0] // 0,1,o & 0,3
 // let inp = [1,2,3,0,0,0]; // failure
-// let inp = [5,6,0,4,2,4,1,0,0,4]; //pass
+let inp = [5,6,0,4,2,4,1,0,0,4]; //pass, 0,5,9,o
 // let inp = ['k',1,'k']
-let inp = 'k';
+// let inp = 'k';
 procIn(inp);
 rc++;
 fly(inO[0], 0, inO);
 
+// console.log(start())
+console.log(start([0,0,0]));
+console.log(start([2,0,3,0,0]));
+console.log(start([1,2,1,2,0,0]));
+console.log(start([4,0,0,2,0]));
+console.log(start([3,4,0,1,2]));
+console.log(start([3,6,0,1,0,2,0]));
+console.log(start([1,2,3,0,0,0]));
+console.log(start([5,6,0,4,2,4,1,0,0,4]));
+console.log(start(['k',1,'k']));
