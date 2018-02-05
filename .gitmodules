@@ -1,9 +1,12 @@
 [submodule "learn_eth"]
 	path = learn_eth
 	url = https://github.com/kaustavha/learn_eth.git
+	branch = master
 [submodule "Interviews/segment_redis_proxy"]
 	path = Interviews/segment_redis_proxy
 	url = https://github.com/kaustavha/segment_redis_proxy.git
+	branch = master
 [submodule "Interviews/sortable-challenge"]
 	path = Interviews/sortable-challenge
 	url = https://github.com/kaustavha/sortable-challenge.git
+	branch = master
