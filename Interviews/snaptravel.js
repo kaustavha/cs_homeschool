@@ -76,44 +76,36 @@ console.log(findJumps([1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]));
 // 2 
 
 
-function stackFind(arr, m) {
-	let i = 0, stack = [], map = {}, indices=[], flipcount =0, soln = 0,
-		seeni = 0;
-	
-	while (i < arr.length) {
-	  let ele = arr[i];
-	  if (ele === 1) {
-		if (!map[soln]) map[soln] = [];
-		if (seeni !== i) map[soln].push(1);
-		i++;
-	  } else if (flipcount === m && ele === 0) {
-		soln++;
-		map[soln] = []
-		flipcount -= 1;
-		map[soln].push(1);
-		stack.push(i);
-		
-		arr[seeni] = 0;
-		seeni = i;
-		arr[seeni] = 1;
-		
-		i = stack.shift()+1;
-	  } else {
-		flipcount += 1;
-		stack.push(i);
-		map[soln].push(1);
-		i++;
-	  }
-	  
-	}
-	
-	let maxl = 0;
-	
-	for (let i in map) {
-	  if (map[i].length > maxl) maxl = map[i].length;
-	}
-	return maxl;
+function stackFind(arr, n) {
+  let i = 0, window = [], flipsn=0, flips=[], maxl =0;
+  while (i < arr.length) {
+    let el = arr[i];
+    if (el === 1) {
+      window.push(el);
+      i++;
+    } else if (el === 0 && flipsn === n ) {
+      flipsn -= 1;
+      let lastflip = flips.shift();
+      arr[lastflip] = 0;
+      i = lastflip + 1;
+      
+      if (window.length > maxl) maxl = window.length;
+      window = [];
+      
+    } else {
+      
+      flipsn += 1;
+      flips.push(i);
+      arr[i] = 1;
+      window.push(1);
+      i++;
+    }
   }
   
-  console.log(stackFind([1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1], 4))
+  if (window.length > maxl) maxl = window.length;
+  return maxl;
+}
+
+
+console.log(stackFind([1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1], 4))
 console.log(stackFind([0, 0, 0, 0, 0,1 ,1], 4))
