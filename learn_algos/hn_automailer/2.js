@@ -1,11 +1,13 @@
 // file names
 
+// const jobsListfs = './2018/jobs_test.txt',
 const jobsListfs = './2018/jobs.txt',
 	sentEmailsfs = './emailsbackup_alreadysent.txt',
 	outputApplScriptfs = './2018/final.scpt',
 	tstAs = outputApplScriptfs + 'test',
 	rejectsfs = './2018/rejects.txt',
-	rawEmailListfs = './2018/emails.txt';
+	rawEmailListfs = './2018/emails.txt',
+	salariesFs = './2018/salaries.txt';
 
 const fs = require('fs');
 let txt = fs.readFileSync(jobsListfs);
@@ -44,11 +46,14 @@ for (var i = 0; i < lines.length; i++) {
 			// new block
 			let etxt = parseEmailFromBlock(blockbuf),
 				keywords = parseBuzzwords(blockbuf);
-			// salaries.push(grabSalary(blockbuf));
+			
+			// prioritize jobs that list salary
+			let slr = grabSalary(blockbuf);
+			if (slr) salaries.push(slr);
 
-			if (etxt[0] == 'null') console.log(blockbuf);
+			// if (etxt[0] == 'null') console.log(blockbuf);
 			if (etxt.length > 0 && etxt[0] != 'null') {
-				emails.push(etxt + ' ' + grabSalary(blockbuf));
+				emails.push(etxt);
 				if (roles.length > 0) {
 					roles = roles[0];
 					roles = roles.split(',');
@@ -94,15 +99,17 @@ tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
 fs.writeFileSync(outputApplScriptfs, genAS(tb));
 fs.writeFileSync(rejectsfs, rejects.join("\n"));
 fs.writeFileSync(rawEmailListfs, emails.join("\n"));
+fs.writeFileSync(salariesFs, salaries.join("\n"));
 
 
 //========================================= End
 // Functions
 
-// const grabSalary = (blk) => blk.split('\n').shift().match(/\$*\d+/);
-
 function grabSalary(blk) {
-	return blk.split('\n')[2].match(/\$*\d+/);
+	let lines = blk.split('\n'), salary = lines[2].match(/\$\d+/);
+	if (salary && lines[2].match(/\d+/) >= 100) {
+		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
+	}
 }
 
 function parseEmailFromBlock(t, iteration) {
@@ -162,6 +169,7 @@ function parseEmailFromBlock(t, iteration) {
 			tb = tb.replace(/\s*\{at\}\s*/gi, '@');
 
 			tb = tb.replace(/\s*\(@\)\s*/gi, '@');
+			tb = tb.replace(/\s\@\s/gi, '@');
 
 
 			// tb = tb.replace(/\s*dot\s*/gi, '.');
@@ -180,19 +188,7 @@ function parseEmailFromBlock(t, iteration) {
 
 			if (tb.length > 0) console.log('2', tb);
 			buf += " " + tb;
-
-			// if (tb.length > 0) console.log(buf);
-
 		}
-
-		// if (tl.indexOf('email') > -1) {
-		// 	//snip snip
-		// 	let i = tl.indexOf('email'),
-		// 		i2 = i + 150;
-		// 	buf += tl.substring(i, i2);
-		// 	// buf += tl + l[i+1];
-		// 	emails.push(buf);
-		// }
 
 	}
 
@@ -205,17 +201,14 @@ function parseEmailFromBlock(t, iteration) {
 			if (w.indexOf('@') > -1 && w.indexOf(".") > -1) {
 				if (w.match(/@/gi).length > 1) {
 					w = w.split("@").splice(1, 2).join("@");
-					// if (w.match())
 					w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
-
 				}
 
 				if (w.length > 0) console.log('1', w);
-
-				// if (!w.match(/[a-z]+.*\@[a-z]+.*[a-z]+/gi)) console.log(w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
-				// if (w.length > 0) console.log(w);
-				if (!w.match(/name/) && !w.match(/http/)) posems.push(w);
+
+				// filter out common false matches
+				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)) posems.push(w);
 			}
 		}
 	}
@@ -223,17 +216,13 @@ function parseEmailFromBlock(t, iteration) {
 	if (posems.length == 0) {
 		if (!iteration == 1) posems = parseEmailFromBlock(parseLine2(t), 1);
 	}
+
+	// do not email peope again************************************
+	//IMPORTANT
 	posems = dedupeArr(posems);
 	let out = [];
-	if (sentEmails.indexOf(posems.join(",")) == -1) out = posems;
-	// do not email peope again************************************8\\
-	//IMPORTANT
-	// for (var i = 0; i < posems.length; i++) {
-	// 	if (sentEmails.indexOf(posems[i] == -1)) out.push(posems[i]); 
-	// }
-
-
-	// if (posems.length > 0) console.log(posems);
+	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
+	
 	return out;
 }
 
@@ -257,8 +246,9 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\<at\>\s*/gi, '@');
 	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
 	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
+	tb = tb.replace(/\s\@\s/gi, '@');
 
-	console.log(tb);
+	console.log('parseLine2', tb, '\n');
 	return tb;
 }
 
@@ -314,11 +304,21 @@ function genAsAll(obj) {
 	let c = '';
 	for (ki in obj) {
 		c += genAS(obj[ki]);
-		c += '\n delay 5 \n';
+		c += genRandDelay();
 	}
 	return c;
 }
 
+
+function genRandDelay() {
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+	}
+	let val = getRandomInt(5,30);
+	return `\n delay ${val} \n`;
+}
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
 function genAS(obj) {

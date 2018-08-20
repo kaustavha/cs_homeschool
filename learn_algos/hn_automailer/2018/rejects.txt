@@ -330,21 +330,6 @@ reply
 
 	
 
-btatum 11 days ago [-]
-
-Maersk Digital | Forward Deployed Engineer | Copenhagen, New York City, Shenzhen | FULL-TIME ONSITE VISA
-Maersk Digital is a 100+ person software engineering organization within Maersk, looking to transform and modernize global shipping. Maersk is the largest container shipping carrier in the world and provides incredible leverage to impact and improve global trade using data and technology.
-
-The team is located in Copenhagen, Denmark and we are hiring multiple positions but particularly the Forward Deployed Engineer (https://jobsearch.maersk.com/vacancies/publication?pinst=005...). This role involves directly interfacing with our customers (internal and external) to drive business outcomes and value-creating products, built on top of our digital platform (Maestro). This requires travel to the relevant sites and embedding to iteratively develop solutions. The role also focuses on contribution to our internal platform to organically grow and evolve driven by these use-cases.
-
-We are looking for technically strong team members who are also independent and desire to learn the ins-and-outs of a highly complex industry that historically has been resistant to change.
-
-More info at https://maerskdigital.io/ or ping me directly brian.tatum @ maersk.com.
-
-reply
-
-	
-
 fefb 10 days ago [-]
 
 Wow it's a cool field, I never thought about the complex system that shipping containers can be.
@@ -725,21 +710,6 @@ ttt111222333 7 days ago [-]
 
 Hi Jaros,
 Did you receive a response? And if so, how long did you wait after taking the test?
-
-reply
-
-	
-
-kumikoda 10 days ago [-]
-
-Numerai | All Engineering | San Francisco | Onsite
-slyfox @ numer.ai https://angel.co/numerai/jobs
-
-Numerai is a quant hedge fund with a distributed research platform designed specifically for AIs. We are a small team looking for ambitious individuals interested in money, decentralization and AI.
-
-Tech stack: Elixir, Go, Python, Javascript, Postgres, GraphQL, AWS, Ethereum
-
-More info: https://www.youtube.com/watch?v=Xa6L2UHTm2g https://medium.com/numerai/how-to-scale-16x-in-6-months-on-e... https://medium.com/numerai/a-new-cryptocurrency-for-coordina...
 
 reply
 
@@ -2423,25 +2393,6 @@ Over the past year, we have raised upwards of $6M and graduated from the Winter 
 Both the firmware and mechanical positions will be helping drive our next generation of products.
 
 Apply: https://deako.com/careers/
-
-reply
-
-	
-
-chriscal 10 days ago [-]
-
-Octopart | New York City | Multiple Positions | Full Time | Onsite
-Octopart (YC W07) is a search engine for electronic parts. Think Kayak, but facilitating the growth of the Internet of Things (IoT). Every month, 800,000+ electrical engineers and part buyers use Octopart to find parts, research pricing and availability, find datasheets, and select components for new designs.
-
-You'll be part of an entrepreneurial and supportive company whose employees genuinely enjoy working together to overcome interesting challenges.
-
-We use: Linux, Python, Go, MySQL, Elasticsearch, Looker, Redshift, AWS.
-
-Open Positions: Site Reliability Engineer (SRE) * Account Executive (Sales & Business Development)
-
-Contact: jobs @ octopart.com
-
-Full position details and info to apply: https://octopart.com/jobs
 
 reply
 
@@ -5046,6 +4997,21 @@ reply
 
 	
 
+Sandragiha 10 days ago [-]
+
+Alta Motors | Brisbane, CA near SF| ONSITE | Full-time
+We design, build & manufacture our Electric Motorcycles just south of San Francisco. We even manufacture our proprietary battery packs onsite. We are growing, building strategic partnerships and succeeding. Check us out at www.altamotors.co (not .com)
+
+We're Hiring. Please use the appropriate links to apply ...
+
+1) Linux Systems Admin - Software Engineer. To apply go to... https://grnh.se/359ea6d31 2) Systems Modeling Engineer. To apply ... https://grnh.se/80f1571e1 3) Structural Test Engineer. To apply ... https://grnh.se/1fdd02b31
+
+There is always some exciting news, milestones reached, fast change / fast growth, always something to learn, and it's never boring. Great perks too ... employees can to commute on an Alta bike!
+
+reply
+
+	
+
 janlin1999 10 days ago [-]
 
 DocSpot | Health Content Researcher (non-technical role at a small tech company) | Santa Clara, CA | ONSITE | http://www.docspot.com
@@ -6408,36 +6374,6 @@ reply
 
 	
 
-hellcow 10 days ago [-]
-
-Abot | Full-Stack Engineer | Venice, CA | ONSITE | https://www.abotlabs.com
-Abot automates customer service for eCommerce companies using machine learning. We integrate directly into existing tools and work out-of-the-box with a 15-minute setup.
-
-  * Early stage company with experienced founding team
-  * You'll work directly with the CEO/CTO as first engineering hire
-  * Golang stack we're proud of, very little technical debt
-  * Our office is steps from the beach
-Experience with Go is strongly preferred. Let's build some amazing technology and have fun doing it.
-Shoot me an email with a link to a project that you built or are excited about: evan @ abotlabs.com.
-
-reply
-
-	Hacker News new | comments | show | ask | jobs | submit | page 4	login
-Ask HN: Who is hiring? (August 2018)
-448 points by whoishiring 11 days ago | hide | past | web | favorite | 1006 comments
-Please state the job location and include the keywords REMOTE, INTERNS and/or VISA when the corresponding sort of candidate is welcome. When remote work is not an option, include ONSITE.
-Please only post if you personally are part of the hiring company—no recruiting firms or job boards. Only one post per month, please. If it isn't a household name, explain what your company does.
-
-Commenters: please don't reply to job posts to complain about something. It's off topic here.
-
-Readers: please only email submitters if you personally are interested in the job—no recruiters or sales calls.
-
-To search the thread, try kennytilton's WhoIsHiring browser at https://kennytilton.github.io/whoishiring/ or kristopolous' console script at https://news.ycombinator.com/item?id=10313519.
-
-
-
-	
-
 kakaorka 8 days ago [-]
 
 Do you guys sponsor visas?
@@ -7161,19 +7097,6 @@ Samsara was started by the founders of Meraki and has a small, tight-knit engine
 Our backend is powered by golang/graphql/grpc and our frontend applications use react/react native/typescript.
 
 Apply/more info at https://www.samsara.com/jobs
-
-reply
-
-	
-
-verops 10 days ago [-]
-
-VerOps | Software Engineer | Austin, TX | https://www.verops.com
-VerOps is a startup building the future of hardware simulation monitoring and triage. Our software tools track millions of simulations daily, and are used by hundreds of verification engineers to be more productive and make higher quality silicon designs.
-
-The stack is primarily Golang, C, Python, Javascript, and an optimized database design.
-
-Looking for backend or frontend engineers. You can learn more on our website and apply via email: jobs @ verops.com
 
 reply
 
@@ -8661,3 +8584,31 @@ We are looking for a motivated software engineer who is excited to work across o
 reply
 
 	
+
+G-Research 5 days ago [-]
+
+G-Research | London, UK | Full - Time | Onsite | www.gresearch.co.uk
+G-Research is a leading quantitative research and technology company. By using the latest scientific techniques, we produce world-beating predictive research and build advanced technology to analyse the world's data.
+
+We have vacancies in Information Security, Software Engineering, Information Technology, and Quantitative Research.
+
+We work with C#, .Net, C++, Haskell, JavaScript, AWS, Docker, F#, Hadoop, Kafka, Scala, Spark, Python, MongoDB, Tensorflow, Kubernetes, JVM, CyberArk, Cassandra and Ansible.
+
+We offer an exceptional employee package which includes top private healthcare and an annual discretionary bonus.
+
+Our other perks include:
+
+Bike to Work Scheme Childcare Vouchers Company Weekend Away Expert Guest Speaker Give as you Earn Pension Scheme Season Ticket Loan
+
+Apply at www.gresearch.co.uk/vacancies
+
+reply
+
+	
+
+G-Research 3 days ago [-]
+
+G-Research | London, UK | Full - Time | Onsite | www.gresearch.co.uk G-Research is a leading quantitative research and technology company. By using the latest scientific techniques, we produce world-beating predictive research and build advanced technology to analyse the world's data. We have vacancies in Information Security, Software Engineering, Information Technology, and Quantitative Research. We work with C#, .Net, C++, Haskell, JavaScript, AWS, Docker, F#, Hadoop, Kafka, Scala, Spark, Python, MongoDB, Tensorflow, Kubernetes, JVM, CyberArk, Cassandra and Ansible. We offer an exceptional employee package which includes top private healthcare and an annual discretionary bonus. Our other perks include: Bike to Work Scheme Childcare Vouchers Company Weekend Away Expert Guest Speaker Give as you Earn Pension Scheme Season Ticket Loan Apply at www.gresearch.co.uk/vacancies
+reply
+
+
