@@ -1,0 +1,22 @@
+
+tell application "Microsoft Outlook"
+ set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
+
+I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.
+I have experience with react, go, kubernetes  and noticed them in the post.
+Here's my resume: <a href='http://kaustavha.github.io/kaustav-haldar-resume/'>bit.ly/khaldarcv</a> 
+          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> 
+          Github: <a href='https://github.com/kaustavha'>kaustavha</a> 
+
+Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?
+Looking forward to hearing back from you.
+
+Thanks, 
+Kaustav Haldar 
+</p>"
+   set newMessage to make new outgoing message with properties {subject:"HackerNews FT SE opportunities", content:theContent} 
+   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}
+    make new cc recipient at newMessage with properties {email address: {address:"kausthal@gmail.com"}}
+    make new cc recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}
+   send message id (id of newMessage)
+end tell
