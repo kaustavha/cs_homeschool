@@ -1,7 +1,7 @@
 // file names
 
 // const jobsListfs = './2018/jobs_test.txt',
-const jobsListfs = './2018/jobs.txt',
+const jobsListfs = './2018/jobs_sept.txt',
 	sentEmailsfs = './emailsbackup_alreadysent.txt',
 	outputApplScriptfs = './2018/final.scpt',
 	tstAs = outputApplScriptfs + 'test',
@@ -31,14 +31,14 @@ let block = false,
 	postername;
 
 let rejects = [];
-
+let matcheskeywords = 0;
 // push first test block
 // console.log(lines.length);
 
 
 for (var i = 0; i < lines.length; i++) {
 	let tl = lines[i];
-	if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1) {
+	if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1 || tl.indexOf('|') > -1) {
 
 		if (!block) {
 			block = true;
@@ -47,6 +47,9 @@ for (var i = 0; i < lines.length; i++) {
 			let etxt = parseEmailFromBlock(blockbuf),
 				keywords = parseBuzzwords(blockbuf);
 			
+			// generate keyword match stats
+			if (keywords.length) matcheskeywords++;
+
 			// prioritize jobs that list salary
 			let slr = grabSalary(blockbuf);
 			if (slr) salaries.push(slr);
@@ -90,13 +93,14 @@ let asc = genAsAll(blocks);
 // console.log(dedupeArr(allroles));
 // console.log(genAsAll(blocks));
 // console.log(lines);
-console.log(emails.length);
-console.log(rejects.length);
+console.log('emails ', emails.length);
+console.log('rejects ', rejects.length);
+console.log('keyword matches ', matcheskeywords);
 
 fs.writeFileSync(outputApplScriptfs, asc);
 let tb = blocks[0];
 tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
-fs.writeFileSync(outputApplScriptfs, genAS(tb));
+fs.writeFileSync(tstAs, genAS(tb));
 fs.writeFileSync(rejectsfs, rejects.join("\n"));
 fs.writeFileSync(rawEmailListfs, emails.join("\n"));
 fs.writeFileSync(salariesFs, salaries.join("\n"));
@@ -124,9 +128,6 @@ function parseEmailFromBlock(t, iteration) {
 		for (var j = 0; j < words.length; j++) {
 			let word = words[j],
 				tb = '';
-
-			// if (word.match(/advocacy/)) console.log(words.slice(0, j+5));
-
 
 			if (word.match(/email/gi) ||
 				word.match(/e-mail/gi)) {
@@ -272,22 +273,29 @@ function parseBuzzwords(txt) {
 	match(/[a-z]+/gi),
 		kspark = "MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS, javascript. angular, node".match(/[a-z]+/gi),
 		python = ["pip", "python", "anaconda"],
-		keth = "blockchain ethereum solidity truffle".match(/[a-z]+/gi);
+		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi);
 	let keywords = [
-		"AWS",
-		"docker",
-		"go", "golang",
-		"python", "ruby", "java", "c++", "lua", "js", "javascript", "bash", "shell", "scripting",
+		"python", "ruby", "java", "c++", "lua", "bash", "shell", "scripting",
 		"mongodb", "mysql", "sql", "hadoop", "hive",
-		"elasticsearch", "logstash", "kibana", "kafka", "grafana", "zookeeper",
+		"kafka", "grafana", "zookeeper",
 		"chef", "ansible", "travis", "jenkins", "kubernetes",
-		"angular", "angularjs", "react", "reactjs", "redux", "react-native", "rails", "coffeescript",
+		"rails", "coffeescript",
 		"bootstrap", "nodejs",
-		"blockchain", "ethereum", "solidity",
+		"blockchain", "ethereum", "solidity", "hyperledger",
 		"redis", "node", "php", "rails",
 		"backend", "web", "mobile", "REST", "cassandra",
 		"linux", "nginx", "apache", "open source"
 	];
+
+	let keywordsMap = {
+		"AWS": ['aws', 'amazon'],
+		'docker': ['docker', 'containers'],
+		'javascript': ['es6', 'js', 'javascript', 'es7', 'esnext'],
+		'react': ['react', 'reactjs', "react-native", 'redux', 'mobex'],
+		'angular': ['angular', 'angularjs'],
+		'go': ['golang', 'go'],
+		'elk': ['kibana', 'logstash', 'elasticsearch']
+	}
 
 	let words = txt.match(/[a-z]+/gi),
 		out = [];
@@ -296,7 +304,14 @@ function parseBuzzwords(txt) {
 		let twlc = words[i].toLowerCase();
 
 		if (keywords.indexOf(twlc) != -1) out.push(keywords[keywords.indexOf(twlc)]);
+
+		for (key in keywordsMap) {
+			if (keywordsMap[key].indexOf(twlc) != -1) out.push(key);
+		}
 	}
+
+	// match open source
+	if (txt.match(/open source/gi)) out.push('opensource');
 	return dedupeArr(out);
 }
 
@@ -329,7 +344,9 @@ function genAS(obj) {
 	match(/[a-z]+/gi),
 		kspark = "MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS, javascript".match(/[a-z]+/gi),
 		python = ["pip", "python", "anaconda"],
-		keth = "blockchain ethereum solidity truffle".match(/[a-z]+/gi);
+		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi),
+		addketh = false,
+		addoss = false;
 
 	let content = '';
 	let o = obj,
@@ -345,12 +362,28 @@ function genAS(obj) {
 		content += txt + "\n";
 	}
 
+	function checkForOpensourceOrEth(keyword) {
+		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
+	}
+
 	addline("Hi,");
 	addline("");
 	addline("I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.");
 
 	// add keywords
 	if (k.length > 0) {
+
+
+		// trim secondary keywords if any for addition later and toggle flag for open source/eth
+		for (var i = 0; i < k.length; i++) {
+			let keyword = k[i];
+			if (checkForOpensourceOrEth(keyword)) {
+				k.splice(i, 1);
+			}
+			if (keyword === 'opensource') addoss = true;
+			if (match(k, keth)) addketh = true;
+		}
+
 		let kstr = '';
 		kstr += "I have experience with ";
 
@@ -362,12 +395,15 @@ function genAS(obj) {
 		} else {
 			kstr += k[0];
 		}
-		kstr += "  and noticed them in the post."
+		kstr += " and noticed them in the post."
 		addline(kstr);
 
 		// highlight blockchain exp
-		if (match(k, keth)) {
-			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won at a hackathon nearby, Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum.");
+		if (addketh) {
+			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM");
+		}
+		if (addoss) {
+			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
 	}
 
@@ -387,7 +423,8 @@ function genAS(obj) {
 	addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
 	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
-	addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
+	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
+	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
 	addline("Looking forward to hearing back from you.");
 	addline("");
 	addline("Thanks, ");
