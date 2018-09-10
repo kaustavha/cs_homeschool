@@ -1,13 +1,14 @@
 // file names
 
 // const jobsListfs = './2018/jobs_test.txt',
-const jobsListfs = './2018/jobs_sept.txt',
-	sentEmailsfs = './emailsbackup_alreadysent.txt',
-	outputApplScriptfs = './2018/final.scpt',
+const jobsListfs = './2018/jobs_aug.txt',
+	sentEmailsfs = jobsListfs + '_emailsbackup_alreadysent.txt',
+	outputApplScriptfs = jobsListfs + '_final.scpt',
 	tstAs = outputApplScriptfs + 'test',
-	rejectsfs = './2018/rejects.txt',
-	rawEmailListfs = './2018/emails.txt',
-	salariesFs = './2018/salaries.txt';
+	rejectsfs = jobsListfs+'_rejects.txt',
+	rawEmailListfs = jobsListfs+'_emails.txt',
+	salariesFs = jobsListfs+'_salaries.txt',
+	remoteFs = jobsListfs+'_remotes.txt';
 
 const fs = require('fs');
 let txt = fs.readFileSync(jobsListfs);
@@ -18,10 +19,15 @@ txt = txt.split('\n');
 let blocks = [],
 	emails = [],
 	allroles = [],
-	salaries = [];
+	salaries = [],
+	remoteJobs = [];
 
-let sentEmails = fs.readFileSync(sentEmailsfs) + '';
-sentEmails = sentEmails.split('\n');
+let sentEmails;
+if (fs.existsSync(sentEmailsfs)) {
+	sentEmails = fs.readFileSync(sentEmailsfs, 'utf8').split('\n');
+} else {
+	sentEmails = [];
+}
 
 // block level
 let block = false,
@@ -54,6 +60,9 @@ for (var i = 0; i < lines.length; i++) {
 			let slr = grabSalary(blockbuf);
 			if (slr) salaries.push(slr);
 
+			// grab and prioritize remote jobs
+			if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
+
 			// if (etxt[0] == 'null') console.log(blockbuf);
 			if (etxt.length > 0 && etxt[0] != 'null') {
 				emails.push(etxt);
@@ -84,11 +93,13 @@ for (var i = 0; i < lines.length; i++) {
 		if (tl.match(/\|/)) roles.push(tl);
 	}
 }
+
+
+let asc = genAsAll(blocks);
 // console.log(i);
 // console.log(rejects);
 // console.log(emails);
 // console.log(emails);
-let asc = genAsAll(blocks);
 // console.log(blocks);
 // console.log(dedupeArr(allroles));
 // console.log(genAsAll(blocks));
@@ -96,24 +107,37 @@ let asc = genAsAll(blocks);
 console.log('emails ', emails.length);
 console.log('rejects ', rejects.length);
 console.log('keyword matches ', matcheskeywords);
-
-fs.writeFileSync(outputApplScriptfs, asc);
+//  MAIN FILE OUTPUTS ===========================>
 let tb = blocks[0];
 tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
 fs.writeFileSync(tstAs, genAS(tb));
+
+fs.writeFileSync(outputApplScriptfs, asc);
 fs.writeFileSync(rejectsfs, rejects.join("\n"));
 fs.writeFileSync(rawEmailListfs, emails.join("\n"));
 fs.writeFileSync(salariesFs, salaries.join("\n"));
+fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
 
 
 //========================================= End
 // Functions
 
 function grabSalary(blk) {
-	let lines = blk.split('\n'), salary = lines[2].match(/\$\d+/);
+	let lines = blk.split('\n');
+	if (!lines || lines.length < 3) return;
+	let salary = lines[2].match(/\$\d+/);
 	if (salary && lines[2].match(/\d+/) >= 100) {
 		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
 	}
+}
+
+function isRemote(blk) {
+
+	if (blk.match(/remote/gi) && blk.match(/|/gi)) return blk;
+	let titleLine = blk.split('\n');
+	if (!titleLine || titleLine.length < 3) return;
+	titleLine = titleLine[2];
+	if (blk.match(/remote/gi)) return blk;
 }
 
 function parseEmailFromBlock(t, iteration) {
