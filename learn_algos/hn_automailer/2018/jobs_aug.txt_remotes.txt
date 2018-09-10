@@ -53,20 +53,6 @@ reply
 
 	
 
-marmaduke 10 days ago [-]
-
-Is the US/Canada restriction on remote for financial or time zone reasons (or both?)?
-reply
-
-	
-
-armandososa 9 days ago [-]
-
-I'm in Mexico. And yes I find that distinction weird and arbitrary. There's a lot of "Remote OK but USA and Canada only" posts in this list. I'm sure there's a very good reason that has nothing to do with discrimination but… well, that wouldn't be surprising either.
-reply
-
-	
-
 Rooam (https://rooam.co) | Senior Software Engineers | Freelancer | Remote
 Rooam is a pay tab from your phone solution.
 
@@ -94,47 +80,6 @@ We are hiring in SF, Hamburg (Germany) and Remote.
 https://mesosphere.com/careers/?gh_jid=1265717 https://mesosphere.com/careers/?gh_jid=1265690 https://mesosphere.com/careers/?gh_jid=1229864
 
 I'm the hiring manager and would love to hear from you.
-
-reply
-
-	
-
-cweagans 10 days ago [-]
-
-Really wish you guys would open up to remote. There's a such a big talent pool you're missing out on by restricting your employee base to the Bay Area.
-reply
-
-	
-
-aercolino 8 days ago [-]
-
-META
-May I ask you to change the leading text to something more useful for remote workers?
-
-REMOTE doesn't cover but the most basic possibility and 90 matches on this page make it quite cumbersome to find what suits you.
-
-What about deprecating it and requiring posters to use instead:
-
-REMOTE_WORLD - for telecommuting from anywhere in the world
-
-REMOTE_US - for telecommuting from anywhere in the USA
-
-REMOTE_US_TX - for telecommuting from anywhere in Texas, USA
-
-REMOTE_MINUS_6 - for telecommuting from anywhere in the UTC-6 timezone, standard time
-
-REMOTE_PLUS_1 - for telecommuting from anywhere in the UTC+1 timezone, standard time
-
-Example: In the past, I telecommuted to Boston (US-MA) from Barcelona (ES). That job would have been advertised as "REMOTE_MINUS_5, REMOTE_WORLD". In fact I worked 3pm-11pm in ES (i.e. 9am-5pm in US-MA), which was certainly unusual but quite doable nonetheless.
-
-reply
-
-	
-
-ahawkins 7 days ago [-]
-
-> REMOTE doesn't cover but the most basic possibility and 90 matches on this page make it quite cumbersome to find what suits you.
-Agree. Personally I don't care what the format is, but the postings should communicate any country/time zone/geo restrictions. That saves everyone's times.
 
 reply
 
@@ -171,34 +116,6 @@ Lifestyle and Benefits
 
 ~~~ jobs@gaiagps.com ~~~
 
-reply
-
-	
-
-atomicnumber1 10 days ago [-]
-
-> Remote (So far: CA, PA, OR, SD, MT, OK, WA, WI) Any chance for other Countries?
-reply
-
-	
-
-fede_seiya 9 days ago [-]
-
-Remote from Argentina possible?
-reply
-
-	
-
-badmon 10 days ago [-]
-
-Remote from Africa(Ghana) possible?
-reply
-
-	
-
-hussein1147 8 days ago [-]
-
-Remote from NYC?
 reply
 
 	
@@ -332,13 +249,6 @@ reply
 
 	
 
-fede_seiya 9 days ago [-]
-
-Can be remote from Argentina?
-reply
-
-	
-
 Signal | SF or Remote (US only) | Full-Time | https://signal.org
 Signal is making private communication simple. As an Open Source project supported by grants and donations, Signal can put users first. There are no ads, no affiliate marketers, no creepy tracking. Just open technology for a fast, simple, and secure messaging experience. We design open protocols, develop Open Source software, and give it away for free.
 
@@ -431,13 +341,6 @@ reply
 
 	
 
-debuggerpk 4 days ago [-]
-
-Dan, Remote in asia okay?
-reply
-
-	
-
 Redbooth | Frontend, Backend, Android Engineers | San Francisco | Onsite or Remote (US/Canada only) | Full-Time
 We help companies organize their work. We provide tasks, chat, video, file share, and timeline. More than 3,000 organizations use us!
 
@@ -491,13 +394,6 @@ Aha! is the #1 tool for product managers to plan strategy and roadmaps. Aha! is 
 
 Our entire team is remote - in US, Canada and Mexico so we can collaborate during the work day.
 
-
-marmaduke 10 days ago [-]
-
-Remote from Marseille possible?
-reply
-
-	
 
 Snowplow Analytics | ONSITE (London)/REMOTE| Full-time | https://snowplowanalytics.com/
 Snowplow provides products and services to not only let companies collect the data that they want, but do transformative things with it. We're a rapidly growing startup based in London, however over half of our employees work remotely and we're passionate about continuing to support this.
@@ -780,13 +676,6 @@ reply
 
 	
 
-edrdoprz 9 days ago [-]
-
-Is Opendoor open to remote engineers?
-reply
-
-	
-
 Noom | Fullstack, Backend, iOS | NYC or REMOTE | FULLTIME | https://noom.com
 At Noom, we use scientifically-proven methods to help users get a handle on chronic medical conditions like obesity, diabetes, and heart disease. We use a variety of technologies, and get to work on hard problems that range from data warehousing to running experiments on mobile devices.
 
@@ -825,29 +714,6 @@ reply
 	
 
 Growth Marketer (http://www.pixey.io) | Marketing | Full-time | Edinburgh, UK Pixey is the online marketplace for finding and licensing Instagram images, We are seeking a Growth Marketer to kick our user acquisition channels into shape. Remote working will be considered. http://smrtr.io/HSjQ
-reply
-
-	
-
-lylo 10 days ago [-]
-
-FreeAgent, Edinburgh and REMOTE (UK-only)
-https://www.freeagent.com
-
-At FreeAgent we help freelancers and small businesses be more successful by putting them in control of their company finances.
-
-We have built an award-winning online accounting product that offers full end-to-end compliance, from time tracking to tax return filing. We're based in beautiful Edinburgh and we're growing from strength to strength with over 65,000 paying customers and strong YoY growth. Our NPS is off the charts (71!) - customers love what we do!
-
-We're a growing team of over 130 people and the majority of our team are based in Edinburgh, but we have staff distributed across the UK. If you want to help us make small businesses awesome at doing their finances, we have great opportunities in our product and engineering team. Our stack is currently Ruby/Rails, JavaScript, React.js, MySQL, RabbitMQ, Elasticsearch, SmartOS.
-
-We on a growth push and have lots of opportunities in Engineering. We’re looking for full-stack engineers, front-end specialists and experienced engineering managers.
-
-We like to work with people who show initiative and continually seek to improve themselves, their teammates, and our codebase. Our engineering teams are small and cross functional, enjoying a great degree of responsibility. We invest in our platform (code health, scalability, security) as well as working on improving and adding new features that help our customers.
-
-You can apply directly via the website – https://www.freeagent.com/company/careers – or feel free to get in touch with me directly: olly [at] freeagent [dot] com.
-
-(We are looking for UK-based full-time staff only right now)
-
 reply
 
 	
@@ -1049,13 +915,6 @@ We're growing and now looking for an Android Engineer to join our team: http://b
 
 Drop me an email if you'd like more info: michelle.coulson@tigerspike.com
 
-reply
-
-	
-
-eveywarrior 5 days ago [-]
-
-Hey there! Love Coding? Secure Code Warrior is looking for fierce developers that can write clean and good code in Scala Play, C++, Python Django, Ruby on Rails, Angular, Angular Js, Swift, React, Go, Kotlin, for a new REMOTE Project we are just starting. The position is to create small applications for our Training Platform. We are in need of developers with at least 2 years of experience and a good level of English. Are you interested? Send your resume to: earevalo@securecodewarrior.com to Evelyn Arévalo. (www.securecodewarrior.com)
 reply
 
 	
@@ -1428,17 +1287,6 @@ TechCrunch: https://techcrunch.com/2017/02/23/fossa-scores-2-2-m-seed-ro...
 To learn more about our engineering team, check out our Request for Teammates (RFT):
 
 https://docs.google.com/document/d/1lzvSSAIa1aevAt5dn1d7BYvK...
-
-reply
-
-	
-
-0xfeba 10 days ago [-]
-
-You say SF + Remote here, but listings say:
-* Open to relocation, but no full remote
-
-So can you clarify?
 
 reply
 
@@ -2096,21 +1944,6 @@ reply
 
 	
 
-RebStilly 10 days ago [-]
-
-Salesforce Security Opportunities - REMOTE and ONSITE in San Francisco, Bellevue, and Indianapolis
-Work in one of our offices, or if you are senior+ level with exceptional Appsec skills, you will be eligible to work remotely if you can’t relocate.
-
-Should you be interested, please apply here: http://bit.ly/2OxUTWa or contact Rebecca Fouts directly at rfouts@salesforce.com.
-
-While our job listings are now super broad and include multiple roles, these roles typically require the following: Web Application Security, Penetration testing, threat modeling, secure code review, and providing secure development coaching for software engineers.
-
-- The work that you will do at this scale will be impressive - Get 10% time back to do security research, open source projects, or go to conferences - Get a stipend to attend conferences - 8 days a year given to you to donate to charity of your choice
-
-reply
-
-	
-
 SFOX | Front-end Engineer, DBAs, Systems Engineer, Trading Systems Engineer, Blockchain Engineer, DevOps | Remote (US & Canada) | Full-time | $100k - $150k | https://www.sfox.com/ SFOX is a leading cryptocurrency OTC and trading platform. We are currently 20 people (12 engineers and growing). We are a YC company (S14), backed by Khosla Ventures, Social Capital, Transmedia, Blockchain Capital, and other top investors. We have had a meteoric growth over the last 4 years, trading and transacting billions of dollars of crypto.
 ## Front-end engineer
 
@@ -2170,43 +2003,6 @@ GoodRx |Sr. Software Engineer|Remote | Full time| https://bit.ly/2OyQEtz
 GoodRx is America’s #1 prescription price transparency platform. More than 8 million people use GoodRx’s website and popular mobile apps each month. We help consumers save up to 80% on their medications by delivering prices and available discounts at nearly every pharmacy in the U.S. More than 100,000 doctors use GoodRx, and our services have been positively reviewed by Good Morning America, the American Heart Association, The New York Times, ABC News, NBC News, AARP, Forbes, Consumer Reports, and many others.
 
 Our goal is to provide Americans with convenient and affordable prescription drugs. We offer solutions for consumers, employers, health plans and anyone else who shares our desire to provide affordable prescriptions to all Americans.
-
-reply
-
-	
-
-kingrolo 11 days ago [-]
-
-* NO AGENCIES OR RECRUITERS PLEASE *
-Wildfish - https://wildfish.com
-
-We're a London based consultancy who work mainly with Django.
-
-We're looking for a full stack developer to join us, ideally permanently but will consider freelance too. Primarily you'll be working on our client sites maintaining and developing Django web applications and mobile APIs, but also working on some of our own products and open source projects (https://github.com/wildfish/).
-
-Everyone in our organisation is technical, all of us working remotely, although it's handy if you're within distance of London for meetings occasionally. We're ideally looking for someone in the UK, but will possibly consider someone overseas with excellent English in a similar timezone. Some of the things we use, which it would be good for you to know some of:
-
-- Python/Django [Essential]
-
-- HTML/CSS/Javascript [Essential]
-
-- Twitter Bootstrap
-
-- React / React Native
-
-- PostgreSQL
-
-- Ubuntu Linux Server Admin
-
-- Docker
-
-- AWS, GCE, Kubernetes
-
-The most important thing is that you must be passionate about your craft, and eager to share and learn with others who feel the same. You'll need to be able to work autonomously, so it's important that you're the sort of person who has attention to detail and can be self motivated.
-
-Please email work@wildfish.com, including the salary or rate you're looking for, along with a list of 3 Django apps you like to use in projects, and a link to any code you have available online. Please also mention if you have any interest in cryptocurrency.
-
-Thanks :)
 
 reply
 
@@ -2618,29 +2414,6 @@ reply
 
 	
 
-tonyhb 10 days ago [-]
-
-Uniform Teeth » Remote or SF » Full Time » https://www.uniformteeth.com
-We're a healthcare startup that's modernizing a hugely antiquated market. Think one Medical for Orthodontics.
-
-We're building our own EMR, our own apps for patient communication, and our own manufacturing pipelines. Come work on it all! That means API, process engineering, scheduling, healthcare, real time chat, data, mobile, and UI.
-
-If you're:
-
-- Full stack
-
-- Backend (go, ruby)
-
-- Frontend (redux, react-native)
-
-You'll have responsibility and sway in terms of how things are built. You're joining an INCREDIBLE team of people from healthcare — fast, nimble engineering, the best medical team in SF/USA, incredible ops from healthcare, incredible marketing.
-
-Hit me up: tony@uniformteeth.com
-
-reply
-
-	
-
 Sonos | UX Design Director for Voice | BOSTON Onsite
 * Boston-based ONSISTE strongly preferred, opportunity for remote, Seattle or Santa Barbara. Relocation support available. * Sonos is the original wireless home sound system known for a premium experience and superior audio quality. * Lead the Sonos vision for voice interfaces.
 
@@ -2718,13 +2491,6 @@ reply
 
 	
 
-debuggerpk 6 days ago [-]
-
-does remote work even if it is asia?
-reply
-
-	
-
 ExecVision | Sr Software Engineer | Remote | Arlington, VA
 ExecVision is conversation intelligence for sales calls - we're building software that helps sales leaders understand what is going on in their calls, how to improve effectiveness, and how to focus their management time.
 
@@ -2765,20 +2531,6 @@ Extra notes:
 
 If you want to avoid the recruitment path, take on the challenge available here: https://energotest.github.io/Challenge/
 
-reply
-
-	
-
-abhishekjha 9 days ago [-]
-
-Interested. What timezones are allowed for the remote position?
-reply
-
-	
-
-ekoczwara 9 days ago [-]
-
-Unfortunately this position is _not_ remote-only. This job is partly remote (1 day/week), we work in the office for the rest of the week.
 reply
 
 	
@@ -2882,31 +2634,6 @@ reply
 
 	
 
-trhaynes 11 days ago [-]
-
-WayBetter - NYC - Onsite unless specified - http://waybetter.com/careers
-Our games make it fun to reach your goals, from weight loss to exercise to learning new skills.
-
-To date we’ve hosted more than 700,000 paying players and paid out more than $45M to winners.
-
-Currently hiring developers:
-
-* Full-Stack JavaScript Engineer (Remote OK) * React Native Engineer (Remote OK)
-
-Designers:
-
-* Product Designer * Senior Visual Designer * Visual/UI Designer
-
-And other roles:
-
-* Digital Marketing Coordinator * Marketing Data & Analytics Analyst * Office Coordinator * Product Manager * VP of Growth
-
-Feel free to email thaynes@waybetter.com (put "HN" in the subject line)
-
-reply
-
-	
-
 Corso Systems | Control Systems Engineer | Remote | Full-time | corsosystems.com
 Corso Systems is a systems integration firm focused on manufacturing execution and optimization. We work with all manufacturing industries to improve their processes through supply chain integrations, process automation, and procedural improvements.
 
@@ -2959,15 +2686,6 @@ There are a few of us in the Denver/Boulder area, but we have colleagues through
 Technologies in-use include Akka (Java), Python, Asterisk, Kamailio, and OpenStack, among others.
 
 https://usr54.dayforcehcm.com/CandidatePortal/en-US/clearcap...
-
-reply
-
-	
-
-Beans0063 10 days ago [-]
-
-Retention Rocket / Full Stack Rails/React Engineer / Data Science / San Diego or REMOTE
-Retention Rocket is a predictive retention marketing platform which enables ecommerce store owners to drive sales and retain customer accounts. As one of our early engineers you'll have a direct impact on our technical direction, product and culture. You will play a key role developing architecture and UX. If you enjoy innovating with a small team, using datara to solve problems and building with scalability in mind please email brian@retentionrocket.com
 
 reply
 
@@ -3032,12 +2750,6 @@ https://angel.co/fact-labs/jobs/404135-founding-software-eng...
 reply
 
 	
-
-Hotjar_Rec 10 days ago [-]
-
-Hotjar is a young startup that embraces remote working and personal development.
-Hotjar's culture is driven by transparency, respect, open discussion, collaboration and blunt and direct feedback. We have several positions open.
-
 
 Hotjar | Senior Software Engineer, DevOps | Remote
 
@@ -3150,15 +2862,6 @@ reply
 
 	
 
-misthop 10 days ago [-]
-
-Would you consider remote (D.C.) for the VP of engineering role? I am otherwise qualified.
-Also, how do you want people to apply? You don't seem to have any roles listed on your site
-
-reply
-
-	
-
 OnSpecta | Palo Alto & San Francisco, CA | Software Engineer, Research Engineer | Remote | Visa
 OnSpecta is an early-stage startup founded by successful serial entrepreneurs and deep learning experts, and was born out of MIT’s neuroscience lab. We offer a Deep Learning Server (DLS) which increases the performance of deep learning computations on Intel and ARM CPUs. We're a small team (<10), so you'll have a huge opportunity to make a difference.
 
@@ -3222,23 +2925,6 @@ reply
 
 	
 
-svp555 10 days ago [-]
-
-Bebo (https://bebo.com), the best live streaming app for gamers.
-Full Time, Based in SF or Remote.
-
-Looking for engineers who: Love building stuff Enjoys video games/is a gamer *Want a startup adventure, not big company
-
-Hiring 3 engineers (front-end, video pipeline, ML/Computer Vision)
-
-Team is well funded ($10M+), and founders have a good track record (over $2B+ in prior exits).
-
-email me shaan at bebo dot com to apply
-
-reply
-
-	
-
 Stealth startup | Android (Kotlin), iOS (Swift), UI/UX designer, marketing, and growth | Silicon Valley + remote (we're flexible) | Full-time only | Competitive salaries depending on role, experience, and location
 We are a stealth company, with millions in seed funding, founded by serial entrepreneurs looking to crack open the unyielding world of real estate and homeownership. This unique industry is riddled with extreme fragmentation and is plagued by a sea of uninspired product offerings. We're a team of seasoned operators and developers that loves to move fast and laughs in the face of nasty-hairy challenges that lie in our path. Home base for us is in the Silicon Valley but we have a team that spans eight countries. So whether you're in bay area, thinking of moving to SV, or are happy where you're at, we'd love to hear from you.
 
@@ -3267,13 +2953,6 @@ Qualifications - Computer Science degree (or equivalent training and experience)
 
 If you are interested, PM me or send your resume to nadeem {dot} chaudhry {at} careerbliss {dot} com
 
-reply
-
-	
-
-mxpxrocks10 10 days ago [-]
-
-Hi! https://SecurityTrails.com is looking for a few different roles for people that are very passionate about security data. Remote Team. Part time or full (or Part time leading to full time). Drop me a line: chris@securitytrails.com
 reply
 
 	
@@ -3340,29 +3019,6 @@ reply
 
 	
 
-antoviaque 10 days ago [-]
-
-REMOTE (Worldwide) - Open Source Developer on Open edX - Python/Django, Javascript (OpenCraft - Fully remote company incorporated in Berlin)
-Development specialized on the free software project Open edX, used by many universities and companies to run online courses. See edx.org, stanford.edu or fun-mooc.fr for examples of Open edX instances. We are 20 senior developers, all working remotely from Europe, North & South America, Asia & Australia. The company is not affiliated with edX, but rather contributing and working with them on various projects. This is a full time position, were you would be able to work remotely from anywhere you want, as long as you have a good internet connection. : )
-
-The Open edX platform is a large Python/Django codebase, with good code standards and architecture (a lot of the edX engineers come from MIT). You would work on different clients contracts using the platform. The clients list/references include Harvard, MIT, edX themselves, the French government, and various startups & universities currently running their own instances, or looking to create one. Tasks are very varied, from developing core platform features, custom exercises and tools for specific courses (XBlocks), customizing and deploying instances, working fullstack, operating our service infrastructure, improving our hosting platform, etc. You won't get bored here.
-
-Most of your work is published as free software (Open edX is released under the AGPL license, which requires clients to release modifications under the same license), and you would also contribute to the free software project, pushing most of your developments upstream through pull requests, contributing features, documentation or help on mailing-lists.
-
-You can read more about how we work in our handbook, at http://opencraft.com/doc/handbook/
-
-Stack: Python/Django, Ansible, AWS/OpenStack, Debian/Ubuntu, MySQL, MongoDB, PostgreSQL, RabbitMQ, Redis, Elasticsearch, JS, HTML/CSS.
-
-Nice to haves: Terraform, Vault, Packer, Prometheus, ELK, Docker, Android/iOS. We are building a modern infrastructure and having a strong DevOps presence on top of core software engineering skills is a big plus with us.
-
-Interview process: a 30 minutes Hangout with a (simple) coding exercise.
-
-To apply, fill this form: http://opencraft.com/jobs/open-source-developer/
-
-reply
-
-	
-
 Circonus | Golang and Perl Software Engineers, Technical Writer | Remote | Full-time | https://www.circonus.com/
 Circonus is a super-scalable data analytics platform for operational time series data. Think ops and engineering data enabled by a cost-effective and powerful data science platform; visualize any data, in any application, from any system, in real ­time. Our SaaS and On-­Premise solutions enable companies to combine monitoring, alerting, event processing, and predictive analytics into a unified solution.
 
@@ -3393,27 +3049,6 @@ https://jobs.lever.co/circonus/6877dd19-9dec-4fd8-948f-c2e92...
 Full job listings: https://jobs.lever.co/circonus
 
 All of our positions include a discretionary PTO policy, health insurance, gym reimbursement, a generous 401K, the opportunity for a bonus and more.
-
-reply
-
-	
-
-arrtz 11 days ago [-]
-
-Worldwide, REMOTE, full time or part time -- 100% flexibility. $70-100/hr. Expert Interviewer at Karat (https://karat.io)
-Work from anywhere in the world that has a solid internet connection. Work as much or as little as you want. Work any day, any time of day, any number of hours -- you can do 0 one week, 50 the next week, and back to 0 the next week. Only requirement there is that we want you to roughly average at least 10 hours a week, or else the training/time investment doesn't make as much sense from your end or ours.
-
-I know the above might sound a little strange, so a bit about the company for context: Karat is a Seattle-based startup that does software engineering interviews on behalf of other companies -- primarily first-round phone screens. Quickly-growing companies can spend a significant fraction of their engineers' time interviewing; we help take the load off. We've done a lot to make the interview experience better for all stakeholders that I could write whole essays about, but suffice it to say that candidates love working with us, clients love working with us, and we're well-funded and growing quickly as a result.
-
-Because of this quickly-growing demand, we're looking to hire more Expert Interviewers. The ideal candidate is a software engineer with strong written and verbal English skills with at least a few years of professional experience. Interviewing experience would be great, but we spend 25 hours (paid) training you before you even start, so if you're strong technically and love working with people we can usually make it work :) Interviews are conducted over video chat, using a collaborative code editor.
-
-Some of our interviewers are freelancers who use our scheduling model to backfill hours; others are full timers at top tech companies looking to make some extra cash; others have quit their jobs to work with us full time; some are digital nomads; one of our interviewers is road tripping around North America for a year and a half, doing anywhere from zero to 40 interviews each week depending on where he is and what the weather's like.
-
-The application form is here: https://jobs.lever.co/karat/d44ab283-c7c0-4bbd-b8c3-4dc0ced6...
-
-I know it's a pretty unique job, so if you have any questions reply here or email me at josh@karat.io and I'm happy to talk through any of it.
-
-P.S. We're also hiring for our internal team -- particularly looking for senior engineers right now; for those we generally prefer local (Seattle) candidates, though we do cover relocation. More details on those here: https://karat.io/careers, or feel free to email me if you have any questions.
 
 reply
 
@@ -3610,22 +3245,6 @@ reply
 
 	
 
-cybernoodles 10 days ago [-]
-
-Are these positions only US - Remote?
-reply
-
-	
-
-nfriedly 10 days ago [-]
-
-The TAM positions are remote in Canada, Japan, Sweden, or USA.
-The others are US Remote or on site in the US.
-
-reply
-
-	
-
 USC Information Sciences Institute | Research Programmer | Waltham, MA | Marina del Rey, CA | REMOTE | Full-time | isi.edu
 The University of Southern California Information Sciences Institute (ISI) is one of the nation’s largest, most successful university-affiliated computer research institutes. ISI’s VISTA center (https://www.isi.edu/centers/vista/overview) performs research in natural language processing (NLP), computer vision, biometrics, optical character recognition (OCR), and speech and text analytics. Much of our software is open-source and we publish in top conferences.
 
@@ -3727,15 +3346,6 @@ reply
 
 	
 
-whockey 10 days ago [-]
-
-+1 - co-founder of Plaid[1] here. Obviously biased, but would love to answer any questions anyone has about Plaid or interested in working with one of the smartest most humble teams out there. We're remote friendly and actively hiring for local talent in SF and SLC. Email is william at plaid dot com.
-[1] - plaid.com
-
-reply
-
-	
-
 448 points by whoishiring 11 days ago | hide | past | web | favorite | 1006 comments
 Please state the job location and include the keywords REMOTE, INTERNS and/or VISA when the corresponding sort of candidate is welcome. When remote work is not an option, include ONSITE.
 Please only post if you personally are part of the hiring company—no recruiting firms or job boards. Only one post per month, please. If it isn't a household name, explain what your company does.
@@ -3750,27 +3360,6 @@ To search the thread, try kennytilton's WhoIsHiring browser at https://kennytilt
 
 	
 
-
-shamidzade 10 days ago [-]
-
-Software Developer Position at Hala Systems (REMOTE, US-Based)
-We are looking for a solid software engineer with experience developing single page, serverless web apps using Node. Our existing systems and current development uses AWS, so while not required, AWS experience is a big plus. This is a full-time remote position, with some limited travel. The candidate is expected to have previous remote experience or feel confident in their ability to supply the appropriate work environment, including a sufficient internet connection, appropriate workspace, and other typical remote/home office needs. We expect availability during most of the typical work day in US time zones. This is a contract-to-hire position. The start date is ASAP.
-
-Hala is a social enterprise working to transform the nature of protection and accountability in the world’s toughest places by democratiz- ing advanced defense, sensing, and artificial intelligence technology. Hala is currently saving lives, reducing trauma, and improving
-
-resilience for millions of people. We are a team of 21 working together around the world to solve hard problems. Founded by a rocket scientist, an ex-diplomat, and an expert in using technology for good, we hail from leading educational, research, and business institutions (including Stanford, MIT, Wharton, Cambridge, UCL, Imperial, LBS, MIT-Lincoln Laboratory, Johns Hopkins Applied Physics Lab, Deloitte, Booz, and the World Bank) and are united by a mission to create a sustainable business that provides massive social impact.
-
-We are looking for a solid software engineer with experience developing single page, serverless web apps using Node. Our existing sys- tems and current development uses AWS, so while not required, AWS experience is a big plus. This is a full-time remote position, with
-
-some limited travel. The candidate is expected to have previous remote experience or feel confident in their ability to supply the appro- priate work environment, including a sufficient internet connection, appropriate workspace, and other typical remote/home office needs.
-
-We expect availability during most of the typical work day in US time zones. This is a contract-to-hire position. The start date is ASAP.
-
-More info: https://drive.google.com/file/d/18Rqfq7kzmxPfFcFNo8VOuOAKFS5...
-
-reply
-
-	
 
 BookMyScan | https://bookmyscan.co.uk | Cambridge / London, UK | REMOTE (Europe) | Full-time | Python/Django/PostgreSQL | Senior Full Stack Developer | £40-£50k
 I am the CTO at BookMyScan, and we develop online booking systems for diagnostic scans. We have a number of exciting opportunities, and therefore need to expand the development team.

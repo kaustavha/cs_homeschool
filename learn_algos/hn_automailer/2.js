@@ -132,12 +132,7 @@ function grabSalary(blk) {
 }
 
 function isRemote(blk) {
-
-	if (blk.match(/remote/gi) && blk.match(/|/gi)) return blk;
-	let titleLine = blk.split('\n');
-	if (!titleLine || titleLine.length < 3) return;
-	titleLine = titleLine[2];
-	if (blk.match(/remote/gi)) return blk;
+	if (blk.match(/remote/gi) && blk.match(/\|/gi)) return blk;
 }
 
 function parseEmailFromBlock(t, iteration) {
