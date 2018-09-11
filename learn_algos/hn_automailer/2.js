@@ -1,41 +1,57 @@
-// file names
-
-// const jobsListfs = './2018/jobs_test.txt',
-const jobsListfs = './2018/jobs_sept.txt',
-	sentEmailsfs = './emailsbackup_alreadysent.txt',
-	outputApplScriptfs = './2018/final.scpt',
-	tstAs = outputApplScriptfs + 'test',
-	rejectsfs = './2018/rejects.txt',
-	rawEmailListfs = './2018/emails.txt',
-	salariesFs = './2018/salaries.txt';
 
 const fs = require('fs');
+
+// INPUTS ==================================>
+
+// file names
+// const jobsListfs = './2018/jobs_test.txt',
+const jobsListfs = './2018/jobs_aug.txt_remotes.txt',
+	sentEmailsfs = jobsListfs + '_emailsbackup_alreadysent.txt',
+	outputApplScriptfs = jobsListfs + '_final.scpt',
+	tstAs = outputApplScriptfs + 'test',
+	rejectsfs = jobsListfs+'_rejects.txt',
+	rawEmailListfs = jobsListfs+'_emails.txt',
+	salariesFs = jobsListfs+'_salaries.txt',
+	remoteFs = jobsListfs+'_remotes.txt';
+
+// Delay min max for applescript
+let oneMin = 60,
+	fvmin = oneMin*5,
+	tenMin = oneMin*10,
+	minDelay = fvmin,
+	maxDelay = tenMin;
+
+// grab the jobs list from fs
 let txt = fs.readFileSync(jobsListfs);
 txt += '';
 let lines = txt.split('\n');
 txt = txt.split('\n');
 
+// data stores for outputs
 let blocks = [],
 	emails = [],
 	allroles = [],
-	salaries = [];
+	salaries = [], // all jobs w/ salaries
+	remoteJobs = [],
+	rejects = [],// failed to parse email;
+	matcheskeywords = 0; // how many keywords did we match? 
 
-let sentEmails = fs.readFileSync(sentEmailsfs) + '';
-sentEmails = sentEmails.split('\n');
+// try to grab a list of successfully parsed/sent emails so we dont email people twice
+let sentEmails;
+if (fs.existsSync(sentEmailsfs)) {
+	sentEmails = fs.readFileSync(sentEmailsfs, 'utf8').split('\n');
+} else {
+	sentEmails = [];
+}
 
-// block level
+// block level vars used when parsing job descr blocks
 let block = false,
 	blockbuf = '',
 	roles = [],
 	matchingKeywords = [],
 	postername;
 
-let rejects = [];
-let matcheskeywords = 0;
-// push first test block
-// console.log(lines.length);
-
-
+// main loop for creating and parsing job blocks from hackernews whos hiring copypasta
 for (var i = 0; i < lines.length; i++) {
 	let tl = lines[i];
 	if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1 || tl.indexOf('|') > -1) {
@@ -53,6 +69,9 @@ for (var i = 0; i < lines.length; i++) {
 			// prioritize jobs that list salary
 			let slr = grabSalary(blockbuf);
 			if (slr) salaries.push(slr);
+
+			// grab and prioritize remote jobs
+			if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
 
 			// if (etxt[0] == 'null') console.log(blockbuf);
 			if (etxt.length > 0 && etxt[0] != 'null') {
@@ -84,36 +103,47 @@ for (var i = 0; i < lines.length; i++) {
 		if (tl.match(/\|/)) roles.push(tl);
 	}
 }
+
+let asc = genAsAll(blocks);
 // console.log(i);
 // console.log(rejects);
 // console.log(emails);
 // console.log(emails);
-let asc = genAsAll(blocks);
 // console.log(blocks);
 // console.log(dedupeArr(allroles));
 // console.log(genAsAll(blocks));
 // console.log(lines);
-console.log('emails ', emails.length);
-console.log('rejects ', rejects.length);
-console.log('keyword matches ', matcheskeywords);
+console.log('emails parsed: ', emails.length);
+console.log('blocks w/ failed email parsing: ', rejects.length);
+console.log('jobs w/ keyword matches: ', matcheskeywords);
 
-fs.writeFileSync(outputApplScriptfs, asc);
+//  MAIN FILE OUTPUTS ===========================>
+// test block 
 let tb = blocks[0];
 tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
 fs.writeFileSync(tstAs, genAS(tb));
+
+fs.writeFileSync(outputApplScriptfs, asc);
 fs.writeFileSync(rejectsfs, rejects.join("\n"));
 fs.writeFileSync(rawEmailListfs, emails.join("\n"));
 fs.writeFileSync(salariesFs, salaries.join("\n"));
-
-
+fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
 //========================================= End
-// Functions
+
+
+// Functions ====================================>
 
 function grabSalary(blk) {
-	let lines = blk.split('\n'), salary = lines[2].match(/\$\d+/);
+	let lines = blk.split('\n');
+	if (!lines || lines.length < 3) return;
+	let salary = lines[2].match(/\$\d+/);
 	if (salary && lines[2].match(/\d+/) >= 100) {
 		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
 	}
+}
+
+function isRemote(blk) {
+	if (blk.match(/remote/gi) && blk.match(/\|/gi)) return blk;
 }
 
 function parseEmailFromBlock(t, iteration) {
@@ -168,10 +198,8 @@ function parseEmailFromBlock(t, iteration) {
 			tb = tb.replace(/\s*\(at\)\s*/gi, '@');
 			tb = tb.replace(/\s*\<at\>\s*/gi, '@');
 			tb = tb.replace(/\s*\{at\}\s*/gi, '@');
-
 			tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 			tb = tb.replace(/\s\@\s/gi, '@');
-
 
 			// tb = tb.replace(/\s*dot\s*/gi, '.');
 			tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
@@ -283,7 +311,7 @@ function parseBuzzwords(txt) {
 		"bootstrap", "nodejs",
 		"blockchain", "ethereum", "solidity", "hyperledger",
 		"redis", "node", "php", "rails",
-		"backend", "web", "mobile", "REST", "cassandra",
+		"backend", "web", "mobile", "REST", "cassandra", "frontend", "fullstack",
 		"linux", "nginx", "apache", "open source"
 	];
 
@@ -315,6 +343,7 @@ function parseBuzzwords(txt) {
 	return dedupeArr(out);
 }
 
+// generate applescript
 function genAsAll(obj) {
 	let c = '';
 	for (ki in obj) {
@@ -324,19 +353,37 @@ function genAsAll(obj) {
 	return c;
 }
 
-
+// returns a line of applescript with a random delay in range specified at the top
 function genRandDelay() {
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
 		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 	}
-	let val = getRandomInt(5,30);
+	let val = getRandomInt(minDelay,maxDelay);
 	return `\n delay ${val} \n`;
 }
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
 function genAS(obj) {
+
+	// Utils for generating applescript
+	function addline(txt) {
+		content += txt + "\n";
+	}
+
+	function checkForOpensourceOrEth(keyword) {
+		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
+	}
+
+	function match(a1, a2) {
+		for (var i = 0; i < a1.length; i++) {
+			if (a2.indexOf(a1[i]) > -1) return true;
+		}
+		return false;
+	}
+	// End
+
 	let defaultsubject = "HackerNews FT SE opportunities";
 	let fcontent = '';
 
@@ -358,22 +405,12 @@ function genAS(obj) {
 
 	let mainEmail = e[0];
 
-	function addline(txt) {
-		content += txt + "\n";
-	}
-
-	function checkForOpensourceOrEth(keyword) {
-		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
-	}
-
 	addline("Hi,");
 	addline("");
 	addline("I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.");
 
 	// add keywords
 	if (k.length > 0) {
-
-
 		// trim secondary keywords if any for addition later and toggle flag for open source/eth
 		for (var i = 0; i < k.length; i++) {
 			let keyword = k[i];
@@ -384,6 +421,7 @@ function genAS(obj) {
 			if (match(k, keth)) addketh = true;
 		}
 
+		// Add keyword match sentence
 		let kstr = '';
 		kstr += "I have experience with ";
 
@@ -405,13 +443,6 @@ function genAS(obj) {
 		if (addoss) {
 			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
-	}
-
-	function match(a1, a2) {
-		for (var i = 0; i < a1.length; i++) {
-			if (a2.indexOf(a1[i]) > -1) return true;
-		}
-		return false;
 	}
 
 	// highlight python pip commit
