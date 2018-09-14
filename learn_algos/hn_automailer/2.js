@@ -2,10 +2,12 @@
 const fs = require('fs');
 
 // INPUTS ==================================>
+//flags
+const debug = false;
 
 // file names
-// const jobsListfs = './2018/jobs_test.txt',
-const jobsListfs = './2018/jobs_aug.txt_remotes.txt',
+const jobsListfs = './2018/jobs_test.txt',
+// const jobsListfs = './2018/jobs_aug.txt_remotes.txt',
 	sentEmailsfs = jobsListfs + '_emailsbackup_alreadysent.txt',
 	outputApplScriptfs = jobsListfs + '_final.scpt',
 	tstAs = outputApplScriptfs + 'test',
@@ -140,6 +142,8 @@ function grabSalary(blk) {
 	if (salary && lines[2].match(/\d+/) >= 100) {
 		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
 	}
+	let ret = blk.match(/\$\d*/) ?  blk.match(/\$\d*/) + '====='+  blk : false;
+	return ret;
 }
 
 function isRemote(blk) {
@@ -170,7 +174,7 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<at\>/gi) ||
 				word.match(/\{at\}/gi) ||
 				word.indexOf("@") > -1) {
-				console.log('at');
+				// console.log('at');
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 				tb += words.slice(start, end).join(" ");
@@ -183,14 +187,14 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<.\>/gi) ||
 				word.match(/\{.\}/gi) ||
 				word.match(/\s*\(\.\)\s*/gi)) {
-				console.log('dot', word);
+				// console.log('dot', word);
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 
 				tb += words.slice(start, end).join(" ");
 			}
 
-			if (tb.length > 0) console.log('1', tb);
+			if (tb.length > 0 && debug) console.log('1', tb);
 
 			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 			// tb = tb.replace(/\s+at\s+/gi, '@');
@@ -215,7 +219,7 @@ function parseEmailFromBlock(t, iteration) {
 			tb = tb.replace(" __4t__ ", '@');
 
 
-			if (tb.length > 0) console.log('2', tb);
+			if (tb.length > 0 && debug) console.log('2', tb);
 			buf += " " + tb;
 		}
 
@@ -233,7 +237,7 @@ function parseEmailFromBlock(t, iteration) {
 					w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
 				}
 
-				if (w.length > 0) console.log('1', w);
+				if (w.length > 0 && debug) console.log('1', w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
 				// filter out common false matches
@@ -256,7 +260,7 @@ function parseEmailFromBlock(t, iteration) {
 }
 
 function parseLine2(tb) {
-	console.log(tb);
+	if (debug) console.log('parseline2 start', tb);
 
 	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
 	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
@@ -277,7 +281,7 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 	tb = tb.replace(/\s\@\s/gi, '@');
 
-	console.log('parseLine2', tb, '\n');
+	if (debug) console.log('parseLine2 done', tb, '\n');
 	return tb;
 }
 
