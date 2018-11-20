@@ -2,6 +2,10 @@
 // inputs and flags
 const hnurlid = '18354503';
 const debug = false;
+const remoteOnly = true;
+const includeCanada = true;
+const fetchFromHN = true;
+const keywordMatchOnly = true;
 
 // Dates for creating filenames
 const date = new Date(),
@@ -60,12 +64,6 @@ let block = false,
 	postername;
 
 let matcheskeywords = 0;
-// push first test block
-// console.log(lines.length);
-
-// (async () => {
-// 	await getHNPosts(1);
-// })()
 getHNPosts(1).then(x => {
 	main();
 })
@@ -83,10 +81,12 @@ function main() {
 	console.log('emails ', emails.length);
 	console.log('rejects ', rejects.length);
 	console.log('keyword matches ', matcheskeywords);
+	console.log('remote ', remoteJobs.length);
+	console.log('remote rejects', remoteJobsRejects.length);
 	//  MAIN FILE OUTPUTS ===========================>
 	let tb = blocks[0];
 	tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
-	fs.writeFileSync(tstAs, genAS(tb));
+	fs.writeFileSync(tstAs, genAS(tb, true));
 
 	fs.writeFileSync(outputApplScriptfs, asc);
 	fs.writeFileSync(rejectsfs, rejects.join("\n"));
@@ -126,7 +126,9 @@ function populateBlocks() {
 				// if (etxt[0] == 'null') console.log(blockbuf);
 				if (etxt.length > 0 && etxt[0] != 'null' && 
 					// desperate for remote jobs, but dont apply to others if we dont have keyword match
-					(keywords.length > 0 || isRemote(blockbuf))) {
+					(keywordMatchOnly ? keywords.length > 0 : true) &&
+					// remote only search flag
+					(remoteOnly ? isRemote(blockbuf) : true)) {
 					emails.push(etxt);
 					if (roles.length > 0) {
 						roles = roles[0];
@@ -173,6 +175,9 @@ function grabSalary(blk) {
 
 function isRemote(blk) {
 	if (blk.match(/remote/gi) && blk.match(/\|/gi)) return blk;
+	if (includeCanada) {
+		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)) return blk;
+	}
 }
 
 function parseEmailFromBlock(t, iteration) {
@@ -403,7 +408,7 @@ function genRandDelay() {
 }
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
-function genAS(obj) {
+function genAS(obj, trialRun) {
 
 	// Utils for generating applescript
 	function addline(txt) {
@@ -475,10 +480,10 @@ function genAS(obj) {
 		addline(kstr);
 
 		// highlight blockchain exp
-		if (addketh) {
-			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM");
+		if (addketh || trialRun) {
+			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. I also recieved a scholarship from the EF to attend Devcon IV this year.");
 		}
-		if (addoss) {
+		if (addoss || trialRun) {
 			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
 	}
@@ -522,15 +527,16 @@ function genAS(obj) {
 function getHNPosts(pageN) {
 	pageN = pageN || 1;
 	return new Promise(res => {
+		if (!fetchFromHN) return res();
 		return _getHNPosts(pageN).then(dat => {
 			if (dat == oldDat) {
 				fs.writeFileSync(jobsListfs, fullDat);
-				return res(fullDat);
+				return res();
 			}
 			fullDat += dat;
 			oldDat = dat;
 			pageN++;
-			return getHNPosts(pageN).then(x => res(x));
+			return getHNPosts(pageN).then(() => res());
 		});
 	})
 }
@@ -540,14 +546,29 @@ function _getHNPosts(pageN) {
 	return new Promise(res => {
 		extractContent(url).then(dat => {
 			let buf = '';
-			html = $(dat);
-			commtext = html.find('.commtext');
+			commtext = stripChildComments(dat);
 			$.each( commtext, function( key, value ) {
 				buf += $(value).html();
 			});
 			res(htmlDecodeWithLineBreaks(buf))
 		})
 	})
+}
+
+function stripChildComments(dat) {
+	html = $(dat);
+	comments = html.find('.comtr');
+	let res = [];
+	$.each(comments, (k, v) => {
+		if ($(v).find('img')) {
+			let img = $(v).find('img').get(0);
+			if (img.width == 0) {
+				let ctext = $(v).find('.commtext').get(0);
+				res.push(ctext)
+			}
+		}
+	});
+	return res;
 }
 
 function extractContent(url) {

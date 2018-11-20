@@ -1,4 +1,4 @@
-$100=====      Any Chance of visa sponsor/work permits for foreign candidates?We are currently not sponsoring or giving work permits to foreign candidates. Where are you located so I can better answer?Emergence Capital | Partner Operations Manager | San Francisco, CA | ONSITE | Full-time
+$100=====      Emergence Capital | Partner Operations Manager | San Francisco, CA | ONSITE | Full-time
 Zoom, Box, Salesforce, Yammer, Gusto.
 
 Work with the team behind $100B+ in market cap. We're looking for a Partner Operations Manager (think of it like a Chief of Staff role) to work directly with our GPs, Kevin Spain and Joe Floyd.
@@ -109,7 +109,7 @@ Apply above or reach out to jtrigg@archlabs.com
                       
                   
 
-$100=====      Lol, thanks for the JavaScript joke. Had a good laugh.Learnetto | Senior Developers | Remote | Part Time
+$100=====      Learnetto | Senior Developers | Remote | Part Time
 Learnetto is an online education site (https://learnetto.com). It's a solo bootstrapped business, steadily growing with a few thousand developers learning programming skills through tutorials and courses.
 
 I'm working on a new service to offer 1-on-1 coaching and mentoring to junior and mid level developers.
@@ -145,12 +145,6 @@ Technologies: Kafka, Kubernetes, Terraform, Bigtable, BigQuery, Beam, Postgres, 
 If you're interested and eligible to work in the UK, please email me (co-founder and CTO) directly at tim@permutive.com
                       
                   
-      I looking for sub-constracting in FP languageshttps://karma-engineering.com/lab/wiki
-                      
-                  
-      > Libraries: Cats, Cats EffectWhy, given that these are, in the context of a strict mostly-functional language, basically an unnecessary function wrapping. ;)
-                      
-                  
 
 $100=====      Blue Canvas | Sr. Engineer | San Francisco, Berlin or Remote | ~$100-120k + generous equity
 Blue Canvas (https://bluecanvas.io/) is a source control product for the Salesforce developer ecosystem.
@@ -182,40 +176,7 @@ Our team of 104 so far: http://www.recursionpharma.com/team
                       
                   
 
-$80=====      What motivated your company to open an Atlanta office?DigiFi | Software Engineer | New York City | $80k-$100k + Equity + Benefits | Full-Time, Onsite https://angel.co/digifi/jobs/57845-software-engineerDigiFi is a SaaS technology company located in New York City that provides software to help businesses make better automated decisions. Our platform lets businesses easily use automated machine learning and rules management to optimize critical decisions with no coding or technical expertise required. https://digifi.io   We are looking for experienced software engineers to join our growing team. We use React on the frontend and NodeJS on the backend, along with both SQL and MongoDB. Our applications are hosted in AWS.   The ideal candidate will have formal training in programming and professional experience with software development in either enterprise or startup environments. They will be expected to collaborate closely with a small team of engineers and ship code frequently while demonstrating a commitment to developing, testing, implementing and maintaining enterprise-quality software.   Apply on using the AngelList link or with resume to info [at] digifi.io
-                      
-                  
-
-$=====      Secfi | Software engineer(s) | Amsterdam, the Netherlands | EUR 35-60k + equity
-We're on a mission to increase employee’s private company ownership by helping them exercise their options - a complex and opaque process that typically comes with a lot of anxiety and unanswered questions. Our tools help you take control of your stock options and maximize their potential.
-
-For example: one of the most complicated things for employees is figuring out how much taxes they need to pay when exercising their Incentive Stock Options or Non-qualified Stock Options.
-
-Our recently launched tax planning tool does just that: https://www.secfi.com/option-tax-planning/
-
-Things we are building next: multiyear tax forecast analysis, recommendation engine based on various sources and fantastic UX and UI. We’ve raised funding from renowned VC investors (known from Uber, Robin Hood), are profitable and are aggressively hiring to continue automating the complex challenges in our platform. Looking for:
-
-- Front-end engineers https://www.secfi.com/careers/front-end-developer/
-Interested? Please email frederik@secfi.com to get in touch.
-                      
-                  
-      35k in a city with a ~40% tax rate and rents approaching 2k/month.Developer salaries in Europe are a joke.
-                      
-                  
-      There are a lot of really low-ball offers, but there is also a shortage of talented applicants, so you can find some stuff around for €140K or €85-110 / hour.You also don't need a car, work reasonable hours and get twice the vacation.
-                      
-                  
-      Actually though. This is awful. I loved Amsterdam, but I can't imagine why anyone would stay in Europe when even new grads can make >= 4x that in the US.35k is low even for straight out of university. With a few years of experience it’s closer to 50-70k€ (57-80k$)That said, when I was doing the math on moving to the states, a +80% increase in salary still left me with less money in NYC vs Amsterdam. (I have kids: healthcare + kids education + rent basically wipes out your income in the US, it doesn’t in Amsterdam)
-                      
-                  
-      Yup, and when your kids will go to uni you'll be paying 2.000 euro/year for TU Delft instead of 40.000 for MIT.Well one of the reasons (and it's a dumb one), is that getting a US work Visa is almost impossible for most, so they don't really have a choice, unfortunately.Problem is it's impossible to get a US work visa :)That is not a regular salary in the Netherlands, they are just being cheap. My first job paid 40k, in a cheaper city, 10 years ago without a university degree.
-Tax brackets are progressive, with 35k you pay about 20% income tax. Expats get a 30% income tax discount for 5 years.
-
-While salaries are low, it does have some advantages to live here. Strong  employee protection (you can't get fired for example), paid leave (minimum is 20 days + public holidays), you don't work more than 40h/week, cheap healthcare, good infrastructure and public transport, paid sick/disability, unemployment benefit, welfare, state pension, etc.
-It is hard to compare employment salaries. I think it makes more sense to compare freelance wages as they don't have those benefits. Freelance engineers make about 80~100 euro/hour and get some tax discount.
-                      
-                  
-      I paid 32% on 36k (my first job as a junior dev). But I had no ruling because I studied there for 6 months.Agree with everything else. Netherlands is a great country.
+$80=====      DigiFi | Software Engineer | New York City | $80k-$100k + Equity + Benefits | Full-Time, Onsite https://angel.co/digifi/jobs/57845-software-engineerDigiFi is a SaaS technology company located in New York City that provides software to help businesses make better automated decisions. Our platform lets businesses easily use automated machine learning and rules management to optimize critical decisions with no coding or technical expertise required. https://digifi.io   We are looking for experienced software engineers to join our growing team. We use React on the frontend and NodeJS on the backend, along with both SQL and MongoDB. Our applications are hosted in AWS.   The ideal candidate will have formal training in programming and professional experience with software development in either enterprise or startup environments. They will be expected to collaborate closely with a small team of engineers and ship code frequently while demonstrating a commitment to developing, testing, implementing and maintaining enterprise-quality software.   Apply on using the AngelList link or with resume to info [at] digifi.io
                       
                   
 
@@ -439,11 +400,6 @@ There is a small code challenge that checks for data manipulation techniques. No
 Email me at chris@openmessage.io to set up a call. Thanks!
                       
                   
-      Hey! I'm not sure if you're aware of this, but on your site openmessage.io, if you go to:
-Solutions (Menu bar) -> Use cases (in menu popup) -> Publishing/Loyalty/Reminders/Concierge
-There's a fair bit of "Lorem ipsum dolor..." text.
-                      
-                  
 
 $100=====Full Stack Software Engineer | Full-time | Onsite | Immediate | $100-160K | 0-2% Equity | Benefits
 
@@ -533,7 +489,7 @@ Apply at https://tulip.co/careers or email us at jobs@tulip.co
                       
                   
 
-$35=====      Made my day to see powerley on here.  If you're in the detroit area and into IOT you should check them out.Software Engineer - Full Stack | San Francisco, CA | Volta Charging | ONSITE and WFH | voltacharging.com
+$35=====      Software Engineer - Full Stack | San Francisco, CA | Volta Charging | ONSITE and WFH | voltacharging.com
 We are a nationwide network of 500+ charging stations, and the only one to provide free charging to all electric vehicles. Our mission is to create the next generation infrastructure for domestic and global EV adoption. We just raised a $35M round of funding ($60M total to date), and have assembled a top notch leadership team comprised of veterans from a variety of industries and companies including Goldman Sachs, FOX Sports, GLAMSQUAD, Yahoo! Inc. and more.
 
 You’ll work on a small close-knit team of 4 engineers. You will own services running in the cloud and on the web. These services will do everything from ingesting data to exposing it on a variety of interfaces like our internal web application and automated reporting mechanisms. Some role highlights include:
@@ -633,7 +589,7 @@ Email Bertrand (CTO): bertrand@furnishare.com
                       reply
                   
 
-$80=====      I've had the pleasure of working with David during a security engagement with our company. I can confirm that he would be an excellent and skilled person to work with. :)Liquid US | Software Engineer | San Francisco, CA, USA | Remote | $80K no benefits equity negotiable | https://liquid.us
+$80=====      Liquid US | Software Engineer | San Francisco, CA, USA | Remote | $80K no benefits equity negotiable | https://liquid.us
 The Company
 
 Liquid US (liquid.us) is a liquid democracy voting startup based in San Francisco. We’re dedicated to upgrading the hyper-partisan, money-dominated iteration of Democracy gripping America to one that prioritizes transparency and nuanced debate. We empower issue experts to curate and weigh in on the policy decisions facing their community so that citizens are better-informed and can vote directly on issues or choose personal representatives they trust.
@@ -856,7 +812,7 @@ P.S. we don’t have many open entry level roles and I’m sorry, maybe in 2018
                       
                   
 
-$50=====      You mean 2019 :]Walker and Company Brands | Full Stack Software Engineer | Palo Alto | Full Time, Contract-to-Hire | Onsite, Remove | http://walkerandcompany.com
+$50=====      Walker and Company Brands | Full Stack Software Engineer | Palo Alto | Full Time, Contract-to-Hire | Onsite, Remove | http://walkerandcompany.com
 Walker & Company Brands is reinventing the way consumers of color learn about, purchase and enjoy health and beauty products. We're starting with a focus on the $50 billion personal care segment. Personal care manufacturers and traditional retailers are neither building brands nor merchandising experiences which cater to the uniquely differentiated needs of black, latino and asian consumers --- three of America's fastest growing and most culturally influential demographic groups.
 
 We are looking for a mid to senior engineer with Ruby on Rails experience or equivalent experience developing for the web. You will help maintain and build new features for: formbeauty.com and getbevel.com. There's lot of opportunity for growth as a developer in this role!
@@ -1183,12 +1139,6 @@ We are hiring for three positions (full stack developers feel free to apply to F
 We value diversity and believe the unique contributions each of us brings drives our success. If this sounds exciting, we'd love to hear from you!
                       
                   
-      Hello! We are additionally hiring for two positions on the data team as well:
-* Data Analytics Engineer - https://jobs.lever.co/reifyhealth/76c4a615-7300-4ef7-ad01-ef...
-* Ontology/Knowledge Engineer - https://jobs.lever.co/reifyhealth/d4d1bd8c-c82b-47e7-9e15-f5...
-                      
-                      reply
-                  
 
 $90=====      Thorn | San Francisco or Remote (US based) | Full-time Contract | $90k - $150k | Software Engineer | https://www.wearethorn.org/
 Thorn is searching for a Full Stack Engineer and a Full Stack Engineer with Data Engineering Experience to join its engineering team as a full-time (40 hrs/week) contractor. This is a 9 month contract, with the possibility of extension.
@@ -1206,7 +1156,7 @@ Technologies we use: Node / React / TypeScript / Docker / Kubernetes / AWS / Ter
                       
                   
 
-$135=====      thanks @austinwm! Feel free to reach out to me for more info (chofmann <at> wri.org) and be sure to check out our Github: https://github.com/gfw-api/. Thanks!Will do!your website appears to be down?CADRE | New York, NY & Toronto, ON| Onsite | Experienced Engineers | We are a well-funded startup (Series C | Total Funding $135M) at the intersection of technology and investing. Our mission is to provide direct access to the world’s best investments. We are building the digital stock market for the once exclusive Commercial Real estate industry. Open Positions: https://cadre.com/careers
+$135=====      CADRE | New York, NY & Toronto, ON| Onsite | Experienced Engineers | We are a well-funded startup (Series C | Total Funding $135M) at the intersection of technology and investing. Our mission is to provide direct access to the world’s best investments. We are building the digital stock market for the once exclusive Commercial Real estate industry. Open Positions: https://cadre.com/careers
 Site Reliability Engineer (NYC)- https://cadre.com/careers/apply?gh_jid=1130468
 Senior Software Engineer (NYC)- https://cadre.com/careers/apply?gh_jid=75123
 Data Engineer (NYC)- https://cadre.com/careers/apply?gh_jid=1185373
@@ -1267,10 +1217,7 @@ Silexica was founded in 2014 and has raised $28 million in funding so far. With 
 Silexica's team includes some of the best software tooling experts and embedded engineers in the world, complemented by experienced industry veterans and skilled business professionals. We are incredibly passionate about revolutionizing embedded programming and you can become an important part of our success story!
                       
                   
-      "I'm sorry, but we can't do visas"What does this mean? For a TN-visa you only need an letter stating employment, not 'full sponsorship'...
-                      
-                  
-      I meant we can’t sponsor.Pusher - Backend Distributed Systems Engineer - London
+      Pusher - Backend Distributed Systems Engineer - London
 Pusher’s realtime APIs power applications around the world. When you see an app with a chat feature, a collaborative text editor, or anything else that updates instantly—it could be us shifting events behind the scenes.
 
 As a Senior Backend Engineer, you will work in a small sub-team to prototype new features in two week “spikes”. You will iterate on successful ones with customers in order to bring them to v1. You will have strong ownership over these features and have opportunities to blog/talk about them publicly. You will use your experience shipping these features to help prioritise new features and shape our roadmap.
@@ -1282,7 +1229,7 @@ Our customers have published over 10 trillion messages via Channels.Apply here h
                       
                   
 
-$79=====      When I applied last year, you said you're "looking to hire people who are already settled in the (viscinity of) Amsterdam (NL) and are available on a short term". Is it still the case?Havenly (https://havenly.com) | Software Engineers and DevOps | Denver, CO and REMOTE | Full-time
+$79=====      Havenly (https://havenly.com) | Software Engineers and DevOps | Denver, CO and REMOTE | Full-time
 Havenly provides interior design services, all online, at an extremely accessible price point. For a flat fee starting from $79, we set you up with your own personal interior designer, matched exclusively to your style, who works with you virtually to decorate your room. You can purchase any of the products your designer suggests for you through us, all in one place, at the best price. We deliver your room to your door.
 
 We are a personalization layer over the furniture e-commerce experience. We take the customer's style and inspiration data to help designers design the space, and we continue to provide customized suggestions for products to spruce up their space. We're the easiest way to decorate your home.
@@ -1720,7 +1667,7 @@ CTO role at our fast-growing, profitable, and bootstrapped SaaS
 business https://angel.co/order-metrics/jobs/440168-ctoEmail Hank (at) ordermetrics (dot) io
                       
                   
-      I have watched Hank build Order Metrics for the past year and recently joined full time, this is a pretty great company, I would be happy to answer questions too.Cloudflare — SF, Austin, Champaign, London — full-time onsite — https://www.cloudflare.com/careers/departments/
+      Cloudflare — SF, Austin, Champaign, London — full-time onsite — https://www.cloudflare.com/careers/departments/
 Cloudflare is hiring Product Managers, Systems Engineers, and other roles in multiple offices.
 
 Come help build the future of the Internet.
