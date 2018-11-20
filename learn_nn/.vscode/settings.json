@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "${workspaceFolder}/mktempenv/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}

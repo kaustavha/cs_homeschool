@@ -93,12 +93,13 @@ function fly2(arr, i, res, answer) {
             // if (answer.length >= res.length || answer.length == 0) answer = res;
             // return answer;
         } else {
+            
 
             return fly2(arr,j,res,answer)
 
             // tempAns = fly2(arr, j, res, answer);
             // if (tempAns.length != 0 && (tempAns.length < answer || answer.length == 0) && tempAns[tempAns.length-1] == 'out') answer = tempAns;
-            
+
         }
     }
     // return answer;

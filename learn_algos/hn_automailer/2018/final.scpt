@@ -18,7 +18,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"careers@atlas-x.com"}}
    send message id (id of newMessage)
 end tell
- delay 21 
+ delay 16 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -39,7 +39,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"dev-recruiting@vimbly.com"}}
    send message id (id of newMessage)
 end tell
- delay 23 
+ delay 24 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -60,7 +60,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@chatgrape.com"}}
    send message id (id of newMessage)
 end tell
- delay 26 
+ delay 12 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -81,7 +81,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"skoperst@gmail.com"}}
    send message id (id of newMessage)
 end tell
- delay 15 
+ delay 19 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -102,7 +102,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"careers@simplepay.co.za"}}
    send message id (id of newMessage)
 end tell
- delay 24 
+ delay 12 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -123,7 +123,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"hey@talkjs.com"}}
    send message id (id of newMessage)
 end tell
- delay 19 
+ delay 22 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -167,7 +167,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"workwithus@signal.org"}}
    send message id (id of newMessage)
 end tell
- delay 8 
+ delay 23 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -188,7 +188,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"alex@intuitionmachines.com"}}
    send message id (id of newMessage)
 end tell
- delay 24 
+ delay 28 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -209,7 +209,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"paul@field.chat"}}
    send message id (id of newMessage)
 end tell
- delay 18 
+ delay 28 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -230,7 +230,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"neil@determined.ai"}}
    send message id (id of newMessage)
 end tell
- delay 22 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -251,7 +251,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"ugo@kraken.com"}}
    send message id (id of newMessage)
 end tell
- delay 6 
+ delay 10 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -272,7 +272,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"adam@adzuna.com"}}
    send message id (id of newMessage)
 end tell
- delay 13 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -294,7 +294,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"work@thesis.co"}}
    send message id (id of newMessage)
 end tell
- delay 23 
+ delay 19 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -315,7 +315,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@flip.lease"}}
    send message id (id of newMessage)
 end tell
- delay 11 
+ delay 15 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -336,7 +336,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@oftn.org"}}
    send message id (id of newMessage)
 end tell
- delay 21 
+ delay 28 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -357,7 +357,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"alexi@tamber.com"}}
    send message id (id of newMessage)
 end tell
- delay 20 
+ delay 29 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -378,7 +378,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"careers@binarymint.io"}}
    send message id (id of newMessage)
 end tell
- delay 19 
+ delay 25 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -400,7 +400,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"careers@datawire.io"}}
    send message id (id of newMessage)
 end tell
- delay 26 
+ delay 28 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -421,7 +421,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"recruitmentspain@sequel.com"}}
    send message id (id of newMessage)
 end tell
- delay 24 
+ delay 21 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -442,7 +442,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jaime@battlefy.com"}}
    send message id (id of newMessage)
 end tell
- delay 10 
+ delay 29 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -464,7 +464,7 @@ Kaustav Haldar
     make new cc recipient at newMessage with properties {email address: {address:"null"}}
    send message id (id of newMessage)
 end tell
- delay 27 
+ delay 16 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -486,7 +486,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@lightning.engineering"}}
    send message id (id of newMessage)
 end tell
- delay 6 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -506,7 +506,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"stephen@fac.tt"}}
    send message id (id of newMessage)
 end tell
- delay 20 
+ delay 19 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -526,7 +526,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"input@turimatic.com"}}
    send message id (id of newMessage)
 end tell
- delay 20 
+ delay 25 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -547,7 +547,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"support@neemo.com"}}
    send message id (id of newMessage)
 end tell
- delay 27 
+ delay 25 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -568,7 +568,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@muckrack.com"}}
    send message id (id of newMessage)
 end tell
- delay 10 
+ delay 25 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -610,7 +610,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"hiring@litcharts.com"}}
    send message id (id of newMessage)
 end tell
- delay 11 
+ delay 7 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -631,7 +631,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"obaid@botmock.com"}}
    send message id (id of newMessage)
 end tell
- delay 19 
+ delay 25 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -652,7 +652,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"barnaby@upflow.io"}}
    send message id (id of newMessage)
 end tell
- delay 11 
+ delay 9 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -674,7 +674,7 @@ Kaustav Haldar
     make new cc recipient at newMessage with properties {email address: {address:"info@imageric.com"}}
    send message id (id of newMessage)
 end tell
- delay 13 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -716,7 +716,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@gravitational.com"}}
    send message id (id of newMessage)
 end tell
- delay 24 
+ delay 7 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -737,7 +737,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"info@compilerworks.com"}}
    send message id (id of newMessage)
 end tell
- delay 10 
+ delay 14 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -757,7 +757,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"notjustajob@trippin.world"}}
    send message id (id of newMessage)
 end tell
- delay 15 
+ delay 29 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -778,7 +778,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"brian@retentionrocket.com"}}
    send message id (id of newMessage)
 end tell
- delay 22 
+ delay 14 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -821,7 +821,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@zammad.com"}}
    send message id (id of newMessage)
 end tell
- delay 16 
+ delay 12 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -841,7 +841,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"sean@marvelapp.com"}}
    send message id (id of newMessage)
 end tell
- delay 15 
+ delay 27 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -862,7 +862,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"info@flairfootball.co.uk"}}
    send message id (id of newMessage)
 end tell
- delay 21 
+ delay 16 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -884,7 +884,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"careers@tiledb.io"}}
    send message id (id of newMessage)
 end tell
- delay 18 
+ delay 28 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -905,7 +905,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@adquick.com"}}
    send message id (id of newMessage)
 end tell
- delay 18 
+ delay 26 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -926,7 +926,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@latacora.com"}}
    send message id (id of newMessage)
 end tell
- delay 5 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -946,7 +946,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"clay.mcleod@stjude.mcleod"}}
    send message id (id of newMessage)
 end tell
- delay 18 
+ delay 12 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -968,7 +968,7 @@ Kaustav Haldar
     make new cc recipient at newMessage with properties {email address: {address:"ateeq+hn@scythe.io"}}
    send message id (id of newMessage)
 end tell
- delay 6 
+ delay 13 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -989,7 +989,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"contact@doctorsinitaly.org"}}
    send message id (id of newMessage)
 end tell
- delay 28 
+ delay 11 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1010,7 +1010,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs+hn@truebill.com"}}
    send message id (id of newMessage)
 end tell
- delay 10 
+ delay 12 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1031,7 +1031,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"ron+hn@uptrending.com"}}
    send message id (id of newMessage)
 end tell
- delay 19 
+ delay 24 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1052,7 +1052,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jeremy@seedlang.com"}}
    send message id (id of newMessage)
 end tell
- delay 8 
+ delay 6 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1073,7 +1073,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jason.reinert@pillrcompany.com"}}
    send message id (id of newMessage)
 end tell
- delay 25 
+ delay 7 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1093,7 +1093,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"adit@etsy.com"}}
    send message id (id of newMessage)
 end tell
- delay 13 
+ delay 21 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1114,7 +1114,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"hunt@edealerdirect.com"}}
    send message id (id of newMessage)
 end tell
- delay 18 
+ delay 24 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1134,7 +1134,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"roberto@roboamp.com"}}
    send message id (id of newMessage)
 end tell
- delay 16 
+ delay 11 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1155,7 +1155,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"karim@nylas.com"}}
    send message id (id of newMessage)
 end tell
- delay 20 
+ delay 22 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1197,7 +1197,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"ian@jumbleberry.com"}}
    send message id (id of newMessage)
 end tell
- delay 27 
+ delay 8 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1240,7 +1240,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jobs@springshare.com"}}
    send message id (id of newMessage)
 end tell
- delay 12 
+ delay 17 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1262,7 +1262,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"jessica@scrapinghub.com"}}
    send message id (id of newMessage)
 end tell
- delay 17 
+ delay 23 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1283,7 +1283,7 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"apetralia@polyteknium.com"}}
    send message id (id of newMessage)
 end tell
- delay 29 
+ delay 13 
 
 tell application "Microsoft Outlook"
  set theContent to "<p style='white-space:pre;display:block;overflow-wrap:normal;'>Hi,
@@ -1305,4 +1305,4 @@ Kaustav Haldar
    make new to recipient at newMessage with properties {email address: {address:"mike+hn@reasi.com"}}
    send message id (id of newMessage)
 end tell
- delay 15 
+ delay 9 

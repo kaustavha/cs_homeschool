@@ -1,11 +1,13 @@
-// file names
 
-// const jobsListfs = './2018/jobs_test.txt',
+// inputs and flags
 const hnurlid = '18354503';
+const debug = false;
 
+// Dates for creating filenames
 const date = new Date(),
 	month = date.getMonth(),
 	yr = date.getFullYear();
+
 const jobsList = `${yr}/jobs_m${month}`,
 	jobsListfs = jobsList + '.txt',
 	sentEmailsfs = jobsList + '_emailsbackup_alreadysent.txt',
@@ -19,20 +21,21 @@ const jobsList = `${yr}/jobs_m${month}`,
 
 const fs = require('fs');
 const https = require('https');
-// const $ = require('jQuery');
 var jsdom = require('jsdom');
 $ = require('jquery')(new jsdom.JSDOM().window);
-// console.log($.parseHTML)
-// return
-// let txt = fs.readFileSync(jobsListfs);
-// txt += '';
-// let lines = txt.split('\n');
-// txt = txt.split('\n');
+
+// Delay min max for applescript
+let oneMin = 60,
+	fvmin = oneMin*5,
+	tenMin = oneMin*10,
+	minDelay = fvmin,
+	maxDelay = tenMin;
 
 // vars for fetching hn jobs txt
 let oldDat = '';
 let fullDat = '';
 
+// data stores for outputs
 let blocks = [],
 	emails = [],
 	allroles = [],
@@ -41,6 +44,7 @@ let blocks = [],
 	rejects = [],
 	remoteJobsRejects = [];
 
+// try to grab a list of successfully parsed/sent emails so we dont email people twice
 let sentEmails;
 if (fs.existsSync(sentEmailsfs)) {
 	sentEmails = fs.readFileSync(sentEmailsfs, 'utf8').split('\n');
@@ -48,7 +52,7 @@ if (fs.existsSync(sentEmailsfs)) {
 	sentEmails = [];
 }
 
-// block level
+// block level vars used when parsing job descr blocks
 let block = false,
 	blockbuf = '',
 	roles = [],
@@ -163,6 +167,8 @@ function grabSalary(blk) {
 	if (salary && lines[2].match(/\d+/) >= 100) {
 		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
 	}
+	let ret = blk.match(/\$\d*/) ?  blk.match(/\$\d*/) + '====='+  blk : false;
+	return ret;
 }
 
 function isRemote(blk) {
@@ -193,7 +199,7 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<at\>/gi) ||
 				word.match(/\{at\}/gi) ||
 				word.indexOf("@") > -1) {
-				console.log('at');
+				// console.log('at');
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 				tb += words.slice(start, end).join(" ");
@@ -206,14 +212,14 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<.\>/gi) ||
 				word.match(/\{.\}/gi) ||
 				word.match(/\s*\(\.\)\s*/gi)) {
-				console.log('dot', word);
+				// console.log('dot', word);
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 
 				tb += words.slice(start, end).join(" ");
 			}
 
-			if (tb.length > 0) console.log('1', tb);
+			if (tb.length > 0 && debug) console.log('1', tb);
 
 			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 			// tb = tb.replace(/\s+at\s+/gi, '@');
@@ -221,7 +227,6 @@ function parseEmailFromBlock(t, iteration) {
 			tb = tb.replace(/\s*\(at\)\s*/gi, '@');
 			tb = tb.replace(/\s*\<at\>\s*/gi, '@');
 			tb = tb.replace(/\s*\{at\}\s*/gi, '@');
-
 			tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 			tb = tb.replace(/\s\@\s/gi, '@');
 
@@ -238,7 +243,7 @@ function parseEmailFromBlock(t, iteration) {
 			// fuck you jeff
 			tb = tb.replace(" __4t__ ", '@');
 
-			if (tb.length > 0) console.log('2', tb);
+			if (tb.length > 0 && debug) console.log('2', tb);
 			buf += " " + tb;
 		}
 
@@ -257,7 +262,7 @@ function parseEmailFromBlock(t, iteration) {
 					w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
 				}
 
-				if (w.length > 0) console.log('1', w);
+				if (w.length > 0 && debug) console.log('1', w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
 				// fix .coms
@@ -284,7 +289,7 @@ function parseEmailFromBlock(t, iteration) {
 }
 
 function parseLine2(tb) {
-	console.log(tb);
+	if (debug) console.log('parseline2 start', tb);
 
 	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
 	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
@@ -310,7 +315,7 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*chr\(64\)\s*/, '@');
 	tb = tb.replace(/\s*chr\(46\)\s*/, '.');
 
-	console.log('parseLine2', tb, '\n');
+	if (debug) console.log('parseLine2 done', tb, '\n');
 	return tb;
 }
 
@@ -344,7 +349,7 @@ function parseBuzzwords(txt) {
 		"bootstrap", "nodejs",
 		"blockchain", "ethereum", "solidity", "hyperledger",
 		"redis", "node", "php", "rails",
-		"backend", "web", "mobile", "REST", "cassandra",
+		"backend", "web", "mobile", "REST", "cassandra", "frontend", "fullstack",
 		"linux", "nginx", "apache", "open source"
 	];
 
@@ -376,6 +381,7 @@ function parseBuzzwords(txt) {
 	return dedupeArr(out);
 }
 
+// generate applescript
 function genAsAll(obj) {
 	let c = '';
 	for (ki in obj) {
@@ -385,19 +391,37 @@ function genAsAll(obj) {
 	return c;
 }
 
-
+// returns a line of applescript with a random delay in range specified at the top
 function genRandDelay() {
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
 		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 	}
-	let val = getRandomInt(5,30);
+	let val = getRandomInt(minDelay,maxDelay);
 	return `\n delay ${val} \n`;
 }
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
 function genAS(obj) {
+
+	// Utils for generating applescript
+	function addline(txt) {
+		content += txt + "\n";
+	}
+
+	function checkForOpensourceOrEth(keyword) {
+		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
+	}
+
+	function match(a1, a2) {
+		for (var i = 0; i < a1.length; i++) {
+			if (a2.indexOf(a1[i]) > -1) return true;
+		}
+		return false;
+	}
+	// End
+
 	let defaultsubject = "HackerNews FT SE opportunities";
 	let fcontent = '';
 
@@ -419,22 +443,12 @@ function genAS(obj) {
 
 	let mainEmail = e[0];
 
-	function addline(txt) {
-		content += txt + "\n";
-	}
-
-	function checkForOpensourceOrEth(keyword) {
-		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
-	}
-
 	addline("Hi,");
 	addline("");
 	addline("I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.");
 
 	// add keywords
 	if (k.length > 0) {
-
-
 		// trim secondary keywords if any for addition later and toggle flag for open source/eth
 		for (var i = 0; i < k.length; i++) {
 			let keyword = k[i];
@@ -445,6 +459,7 @@ function genAS(obj) {
 			if (match(k, keth)) addketh = true;
 		}
 
+		// Add keyword match sentence
 		let kstr = '';
 		kstr += "I have experience with ";
 
@@ -466,13 +481,6 @@ function genAS(obj) {
 		if (addoss) {
 			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
-	}
-
-	function match(a1, a2) {
-		for (var i = 0; i < a1.length; i++) {
-			if (a2.indexOf(a1[i]) > -1) return true;
-		}
-		return false;
 	}
 
 	// highlight python pip commit
