@@ -1,26 +1,45 @@
 // file names
 
 // const jobsListfs = './2018/jobs_test.txt',
-const jobsListfs = './2018/jobs_aug.txt',
-	sentEmailsfs = jobsListfs + '_emailsbackup_alreadysent.txt',
-	outputApplScriptfs = jobsListfs + '_final.scpt',
+const hnurlid = '18354503';
+
+const date = new Date(),
+	month = date.getMonth(),
+	yr = date.getFullYear();
+const jobsList = `${yr}/jobs_m${month}`,
+	jobsListfs = jobsList + '.txt',
+	sentEmailsfs = jobsList + '_emailsbackup_alreadysent.txt',
+	outputApplScriptfs = jobsList + '_final.scpt',
 	tstAs = outputApplScriptfs + 'test',
-	rejectsfs = jobsListfs+'_rejects.txt',
-	rawEmailListfs = jobsListfs+'_emails.txt',
-	salariesFs = jobsListfs+'_salaries.txt',
-	remoteFs = jobsListfs+'_remotes.txt';
+	rejectsfs = jobsList+'_rejects.txt',
+	rawEmailListfs = jobsList+'_emails.txt',
+	salariesFs = jobsList+'_salaries.txt',
+	remoteFs = jobsList+'_remotes.txt',
+	remoteJobsRejectsFs = jobsList+'_remotes_rejects.txt';
 
 const fs = require('fs');
-let txt = fs.readFileSync(jobsListfs);
-txt += '';
-let lines = txt.split('\n');
-txt = txt.split('\n');
+const https = require('https');
+// const $ = require('jQuery');
+var jsdom = require('jsdom');
+$ = require('jquery')(new jsdom.JSDOM().window);
+// console.log($.parseHTML)
+// return
+// let txt = fs.readFileSync(jobsListfs);
+// txt += '';
+// let lines = txt.split('\n');
+// txt = txt.split('\n');
+
+// vars for fetching hn jobs txt
+let oldDat = '';
+let fullDat = '';
 
 let blocks = [],
 	emails = [],
 	allroles = [],
 	salaries = [],
-	remoteJobs = [];
+	remoteJobs = [],
+	rejects = [],
+	remoteJobsRejects = [];
 
 let sentEmails;
 if (fs.existsSync(sentEmailsfs)) {
@@ -36,91 +55,106 @@ let block = false,
 	matchingKeywords = [],
 	postername;
 
-let rejects = [];
 let matcheskeywords = 0;
 // push first test block
 // console.log(lines.length);
 
+// (async () => {
+// 	await getHNPosts(1);
+// })()
+getHNPosts(1).then(x => {
+	main();
+})
+function main() {
+	populateBlocks();
+	let asc = genAsAll(blocks);
+	// console.log(i);
+	// console.log(rejects);
+	// console.log(emails);
+	// console.log(emails);
+	// console.log(blocks);
+	// console.log(dedupeArr(allroles));
+	// console.log(genAsAll(blocks));
+	// console.log(lines);
+	console.log('emails ', emails.length);
+	console.log('rejects ', rejects.length);
+	console.log('keyword matches ', matcheskeywords);
+	//  MAIN FILE OUTPUTS ===========================>
+	let tb = blocks[0];
+	tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
+	fs.writeFileSync(tstAs, genAS(tb));
 
-for (var i = 0; i < lines.length; i++) {
-	let tl = lines[i];
-	if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1 || tl.indexOf('|') > -1) {
-
-		if (!block) {
-			block = true;
-		} else {
-			// new block
-			let etxt = parseEmailFromBlock(blockbuf),
-				keywords = parseBuzzwords(blockbuf);
-			
-			// generate keyword match stats
-			if (keywords.length) matcheskeywords++;
-
-			// prioritize jobs that list salary
-			let slr = grabSalary(blockbuf);
-			if (slr) salaries.push(slr);
-
-			// grab and prioritize remote jobs
-			if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
-
-			// if (etxt[0] == 'null') console.log(blockbuf);
-			if (etxt.length > 0 && etxt[0] != 'null') {
-				emails.push(etxt);
-				if (roles.length > 0) {
-					roles = roles[0];
-					roles = roles.split(',');
-					allroles = allroles.concat(roles);
-				}
-				blocks.push({
-					e: etxt,
-					txt: 'blockbuf',
-					r: roles,
-					n: postername,
-					k: keywords
-				});
-			} else {
-				rejects.push(blockbuf);
-			}
-			postername = null;
-			blockbuf = '';
-			roles = [];
-		}
-		// set postername
-		postername = tl.split(/\s+/)[0];
-	}
-	if (block) {
-		blockbuf += tl + '\n';
-		if (tl.match(/\|/)) roles.push(tl);
-	}
+	fs.writeFileSync(outputApplScriptfs, asc);
+	fs.writeFileSync(rejectsfs, rejects.join("\n"));
+	fs.writeFileSync(rawEmailListfs, emails.join("\n"));
+	fs.writeFileSync(salariesFs, salaries.join("\n"));
+	fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
+	fs.writeFileSync(remoteJobsRejectsFs, remoteJobsRejects.join("\n"));
 }
-
-
-let asc = genAsAll(blocks);
-// console.log(i);
-// console.log(rejects);
-// console.log(emails);
-// console.log(emails);
-// console.log(blocks);
-// console.log(dedupeArr(allroles));
-// console.log(genAsAll(blocks));
-// console.log(lines);
-console.log('emails ', emails.length);
-console.log('rejects ', rejects.length);
-console.log('keyword matches ', matcheskeywords);
-//  MAIN FILE OUTPUTS ===========================>
-let tb = blocks[0];
-tb.e = ["hi@kaustav.me", "kausthal@gmail.com", "hi@kaustav.me"];
-fs.writeFileSync(tstAs, genAS(tb));
-
-fs.writeFileSync(outputApplScriptfs, asc);
-fs.writeFileSync(rejectsfs, rejects.join("\n"));
-fs.writeFileSync(rawEmailListfs, emails.join("\n"));
-fs.writeFileSync(salariesFs, salaries.join("\n"));
-fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
-
-
 //========================================= End
 // Functions
+
+function populateBlocks() {
+	let txt = fs.readFileSync(jobsListfs);
+	txt += '';
+	let lines = txt.split('\n');
+	for (var i = 0; i < lines.length; i++) {
+		let tl = lines[i];
+		if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1 || tl.indexOf('|') > -1) {
+
+			if (!block) {
+				block = true;
+			} else {
+				// new block
+				let etxt = parseEmailFromBlock(blockbuf),
+					keywords = parseBuzzwords(blockbuf);
+				
+				// generate keyword match stats
+				if (keywords.length) matcheskeywords++;
+
+				// prioritize jobs that list salary
+				let slr = grabSalary(blockbuf);
+				if (slr) salaries.push(slr);
+
+				// grab and prioritize remote jobs
+				if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
+
+				// if (etxt[0] == 'null') console.log(blockbuf);
+				if (etxt.length > 0 && etxt[0] != 'null' && 
+					// desperate for remote jobs, but dont apply to others if we dont have keyword match
+					(keywords.length > 0 || isRemote(blockbuf))) {
+					emails.push(etxt);
+					if (roles.length > 0) {
+						roles = roles[0];
+						roles = roles.split(',');
+						allroles = allroles.concat(roles);
+					}
+					blocks.push({
+						e: etxt,
+						txt: 'blockbuf',
+						r: roles,
+						n: postername,
+						k: keywords
+					});
+				} else {
+					rejects.push(blockbuf);
+
+					// grab and prioritize remote jobs we missed
+					if (isRemote(blockbuf)) remoteJobsRejects.push(blockbuf);
+				}
+				postername = null;
+				blockbuf = '';
+				roles = [];
+			}
+			// set postername
+			postername = tl.split(/\s+/)[0];
+		}
+		if (block) {
+			blockbuf += tl + '\n';
+			if (tl.match(/\|/)) roles.push(tl);
+		}
+	}
+}
 
 function grabSalary(blk) {
 	let lines = blk.split('\n');
@@ -191,7 +225,6 @@ function parseEmailFromBlock(t, iteration) {
 			tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 			tb = tb.replace(/\s\@\s/gi, '@');
 
-
 			// tb = tb.replace(/\s*dot\s*/gi, '.');
 			tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
 			tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
@@ -205,7 +238,6 @@ function parseEmailFromBlock(t, iteration) {
 			// fuck you jeff
 			tb = tb.replace(" __4t__ ", '@');
 
-
 			if (tb.length > 0) console.log('2', tb);
 			buf += " " + tb;
 		}
@@ -214,6 +246,7 @@ function parseEmailFromBlock(t, iteration) {
 
 	buf = buf.trim();
 	let posems = [];
+	// further process valid emails
 	if (buf.indexOf('@') > -1 && buf.indexOf(".") > -1) {
 		let ws = buf.match(emailRx);
 		for (var i = 0; i < ws.length; i++) {
@@ -227,8 +260,12 @@ function parseEmailFromBlock(t, iteration) {
 				if (w.length > 0) console.log('1', w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
-				// filter out common false matches
-				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)) posems.push(w);
+				// fix .coms
+				if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
+
+				// filter out common false matches and people using gmail
+				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)
+					&& !w.match(/gmail/)) posems.push(w);
 			}
 		}
 	}
@@ -267,6 +304,11 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
 	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
 	tb = tb.replace(/\s\@\s/gi, '@');
+
+	// thx dalan...
+	tb = tb.replace(/\s*chr\(43\)\s*/, '+');
+	tb = tb.replace(/\s*chr\(64\)\s*/, '@');
+	tb = tb.replace(/\s*chr\(46\)\s*/, '.');
 
 	console.log('parseLine2', tb, '\n');
 	return tb;
@@ -467,5 +509,57 @@ function genAS(obj) {
 	fcontent += '\n' + as;
 
 	return fcontent;
+}
 
+function getHNPosts(pageN) {
+	pageN = pageN || 1;
+	return new Promise(res => {
+		return _getHNPosts(pageN).then(dat => {
+			if (dat == oldDat) {
+				fs.writeFileSync(jobsListfs, fullDat);
+				return res(fullDat);
+			}
+			fullDat += dat;
+			oldDat = dat;
+			pageN++;
+			return getHNPosts(pageN).then(x => res(x));
+		});
+	})
+}
+
+function _getHNPosts(pageN) {
+	let url = `https://news.ycombinator.com/item?id=${hnurlid}&p=${pageN}`;
+	return new Promise(res => {
+		extractContent(url).then(dat => {
+			let buf = '';
+			html = $(dat);
+			commtext = html.find('.commtext');
+			$.each( commtext, function( key, value ) {
+				buf += $(value).html();
+			});
+			res(htmlDecodeWithLineBreaks(buf))
+		})
+	})
+}
+
+function extractContent(url) {
+		let dat = '';
+		return new Promise(resolve => {
+			https.get(url, res => {
+				res.on('data', function( data ) {
+					dat += data;
+				});
+				res.on('end', () => {
+					resolve(dat);
+				})
+		
+			});
+		})
+}
+
+// pollyfill
+function htmlDecodeWithLineBreaks(html) {
+	var breakToken = '_______break_______',
+		lineBreakedHtml = html.replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
+	return $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n');
 }
