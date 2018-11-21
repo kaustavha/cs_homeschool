@@ -1,4 +1,5 @@
 hiring@mnety.com
+martin@passenger.ai
 hadi@citusdata.com,imagine@citusdata.com
 jobs@lightning.engineering
 krbowman@indeed.com
@@ -19,7 +20,7 @@ enewport@caci.com
 contact@osjobs.net
 hiring@litcharts.com
 sean.ivich@oportun.com
-sarah.sparks@springernature.comziprecruiter,techjobs@ziprecruiter.com
+techjobs@ziprecruiter.com
 chris@openmessage.io
 andres.aragoneses@diginex.com
 join@dgraph.io
@@ -43,7 +44,7 @@ tmiller@squarespace.com
 andrew.potapov@ritual.co
 pedro.tabio@stridehealth.tabio
 stephen.rosenthal@seeq.com
-info@proda.aidetermined,neil@determined.ai
+neil@determined.ai
 geert@proper.chat
 careers@smokescreen.io
 tim@pawboost.com
@@ -66,7 +67,7 @@ careers@orisintel.com
 me@users.sf.net
 hacker@kenhub.com
 jobs@gravitational.com
-rajiv@auditboard.com,lpayne@link2feed.com
+lpayne@link2feed.com
 emily@compound.finance
 jobs@podaris.com
 andrew@beatgig.com
@@ -75,7 +76,6 @@ cameron@stereonetworks.com
 mo@districtm.net
 danno.ferrin+hn@consensys.net
 ronen+hn@opencare.com
-avery.francis@setter.francis
 frank+hn@maxwellhealth.com
 thomas@getstack.ca
 careers@datawire.io
@@ -117,11 +117,10 @@ jobs@goodrx.com
 jobs@muckrack.com
 mbouchard@gradealabs.com
 careers@execvision.io
-seanc@drawbackwards.com
+brian@retentionrocket.com
 sean@fireflyon.com
 jamesfarrier@appsurify.com
 nit@earnwithdrop.com
-jobs@themednet.org
 fahim@adquick.com
 ryanz@kraken.com
 kevin.wu@10xgenomics.com,null

@@ -1,11 +1,35 @@
+/**
+ * Description:
+ * This is a hacker news who's hiring auto mailer
+ * Steps:
+ * - Fetch all posts from a hacker news who's hiring thread given the id i.e. item?id=xxx in the url
+ * - Strip off all child comments
+ * - Get text content of all remaining comments while preserving line breaks
+ * - Write this to file in {year}/jobs_m{month number}.txt
+ * - Attempt to parse emails from the text blocks using 2 passes:
+ *   -- Lighter first pass, iter lines, looks for common keywords in the line like `contact me at..` and attempt to pull out a plain email
+ * 		or an encoded email such as `joe at company dot com` and convert back to normal
+ *   -- More aggressive second pass if we didnt find an email, try converting all ats and dots to symbols and such
+ * - Parse any matching keywords in the post based on a provided hashmap hand written from our resume
+ * - Check if the job is remote or in canada (flag dependent)
+ * - For all blocks/jobs that meet our criteria (remote/canada/keyword matches) generate applescript
+ * - Generated applescript contains a small cover letter with info about matched keywords, and paras for blockchain and open source if they match too
+ * - Generated applescript also contains a random delay within a hardcoded range
+ * - This script will also write out to file information about:
+ * 	-- jobs where we failed to parse emails
+ *  -- higher priority (remote e.g.) rejected jobs
+ *  -- jobs where we managed to parse a salary
+ * - Running the applescript will automatically send out emails to everyone specified
+ */
+
 
 // inputs and flags
-const hnurlid = '18354503';
-const debug = false;
-const remoteOnly = true;
-const includeCanada = true;
-const fetchFromHN = true;
-const keywordMatchOnly = true;
+const hnurlid = '18354503'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const debug = true; // output console logs at different steps
+const remoteOnly = true; // only pull in remote jobs
+const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
+const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
+const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
 const date = new Date(),
@@ -14,6 +38,7 @@ const date = new Date(),
 
 const jobsList = `${yr}/jobs_m${month}`,
 	jobsListfs = jobsList + '.txt',
+	// jobsListfs = '2018/jobstest.txt',
 	sentEmailsfs = jobsList + '_emailsbackup_alreadysent.txt',
 	outputApplScriptfs = jobsList + '_final.scpt',
 	tstAs = outputApplScriptfs + 'test',
@@ -36,8 +61,7 @@ let oneMin = 60,
 	maxDelay = tenMin;
 
 // vars for fetching hn jobs txt
-let oldDat = '';
-let fullDat = '';
+let oldDat = '', fullDat = '';
 
 // data stores for outputs
 let blocks = [],
@@ -60,13 +84,19 @@ if (fs.existsSync(sentEmailsfs)) {
 let block = false,
 	blockbuf = '',
 	roles = [],
-	matchingKeywords = [],
-	postername;
+	postername,
+	matcheskeywords = 0;
 
-let matcheskeywords = 0;
+// let l = "We're a fast-moving team that is hard on ideas and not people. We also really like functional programming :) If you have any questions, please feel free to reach out to our head of people at avery {dot} francis {at} setter {dot} com \n";
+// let o = parseEmailFromBlock(l);
+// console.log(o)
+
+// return;
+
 getHNPosts(1).then(x => {
 	main();
-})
+});
+
 function main() {
 	populateBlocks();
 	let asc = genAsAll(blocks);
@@ -181,12 +211,13 @@ function isRemote(blk) {
 }
 
 function parseEmailFromBlock(t, iteration) {
-	let emailRx = /[a-z0-9\.\@\-\_\+]+/gi;
+	let emailRx = /[a-z0-9\.\@\-\_\+\{\}\(\)]+/gi;
 	let l = t.split('\n'),
 		buf = '';
 	for (var i = 0; i < l.length; i++) {
 		let tl = l[i];
 		let words = tl.match(emailRx);
+		if (debug) console.log('Words matched using emailRx: ', words);
 
 		if (!words) words = [];
 		for (var j = 0; j < words.length; j++) {
@@ -204,7 +235,7 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<at\>/gi) ||
 				word.match(/\{at\}/gi) ||
 				word.indexOf("@") > -1) {
-				// console.log('at');
+				if (debug) console.log('at', word);
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 				tb += words.slice(start, end).join(" ");
@@ -217,7 +248,7 @@ function parseEmailFromBlock(t, iteration) {
 				word.match(/\<.\>/gi) ||
 				word.match(/\{.\}/gi) ||
 				word.match(/\s*\(\.\)\s*/gi)) {
-				// console.log('dot', word);
+				if (debug) console.log('dot', word);
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
 
@@ -347,7 +378,7 @@ function parseBuzzwords(txt) {
 		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi);
 	let keywords = [
 		"python", "ruby", "java", "c++", "lua", "bash", "shell", "scripting",
-		"mongodb", "mysql", "sql", "hadoop", "hive",
+		"mongo", "mongodb", "mysql", "sql", "hadoop", "hive",
 		"kafka", "grafana", "zookeeper",
 		"chef", "ansible", "travis", "jenkins", "kubernetes",
 		"rails", "coffeescript",
@@ -365,7 +396,8 @@ function parseBuzzwords(txt) {
 		'react': ['react', 'reactjs', "react-native", 'redux', 'mobex'],
 		'angular': ['angular', 'angularjs'],
 		'go': ['golang', 'go'],
-		'elk': ['kibana', 'logstash', 'elasticsearch']
+		'elk': ['kibana', 'logstash', 'elasticsearch'],
+		'devops': ['devops', 'chef', 'ansible', 'travis', 'jenkins', 'kubernetes', 'docker', 'terraform', 'kubernetes']
 	}
 
 	let words = txt.match(/[a-z]+/gi),
@@ -548,9 +580,9 @@ function _getHNPosts(pageN) {
 			let buf = '';
 			commtext = stripChildComments(dat);
 			$.each( commtext, function( key, value ) {
-				buf += $(value).html();
+				buf += htmlDecodeWithLineBreaks($(value).html());
 			});
-			res(htmlDecodeWithLineBreaks(buf))
+			res(buf)
 		})
 	})
 }
@@ -564,7 +596,9 @@ function stripChildComments(dat) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
 				let ctext = $(v).find('.commtext').get(0);
-				res.push(ctext)
+				ctext.append('\n\n')
+				res.push(ctext);
+				// console.log(ctext)
 			}
 		}
 	});
