@@ -25,7 +25,7 @@
 
 // inputs and flags
 const hnurlid = '18354503'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
-const debug = true; // output console logs at different steps
+const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
@@ -99,6 +99,7 @@ getHNPosts(1).then(x => {
 
 function main() {
 	populateBlocks();
+	// blocks = dedupeObj(blocks, 'e');
 	let asc = genAsAll(blocks);
 	// console.log(i);
 	// console.log(rejects);
@@ -159,7 +160,7 @@ function populateBlocks() {
 					(keywordMatchOnly ? keywords.length > 0 : true) &&
 					// remote only search flag
 					(remoteOnly ? isRemote(blockbuf) : true)) {
-					emails.push(etxt);
+					emails.push(etxt.join(","));
 					if (roles.length > 0) {
 						roles = roles[0];
 						roles = roles.split(',');
@@ -301,9 +302,6 @@ function parseEmailFromBlock(t, iteration) {
 				if (w.length > 0 && debug) console.log('1', w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
-				// fix .coms
-				if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
-
 				// filter out common false matches and people using gmail
 				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)
 					&& !w.match(/gmail/)) posems.push(w);
@@ -315,11 +313,17 @@ function parseEmailFromBlock(t, iteration) {
 		if (!iteration == 1) posems = parseEmailFromBlock(parseLine2(t), 1);
 	}
 
+	for (let index = 0; index < posems.length; index++) {
+		const w = posems[index];
+		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
+		if (w !== 'null' && w) posems[index] = w;
+	}
 	// do not email peope again************************************
 	//IMPORTANT
 	posems = dedupeArr(posems);
 	let out = [];
 	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
+	if (emails.indexOf(posems.join(",")) !== -1) out = [];
 	
 	return out;
 }
@@ -354,6 +358,28 @@ function parseLine2(tb) {
 	if (debug) console.log('parseLine2 done', tb, '\n');
 	return tb;
 }
+
+// function dedupeObj(arr, key) {
+// 	let arr2 = [], outArr = [];
+// 	arr.forEach(element => {
+// 		arr2.push(element[key]);
+// 	});
+// 	// for (k, v in arr) {
+// 	// 	arr2.push(v[key]);
+// 	// }
+// 	dedupeArr(arr2);
+// 	arr2.forEach(element => {
+// 		arr.forEach(origEle => {
+// 			if (origEle[key] === element) {
+// 				outArr.push(origEle);
+// 				return;
+// 			}
+// 		});
+// 	});
+// 	console.log(outArr, arr)
+// 	return outArr;
+	
+// }
 
 // dedupe an array and also cast everything to lowercase
 function dedupeArr(arr) {
@@ -596,7 +622,8 @@ function stripChildComments(dat) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
 				let ctext = $(v).find('.commtext').get(0);
-				ctext.append('\n\n')
+				ctext.prepend('ago [-]');
+				ctext.append('\n\n');
 				res.push(ctext);
 				// console.log(ctext)
 			}
