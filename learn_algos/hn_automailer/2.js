@@ -29,7 +29,7 @@ const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
-const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
+const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
 const date = new Date(),
@@ -49,19 +49,10 @@ const jobsList = `${yr}/jobs_m${month}`,
 	remoteJobsRejectsFs = jobsList+'_remotes_rejects.txt';
 
 const fs = require('fs');
-const https = require('https');
-var jsdom = require('jsdom');
-$ = require('jquery')(new jsdom.JSDOM().window);
+let getHNPosts = require('./scraper.js').getHNPosts;
 
-// Delay min max for applescript
-let oneMin = 60,
-	fvmin = oneMin*5,
-	tenMin = oneMin*10,
-	minDelay = fvmin,
-	maxDelay = tenMin;
-
-// vars for fetching hn jobs txt
-let oldDat = '', fullDat = '';
+// 5-10 minutes between sending emails or w/e is in file
+const genRandDelay = require('./timer.js').genRandDelay;
 
 // data stores for outputs
 let blocks = [],
@@ -70,7 +61,8 @@ let blocks = [],
 	salaries = [],
 	remoteJobs = [],
 	rejects = [],
-	remoteJobsRejects = [];
+	remoteJobsRejects = [],
+	companinies = [];
 
 // try to grab a list of successfully parsed/sent emails so we dont email people twice
 let sentEmails;
@@ -93,7 +85,7 @@ let block = false,
 
 // return;
 
-getHNPosts(1).then(x => {
+getHNPosts(1, fetchFromHN, jobsListfs, hnurlid).then(x => {
 	main();
 });
 
@@ -109,6 +101,7 @@ function main() {
 	// console.log(dedupeArr(allroles));
 	// console.log(genAsAll(blocks));
 	// console.log(lines);
+	console.log('companies ', dedupeArr(companinies).length)
 	console.log('emails ', emails.length);
 	console.log('rejects ', rejects.length);
 	console.log('keyword matches ', matcheskeywords);
@@ -160,7 +153,14 @@ function populateBlocks() {
 					(keywordMatchOnly ? keywords.length > 0 : true) &&
 					// remote only search flag
 					(remoteOnly ? isRemote(blockbuf) : true)) {
-					emails.push(etxt.join(","));
+					// check companies - i wonder if we have multiple posts
+					// delete emails from same company i.e. multiple posts
+					let companyFromEmail = etxt.join(",").match(/\@([a-z]*)./)[1];
+					if (companinies.indexOf(companyFromEmail) === -1) {
+						companinies.push(companyFromEmail);
+						emails.push(etxt.join(","));
+					}
+
 					if (roles.length > 0) {
 						roles = roles[0];
 						roles = roles.split(',');
@@ -252,7 +252,6 @@ function parseEmailFromBlock(t, iteration) {
 				if (debug) console.log('dot', word);
 				let start = j - 5 < 0 ? 0 : j - 5,
 					end = j + 5 > words.length ? words.length : j + 5;
-
 				tb += words.slice(start, end).join(" ");
 			}
 
@@ -310,13 +309,15 @@ function parseEmailFromBlock(t, iteration) {
 	}
 
 	if (posems.length == 0) {
-		if (!iteration == 1) posems = parseEmailFromBlock(parseLine2(t), 1);
+		if (iteration !== 1) return parseEmailFromBlock(parseLine2(t), 1);
 	}
 
 	for (let index = 0; index < posems.length; index++) {
-		const w = posems[index];
+		// clean up nu
+		let w = posems[index] == 'null' ? '' : posems[index];
+		// trim any cruft we picked up with .com email addresses
 		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
-		if (w !== 'null' && w) posems[index] = w;
+		posems[index] = w;
 	}
 	// do not email peope again************************************
 	//IMPORTANT
@@ -325,11 +326,26 @@ function parseEmailFromBlock(t, iteration) {
 	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
 	if (emails.indexOf(posems.join(",")) !== -1) out = [];
 	
+	if (debug) console.log('final output from parsing emails: ', out);
 	return out;
 }
 
 function parseLine2(tb) {
 	if (debug) console.log('parseline2 start', tb);
+	tb = tb.replace(/\s*\[at\]\s*/gi, '@');
+	tb = tb.replace(/\s+at\s+/gi, '@');
+	tb = tb.replace(/\s*\[@\]\s*/gi, '@');
+	tb = tb.replace(/\s*\(at\)\s*/gi, '@');
+	tb = tb.replace(/\s*\<at\>\s*/gi, '@');
+	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
+	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
+	tb = tb.replace(/\s\@\s/gi, '@');
+	tb = tb.replace(/\s\[\/a/s*/t\]\s*/gi, '@');
+
+	// thx dalan...
+	tb = tb.replace(/\s*chr\(43\)\s*/, '+');
+	tb = tb.replace(/\s*chr\(64\)\s*/, '@');
+	tb = tb.replace(/\s*chr\(46\)\s*/, '.');
 
 	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
 	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
@@ -340,55 +356,25 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\<\.\>\s*/gi, '.');
 	tb = tb.replace(/\s*\{\.\}\s*/gi, '.');
 	tb = tb.replace(/\s+dot\s+/gi, '.');
+	tb = tb.replace(/\s*\[\/d\s*\o\s*\t\]\s*/gi, '.');
 
-	tb = tb.replace(/\s*\[at\]\s*/gi, '@');
-	tb = tb.replace(/\s+at\s+/gi, '@');
-	tb = tb.replace(/\s*\[@\]\s*/gi, '@');
-	tb = tb.replace(/\s*\(at\)\s*/gi, '@');
-	tb = tb.replace(/\s*\<at\>\s*/gi, '@');
-	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
-	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
-	tb = tb.replace(/\s\@\s/gi, '@');
-
-	// thx dalan...
-	tb = tb.replace(/\s*chr\(43\)\s*/, '+');
-	tb = tb.replace(/\s*chr\(64\)\s*/, '@');
-	tb = tb.replace(/\s*chr\(46\)\s*/, '.');
 
 	if (debug) console.log('parseLine2 done', tb, '\n');
 	return tb;
 }
 
-// function dedupeObj(arr, key) {
-// 	let arr2 = [], outArr = [];
-// 	arr.forEach(element => {
-// 		arr2.push(element[key]);
-// 	});
-// 	// for (k, v in arr) {
-// 	// 	arr2.push(v[key]);
-// 	// }
-// 	dedupeArr(arr2);
-// 	arr2.forEach(element => {
-// 		arr.forEach(origEle => {
-// 			if (origEle[key] === element) {
-// 				outArr.push(origEle);
-// 				return;
-// 			}
-// 		});
-// 	});
-// 	console.log(outArr, arr)
-// 	return outArr;
-	
-// }
-
-// dedupe an array and also cast everything to lowercase
+// dedupe an array and
+// also cast everything to lowercase and
+// remove any empty values
 function dedupeArr(arr) {
 	let o = {},
 		o2 = [];
 	if (arr.length == 0) return arr;
 	// console.log(arr);
 	for (var i = 0; i < arr.length; i++) {
-		o[arr[i].toLowerCase()] = true;
+		if (arr[i] && arr[i].length>0) {
+			o[arr[i].toLowerCase()] = true;
+		}
 	}
 	for (let k in o) {
 		o2.push(k);
@@ -452,17 +438,6 @@ function genAsAll(obj) {
 		c += genRandDelay();
 	}
 	return c;
-}
-
-// returns a line of applescript with a random delay in range specified at the top
-function genRandDelay() {
-	function getRandomInt(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-	}
-	let val = getRandomInt(minDelay,maxDelay);
-	return `\n delay ${val} \n`;
 }
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
@@ -582,74 +557,74 @@ function genAS(obj, trialRun) {
 	return fcontent;
 }
 
-function getHNPosts(pageN) {
-	pageN = pageN || 1;
-	return new Promise(res => {
-		if (!fetchFromHN) return res();
-		return _getHNPosts(pageN).then(dat => {
-			if (dat == oldDat) {
-				fs.writeFileSync(jobsListfs, fullDat);
-				return res();
-			}
-			fullDat += dat;
-			oldDat = dat;
-			pageN++;
-			return getHNPosts(pageN).then(() => res());
-		});
-	})
-}
+// function getHNPosts(pageN) {
+// 	pageN = pageN || 1;
+// 	return new Promise(res => {
+// 		if (!fetchFromHN) return res();
+// 		return _getHNPosts(pageN).then(dat => {
+// 			if (dat == oldDat) {
+// 				fs.writeFileSync(jobsListfs, fullDat);
+// 				return res();
+// 			}
+// 			fullDat += dat;
+// 			oldDat = dat;
+// 			pageN++;
+// 			return getHNPosts(pageN).then(() => res());
+// 		});
+// 	})
+// }
 
-function _getHNPosts(pageN) {
-	let url = `https://news.ycombinator.com/item?id=${hnurlid}&p=${pageN}`;
-	return new Promise(res => {
-		extractContent(url).then(dat => {
-			let buf = '';
-			commtext = stripChildComments(dat);
-			$.each( commtext, function( key, value ) {
-				buf += htmlDecodeWithLineBreaks($(value).html());
-			});
-			res(buf)
-		})
-	})
-}
+// function _getHNPosts(pageN) {
+// 	let url = `https://news.ycombinator.com/item?id=${hnurlid}&p=${pageN}`;
+// 	return new Promise(res => {
+// 		extractContent(url).then(dat => {
+// 			let buf = '';
+// 			commtext = stripChildComments(dat);
+// 			$.each( commtext, function( key, value ) {
+// 				buf += htmlDecodeWithLineBreaks($(value).html());
+// 			});
+// 			res(buf)
+// 		})
+// 	})
+// }
 
-function stripChildComments(dat) {
-	html = $(dat);
-	comments = html.find('.comtr');
-	let res = [];
-	$.each(comments, (k, v) => {
-		if ($(v).find('img')) {
-			let img = $(v).find('img').get(0);
-			if (img.width == 0) {
-				let ctext = $(v).find('.commtext').get(0);
-				ctext.prepend('ago [-]');
-				ctext.append('\n\n');
-				res.push(ctext);
-				// console.log(ctext)
-			}
-		}
-	});
-	return res;
-}
+// function stripChildComments(dat) {
+// 	html = $(dat);
+// 	comments = html.find('.comtr');
+// 	let res = [];
+// 	$.each(comments, (k, v) => {
+// 		if ($(v).find('img')) {
+// 			let img = $(v).find('img').get(0);
+// 			if (img.width == 0) {
+// 				let ctext = $(v).find('.commtext').get(0);
+// 				ctext.prepend('ago [-]');
+// 				ctext.append('\n\n');
+// 				res.push(ctext);
+// 				// console.log(ctext)
+// 			}
+// 		}
+// 	});
+// 	return res;
+// }
 
-function extractContent(url) {
-		let dat = '';
-		return new Promise(resolve => {
-			https.get(url, res => {
-				res.on('data', function( data ) {
-					dat += data;
-				});
-				res.on('end', () => {
-					resolve(dat);
-				})
+// function extractContent(url) {
+// 		let dat = '';
+// 		return new Promise(resolve => {
+// 			https.get(url, res => {
+// 				res.on('data', function( data ) {
+// 					dat += data;
+// 				});
+// 				res.on('end', () => {
+// 					resolve(dat);
+// 				})
 		
-			});
-		})
-}
+// 			});
+// 		})
+// }
 
-// pollyfill
-function htmlDecodeWithLineBreaks(html) {
-	var breakToken = '_______break_______',
-		lineBreakedHtml = html.replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
-	return $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n');
-}
+// // pollyfill
+// function htmlDecodeWithLineBreaks(html) {
+// 	var breakToken = '_______break_______',
+// 		lineBreakedHtml = html.replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
+// 	return $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n');
+// }
