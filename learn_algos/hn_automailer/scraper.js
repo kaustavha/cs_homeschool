@@ -10,15 +10,17 @@ function getHNPosts(pageN, fetchFromHN, jobsListfs, hnurlid) {
 		if (!fetchFromHN) return res();
 		return _getHNPosts(pageN, hnurlid, hnurlid).then(dat => {
 			if (dat == oldDat) {
+				console.log('hi2')
 				fs.writeFileSync(jobsListfs, fullDat);
 				return res();
 			}
+			console.log('hi')
 			fullDat += dat;
 			oldDat = dat;
 			pageN++;
 			return getHNPosts(pageN).then(() => res());
 		});
-	})
+	});
 }
 
 function _getHNPosts(pageN, hnurlid) {
@@ -44,6 +46,7 @@ function stripChildComments(dat) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
 				let ctext = $(v).find('.commtext').get(0);
+				if (!ctext) return;
 				ctext.prepend('ago [-]');
 				ctext.append('\n\n');
 				res.push(ctext);
