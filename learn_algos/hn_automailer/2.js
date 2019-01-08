@@ -24,12 +24,13 @@
 
 
 // inputs and flags
-const hnurlid = '18354503'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = '18807017'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
+const includenyandsf = true;
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
-const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
+const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
 const date = new Date(),
@@ -206,9 +207,14 @@ function grabSalary(blk) {
 
 function isRemote(blk) {
 	if (blk.match(/remote/gi) && blk.match(/\|/gi)) return blk;
-	if (includeCanada) {
+	if (includeCanada)
 		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)) return blk;
-	}
+	if (includenyandsf)
+		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) 
+		|| blk.match(/ny/gi) || blk.match(/nyc/gi) || blk.match(/sf/gi) || blk.match(/boston/gi)
+		|| blk.match(/atlanta/gi)
+		|| blk.match(/seattle/gi)) 
+			return blk;
 }
 
 function parseEmailFromBlock(t, iteration) {
@@ -588,6 +594,10 @@ function getHNPosts(pageN) {
 		if (!fetchFromHN) return res();
 		return _getHNPosts(pageN).then(dat => {
 			if (dat == oldDat) {
+				if (debug) console.log('got all posts from hn');
+				try {
+					fs.mkdirSync(yr);
+				} catch (e) {}
 				fs.writeFileSync(jobsListfs, fullDat);
 				return res();
 			}
@@ -622,9 +632,15 @@ function stripChildComments(dat) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
 				let ctext = $(v).find('.commtext').get(0);
-				ctext.prepend('ago [-]');
-				ctext.append('\n\n');
-				res.push(ctext);
+				if (ctext) {
+					try {
+						ctext.prepend('ago [-]');
+						ctext.append('\n\n');
+						res.push(ctext);
+					} catch (e) {
+						// bye
+					}
+				}
 				// console.log(ctext)
 			}
 		}
