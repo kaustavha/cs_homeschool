@@ -58,8 +58,8 @@ $ = require('jquery')(new jsdom.JSDOM().window);
 let oneMin = 60,
 	fvmin = oneMin*5,
 	tenMin = oneMin*10,
-	minDelay = fvmin,
-	maxDelay = tenMin;
+	minDelay = oneMin,
+	maxDelay = fvmin;
 
 // vars for fetching hn jobs txt
 let oldDat = '', fullDat = '';
@@ -308,7 +308,7 @@ function parseEmailFromBlock(t, iteration) {
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
 				// filter out common false matches and people using gmail
-				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)
+				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/) && !w.match(/hotmail/)
 					&& !w.match(/gmail/)) posems.push(w);
 			}
 		}
@@ -319,7 +319,7 @@ function parseEmailFromBlock(t, iteration) {
 	}
 
 	for (let index = 0; index < posems.length; index++) {
-		const w = posems[index];
+		let w = posems[index];
 		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
 		if (w !== 'null' && w) posems[index] = w;
 	}
