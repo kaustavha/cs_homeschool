@@ -29,7 +29,7 @@ const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = false;
-const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
+const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
@@ -204,7 +204,8 @@ function isRemote(blk) {
 	if (blk.match(/remote/gi) && blk.match(/\|/gi))
 		return blk;
 	if (includeCanada)
-		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi))
+		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
+			|| blk.match(/mtl/gi))
 			return blk;
 	if (includeusa) {
 		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
@@ -263,7 +264,7 @@ function parseEmailFromBlock(t, iteration) {
 
 			if (tb.length > 0 && debug) console.log('1', tb);
 
-			tb = tb.replace(/\s+at\s+/gi, '@');
+			// tb = tb.replace(/\s+at\s+/gi, '@');
 			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 			tb = tb.replace(/\s*\[@\]\s*/gi, '@');
 			tb = tb.replace(/\s*\(at\)\s*/gi, '@');
@@ -285,7 +286,6 @@ function parseEmailFromBlock(t, iteration) {
 			// fuck you jeff
 			tb = tb.replace(" __4t__ ", '@');
 
-			if (tb.length > 0 && debug) console.log('2', tb);
 			buf += " " + tb;
 		}
 
@@ -309,7 +309,9 @@ function parseEmailFromBlock(t, iteration) {
 
 				// filter out common false matches and people using gmail
 				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/) && !w.match(/hotmail/)
-					&& !w.match(/gmail/)) posems.push(w);
+					&& !w.match(/gmail/)) {
+						posems.push(w);
+					}
 			}
 		}
 	}
@@ -321,8 +323,13 @@ function parseEmailFromBlock(t, iteration) {
 	for (let index = 0; index < posems.length; index++) {
 		let w = posems[index];
 		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
-		if (w !== 'null' && w) posems[index] = w;
+		if (w !== 'null' && w) {
+			posems[index] = w;
+		} else {
+			posems.splice(index, 1);
+		}
 	}
+
 	// do not email peope again************************************
 	//IMPORTANT
 	posems = dedupeArr(posems);
