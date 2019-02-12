@@ -29,7 +29,7 @@ const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = false;
-const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
+const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
@@ -548,13 +548,17 @@ function genAS(obj, trialRun) {
 			kstr += k[0];
 		}
 		kstr += " and noticed them in the post."
-		addline(kstr);
+		addline(kstr)
 
 		// highlight blockchain exp
 		if (addketh || trialRun) {
-			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. I also recieved a scholarship from the EF to attend Devcon IV this year.");
+			addline(' ')
+			addline("I've been in the blockchain space since 2013 and got a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
+			addline("I worked on a prototype ethereum ui before mist, won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
+			addline("I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. ");
 		}
 		if (addoss || trialRun) {
+			addline(' ')
 			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
 	}
@@ -563,7 +567,7 @@ function genAS(obj, trialRun) {
 	// if (){}
 
 	// highlight data engineering @ rax w/ go
-
+	addline(' ')
 	addline("You can find my resume <a href='https://kaustavha.github.io/kaustav-haldar-resume/'>here</a> ");
 	addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
 	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
