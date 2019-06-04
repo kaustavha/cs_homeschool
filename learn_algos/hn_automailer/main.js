@@ -24,10 +24,11 @@
 
 
 // inputs and flags
-const hnurlid = '18354503'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = '20083795'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
+const includeusa = true;
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
@@ -40,8 +41,8 @@ const jobsList = `${yr}/jobs_m${month}`,
 	jobsListfs = jobsList + '.txt',
 	// jobsListfs = '2018/jobstest.txt',
 	sentEmailsfs = jobsList + '_emailsbackup_alreadysent.txt',
-	outputApplScriptfs = jobsList + '_final.scpt',
-	tstAs = outputApplScriptfs + 'test',
+	outputApplScriptfs = jobsList + '_final.applescript',
+	tstAs = outputApplScriptfs + '.test',
 	rejectsfs = jobsList+'_rejects.txt',
 	rawEmailListfs = jobsList+'_emails.txt',
 	salariesFs = jobsList+'_salaries.txt',
@@ -57,8 +58,8 @@ $ = require('jquery')(new jsdom.JSDOM().window);
 let oneMin = 60,
 	fvmin = oneMin*5,
 	tenMin = oneMin*10,
-	minDelay = fvmin,
-	maxDelay = tenMin;
+	minDelay = oneMin,
+	maxDelay = fvmin;
 
 // vars for fetching hn jobs txt
 let oldDat = '', fullDat = '';
@@ -87,11 +88,6 @@ let block = false,
 	postername,
 	matcheskeywords = 0;
 
-// let l = "We're a fast-moving team that is hard on ideas and not people. We also really like functional programming :) If you have any questions, please feel free to reach out to our head of people at avery {dot} francis {at} setter {dot} com \n";
-// let o = parseEmailFromBlock(l);
-// console.log(o)
-
-// return;
 
 getHNPosts(1).then(x => {
 	main();
@@ -205,9 +201,19 @@ function grabSalary(blk) {
 }
 
 function isRemote(blk) {
-	if (blk.match(/remote/gi) && blk.match(/\|/gi)) return blk;
-	if (includeCanada) {
-		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)) return blk;
+	if (blk.match(/remote/gi) && blk.match(/\|/gi))
+		return blk;
+	if (includeCanada)
+		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
+			|| blk.match(/mtl/gi))
+			return blk;
+	if (includeusa) {
+		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
+		blk.match(/ny/gi) || blk.match(/nyc/gi) || blk.match(/sf/gi) || blk.match(/boston/gi) ||
+		blk.match(/atlanta/gi) ||
+		blk.match(/seattle/gi)) {
+			return blk;
+		}
 	}
 }
 
@@ -258,8 +264,8 @@ function parseEmailFromBlock(t, iteration) {
 
 			if (tb.length > 0 && debug) console.log('1', tb);
 
-			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 			// tb = tb.replace(/\s+at\s+/gi, '@');
+			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 			tb = tb.replace(/\s*\[@\]\s*/gi, '@');
 			tb = tb.replace(/\s*\(at\)\s*/gi, '@');
 			tb = tb.replace(/\s*\<at\>\s*/gi, '@');
@@ -280,7 +286,6 @@ function parseEmailFromBlock(t, iteration) {
 			// fuck you jeff
 			tb = tb.replace(" __4t__ ", '@');
 
-			if (tb.length > 0 && debug) console.log('2', tb);
 			buf += " " + tb;
 		}
 
@@ -303,8 +308,10 @@ function parseEmailFromBlock(t, iteration) {
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
 				// filter out common false matches and people using gmail
-				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/)
-					&& !w.match(/gmail/)) posems.push(w);
+				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/) && !w.match(/hotmail/)
+					&& !w.match(/gmail/)) {
+						posems.push(w);
+					}
 			}
 		}
 	}
@@ -314,10 +321,15 @@ function parseEmailFromBlock(t, iteration) {
 	}
 
 	for (let index = 0; index < posems.length; index++) {
-		const w = posems[index];
+		let w = posems[index];
 		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
-		if (w !== 'null' && w) posems[index] = w;
+		if (w !== 'null' && w) {
+			posems[index] = w;
+		} else {
+			posems.splice(index, 1);
+		}
 	}
+
 	// do not email peope again************************************
 	//IMPORTANT
 	posems = dedupeArr(posems);
@@ -421,12 +433,13 @@ function parseBuzzwords(txt) {
 		'javascript': ['es6', 'js', 'javascript', 'es7', 'esnext'],
 		'react': ['react', 'reactjs', "react-native", 'redux', 'mobex'],
 		'angular': ['angular', 'angularjs'],
+		'frontend': ['front-end', 'frontend'],
 		'go': ['golang', 'go'],
 		'elk': ['kibana', 'logstash', 'elasticsearch'],
 		'devops': ['devops', 'chef', 'ansible', 'travis', 'jenkins', 'kubernetes', 'docker', 'terraform', 'kubernetes']
 	}
 
-	let words = txt.match(/[a-z]+/gi),
+	let words = txt.replace('-', '').match(/[a-z]+/gi),
 		out = [];
 
 	for (var i = 0; i < words.length; i++) {
@@ -462,7 +475,7 @@ function genRandDelay() {
 		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 	}
 	let val = getRandomInt(minDelay,maxDelay);
-	return `\n delay ${val} \n`;
+	return `\ndelay ${val} \n`;
 }
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
@@ -535,13 +548,17 @@ function genAS(obj, trialRun) {
 			kstr += k[0];
 		}
 		kstr += " and noticed them in the post."
-		addline(kstr);
+		addline(kstr)
 
 		// highlight blockchain exp
 		if (addketh || trialRun) {
-			addline("I’ve been following blockchain projects like ethereum, dash, ripple, bitcoin etc for a while and have read many whitepapers. I worked on a prototype ethereum ui before mist. More recently I won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. I also recieved a scholarship from the EF to attend Devcon IV this year.");
+			addline(' ')
+			addline("I've been in the blockchain space since 2013 and got a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
+			addline("I worked on a prototype ethereum ui before mist, won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
+			addline("I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. ");
 		}
 		if (addoss || trialRun) {
+			addline(' ')
 			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
 	}
@@ -550,12 +567,13 @@ function genAS(obj, trialRun) {
 	// if (){}
 
 	// highlight data engineering @ rax w/ go
-
-	addline("Here's my resume: <a href='http://kaustavha.github.io/kaustav-haldar-resume/'>bit.ly/khaldarcv</a> ");
+	addline(' ')
+	addline("You can find my resume <a href='https://kaustavha.github.io/kaustav-haldar-resume/'>here</a> ");
 	addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
 	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
 	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
+	addline("I'm looking for Remote or Canadian positions right now. ")
 	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
 	addline("Looking forward to hearing back from you.");
 	addline("");
@@ -565,7 +583,7 @@ function genAS(obj, trialRun) {
 	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
 
 	let as = 'tell application "Microsoft Outlook"';
-	as += '\n set theContent to "' + content + '"';
+	as += '\nset theContent to "' + content + '"';
 	as += '\n   set newMessage to make new outgoing message with properties {subject:"' + defaultsubject + '", content:theContent} ';
 	as += '\n   make new to recipient at newMessage with properties {email address: {address:"' + mainEmail + '"}}';
 	// as += '\n   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}';
@@ -588,6 +606,10 @@ function getHNPosts(pageN) {
 		if (!fetchFromHN) return res();
 		return _getHNPosts(pageN).then(dat => {
 			if (dat == oldDat) {
+				if (debug) console.log('got all posts from hn');
+				try {
+					fs.mkdirSync(yr);
+				} catch (e) {}
 				fs.writeFileSync(jobsListfs, fullDat);
 				return res();
 			}
@@ -622,9 +644,15 @@ function stripChildComments(dat) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
 				let ctext = $(v).find('.commtext').get(0);
-				ctext.prepend('ago [-]');
-				ctext.append('\n\n');
-				res.push(ctext);
+				if (ctext) {
+					try {
+						ctext.prepend('ago [-]');
+						ctext.append('\n\n');
+						res.push(ctext);
+					} catch (e) {
+						// bye
+					}
+				}
 				// console.log(ctext)
 			}
 		}
