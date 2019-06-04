@@ -24,13 +24,13 @@
 
 
 // inputs and flags
-const hnurlid = '19055166'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = '20083795'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
-const includeusa = false;
+const includeusa = true;
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
-const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
+const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
 // Dates for creating filenames
 const date = new Date(),
