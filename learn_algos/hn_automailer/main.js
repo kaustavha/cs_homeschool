@@ -409,11 +409,6 @@ function dedupeArr(arr) {
 }
 
 function parseBuzzwords(txt) {
-	let krax = "Go, golang, Lua, JS, Python, Ruby, Java, C++, Bash;  Hadoop, Hive, Kafka, MongoDB, ElasticSearch, Logstash, Kibana, Grafana, Docker, Chef, Travis, Jenkins, Ansible zookeeper".
-	match(/[a-z]+/gi),
-		kspark = "MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS, javascript. angular, node".match(/[a-z]+/gi),
-		python = ["pip", "python", "anaconda"],
-		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi);
 	let keywords = [
 		"python", "ruby", "java", "c++", "lua", "bash", "shell", "scripting",
 		"mongo", "mongodb", "mysql", "sql", "hadoop", "hive",
@@ -480,7 +475,7 @@ function genRandDelay() {
 
 // Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
 function genAS(obj, trialRun) {
-
+	let content = '';
 	// Utils for generating applescript
 	function addline(txt) {
 		content += txt + "\n";
@@ -509,7 +504,6 @@ function genAS(obj, trialRun) {
 		addketh = false,
 		addoss = false;
 
-	let content = '';
 	let o = obj,
 		e = o.e,
 		txt = o.txt,
@@ -554,12 +548,12 @@ function genAS(obj, trialRun) {
 		if (addketh || trialRun) {
 			addline(' ')
 			addline("I've been in the blockchain space since 2013 and got a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
-			addline("I worked on a prototype ethereum ui before mist, won a prize at Ethwaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
-			addline("I've also helped organize and run workshops at a ethereum developer meetup and worked on hyperledger projects within IBM. ");
+			addline("I worked on a prototype ethereum ui before mist, won a prize at EthWaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
+			addline("I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. ");
 		}
 		if (addoss || trialRun) {
 			addline(' ')
-			addline("I'm a big proponent of open source with commits made and merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
+			addline("I'm a big proponent of open source with commits merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
 		}
 	}
 
@@ -573,7 +567,9 @@ function genAS(obj, trialRun) {
 	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
 	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
-	addline("I'm looking for Remote or Canadian positions right now. ")
+	addline("I'm currently based in Canada but open to relocation.")
+	// addline("I'm a Canadian citizen so I'll need a visa sponsor for most places.")
+	// addline("I'm looking for Remote or Canadian positions right now. ")
 	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
 	addline("Looking forward to hearing back from you.");
 	addline("");
@@ -608,7 +604,7 @@ function getHNPosts(pageN) {
 			if (dat == oldDat) {
 				if (debug) console.log('got all posts from hn');
 				try {
-					fs.mkdirSync(yr);
+					fs.mkdirSync('./'+yr);
 				} catch (e) {}
 				fs.writeFileSync(jobsListfs, fullDat);
 				return res();
@@ -678,6 +674,7 @@ function extractContent(url) {
 // pollyfill
 function htmlDecodeWithLineBreaks(html) {
 	var breakToken = '_______break_______',
-		lineBreakedHtml = html.replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
+		lineBreakedHtml = html.replace(/<a>(.*?)<a\/>/gi, '$1').replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
+		// console.log(html, $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n'))
 	return $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n');
 }
