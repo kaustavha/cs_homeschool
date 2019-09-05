@@ -24,11 +24,11 @@
 
 
 // inputs and flags
-const hnurlid = '20083795'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = '20867123'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
-const remoteOnly = true; // only pull in remote jobs
+const remoteOnly = true; // only pull in remote jobs + foll. flags
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
-const includeusa = true;
+const includeusa = false; // same as above but city keywords for the states
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
@@ -89,6 +89,8 @@ let block = false,
 	matcheskeywords = 0;
 
 
+
+
 getHNPosts(1).then(x => {
 	main();
 });
@@ -126,8 +128,7 @@ function main() {
 // Functions
 
 function populateBlocks() {
-	let txt = fs.readFileSync(jobsListfs);
-	txt += '';
+	let txt = fs.readFileSync(jobsListfs, 'utf8');
 	let lines = txt.split('\n');
 	for (var i = 0; i < lines.length; i++) {
 		let tl = lines[i];
@@ -172,8 +173,11 @@ function populateBlocks() {
 				} else {
 					rejects.push(blockbuf);
 
-					// grab and prioritize remote jobs we missed
-					if (isRemote(blockbuf)) remoteJobsRejects.push(blockbuf);
+					// grab and prioritize remote jobs we missed for manual
+					if (isRemote(blockbuf)
+						&& keywordMatchOnly ? keywords.length > 0 : true) {
+							remoteJobsRejects.push(blockbuf.concat(keywords, parseEmailFromBlock(blockbuf), etxt, (keywordMatchOnly ? keywords.length > 0 : true), isRemote(blockbuf)));
+						}
 				}
 				postername = null;
 				blockbuf = '';
@@ -201,16 +205,17 @@ function grabSalary(blk) {
 }
 
 function isRemote(blk) {
-	if (blk.match(/remote/gi) && blk.match(/\|/gi))
+	if (blk.match(/remote/gi) && (blk.match(/\|/gi)) || (blk.match(/location/gi)))
 		return blk;
 	if (includeCanada)
-		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
-			|| blk.match(/mtl/gi))
-			return blk;
+		if (blk.match(/toronto/gi)) return blk;
+		// uncomment when we cool with not toronto
+		// if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
+		// 	|| blk.match(/mtl/gi))
+		// 	return blk;
 	if (includeusa) {
 		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
 		blk.match(/ny/gi) || blk.match(/nyc/gi) || blk.match(/sf/gi) || blk.match(/boston/gi) ||
-		blk.match(/atlanta/gi) ||
 		blk.match(/seattle/gi)) {
 			return blk;
 		}
@@ -317,7 +322,7 @@ function parseEmailFromBlock(t, iteration) {
 	}
 
 	if (posems.length == 0) {
-		if (!iteration == 1) posems = parseEmailFromBlock(parseLine2(t), 1);
+		if (iteration == null || iteration == undefined || iteration < 1) posems = parseEmailFromBlock(parseLine2(t), 1);
 	}
 
 	for (let index = 0; index < posems.length; index++) {
@@ -371,28 +376,6 @@ function parseLine2(tb) {
 	return tb;
 }
 
-// function dedupeObj(arr, key) {
-// 	let arr2 = [], outArr = [];
-// 	arr.forEach(element => {
-// 		arr2.push(element[key]);
-// 	});
-// 	// for (k, v in arr) {
-// 	// 	arr2.push(v[key]);
-// 	// }
-// 	dedupeArr(arr2);
-// 	arr2.forEach(element => {
-// 		arr.forEach(origEle => {
-// 			if (origEle[key] === element) {
-// 				outArr.push(origEle);
-// 				return;
-// 			}
-// 		});
-// 	});
-// 	console.log(outArr, arr)
-// 	return outArr;
-	
-// }
-
 // dedupe an array and also cast everything to lowercase
 function dedupeArr(arr) {
 	let o = {},
@@ -442,7 +425,7 @@ function parseBuzzwords(txt) {
 
 		if (keywords.indexOf(twlc) != -1) out.push(keywords[keywords.indexOf(twlc)]);
 
-		for (key in keywordsMap) {
+		for (let key in keywordsMap) {
 			if (keywordsMap[key].indexOf(twlc) != -1) out.push(key);
 		}
 	}
@@ -455,7 +438,7 @@ function parseBuzzwords(txt) {
 // generate applescript
 function genAsAll(obj) {
 	let c = '';
-	for (ki in obj) {
+	for (let ki in obj) {
 		c += genAS(obj[ki]);
 		c += genRandDelay();
 	}
@@ -494,7 +477,6 @@ function genAS(obj, trialRun) {
 	// End
 
 	let defaultsubject = "HackerNews FT SE opportunities";
-	let fcontent = '';
 
 	let krax = "Go, golang, Lua, JS, Python, Ruby, Java, C++, Bash;  Hadoop, Hive, Kafka, MongoDB, ElasticSearch, Logstash, Kibana, Grafana, Docker, Chef, Travis, Jenkins, Ansible zookeeper".
 	match(/[a-z]+/gi),
@@ -567,7 +549,7 @@ function genAS(obj, trialRun) {
 	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
 	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
-	addline("I'm currently based in Canada but open to relocation.")
+	addline("I'm a Canadian and looking for work that's remote or in Toronto right now. ")
 	// addline("I'm a Canadian citizen so I'll need a visa sponsor for most places.")
 	// addline("I'm looking for Remote or Canadian positions right now. ")
 	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
@@ -576,6 +558,41 @@ function genAS(obj, trialRun) {
 	addline("Thanks, ");
 	addline("Kaustav Haldar ");
 
+	return genMailAS(content, defaultsubject, mainEmail, e);
+}
+
+function genMailAS(content, defaultsubject, mainEmail, extraEmails) {
+	let fcontent = '';
+	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
+
+	let as = 'tell application "Mail"';
+	as += '\n	set theContent to "' + content + '"';
+	as += '\n	set newMessage to make new outgoing message with properties {visible:true, subject:"' + defaultsubject + '", content:theContent} ';
+	
+	// message opts
+	as += '\n	tell newMessage'
+	as += '\n		make new to recipient at newMessage with properties {address:"' + mainEmail + '"}';
+	// as += '\n   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}';
+	
+	// ignore extra emails for now
+
+	// if (extraEmails.length > 1) {
+	// 	for (var i = 1; i < extraEmails.length; i++) {
+	// 		as += '\n		make new cc recipient at newMessage with properties {address:"' + extraEmails[i] + '"}';
+	// 	}
+	// }
+	as += '\n	end tell'
+	as += '\n   send newMessage';
+	as += '\nend tell';
+
+	fcontent += '\n' + as;
+
+	return fcontent;
+}
+
+// content is generated by addLine func in genAS
+function genOutlookAS(content) {
+	let fcontent = '';
 	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
 
 	let as = 'tell application "Microsoft Outlook"';
@@ -622,7 +639,7 @@ function _getHNPosts(pageN) {
 	return new Promise(res => {
 		extractContent(url).then(dat => {
 			let buf = '';
-			commtext = stripChildComments(dat);
+			let commtext = stripChildComments(dat);
 			$.each( commtext, function( key, value ) {
 				buf += htmlDecodeWithLineBreaks($(value).html());
 			});
@@ -631,17 +648,39 @@ function _getHNPosts(pageN) {
 	})
 }
 
+function swapHtmlTextWithFullRefLinks(dat) {
+	// console.log($(dat).find('a'))
+	let links = $(dat).find('a');
+	if (!links) return;
+	$.each(links, (k, v) => {
+		let url = $(v).attr('href');
+		if (url.match('http')) {
+			$(v).text(function() {
+				return url;
+			});
+		}
+	});
+	return dat;
+	// break;
+}
+
 function stripChildComments(dat) {
-	html = $(dat);
-	comments = html.find('.comtr');
+	let html = $(dat);
+	let comments = html.find('.comtr');
 	let res = [];
 	$.each(comments, (k, v) => {
 		if ($(v).find('img')) {
 			let img = $(v).find('img').get(0);
 			if (img.width == 0) {
-				let ctext = $(v).find('.commtext').get(0);
+				// ctext is HTMLSpanElement {}
+				let ctext;
+				ctext = $(v).find('.commtext').get(0);
 				if (ctext) {
 					try {
+						ctext = swapHtmlTextWithFullRefLinks(v);
+						// ctext = ctext.get(0);
+						ctext = $(ctext).find('.commtext').get(0)
+						ctext.prepend('\n\n');
 						ctext.prepend('ago [-]');
 						ctext.append('\n\n');
 						res.push(ctext);
@@ -666,7 +705,6 @@ function extractContent(url) {
 				res.on('end', () => {
 					resolve(dat);
 				})
-		
 			});
 		})
 }
