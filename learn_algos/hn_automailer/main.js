@@ -27,8 +27,9 @@
 const hnurlid = '20867123'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs + foll. flags
+const torontoAndRemoteOnly = true;
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
-const includeusa = false; // same as above but city keywords for the states
+const includeusa = true; // same as above but city keywords for the states
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
@@ -87,8 +88,6 @@ let block = false,
 	roles = [],
 	postername,
 	matcheskeywords = 0;
-
-
 
 
 getHNPosts(1).then(x => {
@@ -174,9 +173,16 @@ function populateBlocks() {
 					rejects.push(blockbuf);
 
 					// grab and prioritize remote jobs we missed for manual
-					if (isRemote(blockbuf)
-						&& keywordMatchOnly ? keywords.length > 0 : true) {
-							remoteJobsRejects.push(blockbuf.concat(keywords, parseEmailFromBlock(blockbuf), etxt, (keywordMatchOnly ? keywords.length > 0 : true), isRemote(blockbuf)));
+					if (isRemote(blockbuf) !== false
+						&& (!etxt || etxt.length === 0)
+						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
+							remoteJobsRejects.push(
+								blockbuf.concat(
+									keywords, 
+									parseEmailFromBlock(blockbuf), 
+									etxt, 
+									(keywordMatchOnly ? keywords.length > 0 : true), 
+									isRemote(blockbuf)));
 						}
 				}
 				postername = null;
@@ -205,21 +211,30 @@ function grabSalary(blk) {
 }
 
 function isRemote(blk) {
-	if (blk.match(/remote/gi) && (blk.match(/\|/gi)) || (blk.match(/location/gi)))
+	if (torontoAndRemoteOnly) {
+		if (blk.match(/toronto/gi))
+			return blk;
+		if (blk.match(/remote/gi) && ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
+			return blk;
+		return false;
+	}
+
+	if (blk.match(/remote/gi) && ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
 		return blk;
 	if (includeCanada)
-		if (blk.match(/toronto/gi)) return blk;
+		// if (blk.match(/toronto/gi)) return blk;
 		// uncomment when we cool with not toronto
-		// if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
-		// 	|| blk.match(/mtl/gi))
-		// 	return blk;
+		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
+			|| blk.match(/\smtl\s/gi))
+			return blk;
 	if (includeusa) {
 		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
-		blk.match(/ny/gi) || blk.match(/nyc/gi) || blk.match(/sf/gi) || blk.match(/boston/gi) ||
+		blk.match(/\sny\s/gi) || blk.match(/\snyc\s/gi) || blk.match(/\ssf\s/gi) || blk.match(/boston/gi) ||
 		blk.match(/seattle/gi)) {
 			return blk;
 		}
 	}
+	return false;
 }
 
 function parseEmailFromBlock(t, iteration) {
@@ -245,6 +260,7 @@ function parseEmailFromBlock(t, iteration) {
 			} else if (word.match(/\[at\]/gi) ||
 				word.match(/\(at\)/gi) ||
 				word.match(/\<at\>/gi) ||
+				word.match(/\_at\_/gi) ||
 				word.match(/\{at\}/gi) ||
 				word.indexOf("@") > -1) {
 				if (debug) console.log('at', word);
@@ -327,7 +343,7 @@ function parseEmailFromBlock(t, iteration) {
 
 	for (let index = 0; index < posems.length; index++) {
 		let w = posems[index];
-		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com');
+		if (w.match(/.com/)) w.replace(/.com[a-z]+/, '.com ');
 		if (w !== 'null' && w) {
 			posems[index] = w;
 		} else {
@@ -505,7 +521,7 @@ function genAS(obj, trialRun) {
 		for (var i = 0; i < k.length; i++) {
 			let keyword = k[i];
 			if (checkForOpensourceOrEth(keyword)) {
-				k.splice(i, 1);
+				// k.splice(i, 1);
 			}
 			if (keyword === 'opensource') addoss = true;
 			if (match(k, keth)) addketh = true;
@@ -529,7 +545,7 @@ function genAS(obj, trialRun) {
 		// highlight blockchain exp
 		if (addketh || trialRun) {
 			addline(' ')
-			addline("I've been in the blockchain space since 2013 and got a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
+			addline("I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
 			addline("I worked on a prototype ethereum ui before mist, won a prize at EthWaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
 			addline("I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. ");
 		}
@@ -544,12 +560,16 @@ function genAS(obj, trialRun) {
 
 	// highlight data engineering @ rax w/ go
 	addline(' ')
-	addline("You can find my resume <a href='https://kaustavha.github.io/kaustav-haldar-resume/'>here</a> ");
-	addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
-	addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
+	addline("You can find my resume at https://bit.ly/khaldarcv");
+	addline("LinkedIn: khaldar | https://www.linkedin.com/in/khaldar");
+	addline("Github: kaustavha | https://github.com/kaustavha");
+
+	// addline("You can find my resume <a href='https://kaustavha.github.io/kaustav-haldar-resume/'>here</a> ");
+	// addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
+	// addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
 	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
-	addline("I'm a Canadian and looking for work that's remote or in Toronto right now. ")
+	addline("I'm Canadian and looking for work that's remote or in Toronto right now but open to other opportunities. ")
 	// addline("I'm a Canadian citizen so I'll need a visa sponsor for most places.")
 	// addline("I'm looking for Remote or Canadian positions right now. ")
 	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
@@ -563,14 +583,15 @@ function genAS(obj, trialRun) {
 
 function genMailAS(content, defaultsubject, mainEmail, extraEmails) {
 	let fcontent = '';
-	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
+	content = content;
 
 	let as = 'tell application "Mail"';
 	as += '\n	set theContent to "' + content + '"';
-	as += '\n	set newMessage to make new outgoing message with properties {visible:true, subject:"' + defaultsubject + '", content:theContent} ';
+	as += '\n	set newMessage to make new outgoing message with properties {visible:true, subject:"' + defaultsubject + '"} ';
 	
 	// message opts
-	as += '\n	tell newMessage'
+	as += '\n	tell newMessage';
+	as += '\n		set content to theContent';
 	as += '\n		make new to recipient at newMessage with properties {address:"' + mainEmail + '"}';
 	// as += '\n   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}';
 	
@@ -582,7 +603,7 @@ function genMailAS(content, defaultsubject, mainEmail, extraEmails) {
 	// 	}
 	// }
 	as += '\n	end tell'
-	as += '\n   send newMessage';
+	as += '\n	send newMessage';
 	as += '\nend tell';
 
 	fcontent += '\n' + as;
