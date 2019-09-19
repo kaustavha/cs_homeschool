@@ -52,3 +52,37 @@ var numDecodings = function(s) {
     dfs(s, []);
     return solns;
 };
+
+/**
+Runtime: 6244 ms, faster than 7.15% of JavaScript online submissions for Decode Ways.
+Memory Usage: 37.5 MB, less than 14.29% of JavaScript online submissions for Decode Ways.
+**/
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var numDecodings = function(s) {
+    let solns = 0, len = s.length;
+    if (s <= 0) return 0;
+    let dfs = (i) => {
+        if (i >= len) {
+            solns++;
+            return;
+        }
+        let oneDig = s[i];
+        if (oneDig > 0) {
+            let nxtPtr = i+1;
+            dfs(i+1);
+        }
+        let twoDig = s.slice(i,i+2);
+        if (twoDig < 27 && twoDig > 9) {
+            let nxtPtr = i+2;
+            dfs(i+2);
+        }
+        return;
+    }
+    
+    dfs(0);
+    return solns;
+};
+
