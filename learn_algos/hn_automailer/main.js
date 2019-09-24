@@ -21,10 +21,16 @@
  *  -- jobs where we managed to parse a salary
  * - Running the applescript will automatically send out emails to everyone specified
  */
-
+let argHnUrlId, genStats;
+const myArgs = process.argv.slice(2);
+if (myArgs.length > 0) {
+	// 1st arg is hnurl id
+	argHnUrlId = myArgs[0];
+	genStats = myArgs[1];
+}
 
 // inputs and flags
-const hnurlid = '20867123'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = argHnUrlId ? argHnUrlId : '20867123'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs + foll. flags
 const torontoAndRemoteOnly = true;
@@ -32,6 +38,12 @@ const includeCanada = true; // needs the above flag to be true, also adds in job
 const includeusa = true; // same as above but city keywords for the states
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
+
+let stats = {
+	py: 0,
+	js: 0,
+	eth: 0
+}
 
 // Dates for creating filenames
 const date = new Date(),
@@ -89,7 +101,6 @@ let block = false,
 	postername,
 	matcheskeywords = 0;
 
-
 getHNPosts(1).then(x => {
 	main();
 });
@@ -122,6 +133,13 @@ function main() {
 	fs.writeFileSync(salariesFs, salaries.join("\n"));
 	fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
 	fs.writeFileSync(remoteJobsRejectsFs, remoteJobsRejects.join("\n"));
+
+	if (genStats) {
+		console.log(stats)
+	}
+
+	console.log("Done");
+	return Promise.resolve();
 }
 //========================================= End
 // Functions
@@ -142,6 +160,12 @@ function populateBlocks() {
 				
 				// generate keyword match stats
 				if (keywords.length) matcheskeywords++;
+
+				if (genStats) {
+					// how many jobs w/ matching keywords
+					if (keywords.indexOf('python') > -1) stats.py++;
+					if (keywords.indexOf('javascript') > -1) stats.js++;
+				}
 
 				// prioritize jobs that list salary
 				let slr = grabSalary(blockbuf);
@@ -182,7 +206,8 @@ function populateBlocks() {
 									parseEmailFromBlock(blockbuf), 
 									etxt, 
 									(keywordMatchOnly ? keywords.length > 0 : true), 
-									isRemote(blockbuf)));
+									(isRemote(blockbuf) === false ? ' remote: false ' : ' remote: true '),
+									'\n'));
 						}
 				}
 				postername = null;
@@ -268,7 +293,7 @@ function parseEmailFromBlock(t, iteration) {
 					end = j + 5 > words.length ? words.length : j + 5;
 				tb += words.slice(start, end).join(" ");
 			} else if (word.match(/\[dot\]/gi) ||
-				word.match(/\(dot\)/gi) ||
+				word.match(/\(\dot\)/gi) ||
 				word.match(/\s*dot\s*/gi) ||
 				word.match(/\s*\[\.\]\s*/gi) ||
 				word.match(/\<dot\>/gi) ||
@@ -365,7 +390,7 @@ function parseLine2(tb) {
 	if (debug) console.log('parseline2 start', tb);
 
 	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
-	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
+	tb = tb.replace(/\s*\(\s*dot\s*\)\s*/gi, '.');
 	tb = tb.replace(/\s*\(\.\)\s*/gi, '.');
 	tb = tb.replace(/\s*\[\.\]\s*/gi, '.');
 	tb = tb.replace(/\s*\<dot\>\s*/gi, '.');
@@ -377,7 +402,7 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s*\[at\]\s*/gi, '@');
 	tb = tb.replace(/\s+at\s+/gi, '@');
 	tb = tb.replace(/\s*\[@\]\s*/gi, '@');
-	tb = tb.replace(/\s*\(at\)\s*/gi, '@');
+	tb = tb.replace(/\s*\(\s*at\s*\)\s*/gi, '@');
 	tb = tb.replace(/\s*\<at\>\s*/gi, '@');
 	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
 	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
@@ -498,7 +523,7 @@ function genAS(obj, trialRun) {
 	match(/[a-z]+/gi),
 		kspark = "MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS, javascript".match(/[a-z]+/gi),
 		python = ["pip", "python", "anaconda"],
-		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi),
+		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi), // returns an array of keywords
 		addketh = false,
 		addoss = false;
 
