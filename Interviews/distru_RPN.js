@@ -1,20 +1,4 @@
 function RPN(str) {
-    let stack = [], arr = [];
-
-    function parseInput(str) {
-        let arr = str.split(' '), res = [];
-        arr.forEach(element => {
-            if (!isActionChar(element)) {
-                res.push(parseInt(element))
-            } else {
-                res.push(element);
-            }
-        });
-        return res;
-    }
-
-    arr = parseInput(str)
-
     function isActionChar(char) {
         if (char == '+' ||
             char == '-' ||
@@ -25,11 +9,11 @@ function RPN(str) {
     }
 
     function doAction(stack, char) {
-        let res, y, x = stack.pop();
+        let res, y, x = parseInt(stack.pop());
         if (char == 'abs') {
             res = Math.abs(x);
         } else {
-            y = stack.pop();
+            y = parseInt(stack.pop());
             if (char == '+') {
                 res = x+y;
             } else if (char == '-') {
@@ -40,26 +24,19 @@ function RPN(str) {
                 res = y/x;
             }
         }
-
         stack.push(res);
-
         return stack;
     }
 
-    for (let i=0; i<arr.length; i++ ) {
-        let cur = arr[i];
+    let stack = [], arr = str.split(' ');
+
+    arr.forEach(cur => {
         if (!isActionChar(cur)) {
             stack.push(cur);
         } else {
-            // if (cur === 'abs') {
-            //     let x = stack.
-            // }
-            // let x = stack.pop(),
-            //     y = stack.pop();
             stack = doAction(stack, cur);
-            // stack.push(res)
         }
-    }
+    })
 
     return stack[0];
 }
@@ -71,7 +48,8 @@ let testCases = [
     '3 4 2 * -',
     '10 9 8 7 - + +',
     '1',
-    '2 5 - abs'
+    '2 5 - abs',
+    '-'
 ];
 
 testCases.forEach(el => {

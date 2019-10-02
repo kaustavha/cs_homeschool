@@ -45,6 +45,7 @@ Print "Hello World!"
  */
 
 var readline = function() {return 4;};
+let debug = false;
 
 class Node {
     constructor(val) {
@@ -69,9 +70,9 @@ class Treefuck {
         }
     }
     execute(str) {
-        console.log('starting exec');
-        for (var i=0;i<str.length;i++) {
-            var c = str[i];
+        if (debug) console.log('starting exec');
+        for (let i=0;i<str.length;i++) {
+            let c = str[i];
             if (c == '<') {
                 this.goleft();
             } else if (c == '>') {
@@ -82,11 +83,10 @@ class Treefuck {
                 if (this.ptr.val == 0) {
                     let k =i,
                         seenBrackets = 0,found=false;
-                    
                     while (!found) {
                         k++;
-                        if (k>=str.length) console.log('error, no matching bracket found');
-                        var thisChar = str[k];
+                        if (k>=str.length && debug) console.log('error, no matching bracket found');
+                        let thisChar = str[k];
                         if (thisChar == '[') {
                             seenBrackets++;
                         }
@@ -99,9 +99,9 @@ class Treefuck {
                             }
                         }
                     }
-                    console.log('found match'); // 2
                     i = k;
-                    console.log(str[i-1] + i + str[i+1]);
+                    if (debug) console.log('found match'); // 2
+                    if (debug) console.log(str[i-1] + i + str[i+1]);
                 }
             } else if (c==']') {
                 if (this.ptr.val != 0) {
@@ -109,8 +109,8 @@ class Treefuck {
                         seenBrackets=0,found=false;
                     while (!found) {
                         k--;
-                        if (k<=0) console.log('error, no matching bracket found');
-                        var thisChar = str[k];
+                        if (k<=0 && debug) console.log('error, no matching bracket found');
+                        let thisChar = str[k];
                         if (thisChar == '[') {
                             if (seenBrackets == 0) {
                                 found = true;
@@ -118,15 +118,13 @@ class Treefuck {
                             } else {
                                 seenBrackets--;
                             }
-                            
                         } else if (thisChar == ']') {
                             seenBrackets++;
                         }
                     }
                     i=k;
-                    console.log(str[i-1] + i + str[i+1]);
+                    if (debug) console.log(str[i-1] + i + str[i+1]);
                 }
-                       
             } else if (c=='+') {
                 this.increment();
             } else if (c=='-') {
@@ -139,27 +137,22 @@ class Treefuck {
                 throw 'invalid syntax';
             }
         }
-        
     }
     goleft() {
-        //console.log('goleft');
         this.handleEmpty();
-        var nextPtr = this.ptr.left;
+        let nextPtr = this.ptr.left;
         nextPtr.parent = this.ptr;
         this.ptr = nextPtr;
     }
-    
     goRight() {
-        //console.log('goright');
         this.handleEmpty();
-        var nextPtr = this.ptr.right;
+        let nextPtr = this.ptr.right;
         nextPtr.parent = this.ptr;
         this.ptr = nextPtr;      
     }
     goToParent() {
-        //console.log('gotoparent');
         if (this.ptr.parent == null) {
-            console.log('this is the root');
+            if (debug) console.log('this is the root');
         }
         this.ptr = this.ptr.parent;
     }
@@ -168,17 +161,16 @@ class Treefuck {
     }
     decrement() {
         if (this.ptr.val <= 0){
-            console.log('cant have -ve bytes');
+            if (debug) console.log('cant have -ve bytes');
             this.output();
         }
         this.ptr.val--;
     }
     output() {
-        var intofchar = parseInt(this.ptr.val);
-        var letter = String.fromCharCode(intofchar);
-//         console.log(this.ptr.val);
-        
-        console.log(letter + ' ' + intofchar);
+        let intofchar = parseInt(this.ptr.val),
+            letter = String.fromCharCode(intofchar),
+            out = `${letter} | ${intofchar}`;
+        console.log(out);
     }
     input() {
         this.ptr.val = readline();
@@ -188,50 +180,10 @@ class Treefuck {
 
 let instr= ",[.-]";
 let tf = new Treefuck();
-// tf.execute(instr);
+tf.execute(instr);
+tf = new Treefuck();
+tf.execute('<,|>,|<[-|+<]|>[-|+>]|.');
 
-// tf.execute('<,|>,|<[-|+<]|>[-|+>]|.');
-
+tf = new Treefuck();
 tf.execute("++++++++[>++++[>++>+++>+++>+||||-]>+>+>->>+[|]|-]>>.>---.+++++++..+++.>>.|-.|.+++.------.--------.>>+.>++.");
-
-
-
-
-
-// 40 - (
-// h - 104
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// prints hello world
