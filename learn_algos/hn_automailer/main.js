@@ -26,18 +26,18 @@ const myArgs = process.argv.slice(2);
 if (myArgs.length > 0) {
 	// 1st arg is hnurl id
 	argHnUrlId = myArgs[0];
-	genStats = myArgs[1];
+	genStats = myArgs[0] ? true : false;
 }
 
 // inputs and flags
-const hnurlid = argHnUrlId ? argHnUrlId : '20867123'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = argHnUrlId ? argHnUrlId : '21126014'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs + foll. flags
-const torontoAndRemoteOnly = true;
+const torontoAndRemoteOnly = false; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
-const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist and just that
-const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
+const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
+const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 let stats = {
 	py: 0,
@@ -380,8 +380,15 @@ function parseEmailFromBlock(t, iteration) {
 	//IMPORTANT
 	posems = dedupeArr(posems);
 	let out = [];
+	let companyListSentEmails = {};
+	sentEmails.forEach(element => {
+		companyListSentEmails[element.split('@')[1]] = true;
+	});
+	
 	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
 	if (emails.indexOf(posems.join(",")) !== -1) out = [];
+	if (posems && posems[0] && companyListSentEmails[posems[0].split('@')[1]]) out = [];
+
 	
 	return out;
 }
@@ -569,6 +576,7 @@ function genAS(obj, trialRun) {
 
 		// highlight blockchain exp
 		if (addketh || trialRun) {
+			stats.eth = stats.eth ? stats.eth+1 : 1;
 			addline(' ')
 			addline("I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
 			addline("I worked on a prototype ethereum ui before mist, won a prize at EthWaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
