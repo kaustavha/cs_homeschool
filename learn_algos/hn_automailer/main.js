@@ -21,19 +21,20 @@
  *  -- jobs where we managed to parse a salary
  * - Running the applescript will automatically send out emails to everyone specified
  */
-let argHnUrlId, genStats;
+let argHnUrlId, genStats, curMonth;
 const myArgs = process.argv.slice(2);
 if (myArgs.length > 0) {
 	// 1st arg is hnurl id
 	argHnUrlId = myArgs[0];
 	genStats = myArgs[0] ? true : false;
+	curMonth = myArgs[1] ? myArgs[1] : false;
 }
 
 // inputs and flags
 const hnurlid = argHnUrlId ? argHnUrlId : '21126014'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs + foll. flags
-const torontoAndRemoteOnly = false; // strict mode
+const torontoAndRemoteOnly = true; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
 const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
@@ -47,7 +48,7 @@ let stats = {
 
 // Dates for creating filenames
 const date = new Date(),
-	month = date.getMonth(),
+	month = curMonth ? curMonth : date.getMonth(),
 	yr = date.getFullYear();
 
 const jobsList = `${yr}/jobs_m${month}`,
@@ -175,7 +176,7 @@ function populateBlocks() {
 				if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
 
 				// if (etxt[0] == 'null') console.log(blockbuf);
-				if (etxt.length > 0 && etxt[0] != 'null' && 
+				if (etxt.length > 0 && etxt[0] != 'null' && etxt[0] != 'blacklist' &&
 					// desperate for remote jobs, but dont apply to others if we dont have keyword match
 					(keywordMatchOnly ? keywords.length > 0 : true) &&
 					// remote only search flag
@@ -198,7 +199,7 @@ function populateBlocks() {
 
 					// grab and prioritize remote jobs we missed for manual
 					if (isRemote(blockbuf) !== false
-						&& (!etxt || etxt.length === 0)
+						&& (!etxt || etxt.length === 0 || etxt[0] !== 'blacklist')
 						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
 							remoteJobsRejects.push(
 								blockbuf.concat(
@@ -380,14 +381,14 @@ function parseEmailFromBlock(t, iteration) {
 	//IMPORTANT
 	posems = dedupeArr(posems);
 	let out = [];
+	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
+
 	let companyListSentEmails = {};
 	sentEmails.forEach(element => {
 		companyListSentEmails[element.split('@')[1]] = true;
 	});
-	
-	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
-	if (emails.indexOf(posems.join(",")) !== -1) out = [];
-	if (posems && posems[0] && companyListSentEmails[posems[0].split('@')[1]]) out = [];
+	if (posems && posems[0] && companyListSentEmails[posems[0].split('@')[1]] ||
+		emails.indexOf(posems.join(",")) !== -1) out = ['blacklist'];
 
 	
 	return out;

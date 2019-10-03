@@ -17,7 +17,7 @@ let genStatsOverYear = () => {
         let hnurlid = postUrlIds[i];
         console.log("current month: " + i);
 		console.log('current hn url id: ', hnurlid);
-		let child = execSync('node main.js '+hnurlid , { encoding : 'utf8' });
+		let child = execSync(`node main.js ${hnurlid} ${i}`, { encoding : 'utf8' });
 		console.log(child);
 	}
 }
