@@ -42,16 +42,6 @@ class LaunchesView extends Component {
     return <ul>{launches}</ul>;
   }
 
-  expand() {
-    const { dispatch, rocketId } = this.props;
-    fetchRocket(dispatch, rocketId).then((res) => {
-      this.setState({
-        rocket: res.payload.rocket,
-        isClicked: true
-      })
-    })
-  }
-
   render() {
     return (
       <div>
