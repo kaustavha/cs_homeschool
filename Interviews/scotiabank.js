@@ -39,6 +39,7 @@ function generateGraph(inputArray) {
     let adjGraph = createAdjGraph(adjList);
     let cycleDetected = detectCycles(adjGraph);
 
+
     function createAdjList(inputArray) {
         let out = {};
         inputArray.forEach((element, i) => {
@@ -48,6 +49,7 @@ function generateGraph(inputArray) {
         });
         return out;
     }
+
 
     function createAdjGraph(adjList) {
         class Node {
