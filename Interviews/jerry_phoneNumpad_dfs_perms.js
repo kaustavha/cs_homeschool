@@ -67,5 +67,5 @@ console.log(numPadSelection('99999999999'))
 console.log(numPadSelection('999999999999999999999999999999999'))
 /**
  * Space complexity is b^m - branching factor (3-4 per num) ^ (input length)
- * Time complexity is n+m
+ * Time complexity is n*m ?
  */
