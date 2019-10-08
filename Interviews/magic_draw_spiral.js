@@ -156,4 +156,33 @@ let res = drawSpiral(599);
 function printSpiral(matrix) {
     matrix.forEach(ele => console.log(`${ele.join(' ')}`))
 }
-printSpiral(res);
+// printSpiral(res);
+
+
+const numpadMap = {
+    2: ['a', 'b', 'c'],
+    3: ['d', 'e', 'f'],
+      // ...
+  }
+  
+  function numPadSelection(number) {
+    let numArr = number.split('');
+    let output = [];
+    
+    function _generate(numArr, i, resultSoFar) {
+      let cur = numArr[i];
+      if (numArr.length == resultSoFar.length) return output.push(resultSoFar);
+      if (cur == 0 || cur == 1) {
+        i--;
+        numArr = numArr.slice(i, 1);
+      }
+      numpadMap[cur].forEach((letter) => {
+        resultSoFar+=letter;
+        _generate(numArr, i++, resultSoFar);
+      });
+    }
+    
+    return _generate(numArr, 0, '');
+  }
+  
+  console.log(numPadSelection(23))
