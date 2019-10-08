@@ -4,6 +4,9 @@
  * Create and return a DAG
  * Throw error if cycle exists
  * 
+ * Extra: if no deps field, link to top level/root/first incoming dep. 
+ *        if deps field length is null - link as dependent on previous dep
+ * 
  * ExampleIn = [{
  *  name: 'Jenkins'
  * }, {
@@ -38,7 +41,9 @@ function generateGraph(inputArray) {
 
     function createAdjList(inputArray) {
         let out = {};
-        inputArray.forEach(element => {
+        inputArray.forEach((element, i) => {
+            if (element.dep == undefined) element.deps = [inputArray[0].name];
+            if (element.dep.length == 0) element.deps = [inputArray[i-1].name]
             out[element.name] = element.deps;
         });
         return out;
