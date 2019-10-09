@@ -28,35 +28,26 @@
  * -> adjancy graph
  * 
  * class Node {
-     constructor() {
-         name: 
-         type:
-         dependencies: 
-     }
-
- * 
- * 
+    constructor() {
+        name: 
+        type:
+        dependencies: 
+    }
  * {
-     name: a,
-     type: mysql
-     deps: []
- },{
-     name: d,
-     type: mysql,
-     deps: []
- }, {
-     name: c,
-     type: hive.
-     deps: [a, d]
- }
+    name: a,
+    type: mysql
+    deps: []
+},{
+    name: d,
+    type: mysql,
+    deps: []
+}, {
+    name: c,
+    type: hive.
+    deps: [a, d]
+}
  */
 
-// 
-
-
-/**
- * 
- */
 class GraphNode {
     constructor(name, type, deps) {
         this.name = name;
@@ -65,12 +56,18 @@ class GraphNode {
         this.dependedOnBy = [];
     }
     getDependencies() {
-        return this._getDependencies(this.deps, 'deps');
+        return this._flattenTree(this.deps, 'deps');
     }
     getDependedOnBy() {
-        return this._getDependencies(this.dependedOnBy, 'dependedOnBy');
+        return this._flattenTree(this.dependedOnBy, 'dependedOnBy');
     }
-    _getDependencies(depsArr, key) {
+    /**
+     * Flattens a tree to an array of unique members of the tree
+     * @param {*} depsArr array of nodes
+     * @param {*} key child name
+     * @returns {Array} unique array of all children in tree
+     */
+    _flattenTree(depsArr, key) {
         function _getDepsFromChildren(outObj, deps) {
             deps.forEach(depNode => {
                 outObj[depNode.name] = depNode;
@@ -90,21 +87,29 @@ class Graph {
         this.graph = this.populateGraph(jsonObjArr);
     }
     populateGraph(jsonObjArr) {
-        let out = {};
-        jsonObjArr.forEach(incomingNodeDef => {
-            let newNode = new GraphNode(
-                incomingNodeDef.name,
-                incomingNodeDef.type,
-                incomingNodeDef.deps
-            );
-            out[incomingNodeDef.name] = newNode;
-        });
-        Object.values(out).forEach(node => node.deps.forEach((dep, i) => {
-            node.deps[i] = out[dep];
-            out[dep].dependedOnBy.push(node);
-        }));
-        return out;
+        function _createAdjancencyList(jsonObjArr) {
+            let out = {};
+            jsonObjArr.forEach(incomingNodeDef => {
+                out[incomingNodeDef.name] = new GraphNode(
+                    incomingNodeDef.name,
+                    incomingNodeDef.type,
+                    incomingNodeDef.deps
+                );
+            });
+            return out;
+        }
+        function _linkDeps(adjancyList) {
+            Object.values(adjancyList).forEach(node => node.deps.forEach((dep, i) => {
+                node.deps[i] = adjancyList[dep];
+                adjancyList[dep].dependedOnBy.push(node);
+            }));
+            return adjancyList;
+        }
+
+        let adjancyList = _createAdjancencyList(jsonObjArr);
+        return _linkDeps(adjancyList);
     }
+
     detectCycles() {
         let cycleDetected = false;
         function _detectCycles(mapset, root) {
