@@ -57,7 +57,7 @@
 /**
  * 
  */
-class GNode {
+class GraphNode {
     constructor(name, type, deps) {
         this.name = name;
         this.type = type;
@@ -65,48 +65,44 @@ class GNode {
         this.dependedOnBy = [];
     }
     getDependencies() {
+        return this._getDependencies(this.deps, 'deps');
+    }
+    getDependedOnBy() {
+        return this._getDependencies(this.dependedOnBy, 'dependedOnBy');
+    }
+    _getDependencies(depsArr, key) {
         function _getDepsFromChildren(outObj, deps) {
             deps.forEach(depNode => {
                 outObj[depNode.name] = depNode;
-                //  outArr.push(depNode);
-                if (depNode.deps.length > 0) {
-                    outObj = _getDepsFromChildren(outObj, depNode.deps)
+                if (depNode[key].length > 0) {
+                    outObj = _getDepsFromChildren(outObj, depNode[key])
                 }
             });
             return outObj;
         }
-        let outObj = _getDepsFromChildren({}, this.deps);
-        let outArr = [];
-        for (let key in outObj) {
-            outArr.push(outObj[key])
-        }
-        return outArr;
+        let outObj = _getDepsFromChildren({}, depsArr);
+        return Object.values(outObj);
     }
-
 }
+
 class Graph {
     constructor(jsonObjArr) {
         this.graph = this.populateGraph(jsonObjArr);
     }
-
     populateGraph(jsonObjArr) {
         let out = {};
         jsonObjArr.forEach(incomingNodeDef => {
-            let newNode = new GNode(
+            let newNode = new GraphNode(
                 incomingNodeDef.name,
                 incomingNodeDef.type,
                 incomingNodeDef.deps
             );
             out[incomingNodeDef.name] = newNode;
         });
-
-        for (let key in out) {
-            let node = out[key];
-            node.deps.forEach((dep, i) => {
-                out[key].deps[i] = out[dep];
-                out[dep].dependedOnBy.push(node);
-            });
-        }
+        Object.values(out).forEach(node => node.deps.forEach((dep, i) => {
+            node.deps[i] = out[dep];
+            out[dep].dependedOnBy.push(node);
+        }));
         return out;
     }
     detectCycles() {
@@ -123,11 +119,7 @@ class Graph {
                 _detectCycles(mapset, node);
             });
         }
-        for (let key in this.graph) {
-            let startNode = this.graph[key],
-                mapset = {};
-            _detectCycles(mapset, startNode);
-        }
+        Object.values(this.graph).forEach(node => _detectCycles({}, node));
         return cycleDetected;
     }
     getNode(nodeName) {
@@ -164,3 +156,4 @@ console.log(g.getNode("c").getDependencies())
 console.log(g.getNode("d").getDependencies())
 console.log(g.getNode("a").getDependencies())
 console.log(g.getNode("x").getDependencies())
+console.log(g.getNode("x").getDependedOnBy())
