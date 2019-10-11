@@ -206,7 +206,6 @@ function createCharMap(textArr) {
 }
 
 function samesame(numMap) {
-    let out = [];
     for (let key in numMap) {
         let charArr = numMap[key];
         let same = scanLineForSame(charArr);
@@ -277,9 +276,6 @@ function diffdiff(numMap) {
             if (seenNums.indexOf(key) == -1) {
                 let possibileMatches = _findUniq(numMap[key], seencharNames);
                 possibileMatches.forEach(match => {
-                    if (seencharNames.indexOf(match[0]) == -1) {
-                        
-                    } 
                     let newOutSet = new Array().concat(outSetChars),
                         newSeenNums = new Array().concat(seenNums),
                         newSeencharNames = new Array().concat(seencharNames);
@@ -290,7 +286,7 @@ function diffdiff(numMap) {
                     let res = _dfs(numMap, newOutSet, newSeenNums, newSeencharNames);
                     if (res.length == 3) {
                         outSetChars = res;
-                        return res;
+                        return;
                     }
                 });
             }
@@ -330,10 +326,24 @@ function test(inStr) {
     console.log('input : ', inStr)
     let inArr = inStr.split(' ');
     let {charMap, numMap,charNameToChar} = createCharMap(inArr);
-    console.log('Diff l & char ', diffdiff(numMap))
-    console.log('Diff l & same char ', sameCharDiffLens(charMap, charNameToChar))
-    console.log('Same l & diff char ', diffCharSameLen(numMap))
-    console.log('same l & char ', samesame(numMap))
+    let results = [{
+        name: 'same len & char',
+        res: samesame(numMap)
+    },{
+        name: 'Diff len & same char',
+        res: sameCharDiffLens(charMap, charNameToChar)
+    },{
+        name: 'Same len & diff char',
+        res: diffCharSameLen(numMap)
+    },{
+        name: 'Diff len & char',
+        res: diffdiff(numMap)
+    }]
+    results.filter(result => {
+        if (result.res.length === 3) {
+            console.log(`Output: ${result.name} - ${result.res}`)
+        }
+    });
     console.log('done \n\n')
 }
 
