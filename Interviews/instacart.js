@@ -152,7 +152,8 @@ Output: AA OOO U
     // diff char same lens => numMap.forEach charArr => uniq(charArr)
     // diff char diff lens => numMaps.forEach recursively check if we can form a list with other items in the numMap then run scanLineForUniq on each possibiltiy and return succ match 
 
-function scanLineForSame(textArr) {
+function _scanLineForSame(textArr) {
+    // seenRes is map of char to char
     let seenRes = {}, outList = [];
     textArr.forEach(char => {
         if (seenRes[char]) {
@@ -164,22 +165,22 @@ function scanLineForSame(textArr) {
     Object.values(seenRes).forEach(list => {
         if (list.length == 3) {
             outList = list;
-            return;
         }
     });
     return outList;
 }
 
-function scanLineForDifferent(textArr) {
-    let seenMap={}, list = [];
-    textArr.forEach(char => {
-        if (list.length == 3) return list;
-        if (!seenMap[char]) {
-            seenMap[char] = true;
-            list.push(char);
+// Given txtArr, an array of equal length strings of the same chars, find all chars that arent in the seencharNames set
+function _findUniq(txtArr=[], seencharNames=[]) {
+    let out = [], seenChars = [];
+    txtArr.forEach(chars => {
+        let charName = chars[0];
+        if (seenChars.indexOf(chars) == -1 && seencharNames.indexOf(charName) == -1) {
+            out.push(chars);
+            seenChars.push(chars);
         }
-    });
-    return list;
+    })
+    return out;
 }
 
 function createCharMap(textArr) {
@@ -208,7 +209,7 @@ function createCharMap(textArr) {
 function samesame(numMap) {
     for (let key in numMap) {
         let charArr = numMap[key];
-        let same = scanLineForSame(charArr);
+        let same = _scanLineForSame(charArr);
         if (same && same.length == 3) {
             return same;
         }
@@ -218,7 +219,7 @@ function samesame(numMap) {
 
 function diffCharSameLen(numMap) {
     for (let key in numMap) {
-        let samelen = scanLineForDifferent(numMap[key]);
+        let samelen = _findUniq(numMap[key]);
         if (samelen.length == 3) return samelen;
     }
     return [];
@@ -227,9 +228,9 @@ function diffCharSameLen(numMap) {
 function sameCharDiffLens(charMap, charNameToChar) {
     for (let key in charMap) {
         let numArr = charMap[key];
-        let diff = scanLineForDifferent(numArr);
+        let diff = _findUniq(numArr);
         if (diff && diff.length == 3) {
-            return scanLineForDifferent(charNameToChar[key]);
+            return _findUniq(charNameToChar[key]);
         }
     }
     return [];
@@ -253,19 +254,6 @@ function diffdiff(numMap) {
                 return out;
             }
         });
-    }
-
-    // Given txtArr, an array of equal length strings of the same chars, find all chars that arent in the seencharNames set
-    function _findUniq(txtArr=[], seencharNames=[]) {
-        let out = [], seenChars = [];
-        txtArr.forEach(chars => {
-            let charName = chars[0];
-            if (seenChars.indexOf(chars) == -1 && seencharNames.indexOf(charName) == -1) {
-                out.push(chars);
-                seenChars.push(chars);
-            }
-        })
-        return out;
     }
 
     function _dfs(numMap, outSetChars=[], seenNums, seencharNames) {
