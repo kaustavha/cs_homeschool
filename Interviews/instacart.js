@@ -1,80 +1,5 @@
 // cardgame
 /**
- * Card game - Step 1
- 
-
-You have a set of cards where each “card” is represented by a letter — A, O, or U. Your task is to find a hand of 3 cards that are all the same or all different.
-
- 
-
-Specifications
-
-– You only need to find one hand
-– The cards will be read from STDIN, space separated
-– The hand should be printed to STDOUT, space separated (trailing space is ok)
-– The cards can be output in any order
-– You don't need to optimize for time or space complexity
-
-– Use the "Run Tests" button to check solution
-
- 
-
-Test cases
- 
-
-Test case 0 - all same
-Input: O U O U O
-Expected output: O O O
-
- 
-
-Test case 1 - all different
-Input: A A O O U
-Expected output: A O U
-
- 
- */
-// process.stdin.resume();
-// process.stdin.setEncoding("ascii");
-// var input = "";
-// process.stdin.on("data", function (chunk) {
-//     input += chunk;
-// });
-// process.stdin.on("end", function () {
-//     // now we can read/parse input
-//     function scanLineForSame(textLine) {
-//         let textArr = textLine.split(' ');
-//         let seenMap = {}, seenRes = {};
-//         textArr.forEach(char => {
-//             if (seenRes[char]) {
-//                 if (seenRes[char].length < 3) seenRes[char].push(char);
-//             } else {
-//                 seenRes[char] = [char];
-//             }
-//         });
-//         let out = [];
-//         Object.values(seenRes).forEach(list => {
-//             if (list.length == 3) out = list;
-//         });
-//         return out.join(' ');
-//     }
-    
-//     function scanLineForDifferent(textLine) {
-//         let textArr = textLine.split(' '), seenMap={}, list = [];
-//         textArr.forEach(char => {
-//             if (list.length == 3) return;
-//             if (!seenMap[char]) {
-//                 seenMap[char] = true;
-//                 list.push(char);
-//             }
-//         });
-//         return list.join(' ')
-//     }
-    
-//     let sameHand = scanLineForSame(input);
-//     let uniqHand = scanLineForDifferent(input);
-//     sameHand.length > 0 ? console.log(sameHand) : console.log(uniqHand);
-// });
 
 /**
  * Card game - Step 2
@@ -131,15 +56,6 @@ Test case 3
 Input: A AA OO OOO U
 Output: AA OOO U
  */
-// process.stdin.resume();
-// process.stdin.setEncoding("ascii");
-// var input = "";
-// process.stdin.on("data", function (chunk) {
-//     input += chunk;
-// });
-// process.stdin.on("end", function () {
-    // now we can read/parse input
-
 
     // new strat 
     // pre process
@@ -335,10 +251,7 @@ function test(inStr) {
     console.log('done \n\n')
 }
 
-
-
-
-// // old
+// // old - original Q2 attempt at instacart onsite oct '19
 
 //     function scanLineForSamePatternAndSameLength(textLine) {
 //         let textArr = textLine.split(' ');
@@ -454,3 +367,91 @@ function test(inStr) {
 // }
 
 // // next step q3 -> add a prefix to the array so its 3 uniq things to filter on instead of 2 e.g. *AAA &UUU
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+* Card game - Step 1
+ 
+
+You have a set of cards where each “card” is represented by a letter — A, O, or U. Your task is to find a hand of 3 cards that are all the same or all different.
+
+ 
+
+Specifications
+
+– You only need to find one hand
+– The cards will be read from STDIN, space separated
+– The hand should be printed to STDOUT, space separated (trailing space is ok)
+– The cards can be output in any order
+– You don't need to optimize for time or space complexity
+
+– Use the "Run Tests" button to check solution
+
+ 
+
+Test cases
+ 
+
+Test case 0 - all same
+Input: O U O U O
+Expected output: O O O
+
+ 
+
+Test case 1 - all different
+Input: A A O O U
+Expected output: A O U
+
+ 
+ */
+// process.stdin.resume();
+// process.stdin.setEncoding("ascii");
+// var input = "";
+// process.stdin.on("data", function (chunk) {
+//     input += chunk;
+// });
+// process.stdin.on("end", function () {
+//     // now we can read/parse input
+//     function scanLineForSame(textLine) {
+//         let textArr = textLine.split(' ');
+//         let seenMap = {}, seenRes = {};
+//         textArr.forEach(char => {
+//             if (seenRes[char]) {
+//                 if (seenRes[char].length < 3) seenRes[char].push(char);
+//             } else {
+//                 seenRes[char] = [char];
+//             }
+//         });
+//         let out = [];
+//         Object.values(seenRes).forEach(list => {
+//             if (list.length == 3) out = list;
+//         });
+//         return out.join(' ');
+//     }
+    
+//     function scanLineForDifferent(textLine) {
+//         let textArr = textLine.split(' '), seenMap={}, list = [];
+//         textArr.forEach(char => {
+//             if (list.length == 3) return;
+//             if (!seenMap[char]) {
+//                 seenMap[char] = true;
+//                 list.push(char);
+//             }
+//         });
+//         return list.join(' ')
+//     }
+    
+//     let sameHand = scanLineForSame(input);
+//     let uniqHand = scanLineForDifferent(input);
+//     sameHand.length > 0 ? console.log(sameHand) : console.log(uniqHand);
+// });
