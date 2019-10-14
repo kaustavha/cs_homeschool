@@ -8,8 +8,7 @@
 ```
 # TODO - improvements based on feedback
 - spped calc is wrong in _calculateAverageSpeed; needs to convert hours to 60 mins, currently treats 1hr as 100mins and divides simply
-- More tests, avg speed > x
-- More tests, more unit, test individual functions instead of i/o to show TDD instead of integration only
+- More tests, avg speed > x, more unit, test individual functions instead of i/o to show TDD instead of integration only
 - Smaller, more modular classes, e.g. a trip class, used in a driver class used in Driving history. Seperate class or func for parsing input and rendering output
 
 # Problem statement:
