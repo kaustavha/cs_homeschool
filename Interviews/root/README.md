@@ -1,3 +1,17 @@
+# Feedback 
+```
+* The way he calculates the difference in start and end time clearly demonstrates that he is not familiar with javascript language idioms
+* Tests are not descriptive and does not cover some use cases like boundary condition for avg speed higher than 100
+* No separation of concerns - Driving History class parses the lines and generates the report
+* Both Driver and Trip data are combined into a single Metric class. Not much thought being put into object modeling the solution resulting in more complexity than necessary
+* No evidence of TDD
+```
+# TODO - improvements based on feedback
+- spped calc is wrong in _calculateAverageSpeed; needs to convert hours to 60 mins, currently treats 1hr as 100mins and divides simply
+- More tests, avg speed > x
+- More tests, more unit, test individual functions instead of i/o to show TDD instead of integration only
+- Smaller, more modular classes, e.g. a trip class, used in a driver class used in Driving history. Seperate class or func for parsing input and rendering output
+
 # Problem statement:
 https://gist.github.com/dan-manges/1e1854d0704cb9132b74
 
