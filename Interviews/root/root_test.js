@@ -19,9 +19,11 @@ function TestDrivingHistory(driverName, tripDetails, expectedOut) {
 
 function RunTests() {
     TestDrivingHistory('Dan', '06:12 06:32 21.8', 'Dan: 0 miles'); // Too fast
+    TestDrivingHistory('Dan', '06:12 08:32 221.8', 'Dan: 0 miles'); // Too fast
     TestDrivingHistory('Bob', '00:00 00:00 00.0', 'Bob: 0 miles'); // 0s
     TestDrivingHistory('Bob', '01:00 02:00 4', 'Bob: 0 miles'); // Too slow
     TestDrivingHistory('Bob', '01:00 02:00 40', 'Bob: 40 miles @ 40 mph');
+    TestDrivingHistory('Lauren', '01:00 02:15 42', 'Lauren: 42 miles @ 34 mph'); // js is incorrect in speed calc
 
     // Manual Test
     let DH = new DrivingHistory();
