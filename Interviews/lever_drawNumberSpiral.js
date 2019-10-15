@@ -14,8 +14,9 @@ function drawSpiral(length, width) {
         }
         return matrix;
     }
-    function moveInDirection(matrix, maxN, dir) {
+    function moveInDirection(matrix, maxN) {
         let row = 0, col = 0, curN = 1;
+        let dir = '';
         while (curN <= maxN) {
             let curRow = matrix[row];
             dir = getDirection(dir);
@@ -71,9 +72,17 @@ function drawSpiral(length, width) {
 
     return moveInDirection(
         initMatrix(length, width),
-        length * width,
-        ''
+        length * width
     )
 }
+
+console.log(drawSpiral(0,0))
+console.log(drawSpiral(0,1))
+console.log(drawSpiral(1,0))
+
+console.log(drawSpiral(3,3))
+console.log(drawSpiral(3,2))
+console.log(drawSpiral(2,8))
+console.log(drawSpiral(8,8))
 
 console.log(drawSpiral(3,4))
