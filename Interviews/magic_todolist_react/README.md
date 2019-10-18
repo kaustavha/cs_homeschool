@@ -16,6 +16,7 @@ The goal is to build a todo list with the following features:
 Time limit: 2hrs
 
 ## My solutions
+GIF: ![Demo gif](https://github.com/kaustavha/cs_homeschool/tree/master/Interviews/magic_todolist_react/magic_todolist_demo.gif)
 - Use create react app to scaffold a quick working environment for this - todo lists are common in front end tutorials
 - Iteratively build out a solution from base building blocks
 - In my case I came to a todoItem as the base, outwards from that, creating and deleting it
