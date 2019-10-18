@@ -1,0 +1,6 @@
+{
+    "name": "cs_homeschool",
+    "scripts": {
+        "update": "git submodule foreach git pull origin master && git commit -am 'update submodules' && git push"
+    }
+}
