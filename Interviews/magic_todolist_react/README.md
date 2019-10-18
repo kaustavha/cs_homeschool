@@ -1,3 +1,31 @@
+# Interview introduction
+
+The goal is to build a todo list with the following features:  
+
+- ability to add items
+- ability to recursively add sub-items to items to an infinite depth
+- ability to remove/complete items
+- items underneath parent item should also be cleared if parent is cleared
+- persist state, at least in the front-end via a mock users systems so that:
+  - users can "login"
+  - make a todo list
+  - logout
+  - log back in
+  - see the same list
+
+Time limit: 2hrs
+
+## My solutions
+- Use create react app to scaffold a quick working environment for this - todo lists are common in front end tutorials
+- Iteratively build out a solution from base building blocks
+- In my case I came to a todoItem as the base, outwards from that, creating and deleting it
+- create => TodoInput component
+- delete => doneButton component
+- Recursively linking the todoItem and todoInput to allow creation of child todo items at every level via props
+- Creating a userNameInput component to render the top level todoInput after 'login'
+- Lifting state from todo list components into users handling component to allow persistence past logout 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
