@@ -10,3 +10,6 @@
 	path = Interviews/sortable-challenge
 	url = https://github.com/kaustavha/sortable-challenge.git
 	branch = master
+[submodule "Interviews/gravity-interview"]
+	path = Interviews/gravity-interview
+	url = https://github.com/kaustavha/gravity-interview/
