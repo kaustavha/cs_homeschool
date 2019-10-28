@@ -28,42 +28,30 @@ function stretch(BTreePtr, k) {
         let val = ptr.val;
         let newVal = Math.floor(val/k);
         if (dir == 'left') {
-            _addNodesLeft(ptr, newVal, k)
+            _addNodes(ptr, newVal, k, 'left')
         } else if (dir == 'right') {
-            _addNodesRight(ptr, newVal, k)
+            _addNodes(ptr, newVal, k, 'right')
         }
     }
 
-    function _addNodesRight(ptr, val, k) {
+    function _addNodes(ptr, val, k, dir) {
         let lchild = ptr.left,
             rchild = ptr.right,
             count = k;
             ptr.val = val;
         while (count > 1) {
             let newNode = new Node(val);
-            ptr.right = newNode;
-            ptr = ptr.right;
+            if (dir == 'right') {
+                ptr.right = newNode;
+                ptr = ptr.right;
+            } else {
+                ptr.left = newNode;
+                ptr = ptr.left;
+            }
             count--;
         }
         ptr.left = lchild;
         ptr.right = rchild; 
-        if (lchild) _stretch(lchild, 'left');
-        if (rchild) _stretch(rchild, 'right');
-    }
-    function _addNodesLeft(ptr, val, k) {
-        let lchild = ptr.left,
-            rchild = ptr.right,
-            count = k;
-            ptr.val = val;
-        while (count > 1) {
-            let newNode = new Node(val);
-            ptr.left = newNode;
-            ptr = ptr.left;
-            count--;
-        }
-        ptr.left = lchild;
-        ptr.right = rchild; 
-
         if (lchild) _stretch(lchild, 'left');
         if (rchild) _stretch(rchild, 'right');
     }
