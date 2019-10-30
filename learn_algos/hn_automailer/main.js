@@ -33,12 +33,12 @@ if (myArgs.length > 0) {
 // inputs and flags
 const hnurlid = argHnUrlId ? argHnUrlId : '21126014'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
-const remoteOnly = true; // only pull in remote jobs + foll. flags
-const torontoAndRemoteOnly = true; // strict mode
+const remoteOnly = false; // only pull in remote jobs + foll. flags
+const torontoAndRemoteOnly = false; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
 const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
-const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
+const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
 let stats = {
 	py: 0,
@@ -72,8 +72,8 @@ $ = require('jquery')(new jsdom.JSDOM().window);
 let oneMin = 60,
 	fvmin = oneMin*5,
 	tenMin = oneMin*10,
-	minDelay = oneMin,
-	maxDelay = fvmin;
+	minDelay = oneMin/2,
+	maxDelay = fvmin/2;
 
 // vars for fetching hn jobs txt
 let oldDat = '', fullDat = '';
@@ -102,22 +102,46 @@ let block = false,
 	postername,
 	matcheskeywords = 0;
 
+
+let blk = `
+Feather | Senior Software engineer | Full-time | Onsite | New York, NY
+Feather is a furniture subscription company driven to provide customers with a flexible, innovative, and delightful way to furnish their homes. We believe that when life changes, your things should be able to change with you — without spending a fortune or hurting the planet in the process. Every year, 9.7 million tons of furniture fills U.S. landfills. We know there's a better way by making furniture ownership sustainable and affordable.
+
+There's opportunity to contribute to the consumer facing e-commerce website, or you might work on the suite of internal applications that solve exciting new logistical, administrative, and operational problems.
+
+Stack:
+
+Front-End: Typescript, React, Redux, Redux Saga, Storybook, Emotion
+
+Back-End: Express, Typescript, MySQL, Redis, Docker, AWS
+
+Benefits: Our main goals are a high quality product and a high quality of life for our team. To this end, we offer:
+
+- flexible hours and unlimited PTO
+
+- medical, dental, and vision benefits
+
+- commuter benefits
+
+- delicious and healthy team lunches 3x a week
+
+- a product cycle focused on long-term sustainable development
+
+Contact: Send your LinkedIn profile or CV to me directly at jake@livefeather.com. I will answer all messages.
+Vacancy page: https://www.livefeather.com/about/#careers
+                      
+                      reply
+                  
+`
+console.log(parseEmailFromBlock(blk), parseBuzzwords(blk), isRemote(blk), isRemote(blk))
+// return
 getHNPosts(1).then(x => {
 	main();
 });
 
 function main() {
 	populateBlocks();
-	// blocks = dedupeObj(blocks, 'e');
 	let asc = genAsAll(blocks);
-	// console.log(i);
-	// console.log(rejects);
-	// console.log(emails);
-	// console.log(emails);
-	// console.log(blocks);
-	// console.log(dedupeArr(allroles));
-	// console.log(genAsAll(blocks));
-	// console.log(lines);
 	console.log('emails ', emails.length);
 	console.log('rejects ', rejects.length);
 	console.log('keyword matches ', matcheskeywords);
@@ -154,7 +178,7 @@ function populateBlocks() {
 
 			if (!block) {
 				block = true;
-			} else {
+			} else if (blockbuf.length > 10) {
 				// new block
 				let etxt = parseEmailFromBlock(blockbuf),
 					keywords = parseBuzzwords(blockbuf);
@@ -172,15 +196,16 @@ function populateBlocks() {
 				let slr = grabSalary(blockbuf);
 				if (slr) salaries.push(slr);
 
-				// grab and prioritize remote jobs
-				if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
-
 				// if (etxt[0] == 'null') console.log(blockbuf);
 				if (etxt.length > 0 && etxt[0] != 'null' && etxt[0] != 'blacklist' &&
 					// desperate for remote jobs, but dont apply to others if we dont have keyword match
 					(keywordMatchOnly ? keywords.length > 0 : true) &&
 					// remote only search flag
 					(remoteOnly ? isRemote(blockbuf) : true)) {
+
+					// grab and prioritize remote jobs
+					if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
+
 					emails.push(etxt.join(","));
 					if (roles.length > 0) {
 						roles = roles[0];
@@ -195,20 +220,21 @@ function populateBlocks() {
 						k: keywords
 					});
 				} else {
-					rejects.push(blockbuf);
+					let blockStats = blockbuf.concat(
+						'\n',
+						blockbuf.length ? ` | len: ${blockbuf.length} | ` : '| empty block |',
+						keywords.length > 0 ? keywords : 'no keyword match',
+						(isRemote(blockbuf) === false ? ' remote: false ' : ' remote: true '),
+						etxt && etxt.length > 0 ? etxt : 'no email',
+						'\n'
+					);
+					rejects.push(blockStats);
 
 					// grab and prioritize remote jobs we missed for manual
 					if (isRemote(blockbuf) !== false
-						&& (!etxt || etxt.length === 0 || etxt[0] !== 'blacklist')
+						&& ((!etxt || etxt.length === 0 || etxt[0] == 'null') && etxt[0] !== 'blacklist')
 						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
-							remoteJobsRejects.push(
-								blockbuf.concat(
-									keywords, 
-									parseEmailFromBlock(blockbuf), 
-									etxt, 
-									(keywordMatchOnly ? keywords.length > 0 : true), 
-									(isRemote(blockbuf) === false ? ' remote: false ' : ' remote: true '),
-									'\n'));
+							remoteJobsRejects.push(blockStats);
 						}
 				}
 				postername = null;
@@ -240,26 +266,25 @@ function isRemote(blk) {
 	if (torontoAndRemoteOnly) {
 		if (blk.match(/toronto/gi))
 			return blk;
-		if (blk.match(/remote/gi) && ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
+		if (blk.match(/remote/gi) 
+			&& (!blk.match(/\(US\)/gi) || !blk.match(/\(US only\)/gi) || !blk.match(/\(U.S. only\)/gi))
+			&& !blk.match(/\(EU\)/gi)
+			&& ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
 			return blk;
 		return false;
 	}
-
-	if (blk.match(/remote/gi) && ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
+	if (blk.match(/remote/gi))
 		return blk;
 	if (includeCanada)
-		// if (blk.match(/toronto/gi)) return blk;
-		// uncomment when we cool with not toronto
 		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
-			|| blk.match(/\smtl\s/gi))
+		|| blk.match(/\smtl\s/gi))
 			return blk;
-	if (includeusa) {
-		if (blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
+	if (includeusa)
+		if ((blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
 		blk.match(/\sny\s/gi) || blk.match(/\snyc\s/gi) || blk.match(/\ssf\s/gi) || blk.match(/boston/gi) ||
-		blk.match(/seattle/gi)) {
+		blk.match(/seattle/gi)) && blk.match(/visa/gi))
 			return blk;
-		}
-	}
+		
 	return false;
 }
 
@@ -310,29 +335,7 @@ function parseEmailFromBlock(t, iteration) {
 			}
 
 			if (tb.length > 0 && debug) console.log('1', tb);
-
-			// tb = tb.replace(/\s+at\s+/gi, '@');
-			tb = tb.replace(/\s*\[at\]\s*/gi, '@');
-			tb = tb.replace(/\s*\[@\]\s*/gi, '@');
-			tb = tb.replace(/\s*\(at\)\s*/gi, '@');
-			tb = tb.replace(/\s*\<at\>\s*/gi, '@');
-			tb = tb.replace(/\s*\{at\}\s*/gi, '@');
-			tb = tb.replace(/\s*\(@\)\s*/gi, '@');
-			tb = tb.replace(/\s\@\s/gi, '@');
-
-			// tb = tb.replace(/\s*dot\s*/gi, '.');
-			tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
-			tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
-			tb = tb.replace(/\s*\(\.\)\s*/gi, '.');
-			tb = tb.replace(/\s*\[\.\]\s*/gi, '.');
-			tb = tb.replace(/\s*\<dot\>\s*/gi, '.');
-			tb = tb.replace(/\s*\{dot\}\s*/gi, '.');
-			tb = tb.replace(/\s*\<\.\>\s*/gi, '.');
-			tb = tb.replace(/\s*\{\.\}\s*/gi, '.');
-
-			// fuck you jeff
-			tb = tb.replace(" __4t__ ", '@');
-
+			tb = parseLine1(tb);
 			buf += " " + tb;
 		}
 
@@ -379,6 +382,7 @@ function parseEmailFromBlock(t, iteration) {
 
 	// do not email peope again************************************
 	//IMPORTANT
+	// simple check for distinct email then more complex check for company name
 	posems = dedupeArr(posems);
 	let out = [];
 	if (sentEmails.indexOf(posems.join(",")) === -1) out = posems;
@@ -390,8 +394,28 @@ function parseEmailFromBlock(t, iteration) {
 	if (posems && posems[0] && companyListSentEmails[posems[0].split('@')[1]] ||
 		emails.indexOf(posems.join(",")) !== -1) out = ['blacklist'];
 
-	
+
 	return out;
+}
+
+function parseLine1(tb) {
+	tb = tb.replace(/\s*\[at\]\s*/gi, '@');
+	tb = tb.replace(/\s*\[@\]\s*/gi, '@');
+	tb = tb.replace(/\s*\(at\)\s*/gi, '@');
+	tb = tb.replace(/\s*\<at\>\s*/gi, '@');
+	tb = tb.replace(/\s*\{at\}\s*/gi, '@');
+	tb = tb.replace(/\s*\(@\)\s*/gi, '@');
+	tb = tb.replace(/\s\@\s/gi, '@');
+
+	tb = tb.replace(/\s*\[dot\]\s*/gi, '.');
+	tb = tb.replace(/\s*\(dot\)\s*/gi, '.');
+	tb = tb.replace(/\s*\(\.\)\s*/gi, '.');
+	tb = tb.replace(/\s*\[\.\]\s*/gi, '.');
+	tb = tb.replace(/\s*\<dot\>\s*/gi, '.');
+	tb = tb.replace(/\s*\{dot\}\s*/gi, '.');
+	tb = tb.replace(/\s*\<\.\>\s*/gi, '.');
+	tb = tb.replace(/\s*\{\.\}\s*/gi, '.');
+	return tb;
 }
 
 function parseLine2(tb) {
@@ -408,6 +432,7 @@ function parseLine2(tb) {
 	tb = tb.replace(/\s+dot\s+/gi, '.');
 
 	tb = tb.replace(/\s*\[at\]\s*/gi, '@');
+	tb = tb.replace(" __4t__ ", '@');
 	tb = tb.replace(/\s+at\s+/gi, '@');
 	tb = tb.replace(/\s*\[@\]\s*/gi, '@');
 	tb = tb.replace(/\s*\(\s*at\s*\)\s*/gi, '@');
@@ -430,7 +455,6 @@ function dedupeArr(arr) {
 	let o = {},
 		o2 = [];
 	if (arr.length == 0) return arr;
-	// console.log(arr);
 	for (var i = 0; i < arr.length; i++) {
 		o[arr[i].toLowerCase()] = true;
 	}
@@ -547,6 +571,7 @@ function genAS(obj, trialRun) {
 	addline("Hi,");
 	addline("");
 	addline("I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.");
+	addline("I'm a generalist software engineer with 6 years of experience overall.")
 
 	// add keywords
 	if (k.length > 0) {
@@ -602,8 +627,8 @@ function genAS(obj, trialRun) {
 	// addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
 	// addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
 	addline("");
+	addline("I'm currently based out of Toronto, Canada. ")
 	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
-	addline("I'm Canadian and looking for work that's remote or in Toronto right now but open to other opportunities. ")
 	// addline("I'm a Canadian citizen so I'll need a visa sponsor for most places.")
 	// addline("I'm looking for Remote or Canadian positions right now. ")
 	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
@@ -645,8 +670,9 @@ function genMailAS(content, defaultsubject, mainEmail, extraEmails) {
 	return fcontent;
 }
 
+// old function - need to repair 
 // content is generated by addLine func in genAS
-function genOutlookAS(content) {
+function genOutlookAS(content, defaultsubject, mainEmail, extraEmails) {
 	let fcontent = '';
 	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
 
@@ -704,7 +730,6 @@ function _getHNPosts(pageN) {
 }
 
 function swapHtmlTextWithFullRefLinks(dat) {
-	// console.log($(dat).find('a'))
 	let links = $(dat).find('a');
 	if (!links) return;
 	$.each(links, (k, v) => {
@@ -743,7 +768,6 @@ function stripChildComments(dat) {
 						// bye
 					}
 				}
-				// console.log(ctext)
 			}
 		}
 	});
