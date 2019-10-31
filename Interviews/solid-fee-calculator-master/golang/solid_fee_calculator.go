@@ -46,3 +46,4 @@ func calculateFee(usertype int, itemtype int, itemprice int, itemenddate time.Ti
 	}
 	return itemprice + cost - discount, nil
 }
+// maps, table driven tests
