@@ -113,6 +113,52 @@ class Graph {
 		return articulationPoints;
 	}
 
+	findAPVia_findBridges(set) {
+		let aps = [];
+		const neighbours = (at) => this.graph[at].length;
+		const postDfsCB = (at, to, low, ids) => (low[to] >= ids[at] && neighbours(at) > 1) ? aps.push(at) : console.log(at, to, low, ids);
+		this.findBridges(set, postDfsCB);
+		return aps;
+	}
+
+	findBridges(set, postDfsCB) {
+		this.constructAdjListFromSet_undirected(set);
+		let n = Object.keys(this.graph).length + 1,
+			graph = this.graph,
+			id = 0,
+			ids = new Array(n).fill(0),
+			low = new Array(n).fill(0),
+			visited = new Array(n).fill(false),
+			bridges = [];
+
+		function dfs(at, parent, bridges) {
+			visited[at] = true;
+			id++;
+			low[at] = ids[at] = id;
+
+			graph[at].forEach(to => {
+				if (!visited[to]) {
+					dfs(to, at, bridges);
+					low[at] = Math.min(low[at],low[to]);
+					postDfsCB ? postDfsCB(at, to, low, ids) : null;
+					if (ids[at] < low[to]) {
+						bridges.push(at, to);
+					}
+				} else if (to !== parent) {
+					low[at] = Math.min(low[at], ids[to])
+				}
+			})
+		}
+
+		Object.keys(this.graph).forEach(vertex => {
+			if (!visited[vertex]) {
+				dfs(parseInt(vertex), -1, bridges)
+			}
+		})
+
+		return bridges;
+	}
+
 	tarjansStronglyConnectedComponents(set) {
 		// implementation of tarjans algo
 		let index = 0;
@@ -131,7 +177,7 @@ class Graph {
 
 			graphNode.connections.forEach((curNode) => {
 				if (curNode !== undefined ) {
-					if (!curNode.index) {
+					if (!curNode.index && curNode.index !== 0) {
 						_dfsStrongConnect(curNode);
 						graphNode.lowTime = Math.min(graphNode.lowTime, curNode.lowTime);
 					} else if (curNode.onStack) {
@@ -225,23 +271,23 @@ let g = new Graph();
 let s, res;
 g = new Graph();
 s = [[1, 2], [1, 3], [3, 4], [1, 4], [4, 5]]
-res = g.findArticulationPointsBruteForce(s)
+res = g.findAPVia_findBridges(s)
 console.log(res)
 // 1, 4
-
 g = new Graph();
 s = [[1, 2], [1, 3], [2, 3], [2, 4], [2, 5], [4, 6], [5, 6]]
-res = g.findArticulationPointsBruteForce(s)
+res = g.findAPVia_findBridges(s)
 console.log(res)
 // 2
 
 g = new Graph();
 s = [[1, 2], [1, 3], [2, 3], [3, 4], [3, 6], [4, 5], [6, 7], [6, 9], [7, 8], [8, 9]]
-res = g.findArticulationPointsBruteForce(s)
+res = g.findAPVia_findBridges(s)
 console.log(g.graph)
 console.log(res)
 // 3,4,6
 
+return 
 g1 = new Graph();
 g1.addBidirectionalEdge(1, 0) 
 g1.addBidirectionalEdge(0, 2) 
