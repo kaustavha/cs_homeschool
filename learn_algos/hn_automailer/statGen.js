@@ -10,7 +10,8 @@ let postUrlIds = [
 	'20325925',
 	'20584311',
 	'20867123',
-	'21126014'
+	'21126014',
+	'21419536'
 ]
 let genStatsOverYear = () => {
 	for (let i=0; i<postUrlIds.length; i++) {

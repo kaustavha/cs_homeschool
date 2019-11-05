@@ -31,13 +31,13 @@ if (myArgs.length > 0) {
 }
 
 // inputs and flags
-const hnurlid = argHnUrlId ? argHnUrlId : '21126014'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = argHnUrlId ? argHnUrlId : '21419536'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
-const remoteOnly = false; // only pull in remote jobs + foll. flags
+const remoteOnly = true; // only pull in remote jobs + foll. flags
 const torontoAndRemoteOnly = false; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
-const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
+const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
 
 let stats = {
@@ -48,7 +48,7 @@ let stats = {
 
 // Dates for creating filenames
 const date = new Date(),
-	month = curMonth ? curMonth : date.getMonth(),
+	month = curMonth ? curMonth : date.getMonth() + 1,
 	yr = date.getFullYear();
 
 const jobsList = `${yr}/jobs_m${month}`,
@@ -56,24 +56,31 @@ const jobsList = `${yr}/jobs_m${month}`,
 	// jobsListfs = '2018/jobstest.txt',
 	sentEmailsfs = jobsList + '_emailsbackup_alreadysent.txt',
 	outputApplScriptfs = jobsList + '_final.applescript',
-	tstAs = outputApplScriptfs + '.test',
-	rejectsfs = jobsList+'_rejects.txt',
-	rawEmailListfs = jobsList+'_emails.txt',
-	salariesFs = jobsList+'_salaries.txt',
-	remoteFs = jobsList+'_remotes.txt',
-	remoteJobsRejectsFs = jobsList+'_remotes_rejects.txt';
+	tstAs = outputApplScriptfs.split('.').join('_test.'),
+	rejectsfs = jobsList + '_rejects.txt',
+	rawEmailListfs = jobsList + '_emails.txt',
+	salariesFs = jobsList + '_salaries.txt',
+	remoteFs = jobsList + '_remotes.txt',
+	remoteJobsRejectsFs = jobsList + '_remotes_rejects.txt';
 
 const fs = require('fs');
 const https = require('https');
-var jsdom = require('jsdom');
+const jsdom = require('jsdom');
 $ = require('jquery')(new jsdom.JSDOM().window);
-
+const _genAS = require('./lib/generate_applescript');
+const genAS = (obj, trialRun) => {
+	return _genAS(obj, trialRun, {
+		month: month,
+		yr: yr,
+		stats: stats
+	})
+}
 // Delay min max for applescript
 let oneMin = 60,
-	fvmin = oneMin*5,
-	tenMin = oneMin*10,
-	minDelay = oneMin/2,
-	maxDelay = fvmin/2;
+	fvmin = oneMin * 5,
+	tenMin = oneMin * 10,
+	minDelay = oneMin,
+	maxDelay = fvmin;
 
 // vars for fetching hn jobs txt
 let oldDat = '', fullDat = '';
@@ -103,37 +110,24 @@ let block = false,
 	matcheskeywords = 0;
 
 
-let blk = `
-Feather | Senior Software engineer | Full-time | Onsite | New York, NY
-Feather is a furniture subscription company driven to provide customers with a flexible, innovative, and delightful way to furnish their homes. We believe that when life changes, your things should be able to change with you — without spending a fortune or hurting the planet in the process. Every year, 9.7 million tons of furniture fills U.S. landfills. We know there's a better way by making furniture ownership sustainable and affordable.
+// let blk = `
 
-There's opportunity to contribute to the consumer facing e-commerce website, or you might work on the suite of internal applications that solve exciting new logistical, administrative, and operational problems.
+// Sonder | San Francisco, CA & Montreal, Canada | Onsite | Full-time | https://www.sonder.com
+// Sonder is transforming the future of hospitality. We are building the operating system for the future of the hospitality industry. Technology is at the core of powering the platform for the world's first deconstructed hotel and we are the first to do it. We recently raised our Series D at a $1B+ valuation. We are growing rapidly and looking for talented engineers to join us on this journey.
 
-Stack:
+// Director of Engineering: https://grnh.se/dc062bb52
 
-Front-End: Typescript, React, Redux, Redux Saga, Storybook, Emotion
+// Machine Learning Engineer: https://grnh.se/8ee2652e2
 
-Back-End: Express, Typescript, MySQL, Redis, Docker, AWS
+// Senior Data Scientist: https://grnh.se/e3e5bc662
 
-Benefits: Our main goals are a high quality product and a high quality of life for our team. To this end, we offer:
+// Senior Software Engineer: https://grnh.se/7ad3cb202
 
-- flexible hours and unlimited PTO
+// Senior DevOps Engineer: https://grnh.se/e41290792
 
-- medical, dental, and vision benefits
-
-- commuter benefits
-
-- delicious and healthy team lunches 3x a week
-
-- a product cycle focused on long-term sustainable development
-
-Contact: Send your LinkedIn profile or CV to me directly at jake@livefeather.com. I will answer all messages.
-Vacancy page: https://www.livefeather.com/about/#careers
-                      
-                      reply
-                  
-`
-console.log(parseEmailFromBlock(blk), parseBuzzwords(blk), isRemote(blk), isRemote(blk))
+// Senior Software Engineer (MTL): https://grnh.se/3359a69d2
+// Reach out at chris.spada at sonder.com with any questions`
+// console.log(parseEmailFromBlock(blk), parseBuzzwords(blk), isRemote(blk), isRemote(blk))
 // return
 getHNPosts(1).then(x => {
 	main();
@@ -182,7 +176,7 @@ function populateBlocks() {
 				// new block
 				let etxt = parseEmailFromBlock(blockbuf),
 					keywords = parseBuzzwords(blockbuf);
-				
+
 				// generate keyword match stats
 				if (keywords.length) matcheskeywords++;
 
@@ -234,8 +228,8 @@ function populateBlocks() {
 					if (isRemote(blockbuf) !== false
 						&& ((!etxt || etxt.length === 0 || etxt[0] == 'null') && etxt[0] !== 'blacklist')
 						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
-							remoteJobsRejects.push(blockStats);
-						}
+						remoteJobsRejects.push(blockStats);
+					}
 				}
 				postername = null;
 				blockbuf = '';
@@ -258,7 +252,7 @@ function grabSalary(blk) {
 	if (salary && lines[2].match(/\d+/) >= 100) {
 		return lines[2].match(/\$\d+/) + ' == ' + lines[2];
 	}
-	let ret = blk.match(/\$\d*/) ?  blk.match(/\$\d*/) + '====='+  blk : false;
+	let ret = blk.match(/\$\d*/) ? blk.match(/\$\d*/) + '=====' + blk : false;
 	return ret;
 }
 
@@ -266,7 +260,7 @@ function isRemote(blk) {
 	if (torontoAndRemoteOnly) {
 		if (blk.match(/toronto/gi))
 			return blk;
-		if (blk.match(/remote/gi) 
+		if (blk.match(/remote/gi)
 			&& (!blk.match(/\(US\)/gi) || !blk.match(/\(US only\)/gi) || !blk.match(/\(U.S. only\)/gi))
 			&& !blk.match(/\(EU\)/gi)
 			&& ((blk.match(/\|/gi)) || (blk.match(/location/gi))))
@@ -277,14 +271,14 @@ function isRemote(blk) {
 		return blk;
 	if (includeCanada)
 		if (blk.match(/toronto/gi) || blk.match(/canada/gi) || blk.match(/vancouver/gi) || blk.match(/montreal/gi)
-		|| blk.match(/\smtl\s/gi))
+			|| blk.match(/\smtl\s/gi))
 			return blk;
 	if (includeusa)
 		if ((blk.match(/san francisco/gi) || blk.match(/new york/gi) ||
-		blk.match(/\sny\s/gi) || blk.match(/\snyc\s/gi) || blk.match(/\ssf\s/gi) || blk.match(/boston/gi) ||
-		blk.match(/seattle/gi)) && blk.match(/visa/gi))
+			blk.match(/\sny\s/gi) || blk.match(/\snyc\s/gi) || blk.match(/\ssf\s/gi) || blk.match(/boston/gi) ||
+			blk.match(/seattle/gi)) && blk.match(/visa/gi))
 			return blk;
-		
+
 	return false;
 }
 
@@ -349,19 +343,24 @@ function parseEmailFromBlock(t, iteration) {
 		for (var i = 0; i < ws.length; i++) {
 			let w = ws[i];
 			if (w.indexOf('@') > -1 && w.indexOf(".") > -1) {
+
+				if (w.length > 0 && debug) console.log('further processing', w);
 				if (w.match(/@/gi).length > 1) {
 					w = w.split("@").splice(1, 2).join("@");
-					w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
+
+					if (w.length > 0 && debug) console.log('further processing', w);
+					// w = w.match(/[a-z]+.*\@[a-z]+/gi) + w.match(/\.[a-z]+/gi);
 				}
 
-				if (w.length > 0 && debug) console.log('1', w);
+				if (w.length > 0 && debug) console.log('further processing', w);
 				w = w.match(/[a-z0-9\.\-\_\+]+\@[a-z0-9\-\.]+\.+[a-z0-9]+/gi) + '';
 
+				if (w.length > 0 && debug) console.log('further processing', w);
 				// filter out common false matches and people using gmail
 				if (!w.match(/name/) && !w.match(/http/) && !w.match(/www/) && !w.match(/hotmail/)
 					&& !w.match(/gmail/)) {
-						posems.push(w);
-					}
+					posems.push(w);
+				}
 			}
 		}
 	}
@@ -525,173 +524,8 @@ function genRandDelay() {
 		max = Math.floor(max);
 		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 	}
-	let val = getRandomInt(minDelay,maxDelay);
+	let val = getRandomInt(minDelay, maxDelay);
 	return `\ndelay ${val} \n`;
-}
-
-// Amazon, Apple, Evernote, Facebook, Google, LinkedIn, Microsoft, Oracle, any Y Combinator startup, Yelp, and Zynga.
-function genAS(obj, trialRun) {
-	let content = '';
-	// Utils for generating applescript
-	function addline(txt) {
-		content += txt + "\n";
-	}
-
-	function checkForOpensourceOrEth(keyword) {
-		return keyword === 'opensource' || keth.indexOf(keyword) > -1;
-	}
-
-	function match(a1, a2) {
-		for (var i = 0; i < a1.length; i++) {
-			if (a2.indexOf(a1[i]) > -1) return true;
-		}
-		return false;
-	}
-	// End
-
-	let defaultsubject = "HackerNews FT SE opportunities";
-
-	let krax = "Go, golang, Lua, JS, Python, Ruby, Java, C++, Bash;  Hadoop, Hive, Kafka, MongoDB, ElasticSearch, Logstash, Kibana, Grafana, Docker, Chef, Travis, Jenkins, Ansible zookeeper".
-	match(/[a-z]+/gi),
-		kspark = "MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS, javascript".match(/[a-z]+/gi),
-		python = ["pip", "python", "anaconda"],
-		keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi), // returns an array of keywords
-		addketh = false,
-		addoss = false;
-
-	let o = obj,
-		e = o.e,
-		txt = o.txt,
-		r = o.r,
-		n = o.n,
-		k = o.k;
-
-	let mainEmail = e[0];
-
-	addline("Hi,");
-	addline("");
-	addline("I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.");
-	addline("I'm a generalist software engineer with 6 years of experience overall.")
-
-	// add keywords
-	if (k.length > 0) {
-		// trim secondary keywords if any for addition later and toggle flag for open source/eth
-		for (var i = 0; i < k.length; i++) {
-			let keyword = k[i];
-			if (checkForOpensourceOrEth(keyword)) {
-				// k.splice(i, 1);
-			}
-			if (keyword === 'opensource') addoss = true;
-			if (match(k, keth)) addketh = true;
-		}
-
-		// Add keyword match sentence
-		let kstr = '';
-		kstr += "I have experience with ";
-
-		if (k.length > 1) {
-			for (var i = 0; i < k.length - 1; i++) {
-				kstr += k[i] + ', ';
-			}
-			kstr += k[k.length - 1];
-		} else {
-			kstr += k[0];
-		}
-		kstr += " and noticed them in the post."
-		addline(kstr)
-
-		// highlight blockchain exp
-		if (addketh || trialRun) {
-			stats.eth = stats.eth ? stats.eth+1 : 1;
-			addline(' ')
-			addline("I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. ")
-			addline("I worked on a prototype ethereum ui before mist, won a prize at EthWaterloo for prototyping an identity management / social network layer protocol for ethereum. ")
-			addline("I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. ");
-		}
-		if (addoss || trialRun) {
-			addline(' ')
-			addline("I'm a big proponent of open source with commits merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler")
-		}
-	}
-
-	// highlight python pip commit
-	// if (){}
-
-	// highlight data engineering @ rax w/ go
-	addline(' ')
-	addline("You can find my resume at https://bit.ly/khaldarcv");
-	addline("LinkedIn: khaldar | https://www.linkedin.com/in/khaldar");
-	addline("Github: kaustavha | https://github.com/kaustavha");
-
-	// addline("You can find my resume <a href='https://kaustavha.github.io/kaustav-haldar-resume/'>here</a> ");
-	// addline("          LinkedIn: <a href='https://www.linkedin.com/in/khaldar'>khaldar</a> ");
-	// addline("          Github: <a href='https://github.com/kaustavha'>kaustavha</a> ");
-	addline("");
-	addline("I'm currently based out of Toronto, Canada. ")
-	addline("Please reach out if you think I'd be a good fit for anything you're looking for. ")
-	// addline("I'm a Canadian citizen so I'll need a visa sponsor for most places.")
-	// addline("I'm looking for Remote or Canadian positions right now. ")
-	// addline("Are you still interviewing candidates?  And do you think I'd be a good fit for this or anything else you're looking for?");
-	addline("Looking forward to hearing back from you.");
-	addline("");
-	addline("Thanks, ");
-	addline("Kaustav Haldar ");
-
-	return genMailAS(content, defaultsubject, mainEmail, e);
-}
-
-function genMailAS(content, defaultsubject, mainEmail, extraEmails) {
-	let fcontent = '';
-	content = content;
-
-	let as = 'tell application "Mail"';
-	as += '\n	set theContent to "' + content + '"';
-	as += '\n	set newMessage to make new outgoing message with properties {visible:true, subject:"' + defaultsubject + '"} ';
-	
-	// message opts
-	as += '\n	tell newMessage';
-	as += '\n		set content to theContent';
-	as += '\n		make new to recipient at newMessage with properties {address:"' + mainEmail + '"}';
-	// as += '\n   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}';
-	
-	// ignore extra emails for now
-
-	// if (extraEmails.length > 1) {
-	// 	for (var i = 1; i < extraEmails.length; i++) {
-	// 		as += '\n		make new cc recipient at newMessage with properties {address:"' + extraEmails[i] + '"}';
-	// 	}
-	// }
-	as += '\n	end tell'
-	as += '\n	send newMessage';
-	as += '\nend tell';
-
-	fcontent += '\n' + as;
-
-	return fcontent;
-}
-
-// old function - need to repair 
-// content is generated by addLine func in genAS
-function genOutlookAS(content, defaultsubject, mainEmail, extraEmails) {
-	let fcontent = '';
-	content = "<p style='white-space:pre;display:block;overflow-wrap:normal;'>" + content + "</p>";
-
-	let as = 'tell application "Microsoft Outlook"';
-	as += '\nset theContent to "' + content + '"';
-	as += '\n   set newMessage to make new outgoing message with properties {subject:"' + defaultsubject + '", content:theContent} ';
-	as += '\n   make new to recipient at newMessage with properties {email address: {address:"' + mainEmail + '"}}';
-	// as += '\n   make new to recipient at newMessage with properties {email address: {address:"hi@kaustav.me"}}';
-	if (e.length > 1) {
-		for (var i = 1; i < e.length; i++) {
-			as += '\n    make new cc recipient at newMessage with properties {email address: {address:"' + e[i] + '"}}';
-		}
-	}
-	as += '\n   send message id (id of newMessage)';
-	as += '\nend tell';
-
-	fcontent += '\n' + as;
-
-	return fcontent;
 }
 
 function getHNPosts(pageN) {
@@ -702,8 +536,8 @@ function getHNPosts(pageN) {
 			if (dat == oldDat) {
 				if (debug) console.log('got all posts from hn');
 				try {
-					fs.mkdirSync('./'+yr);
-				} catch (e) {}
+					fs.mkdirSync('./' + yr);
+				} catch (e) { }
 				fs.writeFileSync(jobsListfs, fullDat);
 				return res();
 			}
@@ -721,7 +555,7 @@ function _getHNPosts(pageN) {
 		extractContent(url).then(dat => {
 			let buf = '';
 			let commtext = stripChildComments(dat);
-			$.each( commtext, function( key, value ) {
+			$.each(commtext, function (key, value) {
 				buf += htmlDecodeWithLineBreaks($(value).html());
 			});
 			res(buf)
@@ -735,7 +569,7 @@ function swapHtmlTextWithFullRefLinks(dat) {
 	$.each(links, (k, v) => {
 		let url = $(v).attr('href');
 		if (url.match('http')) {
-			$(v).text(function() {
+			$(v).text(function () {
 				return url;
 			});
 		}
@@ -775,23 +609,23 @@ function stripChildComments(dat) {
 }
 
 function extractContent(url) {
-		let dat = '';
-		return new Promise(resolve => {
-			https.get(url, res => {
-				res.on('data', function( data ) {
-					dat += data;
-				});
-				res.on('end', () => {
-					resolve(dat);
-				})
+	let dat = '';
+	return new Promise(resolve => {
+		https.get(url, res => {
+			res.on('data', function (data) {
+				dat += data;
 			});
-		})
+			res.on('end', () => {
+				resolve(dat);
+			})
+		});
+	})
 }
 
 // pollyfill
 function htmlDecodeWithLineBreaks(html) {
 	var breakToken = '_______break_______',
 		lineBreakedHtml = html.replace(/<a>(.*?)<a\/>/gi, '$1').replace(/<br\s?\/?>/gi, breakToken).replace(/<p\.*?>(.*?)<\/p>/gi, breakToken + '$1' + breakToken);
-		// console.log(html, $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n'))
+	// console.log(html, $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n'))
 	return $('<div>').html(lineBreakedHtml).text().replace(new RegExp(breakToken, 'g'), '\n');
 }
