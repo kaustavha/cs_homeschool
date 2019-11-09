@@ -51,6 +51,10 @@ Then, write a resolve method that works like this:
 root.resolve('dir1/dir2');    // dir2
 dir2.resolve('..');           // dir1
 
+
+2nd part 
+implement files and `file.*` to return all files
+
 */
 
 function Directory(name = '') {
@@ -115,6 +119,8 @@ Directory.prototype.resolve = function (path) {
     if (this.directories[curPart]) {
         return this.directories[curPart].resolve(parts.join('/'))
     }
+
+    return fileNotFounderr;
 }
 
 Directory.prototype.add = function (o) {
@@ -157,44 +163,44 @@ _root.add(dir3);
 var file4 = new File('file4');
 _root.add(file4);
 
-// console.log(_root)
+
+// Add test code here
 
 let res = _root.resolve('dir1/dir2')
-// console.log(res.name)
+console.log(res.name)
 
 res = res.resolve('..')
+console.log('====')
+console.log(res.name)
 
-// console.log('====')
-// console.log(res.name)
-
-// console.log('====')
+console.log('====')
 res = res.resolve('.')
-// console.log(res.name)
+console.log(res.name)
 
 
-// console.log('====')
+console.log('====')
 res = _root.resolve('dir1/dir2/file1')
-// console.log(res.name)
+console.log(res.name)
 
 
-// console.log('====')
+console.log('====')
 res = _root.resolve('dir1/dir2/../..')
-// console.log(res)
+console.log(res)
 
 
-// console.log('====')
+console.log('====')
 res = _root.resolve('dir1/dir2/file10')
-// console.log(res)
+console.log(res)
 
 
-// console.log('====')
+console.log('====')
 res = _root.resolve('../../..')
-// console.log(res)
+console.log(res)
 
 
-// console.log('====')
+console.log('====')
 res = _root.find('dir2')
-// console.log(res.name)
+console.log(res.name)
 
 
 console.log('====')
@@ -205,5 +211,3 @@ console.log(res.name)
 console.log('====')
 res = _root.find('file.*')
 console.log(res)
-
-// Add test code here
