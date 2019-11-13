@@ -62,7 +62,7 @@ Feel free to reach out directly to kevin (at) getdex.com or apply through AngelL
 $60=====ago [-]
 
 Kumu | Remote | https://kumu.io
-Kumu is a web-based data viz platform that helps people understand complex relationships, mostly through network, systems, and stakeholder maps. We’ve spent years refining Kumu’s visualization platform, and we’re embarking on our next phase: developing a suite of specialized tools for tackling tough problems (such as building stronger communities through Weavr, building better teams through Compass, and collecting better data through Undercurrent and System Effects).
+Kumu is a web-based data viz platform that helps people understand complex relationships, mostly through network, systems, and stakeholder maps. We’ve spent years refining Kumu��s visualization platform, and we’re embarking on our next phase: developing a suite of specialized tools for tackling tough problems (such as building stronger communities through Weavr, building better teams through Compass, and collecting better data through Undercurrent and System Effects).
 
 Full-time position (remote)
 
@@ -143,21 +143,6 @@ I am one of the founders, feel free to reach out to me directly: tomas@proteinqu
       
 
 
-$9=====ago [-]
-
-Lightstream | Chicago | Full-time | ONSITE, REMOTE (US) for strong candidates | https://www.golightstream.com/
-We’re building the future of live streaming. We empower streamers on Twitch, Mixer, etc. to be successful with creative tools and analytics. We’ve got a ton of momentum including a $9M Series A, a strategic partnership with Microsoft and an acquisition of the analytics company https://arsenal.gg
-
-We build with modern stack including React, Node, Typescript.
-Right now we’re particularly focused on hiring for our Arsenal team.
-https://strea.mr/2Nw1CQVAll job postings are here: https://strea.mr/2GE4qsY  
-Interested in us but don’t see what you like?  Hit us up at jobs@golightstream.com
-                      
-                      reply
-                  
-      
-
-
 $100=====ago [-]
 
 Alto | San Francisco, CA | Perm, Onsite, Full-Time | https://alto.com
@@ -181,6 +166,21 @@ Here are our open roles:
 
 * Product Manager: https://boards.greenhouse.io/alto/jobs/744789?gh_jid=744789&gh_src=e6c446df1
 Tech Stack: React Native, React, Ruby on Rails, Go
+                      
+                      reply
+                  
+      
+
+
+$9=====ago [-]
+
+Lightstream | Chicago | Full-time | ONSITE, REMOTE (US) for strong candidates | https://www.golightstream.com/
+We’re building the future of live streaming. We empower streamers on Twitch, Mixer, etc. to be successful with creative tools and analytics. We’ve got a ton of momentum including a $9M Series A, a strategic partnership with Microsoft and an acquisition of the analytics company https://arsenal.gg
+
+We build with modern stack including React, Node, Typescript.
+Right now we’re particularly focused on hiring for our Arsenal team.
+https://strea.mr/2Nw1CQVAll job postings are here: https://strea.mr/2GE4qsY  
+Interested in us but don’t see what you like?  Hit us up at jobs@golightstream.com
                       
                       reply
                   
@@ -724,23 +724,6 @@ Interested? Send your resume to careers@tython.co (no recruiters please)
       
 
 
-$3=====ago [-]
-
-Elementus | Data Scientist | New York | Full-time | Onsite | https://elementus.io
-Elementus is the universal blockchain query engine. We develop tools for financial institutions, law enforcement, and regulators to help them see past the raw blockchain data and understand the social and economic interactions taking place on-chain.
-
-We are hiring for a creative, curious data scientist who is comfortable in rapidly changing, highly ambiguous environments. The role will involve developing new methods and algorithms to extract insights from on-chain data (bitcoin, ethereum, and others).
-
-We use Nodejs, C++, Python. Some background in graph theory, blockchain tech is a plus, but not required.
-
-We recently closed a $3.5m seed round that included Morgan Creek, Fidelity, and Stage 1.
-If this sounds interesting, we'd love to chat. Please contact me at max at elementus.io.
-                      
-                      reply
-                  
-      
-
-
 $5=====ago [-]
 
 Ought | https://ought.org | Engineering Team Lead | San Francisco (onsite)
@@ -752,6 +735,23 @@ Humboldt talked about natural language as a system that "makes infinite use of f
 
 We'll pay a $5,000 referral bonus to whoever refers the person we end up hiring (careers@ought.org, terms: https://bit.ly/2lw3Q8w). Our benefits and compensation package are at market with similar roles in the Bay Area.
 Apply here: https://ought.org/careers/engineering-lead
+                      
+                      reply
+                  
+      
+
+
+$3=====ago [-]
+
+Elementus | Data Scientist | New York | Full-time | Onsite | https://elementus.io
+Elementus is the universal blockchain query engine. We develop tools for financial institutions, law enforcement, and regulators to help them see past the raw blockchain data and understand the social and economic interactions taking place on-chain.
+
+We are hiring for a creative, curious data scientist who is comfortable in rapidly changing, highly ambiguous environments. The role will involve developing new methods and algorithms to extract insights from on-chain data (bitcoin, ethereum, and others).
+
+We use Nodejs, C++, Python. Some background in graph theory, blockchain tech is a plus, but not required.
+
+We recently closed a $3.5m seed round that included Morgan Creek, Fidelity, and Stage 1.
+If this sounds interesting, we'd love to chat. Please contact me at max at elementus.io.
                       
                       reply
                   

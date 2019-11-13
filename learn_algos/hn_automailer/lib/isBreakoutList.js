@@ -208,23 +208,17 @@ let list = [
 ]
 
 function isBLCo(blk) {
-    let bool = false;
-    let matchCo;
-    list.some(co => {
-        let re = new RegExp(co, 'gi')
-        if (blk && blk.substring(0, 11 + co.length + 1).match(re)) {
-            let str = blk.split('\n')[2];
-            if (str) str = str.substring(0, str.indexOf('|'));
-            if (str) str.trim();
-
-            if (str && co && str.length === co.length) {
-                matchCo = co;
-                bool = true;
-                return;
-            }
-        }
-    })
-    return bool ? matchCo : false;
+    try {
+        let str = blk.split('\n')[2];
+        if (str) str = str.substring(0, str.indexOf('|'));
+        if (str) str.trim();
+        let match = list.some(co => str.match(new RegExp(co, 'gi')))
+        if (match) return true;
+        return false;
+    } catch (e) {
+        // console.error('Error with isblco : ', blk.length, blk, e)
+        // Malformed incoming block, ignore and continue
+    }
 }
 
 module.exports = isBLCo;

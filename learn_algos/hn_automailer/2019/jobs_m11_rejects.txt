@@ -19,7 +19,7 @@ Apply here: https://github.com/sourcegraph/careers/
       
 
 
- | len: 1294 | go,react,docker,devops,kubernetes remote: true no email | Not blco 
+ | len: 1294 | go,react,docker,devops,kubernetes remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -48,7 +48,7 @@ Please email us your resume to: Workwithus@signal.org
       
 
 
- | len: 1401 | java,web,javascript,aws,devops,opensource remote: true blacklist | Breakoutlist company!! Signal
+ | len: 1401 | java,web,javascript,aws,devops,opensource remote: true blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -159,7 +159,7 @@ https://www.datadoghq.com/jobs-engineering/
       
 
 
- | len: 675 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+ | len: 675 | go,python,java,react,aws remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -441,7 +441,7 @@ Apply here: https://consensys.net/open-roles/?discipline=61666
       
 
 
- | len: 1054 | ethereum,opensource remote: true no email | Not blco 
+ | len: 1054 | ethereum,opensource remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -603,7 +603,7 @@ email: hn-expedited@envoy.com
       
 
 
- | len: 1341 | backend,python,ruby,aws,frontend,javascript,java,devops remote: false blacklist | Breakoutlist company!! Envoy
+ | len: 1341 | backend,python,ruby,aws,frontend,javascript,java,devops remote: false blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -685,18 +685,6 @@ We're very well funded by a few infrastructure-focused investors. We're looking 
 
 ago [-]
 
-Lendex | Java Backend Developer | Netherlands only | Full-time | Remote-firstWe are a young Duch FinTech company in the retail lending domain, backed up by a solid bank. We are looking for backend Java developers into a freshly formed team with the remote-first approach. 
-We are working with a classic technology stack based on Spring and Hibernate in Cloud.https://angel.co/company/lendex-1/jobs/660803-senior-java-developer
-                      
-                      reply
-                  
-      
-
-
- | len: 514 | java,backend remote: true no email | Not blco 
-
-ago [-]
-
 OnSpecta | Redwood City, CA & Warsaw, Poland | Performance Engineer (HPC) | Visa
 OnSpecta is an early-stage startup founded by successful serial entrepreneurs and deep learning experts, and was born out of MIT’s neuroscience lab. We offer a Deep Learning Server (DLS) which increases the performance of deep learning computations on Intel and ARM CPUs, GPUs and ASICs etc. We're a small team (~12), so you'll have a huge opportunity to make a difference.
 
@@ -709,6 +697,18 @@ Please reach out to hiring@onspecta.com and include "HN: " in the subject. (Note
 
 
  | len: 1046 | no keyword match remote: true blacklist | Not blco 
+
+ago [-]
+
+Lendex | Java Backend Developer | Netherlands only | Full-time | Remote-firstWe are a young Duch FinTech company in the retail lending domain, backed up by a solid bank. We are looking for backend Java developers into a freshly formed team with the remote-first approach. 
+We are working with a classic technology stack based on Spring and Hibernate in Cloud.https://angel.co/company/lendex-1/jobs/660803-senior-java-developer
+                      
+                      reply
+                  
+      
+
+
+ | len: 514 | java,backend remote: true no email | Not blco 
 
 ago [-]
 
@@ -837,7 +837,7 @@ We’re looking for exceptional C++ Developers. For more information, please vis
       
 
 
- | len: 851 | no keyword match remote: false no email | Not blco 
+ | len: 851 | no keyword match remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -939,17 +939,6 @@ Hive, Impala, HBase, Spark, HDFS, Python, Java, Scala, Kafka, Elasticsearch, MyS
 
 ago [-]
 
-Don't like big pharma? Join small pharma! Eikon Therapeutics is disrupting drug discovery using Nobel Prize winning technology to help chronically underserved patient populations and we need a Data Engineer to be successful!https://boards.greenhouse.io/eikontx/jobs/4000113003
-                      
-                      reply
-                  
-      
-
-
- | len: 364 | no keyword match remote: false no email | Not blco 
-
-ago [-]
-
 Nuna (https://www.nuna.com) | San Francisco / DC | Full-time | ONSITE | Visa Transfer
 We build data and analytics solutions that will help shift the US healthcare system to one based on value and quality. Our technical challenges are complex and compelling, and the work we do has the potential to impact millions of lives. We partner with healthcare plans, providers, and the government.
 Data can be a powerful driver of change—but only when it’s acted upon with empathy. Our technology, data, and analytics solutions help healthcare payers, and providers get the answers they need to make quality care more affordable for millions of people.
@@ -984,6 +973,17 @@ Questions? Contact via email: recruiting+hn@( our domain )
 
 ago [-]
 
+Don't like big pharma? Join small pharma! Eikon Therapeutics is disrupting drug discovery using Nobel Prize winning technology to help chronically underserved patient populations and we need a Data Engineer to be successful!https://boards.greenhouse.io/eikontx/jobs/4000113003
+                      
+                      reply
+                  
+      
+
+
+ | len: 364 | no keyword match remote: false no email | Not blco 
+
+ago [-]
+
 Kabisa | Software crafts(wo)man | Weert / Eindhoven / Amsterdam, Netherlands | ONSITE
 Kabisa is a software agency based in the Netherlands. We're 13 years in business and have a team of 50 people.
 
@@ -1009,7 +1009,7 @@ Apply at https://www.kabisa.nl/vacatures/software-engineer-english/.
 ago [-]
 
 Kumu | Remote | https://kumu.io
-Kumu is a web-based data viz platform that helps people understand complex relationships, mostly through network, systems, and stakeholder maps. We’ve spent years refining Kumu’s visualization platform, and we’re embarking on our next phase: developing a suite of specialized tools for tackling tough problems (such as building stronger communities through Weavr, building better teams through Compass, and collecting better data through Undercurrent and System Effects).
+Kumu is a web-based data viz platform that helps people understand complex relationships, mostly through network, systems, and stakeholder maps. We’ve spent years refining Kumu��s visualization platform, and we’re embarking on our next phase: developing a suite of specialized tools for tackling tough problems (such as building stronger communities through Weavr, building better teams through Compass, and collecting better data through Undercurrent and System Effects).
 
 Full-time position (remote)
 
@@ -1042,7 +1042,7 @@ Thanks!
       
 
 
- | len: 2089 | web,react,ruby,rails,aws remote: true blacklist | Not blco 
+ | len: 2090 | web,react,ruby,rails,aws remote: true blacklist | Not blco 
 
 ago [-]
 
@@ -1479,7 +1479,7 @@ Reach out at chris.spada at sonder.com with any questions
       
 
 
- | len: 950 | devops remote: true blacklist | Breakoutlist company!! Sonder
+ | len: 950 | devops remote: true blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -1800,25 +1800,6 @@ Apply: evgeny@hyrestaff.com or https://angel.co/company/hyrestaff/jobs/634659-se
 
 ago [-]
 
-InstaREC | GPGPU Software Developer (3D/Qt) | Stuttgart, DE | Full-Time or Contractor/Freelance | Remote or Onsite
-At InstaReconstruct (InstaREC), we’re currently working towards the release of our next-generation photogrammetry and scan processing solution. Like our sister company, InstaLOD, we’re enabling enterprise and entertainment companies to create magical 3D experiences in a faster, automated, and scalable way. From military companies building next-generation simulations and data analysis to leading automotive and game developers — our tech plays a vital part in delivering their project.
-
-InstaREC is a newly established startup, that we’ve introduced for the first time at SIGGRAPH 2019 with fantastic reception from all key players in the industry. Everybody is looking forward to getting their hands onto our new tech.
-
-We're not just looking for coworkers but for stakeholders and adventurers – driven product owners that want to make a difference through their work. We’re looking for passionate C++ software developers with experience in GPGPU programming frameworks and technologies, such as OpenCL and CUDA, GPU based optimizations techniques, and modern 3D frameworks. Ideally, you've used the Qt-framework in past projects.
-
-Because everything is still being built, we don’t have a career website, so it’s an excellent opportunity to be part of something new and rapidly growing. All parts of our startup are still moving and you’ll be able to drive and influence the direction of our company.
-Please provide an up-to-date resume including sample code of previous work that you can share to Michael@theabstract.co.
-                      
-                      reply
-                  
-      
-
-
- | len: 1727 | no keyword match remote: true blacklist | Not blco 
-
-ago [-]
-
 Fern Creek Software | Louisville KY | Multiple Positions | Remote
 Fern Creek is a software consulting company. We build stuff for other people, usually in .NET on Azure but we do other stuff occasionally. The company has been around since I started consulting independently about 20 years ago. Recently I started taking on larger projects that need more people and as a result, started hiring people. Sometimes a 1099, sometimes W2.
 
@@ -1839,6 +1820,25 @@ Shoot me a message at jobs at ferncreeksoftware.com
 
 
  | len: 1334 | sql remote: true blacklist | Not blco 
+
+ago [-]
+
+InstaREC | GPGPU Software Developer (3D/Qt) | Stuttgart, DE | Full-Time or Contractor/Freelance | Remote or Onsite
+At InstaReconstruct (InstaREC), we’re currently working towards the release of our next-generation photogrammetry and scan processing solution. Like our sister company, InstaLOD, we’re enabling enterprise and entertainment companies to create magical 3D experiences in a faster, automated, and scalable way. From military companies building next-generation simulations and data analysis to leading automotive and game developers — our tech plays a vital part in delivering their project.
+
+InstaREC is a newly established startup, that we’ve introduced for the first time at SIGGRAPH 2019 with fantastic reception from all key players in the industry. Everybody is looking forward to getting their hands onto our new tech.
+
+We're not just looking for coworkers but for stakeholders and adventurers – driven product owners that want to make a difference through their work. We’re looking for passionate C++ software developers with experience in GPGPU programming frameworks and technologies, such as OpenCL and CUDA, GPU based optimizations techniques, and modern 3D frameworks. Ideally, you've used the Qt-framework in past projects.
+
+Because everything is still being built, we don’t have a career website, so it’s an excellent opportunity to be part of something new and rapidly growing. All parts of our startup are still moving and you’ll be able to drive and influence the direction of our company.
+Please provide an up-to-date resume including sample code of previous work that you can share to Michael@theabstract.co.
+                      
+                      reply
+                  
+      
+
+
+ | len: 1727 | no keyword match remote: true blacklist | Not blco 
 
 ago [-]
 
@@ -2060,6 +2060,23 @@ Feel free to email directly at david at memsql dot com.
 
 ago [-]
 
+GiveCampus (YC S15) | Rails engineers | Full Time | Washington DC | On-site | https://www.givecampus.com/careers#engineering
+GiveCampus builds fundraising software for colleges, universities, and K-12 schools. The company is 4 years old, profitable, and serves more than 750 schools, including 30 of the Top 50-ranked colleges in the United States. We're backed by Y Combinator and YC's CEO listed us among the 20 YC companies that he expects to be a household name by 2020 (https://news.ycombinator.com/item?id=13896296). You can read a bit more about what we do in The Washington Post (https://www.washingtonpost.com/news/grade-point/wp/2016/04/19/colleges-are-going-online-to-crowdsource-donations-and-theyre-raising-millions).
+
+We're looking for full-stack Rails engineers with at least 2 years of professional experience. Our current team was previously with Facebook, Amazon, and Intel.
+
+We're looking for people who like having ownership of the product, and can own the process from idea to development to deployment and maintenance. You should also believe education is important, and really care about it.
+We're still a small team, so if you're looking to join a fast-growing startup and have an immediate impact, please reach out to careers@givecampus.com with a bit about why you're passionate about education, and a project you've working on that you're particularly proud of.
+                      
+                      reply
+                  
+      
+
+
+ | len: 1476 | rails,aws remote: false blacklist | Not blco 
+
+ago [-]
+
 Fueled | NYC, LONDON & NOIDA, IN | Full-Time |https://fueled.com/jobs 
 Please email christine@fueled.com with questions
 -- Who We Are --
@@ -2096,23 +2113,6 @@ Senior Product Designer | London, UK | https://fueled.com/jobs/london/senior-pro
 
 
  | len: 172 | no keyword match remote: false no email | Not blco 
-
-ago [-]
-
-GiveCampus (YC S15) | Rails engineers | Full Time | Washington DC | On-site | https://www.givecampus.com/careers#engineering
-GiveCampus builds fundraising software for colleges, universities, and K-12 schools. The company is 4 years old, profitable, and serves more than 750 schools, including 30 of the Top 50-ranked colleges in the United States. We're backed by Y Combinator and YC's CEO listed us among the 20 YC companies that he expects to be a household name by 2020 (https://news.ycombinator.com/item?id=13896296). You can read a bit more about what we do in The Washington Post (https://www.washingtonpost.com/news/grade-point/wp/2016/04/19/colleges-are-going-online-to-crowdsource-donations-and-theyre-raising-millions).
-
-We're looking for full-stack Rails engineers with at least 2 years of professional experience. Our current team was previously with Facebook, Amazon, and Intel.
-
-We're looking for people who like having ownership of the product, and can own the process from idea to development to deployment and maintenance. You should also believe education is important, and really care about it.
-We're still a small team, so if you're looking to join a fast-growing startup and have an immediate impact, please reach out to careers@givecampus.com with a bit about why you're passionate about education, and a project you've working on that you're particularly proud of.
-                      
-                      reply
-                  
-      
-
-
- | len: 1476 | rails,aws remote: false blacklist | Not blco 
 
 ago [-]
 
@@ -2348,7 +2348,7 @@ If Belgium's not your thing, we're also hiring talented engineers at our offices
       
 
 
- | len: 904 | javascript remote: false no email | Not blco 
+ | len: 904 | javascript remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -2517,7 +2517,7 @@ https://asana.com/jobs/apply/1300586/engineering-managerproduct* All open Engine
       
 
 
- | len: 1284 | mobile remote: true no email | Breakoutlist company!! Asana
+ | len: 1284 | mobile remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -2644,7 +2644,7 @@ Join us! More details here: https://www.bolt.com/jobs/software-engineer/81492e99
       
 
 
- | len: 1097 | no keyword match remote: false no email | Breakoutlist company!! Bolt
+ | len: 1097 | no keyword match remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -2816,7 +2816,7 @@ The company is backed by Y Combinator and other top tier investors from Silicon 
 
 We have full-time students in 70+ countries, thousands of applicants per month from ~200 countries, and graduates from Nigeria to Mexico that have increased their salaries by 2-10x after completing the program.
 
- | len: 529 | no keyword match remote: true no email | Not blco 
+ | len: 529 | no keyword match remote: true no email | Breakoutlist company!! true
 
 We currently are hiring for several roles: Head of Growth & Marketing || Head of Business Development & Partnerships
 
@@ -2835,13 +2835,6 @@ Apply here: https://angel.co/company/microverse/jobs/
 
 
  | len: 457 | no keyword match remote: false no email | Not blco 
-
-ago [-]
-
-Audatic | Berlin, Germany (ONSITE) | Full-time | Visa | SysAdmin & Deep Learning Engineer | http://audatic.ai Audatic is building systems to intelligently modify sound using state of the art deep learning technology and unique datasets. Our personalized sound environment allows users to customize sounds to their individual taste. Applications include effortless interactions in noisy places (especially for people with hearing impairments), and realistic audio-environments for augmented reality. We are a young, driven and dynamic team with the vision to change people’s lives. We value each team member and opinion equally and count on everyone’s contribution to make our vision come true. You are encouraged to constructively challenge our ideas and can expect to be involved in the decisions that shape the future of our company. Tech: Linux, Python with Tensorflow, Android & iOS and some AWS. We are looking for smart and curious people who either like to manage our in-house cluster and infrastructure (SysAdmin) or build novel network architectures (Deep Learning Engineer). Apply now at http://audatic.ai/apply-now/
-
-
- | len: 1137 | linux,python,aws remote: false no email | Not blco 
 
 ago [-]
 
@@ -2868,6 +2861,13 @@ Apply online, every application is read: https://jobs.lever.co/starskyrobotics/ 
 
 
  | len: 1998 | python,bash,scripting remote: true no email | Not blco 
+
+ago [-]
+
+Audatic | Berlin, Germany (ONSITE) | Full-time | Visa | SysAdmin & Deep Learning Engineer | http://audatic.ai Audatic is building systems to intelligently modify sound using state of the art deep learning technology and unique datasets. Our personalized sound environment allows users to customize sounds to their individual taste. Applications include effortless interactions in noisy places (especially for people with hearing impairments), and realistic audio-environments for augmented reality. We are a young, driven and dynamic team with the vision to change people’s lives. We value each team member and opinion equally and count on everyone’s contribution to make our vision come true. You are encouraged to constructively challenge our ideas and can expect to be involved in the decisions that shape the future of our company. Tech: Linux, Python with Tensorflow, Android & iOS and some AWS. We are looking for smart and curious people who either like to manage our in-house cluster and infrastructure (SysAdmin) or build novel network architectures (Deep Learning Engineer). Apply now at http://audatic.ai/apply-now/
+
+
+ | len: 1137 | linux,python,aws remote: false no email | Not blco 
 
 ago [-]
 
@@ -3086,7 +3086,7 @@ https://www.amazon.jobs/en/jobs/920217/software-development-engineer
       
 
 
- | len: 1069 | aws,web,mysql remote: true no email | Breakoutlist company!! Amazon Web Services
+ | len: 1069 | aws,web,mysql remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -3110,7 +3110,7 @@ ago [-]
 GitLab | Remote only | Full time - It’s an exciting time to join GitLab. As a fast-growing, all-remote company, GitLab is a place where you can contribute and make an impact from anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration. We’re hiring solutions architects, engineering managers, security engineers, recruiters, support engineers, product managers, strategic account leaders, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/ Here’s an inside look at GitLab’s interview process from one of our new team members: https://about.gitlab.com/blog/2019/03/28/what-its-like-to-interview-at-gitlab/ Want to learn more? Check out our company handbook: https://about.gitlab.com/handbook/
 
 
- | len: 811 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+ | len: 811 | no keyword match remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -3786,6 +3786,29 @@ Stack: Node / Express / GraphQL / Vue / Quasar / React / GCP
 
 ago [-]
 
+Vanta (YC W18) | San Francisco, CA | Onsite | https://vanta.com/jobs
+Vanta is security-in-a-box for technology companies, covering everything from laptops to infrastructure, and using a suite of simple, effective, and easy-to-deploy tools. We're in closed beta, have a backlog of customers to engage, and since we began onboarding users, we've had no customer churn. Help us secure the internet, increase trust in software companies, and keep consumer data safe.
+
+We're hiring:
+
+* Engineering Manager (our first!):https://vanta.com/jobs/engineering-manager?ref=keyvalues
+
+* Software Engineer: https://vanta.com/jobs/software-engineer
+
+We'll be hiring for more engineers a little later in the year, so feel free to reach out to us if you don't see a role right now that fits for you: jobs@vanta.com
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/vanta
+Tech Stack: Node.js, TypeScript, React, GraphQL, Docker, Terraform, Go, AWS
+                      
+                      reply
+                  
+      
+
+
+ | len: 1125 | node,javascript,react,docker,devops,go,aws remote: false blacklist | Not blco 
+
+ago [-]
+
 Dental Wings | Montreal (CA), Berlin, Chemnitz (GER), Lyon (FR) | ONSITE | Various engineering roles | Full-time
 * About us *
 
@@ -3816,29 +3839,6 @@ https://dentalwings.com/working-at-dental-wings/
 
 
  | len: 1340 | jenkins,devops,java remote: true no email | Not blco 
-
-ago [-]
-
-Vanta (YC W18) | San Francisco, CA | Onsite | https://vanta.com/jobs
-Vanta is security-in-a-box for technology companies, covering everything from laptops to infrastructure, and using a suite of simple, effective, and easy-to-deploy tools. We're in closed beta, have a backlog of customers to engage, and since we began onboarding users, we've had no customer churn. Help us secure the internet, increase trust in software companies, and keep consumer data safe.
-
-We're hiring:
-
-* Engineering Manager (our first!):https://vanta.com/jobs/engineering-manager?ref=keyvalues
-
-* Software Engineer: https://vanta.com/jobs/software-engineer
-
-We'll be hiring for more engineers a little later in the year, so feel free to reach out to us if you don't see a role right now that fits for you: jobs@vanta.com
-
-To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/vanta
-Tech Stack: Node.js, TypeScript, React, GraphQL, Docker, Terraform, Go, AWS
-                      
-                      reply
-                  
-      
-
-
- | len: 1125 | node,javascript,react,docker,devops,go,aws remote: false blacklist | Not blco 
 
 ago [-]
 
@@ -4259,7 +4259,7 @@ PS: Check out our blog https://blog.superhuman.com/
       
 
 
- | len: 1402 | fullstack,react,go,mobile remote: true blacklist | Breakoutlist company!! Superhuman
+ | len: 1402 | fullstack,react,go,mobile remote: true blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -4385,7 +4385,7 @@ Read about open positions and apply here: https://airtable.com/careers
       
 
 
- | len: 1413 | web,javascript,node,react remote: true no email | Breakoutlist company!! Airtable
+ | len: 1413 | web,javascript,node,react remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -4657,6 +4657,21 @@ To find a full list visit www.kensho.com/careers
 
 ago [-]
 
+Ridecell (www.ridecell.com) | San Francisco | Onsite
+Ridecell is powering next generation of ridesharing, carsharing and autonomous shared mobility services. As the world shifts to a mobility on- demand model and new companies rush to enter as service providers, Ridecell is ready to support these initiatives. Already 20+ customers, including Penske, Renault, RideKleen, Blu Smart and AAA use our proven platform to build their shared mobility businesses.
+
+By joining Ridecell, you'll find yourself at the start of something big: A better way to do transportation
+We're hiring Engineers (Robotics, DevOps, Android, iOS Backend), Product and more. Learn about our career opportunities here: https://ridecell.com/careers.html
+                      
+                      reply
+                  
+      
+
+
+ | len: 812 | devops,backend remote: false no email | Not blco 
+
+ago [-]
+
 Transview Logistics | Full-time | Boulder, CO Local (preferred) or Remote | Ruby and/or React Software Engineer
 Come join a great team developing AI-based web applications focused on reducing cost and emissions in the transportation and logistics industry!
 
@@ -4673,21 +4688,6 @@ Send a cover letter and resume to jobs@transviewlogistics.com
 
 
  | len: 706 | ruby,react,web,rails remote: true blacklist | Not blco 
-
-ago [-]
-
-Ridecell (www.ridecell.com) | San Francisco | Onsite
-Ridecell is powering next generation of ridesharing, carsharing and autonomous shared mobility services. As the world shifts to a mobility on- demand model and new companies rush to enter as service providers, Ridecell is ready to support these initiatives. Already 20+ customers, including Penske, Renault, RideKleen, Blu Smart and AAA use our proven platform to build their shared mobility businesses.
-
-By joining Ridecell, you'll find yourself at the start of something big: A better way to do transportation
-We're hiring Engineers (Robotics, DevOps, Android, iOS Backend), Product and more. Learn about our career opportunities here: https://ridecell.com/careers.html
-                      
-                      reply
-                  
-      
-
-
- | len: 812 | devops,backend remote: false no email | Not blco 
 
 ago [-]
 
@@ -4792,23 +4792,6 @@ NanoSemi has proven breakthrough linearization technology based on system identi
 
 ago [-]
 
-Pipedrive | senior engineers across the stack | Prague, Lisbon, Tallinn | ONSITE, VISA
-Pipedrive is a SaaS visual sales tool for small to medium businesses. We’ve been backed with $90 million in funding since 2010 and are experiencing rapid growth. Our team is now located in five countries, building the sales tool used by over 85,000 companies.
-
-I am very happy with the maturity of the process here and the autonomy our team is having. We are getting a lot of support from the company while still being able to innovate and fully own our part of the product.
-
-Our stack is mainly TypeScript, Node.js, React, Docker, MySQL, Elastic, ... We expect some experience with that but the main thing is the cultural fit. We are looking for team players.
-Please ping me an email at jakub.kadlubiec@pipedrive.com if you want me to refer you or if you want to learn more about the company. Please include the location where you'd like to work from (no remote). I am an engineer not a recruiter.
-                      
-                      reply
-                  
-      
-
-
- | len: 1073 | node,javascript,react,docker,devops,mysql remote: true blacklist | Not blco 
-
-ago [-]
-
 GRAILED | https://www.grailed.com | SOHO, NYC | Full-time | Onsite
 Grailed is a community driven marketplace for fashion and streetwear. We are 70 people, and recently had a 15MM series A after ~5 years of organic growth and a few years of profitability. We run a monolothic rails app + heroku with react/native iOS & Android (but we'll consider anyone with web app xp). We've got a lot of exciting work to be done in the space of recommendations, discovery, and fraud! We place a lot of emphasis on quality of life - this is a truly great place to work :)
 Open roles:
@@ -4827,7 +4810,7 @@ email: alec.mckinley@grailed.com
       
 
 
- | len: 1016 | rails,react,web,ruby remote: false blacklist | Not blco 
+ | len: 1016 | rails,react,web,ruby remote: false blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -4857,6 +4840,23 @@ Apply via the links above, or email me your resume (address in profile) and I'll
 
 
  | len: 1247 | react remote: false no email | Not blco 
+
+ago [-]
+
+Pipedrive | senior engineers across the stack | Prague, Lisbon, Tallinn | ONSITE, VISA
+Pipedrive is a SaaS visual sales tool for small to medium businesses. We’ve been backed with $90 million in funding since 2010 and are experiencing rapid growth. Our team is now located in five countries, building the sales tool used by over 85,000 companies.
+
+I am very happy with the maturity of the process here and the autonomy our team is having. We are getting a lot of support from the company while still being able to innovate and fully own our part of the product.
+
+Our stack is mainly TypeScript, Node.js, React, Docker, MySQL, Elastic, ... We expect some experience with that but the main thing is the cultural fit. We are looking for team players.
+Please ping me an email at jakub.kadlubiec@pipedrive.com if you want me to refer you or if you want to learn more about the company. Please include the location where you'd like to work from (no remote). I am an engineer not a recruiter.
+                      
+                      reply
+                  
+      
+
+
+ | len: 1073 | node,javascript,react,docker,devops,mysql remote: true blacklist | Not blco 
 
 ago [-]
 
@@ -5163,7 +5163,7 @@ Learn more about life at GitLab: https://about.gitlab.com/company/culture/#life-
       
 
 
- | len: 942 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+ | len: 942 | no keyword match remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -5300,7 +5300,7 @@ Further information and application can be found at: https://www.finn.no/job/ful
       
 
 
- | len: 1058 | no keyword match remote: false no email | Not blco 
+ | len: 1058 | no keyword match remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -5455,7 +5455,7 @@ https://nuro.ai/careersitem?gh_jid=1630180
       
 
 
- | len: 1065 | linux remote: false no email | Breakoutlist company!! Nuro
+ | len: 1065 | linux remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -5536,7 +5536,7 @@ Tech Stack: We use Golang for our backend, Typescript and React for our web clie
       
 
 
- | len: 953 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! Samsara
+ | len: 953 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -5780,6 +5780,30 @@ https://conjur.org (our secret service, AGPLv3) https://www.conjur.org/careers/e
 
 ago [-]
 
+Cultivate Labs (Formerly Inkling Markets YC W06) | Rails Engineer | Chicago, IL
+Cultivate Labs builds collective intelligence solutions like prediction markets and opinion polls for governments, large private organizations, and think tanks. Our mission is to quantify and amplify the voice of employees to better define ground truth and drive reality-based decision making.
+
+This role will touch all aspects of our development and delivery process, from new feature development on our products, to working with clients on specific requested customizations, to data analysis, to bug fixes. On a day to day basis, you will:
+
+- Write code
+
+- Work with clients and our team to define application requirements
+
+- Perform data analysis
+- Contribute thinking/perspective on product and company 
+strategy
+We are self-funded and pride ourselves on NOT having a "work hard, play hard" culture, just work hard on interesting problems, then go home and enjoy your life.
+You can read more about the job, and if interested, apply here: https://cultivatelabs.com/jobs
+                      
+                      reply
+                  
+      
+
+
+ | len: 1140 | rails,go remote: false no email | Not blco 
+
+ago [-]
+
 Peek | Senior iOS Engineer (Seattle Only), Senior DevOps Engineer (Seattle or SF), Frontend Engineer (SF Only) | Seattle & San Francisco | ONSITE & VISA (transfer+treaty) | Full-time
 Peek makes the world's tours & activities easily bookable — anytime, anywhere. Our leading technology empowers operators to manage and grow their businesses.
 
@@ -5816,30 +5840,6 @@ If you have any questions, feel free to email megan DOT dose AT peek DOT com
 
 
  | len: 385 | frontend remote: false blacklist | Not blco 
-
-ago [-]
-
-Cultivate Labs (Formerly Inkling Markets YC W06) | Rails Engineer | Chicago, IL
-Cultivate Labs builds collective intelligence solutions like prediction markets and opinion polls for governments, large private organizations, and think tanks. Our mission is to quantify and amplify the voice of employees to better define ground truth and drive reality-based decision making.
-
-This role will touch all aspects of our development and delivery process, from new feature development on our products, to working with clients on specific requested customizations, to data analysis, to bug fixes. On a day to day basis, you will:
-
-- Write code
-
-- Work with clients and our team to define application requirements
-
-- Perform data analysis
-- Contribute thinking/perspective on product and company 
-strategy
-We are self-funded and pride ourselves on NOT having a "work hard, play hard" culture, just work hard on interesting problems, then go home and enjoy your life.
-You can read more about the job, and if interested, apply here: https://cultivatelabs.com/jobs
-                      
-                      reply
-                  
-      
-
-
- | len: 1140 | rails,go remote: false no email | Not blco 
 
 ago [-]
 
@@ -6173,7 +6173,7 @@ Tech Stack:
       
 
 
- | len: 953 | frontend,react,mobile,backend,ruby,rails,python,aws remote: false no email | Not blco 
+ | len: 953 | frontend,react,mobile,backend,ruby,rails,python,aws remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -6246,23 +6246,6 @@ https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDeta
 
 ago [-]
 
-Emurgo (https://emurgo.io) Software Engineer, Full stack | Remote | full-time, Onsite | https://emurgo.breezy.hr/p/f2522c38b22f01-software-engineer?&popup=true
-Cardano is a 3rd generation blockchain platform with more advanced features than any protocol yet developed, and the first one to evolve out of a scientific philosophy, where feature development is driven by scientific peer reviewed white papers.
-
-Emurgo is its venture arm, but we also develop projects for the Cardano blockchain -- we embrace open source :) https://github.com/Emurgo
-We're looking for:
-- Devs with a strong CS background
-- Lots of interest to learn about cryptoIf you have questions, feel free to write to me nicolas at emurgo.io
-                      
-                      reply
-                  
-      
-
-
- | len: 796 | blockchain,opensource remote: true blacklist | Not blco 
-
-ago [-]
-
 Inc-Query | Operations | Full-time | REMOTE (Americas/Europe only) | https://inc-query.com
 Bootstrapped, profitable, very rapidly growing B2B tech company. We program surveys insanely fast for private equity and management consulting clients.
 
@@ -6283,6 +6266,23 @@ If you're interested in learning more, shoot me (the founder) a note with either
 
 
  | len: 1085 | no keyword match remote: true blacklist | Not blco 
+
+ago [-]
+
+Emurgo (https://emurgo.io) Software Engineer, Full stack | Remote | full-time, Onsite | https://emurgo.breezy.hr/p/f2522c38b22f01-software-engineer?&popup=true
+Cardano is a 3rd generation blockchain platform with more advanced features than any protocol yet developed, and the first one to evolve out of a scientific philosophy, where feature development is driven by scientific peer reviewed white papers.
+
+Emurgo is its venture arm, but we also develop projects for the Cardano blockchain -- we embrace open source :) https://github.com/Emurgo
+We're looking for:
+- Devs with a strong CS background
+- Lots of interest to learn about cryptoIf you have questions, feel free to write to me nicolas at emurgo.io
+                      
+                      reply
+                  
+      
+
+
+ | len: 796 | blockchain,opensource remote: true blacklist | Not blco 
 
 ago [-]
 
@@ -6408,7 +6408,7 @@ We offer competitive benefits:
 https://jobs.lever.co/carta?lever-via=qaXpJCYu-T
 
 
- | len: 817 | no keyword match remote: true no email | Breakoutlist company!! Carta
+ | len: 817 | no keyword match remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -6569,7 +6569,7 @@ We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, R
       
 
 
- | len: 1325 | docker,devops,go,aws,javascript,react,kafka remote: true no email | Breakoutlist company!! Segment
+ | len: 1325 | docker,devops,go,aws,javascript,react,kafka remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -6841,23 +6841,6 @@ We are looking for a Lead Backend Engineer (https://up42gmbh.recruitee.com/o/lea
 
 ago [-]
 
-First Dollar | CTO/VP Engineering | Senior Backend Dev | Full-Time | ONSITE Austin, TX
-www.firstdollar.com
-
-First Dollar is a marketplace that helps consumers save, shop & pay for healthcare. We're a repeat founding team with prior exits to athenahealth & Expedia.
-
-We're seeking a CTO/VPE and a Senior Backend Engineer. These are ground floor roles with significant responsibility & upside opportunity. Decent salary & equity.
-Please apply here: https://angel.co/company/firstdollar/jobs
-                      
-                      reply
-                  
-      
-
-
- | len: 576 | backend remote: false no email | Not blco 
-
-ago [-]
-
 Asana | Security Engineers | San Francisco, CA | Onsite, Full-time, Interns, Visa
 Asana is a leading work management platform that helps teams organize and manage all of their work. Asana Security is hiring for multiple positions:
 
@@ -6885,7 +6868,24 @@ Apply through the job descriptions or contact me directly at seancassidy@asana.c
       
 
 
- | len: 1507 | devops remote: true blacklist | Breakoutlist company!! Asana
+ | len: 1507 | devops remote: true blacklist | Breakoutlist company!! true
+
+ago [-]
+
+First Dollar | CTO/VP Engineering | Senior Backend Dev | Full-Time | ONSITE Austin, TX
+www.firstdollar.com
+
+First Dollar is a marketplace that helps consumers save, shop & pay for healthcare. We're a repeat founding team with prior exits to athenahealth & Expedia.
+
+We're seeking a CTO/VPE and a Senior Backend Engineer. These are ground floor roles with significant responsibility & upside opportunity. Decent salary & equity.
+Please apply here: https://angel.co/company/firstdollar/jobs
+                      
+                      reply
+                  
+      
+
+
+ | len: 576 | backend remote: false no email | Not blco 
 
 ago [-]
 
@@ -7177,7 +7177,7 @@ We are looking for software engineers to work on our Cloud Native Platform team.
       
 
 
- | len: 789 | no keyword match remote: true no email | Not blco 
+ | len: 789 | no keyword match remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -7538,7 +7538,7 @@ You can also email me your resume - wantony {AT} amazon_DOT_com. Please add 'HN'
       
 
 
- | len: 638 | aws,web,backend remote: false blacklist | Not blco 
+ | len: 638 | aws,web,backend remote: false blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -7565,7 +7565,7 @@ We are looking for a Senior Android Engineer to lead our effort on the Android p
 We are also hiring a Backend Engineer:
 
 
- | len: 917 | mobile,backend remote: false no email | Not blco 
+ | len: 917 | mobile,backend remote: false no email | Breakoutlist company!! true
 
 xbird | Backend Engineer - Python | Berlin, Germany | ONSITE, VISA, FULL-TIME | http://xbird.io
 
@@ -7960,7 +7960,7 @@ Apply at https://www.revenueanalytics.com/careers or email me with a cover lette
       
 
 
- | len: 720 | python,docker,aws remote: false blacklist | Not blco 
+ | len: 720 | python,docker,aws remote: false blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -8596,7 +8596,7 @@ Apply here: https://apply.workable.com/forward-partners-3/j/AD73E8FFC0/
       
 
 
- | len: 477 | python,react,kubernetes,devops,aws remote: false no email | Not blco 
+ | len: 477 | python,react,kubernetes,devops,aws remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -8988,7 +8988,7 @@ Infrastructure: Heroku + AWS, CircleCI, DataDog.
       
 
 
- | len: 1602 | backend,frontend,node,go,javascript,react,aws remote: false no email | Not blco 
+ | len: 1602 | backend,frontend,node,go,javascript,react,aws remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -9037,49 +9037,6 @@ https://duckduckgo.com/hiring
 
 
  | len: 157 | no keyword match remote: true no email | Not blco 
-
-ago [-]
-
-PrepScholar | Boston, MA | Onsite | Full-time | Product Manager | $100,000-$200,000
-PrepScholar is hiring Product Managers!
-
-PrepScholar’s mission is to improve education at scale through technology. Our flagship product is an SAT/ACT prep program that automatically learns the strengths and weaknesses of each student and creates an individualized learning program through machine learning. You can think of it as an automated tutor that provides a compelling learning experience at scale. We also have a large web presence with over two million monthly visitors to our free tools and articles.
-
-We believe we have a major advantage over other companies in our space because of our technology-centered and analytical approach to education. We're profitable and bootstrapped, and you'll work on products that impact millions of students worldwide.
-
-As a Product Manager, you’ll lead a full existing product line (department) at PrepScholar.  Examples of departments you may run include our automated SAT prep product or our tutoring department. Think of this role as being the CEO of that entire department.
-
-You’ll be responsible for all aspects that feed into that product’s P&L including: optimizing marketing, product, sales, and continuing technical improvements. You'll oversee growth of the entire product, including opening up new marketing channels, developing lifetime customer value, expanding our range of product variations, and improving the program itself.
-
-You will determine which ongoing projects have highest returns (ROI), expand those, and propose creative new projects.  You will translate these projects into budgets for your product line, and be responsible for implementing the projects.  The implementation includes making hires and managing teams, as well as working with engineers, marketing experts and test content creators.
-
-Responsibilities
-
-* Build and manage a product roadmap for product launch and iterations
-
-* Interface with engineers and test content developers to create the product
-
-* Develop effective marketing materials for all our online channels
-
-* Manage P&L and develop a strategic business plan to grow your product to a dominant position
-
-Our ideal candidate has:
-
-* Experience being responsible for P&L (e.g. running a department, running a startup or side-project with positive cashflow)
-
-* Understanding of a broad array of marketing channels, including researching whether a channel is appropriate for a product, starting up new channels, and using tracking/metrics to prove positive ROI of a marketing channel
-
-* Experience with SEO, content marketing, and Adwords
-
-*Distinctive problem solving, organizational, and analytical skills with the ability to evolve product strategy based on research, data and industry trends
-Please send your resume and cover letter to job.pm+hn@prepscholar.com, and read more at http://www.prepscholar.com
-                      
-                      reply
-                  
-      
-
-
- | len: 2979 | web remote: false blacklist | Not blco 
 
 ago [-]
 
@@ -9133,6 +9090,49 @@ https://jobs.close.com
 
 
  | len: 539 | backend,frontend remote: true no email | Not blco 
+
+ago [-]
+
+PrepScholar | Boston, MA | Onsite | Full-time | Product Manager | $100,000-$200,000
+PrepScholar is hiring Product Managers!
+
+PrepScholar’s mission is to improve education at scale through technology. Our flagship product is an SAT/ACT prep program that automatically learns the strengths and weaknesses of each student and creates an individualized learning program through machine learning. You can think of it as an automated tutor that provides a compelling learning experience at scale. We also have a large web presence with over two million monthly visitors to our free tools and articles.
+
+We believe we have a major advantage over other companies in our space because of our technology-centered and analytical approach to education. We're profitable and bootstrapped, and you'll work on products that impact millions of students worldwide.
+
+As a Product Manager, you’ll lead a full existing product line (department) at PrepScholar.  Examples of departments you may run include our automated SAT prep product or our tutoring department. Think of this role as being the CEO of that entire department.
+
+You’ll be responsible for all aspects that feed into that product’s P&L including: optimizing marketing, product, sales, and continuing technical improvements. You'll oversee growth of the entire product, including opening up new marketing channels, developing lifetime customer value, expanding our range of product variations, and improving the program itself.
+
+You will determine which ongoing projects have highest returns (ROI), expand those, and propose creative new projects.  You will translate these projects into budgets for your product line, and be responsible for implementing the projects.  The implementation includes making hires and managing teams, as well as working with engineers, marketing experts and test content creators.
+
+Responsibilities
+
+* Build and manage a product roadmap for product launch and iterations
+
+* Interface with engineers and test content developers to create the product
+
+* Develop effective marketing materials for all our online channels
+
+* Manage P&L and develop a strategic business plan to grow your product to a dominant position
+
+Our ideal candidate has:
+
+* Experience being responsible for P&L (e.g. running a department, running a startup or side-project with positive cashflow)
+
+* Understanding of a broad array of marketing channels, including researching whether a channel is appropriate for a product, starting up new channels, and using tracking/metrics to prove positive ROI of a marketing channel
+
+* Experience with SEO, content marketing, and Adwords
+
+*Distinctive problem solving, organizational, and analytical skills with the ability to evolve product strategy based on research, data and industry trends
+Please send your resume and cover letter to job.pm+hn@prepscholar.com, and read more at http://www.prepscholar.com
+                      
+                      reply
+                  
+      
+
+
+ | len: 2979 | web remote: false blacklist | Not blco 
 
 ago [-]
 
@@ -9476,7 +9476,7 @@ Reach out with a GitHub/LinkedIn to givemeajob@comma.ai.
       
 
 
- | len: 683 | python,javascript,react remote: false blacklist | Not blco 
+ | len: 683 | python,javascript,react remote: false blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -9687,7 +9687,7 @@ Tech Stack: Rails 5.2, Ruby 2.3.7, Python, R, PostgreSQL 9.6, React 0.17, AWS, D
       
 
 
- | len: 1477 | rails,ruby,python,react,aws,docker,devops remote: true no email | Not blco 
+ | len: 1477 | rails,ruby,python,react,aws,docker,devops remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -9830,7 +9830,7 @@ Contact jarrett@beacon.bio if interested.
       
 
 
- | len: 2630 | aws,devops,docker remote: true blacklist | Not blco 
+ | len: 2630 | aws,devops,docker remote: true blacklist | Breakoutlist company!! true
 
 ago [-]
 
@@ -10400,7 +10400,7 @@ Questions? Want a chat? Get in touch at https://intercom.engineering/ or check o
       
 
 
- | len: 2934 | ruby,rails,javascript,frontend,mysql,mongodb,aws,web,react remote: false no email | Breakoutlist company!! Intercom
+ | len: 2934 | ruby,rails,javascript,frontend,mysql,mongodb,aws,web,react remote: false no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -10710,7 +10710,7 @@ Our team of 160 so far: http://www.recursionpharma.com/team
       
 
 
- | len: 3151 | go,devops,chef,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals
+ | len: 3151 | go,devops,chef,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! true
 
 ago [-]
 

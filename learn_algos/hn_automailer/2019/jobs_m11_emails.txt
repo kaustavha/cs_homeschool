@@ -45,8 +45,8 @@ hr@binary.com
 pedro.tabio@stridehealth.com
 ahurst@synopsys.com
 shehrina.kamal@dhl.com
-talent+aus@octoenergy.com
 sfleming@attentivemobile.com
+talent+aus@octoenergy.com
 careers@feedforwardai.com
 angeline@fivetran.com
 ritchie.tendencia@mixpanel.com
@@ -71,8 +71,8 @@ ben.werdmuller@forusall.com
 nathan@skinio.com
 david.pick@fastradius.com
 martin@firefly.health
-max@elementus.io
 careers@ought.org
+max@elementus.io
 moe@monograph.io
 pranay@o1labs.org
 travis@qualia.com

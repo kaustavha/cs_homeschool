@@ -47,7 +47,7 @@ const remoteOnly = false; // only pull in remote jobs + foll. flags
 const torontoAndRemoteOnly = false; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
-const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
+const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
 const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
 let stats = {
@@ -259,7 +259,7 @@ function populateBlocks() {
 						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
 						remoteJobsRejects.push(blockStats);
 					}
-					if (itIsBLCo && etxt[0] !== 'blacklist') {
+					if (itIsBLCo && (etxt.length === 0 || etxt[0] !== 'blacklist')) {
 						breakoutlist.push(blockStats);
 					}
 				}

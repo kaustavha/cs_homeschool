@@ -1,5 +1,27 @@
 ago [-]
 
+Sourcegraph (https://sourcegraph.com) | Software Engineer | REMOTE FIRST and San Francisco, CA
+Sourcegraph's mission is to enable every software developer to create products using the best technology. Read our master plan to learn more about what we're building, and why it matters: https://sourcegraph.com/plan
+
+With Sourcegraph, you can instantly search across all of your company's private code using powerful regular expressions, and with our browser extension you can go-to-definition and find-references while you are reviewing code on GitHub and other code hosts. Most of the developers at Uber, Lyft, and Yelp (and more) use Sourcegraph every day.
+
+We have product-market fit, strong revenue growth, and are growing our remote-first team to keep up with demand. If you are passionate about making the world better through software, come join us!
+
+Sourcegraph is an equal opportunity workplace; we embrace diversity and welcome people from all backgrounds and communities.
+
+Technologies that we use: Go, TypeScript, React, RxJS, GraphQL, Docker + Kubernetes
+
+We’re hiring for the following roles: Software Engineer, Account Executive, UX Designer.
+Apply here: https://github.com/sourcegraph/careers/
+                      
+                      reply
+                  
+      
+
+
+ | len: 1294 | go,react,docker,devops,kubernetes remote: true no email | Breakoutlist company!! true
+,ago [-]
+
 Datadog | Software Engineers | ONSITE (Boston, NYC, Paris) and REMOTE | Full-time
 Datadog is a monitoring, tracing, and logs system for your infrastructure and services. We build our own tsdb, distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences for customers just like us and are growing fast!
 
@@ -13,7 +35,65 @@ https://www.datadoghq.com/jobs-engineering/
       
 
 
- | len: 675 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+ | len: 675 | go,python,java,react,aws remote: true no email | Breakoutlist company!! true
+,ago [-]
+
+ConsenSys R&D | Senior Software Engineer (Rust) | Full-time | Remote
+ConsenSys R&D is focused on developing open source technology for the next generation of Ethereum.
+
+We are looking for senior level engineers and researchers with backgrounds in systems engineering, distributed networks (p2p), parallel computing, WebAssembly, and cryptography. Our team is competitively compensated based on experience.
+
+Some of the things we are working on:
+
+* Building a proof-of-concept client in Rust for Ethereum 2.0 which supports WebAssembly execution for multiple shards.
+
+* Benchmarking the performance of various aspects of WebAssembly runtimes, cryptographic functions, and p2p networking.
+
+* Developing efficient proof tooling for authenticated data structures (merkle proofs).
+
+* Exploring BFT consensus schemes for cross shard transactions.
+
+* Researching and developing global transaction broadcasters.
+Apply here: https://consensys.net/open-roles/?discipline=61666
+                      
+                      reply
+                  
+      
+
+
+ | len: 1054 | ethereum,opensource remote: true no email | Breakoutlist company!! true
+,ago [-]
+
+Stevens Capital Management LP | https://www.scm-lp.com | Developer | Philadelphia, PA | ONSITE | Full-time | VISA
+Stevens Capital Management LP (“SCM”) is a registered investment adviser that manages a multi-billion dollar hedge fund that has been in business for 25+ years.
+
+SCM specializes in the rigorous development and disciplined implementation of empirically based quantitative trading strategies. Our highly productive team works in a fast-paced collegial environment, utilizing extensive data sets, technology and the scientific method to devise and employ trading strategies throughout the world’s most liquid financial markets.
+We’re looking for exceptional C++ Developers. For more information, please visit our careers page: https://grnh.se/104b5e201
+                      
+                      reply
+                  
+      
+
+
+ | len: 851 | no keyword match remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+DoubleVerify | Ghent (Belgium), Tel Aviv (Israel), New York (US) | Full-time, Onsite
+Ghent: https://doubleverify.gent/careers?gh_src=221704c02
+
+Worldwide: https://www.doubleverify.com/careers/?gh_src=221704c02
+
+DoubleVerify improves the impression quality and audience impact of digital advertising. We ensure ad viewability, brand safety, and fraud protection for hundreds of Fortune 500 companies.
+
+My team in Belgium optimizes hundreds of thousands of video ads per minute. We also do a fair amount of data science. We're a full-stack JavaScript team, but we focus on computer science fundamentals rather than specific tech. In fact, some of our top engineers started out without any JavaScript experience!
+If Belgium's not your thing, we're also hiring talented engineers at our offices in New York and Tel Aviv.
+                      
+                      reply
+                  
+      
+
+
+ | len: 904 | javascript remote: false no email | Breakoutlist company!! true
 ,ago [-]
 
 Asana | San Francisco, Vancouver, and New York City | Onsite | https://asana.com/jobs
@@ -35,7 +115,7 @@ https://asana.com/jobs/apply/1300586/engineering-managerproduct* All open Engine
       
 
 
- | len: 1284 | mobile remote: true no email | Breakoutlist company!! Asana
+ | len: 1284 | mobile remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 Bolt | Software Engineer | San Francisco, CA | ONSITE | Fulltime | https://www.bolt.com
@@ -49,7 +129,16 @@ Join us! More details here: https://www.bolt.com/jobs/software-engineer/81492e99
       
 
 
- | len: 1097 | no keyword match remote: false no email | Breakoutlist company!! Bolt
+ | len: 1097 | no keyword match remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+Microverse | Remote only | Full time
+Microverse is a global, distributed school for software developers that doesn't charge students anything until they get hired.
+The company is backed by Y Combinator and other top tier investors from Silicon Valley, and the team works remotely from more than 7 countries.
+
+We have full-time students in 70+ countries, thousands of applicants per month from ~200 countries, and graduates from Nigeria to Mexico that have increased their salaries by 2-10x after completing the program.
+
+ | len: 529 | no keyword match remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 Amazon Web Services | Software Dev Engineer | Seattle and Vancouver | ONSITEServerless Database 
@@ -65,13 +154,13 @@ https://www.amazon.jobs/en/jobs/920217/software-development-engineer
       
 
 
- | len: 1069 | aws,web,mysql remote: true no email | Breakoutlist company!! Amazon Web Services
+ | len: 1069 | aws,web,mysql remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 GitLab | Remote only | Full time - It’s an exciting time to join GitLab. As a fast-growing, all-remote company, GitLab is a place where you can contribute and make an impact from anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration. We’re hiring solutions architects, engineering managers, security engineers, recruiters, support engineers, product managers, strategic account leaders, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/ Here’s an inside look at GitLab’s interview process from one of our new team members: https://about.gitlab.com/blog/2019/03/28/what-its-like-to-interview-at-gitlab/ Want to learn more? Check out our company handbook: https://about.gitlab.com/handbook/
 
 
- | len: 811 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+ | len: 811 | no keyword match remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 Airtable | San Francisco, CA | Onsite or remote (USA only) | Software Engineer, Data Engineer, Data Scientist, SRE
@@ -89,7 +178,7 @@ Read about open positions and apply here: https://airtable.com/careers
       
 
 
- | len: 1413 | web,javascript,node,react remote: true no email | Breakoutlist company!! Airtable
+ | len: 1413 | web,javascript,node,react remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 GitLab | Remote only | Full time
@@ -105,7 +194,23 @@ Learn more about life at GitLab: https://about.gitlab.com/company/culture/#life-
       
 
 
- | len: 942 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+ | len: 942 | no keyword match remote: true no email | Breakoutlist company!! true
+,ago [-]
+
+Sevendof | Embedded Software Engineer | Trondheim, Norway | ONSITE, VISA, Full-time | https://www.sevendof.com/
+Sevendof is a startup in Trondheim focused on building the drone infrastructure of the future. We seek to make drones available as a service to businesses for purposes such as inspection, mapping, and search and rescue. Sevendof will operate a network of long-range drones which are stationed in the field, enabling missions to be carried out automatically.
+
+We are now hiring an Embedded Software Engineer to help bring our first production system to life. Your work would be centered on developing and testing control software for our hybrid engine system, as well as integrating necessary sensor and compute units in our drone architecture.
+
+We are also seeking a Dev-Ops and Front-End engineer - please get in contact if this is of interest.
+Further information and application can be found at: https://www.finn.no/job/fulltime/ad.html?finnkode=148735141
+                      
+                      reply
+                  
+      
+
+
+ | len: 1058 | no keyword match remote: false no email | Breakoutlist company!! true
 ,ago [-]
 
 Nuro | Robotics Reliability Engineer | Mountain View, CA | Full-time | On-site | https://nuro.ai
@@ -121,7 +226,7 @@ https://nuro.ai/careersitem?gh_jid=1630180
       
 
 
- | len: 1065 | linux remote: false no email | Breakoutlist company!! Nuro
+ | len: 1065 | linux remote: false no email | Breakoutlist company!! true
 ,ago [-]
 
 Samsara | San Francisco, Atlanta, and London | Onsite | https://www.samsara.com
@@ -137,7 +242,33 @@ Tech Stack: We use Golang for our backend, Typescript and React for our web clie
       
 
 
- | len: 953 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! Samsara
+ | len: 953 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+Flexport (YC W14) | San Francisco, Chicago, Shenzhen, Shanghai, Amsterdam | Onsite | https://www.flexport.com
+Flexport’s mission is to make global trade easy for everyone. We are revolutionizing a huge industry that touches every country on the planet, which means solving complex challenges. We are looking for makers who love learning, are passionate about collaborating, and desire to see the global impact of the solutions they build.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/flexport
+
+View all of our jobs here: https://grnh.se/c0d6caef1
+
+Tech Stack:
+
+- Frontend: React, Relay, Flow, Jest, Enzyme
+
+- Mobile: React Native, Apollo
+
+- Backend: Ruby on Rails, Postgres, GraphQL, Python, RSpec
+
+- CI: GitHub, Buildkite
+- Infrastructure: AWS, Python
+                      
+                      reply
+                  
+      
+
+
+ | len: 953 | frontend,react,mobile,backend,ruby,rails,python,aws remote: false no email | Breakoutlist company!! true
 ,ago [-]
 
 Carta | Software Engineer, Data Engineer, Product Manager | SF, Palo Alto, Seattle, New York, Rio | ONSITE, VISA | FULLTIME
@@ -158,7 +289,7 @@ We offer competitive benefits:
 https://jobs.lever.co/carta?lever-via=qaXpJCYu-T
 
 
- | len: 817 | no keyword match remote: true no email | Breakoutlist company!! Carta
+ | len: 817 | no keyword match remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 Segment | Engineering | San Francisco, CA; Vancouver, BC; New York, NY | Full-Time | Onsite
@@ -179,7 +310,106 @@ We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, R
       
 
 
- | len: 1325 | docker,devops,go,aws,javascript,react,kafka remote: true no email | Breakoutlist company!! Segment
+ | len: 1325 | docker,devops,go,aws,javascript,react,kafka remote: true no email | Breakoutlist company!! true
+,ago [-]
+
+Affirmed Networks | Acton, Greater Boston Area, MA | Full-time, ONSITE | Visa
+Affirmed Networks is a telecom software company building 4G & 5G core network software. Existing customers include AT&T, Vodafone, Orange, Telus, Softbank + 100 more worldwide.
+We are looking for software engineers to work on our Cloud Native Platform team. Responsibilities include integrating, enhancing, and contributing to leading open-source projects such as Istio, Envoy, Calico, Etcd, Prometheus, and other Cloud Native Computing Foundation (CNCF) projects, as well as building proprietary Platform-as-a-Service (PaaS) components. More details at: https://www.affirmednetworks.com/job/cloud-native-platform-engineer/
+                      
+                      reply
+                  
+      
+
+
+ | len: 789 | no keyword match remote: true no email | Breakoutlist company!! true
+,ago [-]
+
+xbird | Senior Android Engineer - Mobile Sensors | Berlin, Germany | ONSITE, VISA, FULL-TIME | http://xbird.io
+xbird is a medical AI company developing ways to use smartphones and wearable devices to predict and prevent health risks. Our technology captures data streams from the built-in sensors of smartphones and wearables, and analyzes these to detect critical health events before they occur.
+
+We are looking for a Senior Android Engineer to lead our effort on the Android platform. You will work directly on our core product, which collects mobile sensor data, stores it, and eventually uploads it to our cloud service for interpretation. Some of the sensors we work with are accelerometer, gyroscope, barometer, and magnetometer. You will be responsible for the SDK that gets integrated into the products of our partners, as well as our own Android apps.
+
+. .
+
+We are also hiring a Backend Engineer:
+
+
+ | len: 917 | mobile,backend remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+Forward Partners | Senior Software Engineer (Python) | Full-time | London | Onsite
+We're a hands-on VC fund, investing in early stage founders, building their initial products and helping them achieve product-market fit.
+
+Tech stack: Python, Django, GraphQL, React, React Native, Kubernetes, AWS. Greenfield projects.
+Apply here: https://apply.workable.com/forward-partners-3/j/AD73E8FFC0/
+                      
+                      reply
+                  
+      
+
+
+ | len: 477 | python,react,kubernetes,devops,aws remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+Newfront (YC W18) | San Francisco, CA & Portland, OR | Onsite | https://www.newfrontinsurance.com
+Newfront is building the modern platform to transact insurance. No 20-page applications, confusing policy terms, or painful renewal cycles; Newfront's experienced brokers and technology remove the headache from business insurance. We believe in human-computer symbiosis that empowers, not replaces, people.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/newfront
+
+Our open positions:
+
+* Engineering Manager: https://jobs.lever.co/newfrontinsurance/51c08b9c-f5ed-4714-8787-b1a2b1059ead?lever-origin=applied&lever-source%5B%5D=Key%20Values
+
+* Backend Engineer: https://jobs.lever.co/newfrontinsurance/d55fa37d-3131-4c12-9dda-13ceaea76c02?lever-origin=applied&lever-source%5B%5D=Key%20Values
+
+* Frontend Engineer: https://jobs.lever.co/newfrontinsurance/00c67f22-1d1e-431f-9612-6ef2d5fd3084?lever-origin=applied&lever-source%5B%5D=Key%20Values
+
+* Full Stack Engineer: https://jobs.lever.co/newfrontinsurance/852043b5-4da3-4b63-b2c7-66160dc83e58?lever-origin=applied&lever-source%5B%5D=Key%20Values
+
+* Product Manager: https://jobs.lever.co/newfrontinsurance/8a6fa0ec-7123-4fd2-95b4-005c3e6fa330?lever-origin=applied&lever-source%5B%5D=Key%20Values
+Tech Stack: Backend: Node + Express, Typescript, Go Microservices.
+Frontend: Next.js, React + Hooks, Storybook.
+Infrastructure: Heroku + AWS, CircleCI, DataDog.
+                      
+                      reply
+                  
+      
+
+
+ | len: 1602 | backend,frontend,node,go,javascript,react,aws remote: false no email | Breakoutlist company!! true
+,ago [-]
+
+Instacart (YC S12) | San Francisco, CA and Toronto, ON | https://www.instacart.com
+Since 2012, Instacart has been focused on making grocery delivery convenient, affordable, and accessible to everyone. We bring fresh groceries and everyday essentials to customers across the US and Canada from nearly 20,000 stores across 5,500 markets. Instacart is available to 80% of us households in all 50 states, and 60% of Canadian households.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/instacart
+
+To see all of our positions: https://grnh.se/25760b6d1
+
+Some of the key roles we're hiring for include:
+
+* Android Engineer (SF): https://boards.greenhouse.io/instacart/jobs/41840?t=25760b6d1
+
+* iOS Engineer (SF): https://boards.greenhouse.io/instacart/jobs/271441?t=25760b6d1
+
+* Security Engineer (TOR): https://grnh.se/4fb95c011
+
+* Director, Engineering (SF): https://boards.greenhouse.io/instacart/jobs/1583453?t=25760b6d1
+
+* Manager, Data Science (SF): https://grnh.se/f21d13401
+
+* Manager, Engineering (TOR): https://boards.greenhouse.io/instacart/jobs/1592391?t=25760b6d1
+
+* Manager, Engineering (SF): https://boards.greenhouse.io/instacart/jobs/1584826?t=25760b6d1
+Tech Stack: Rails 5.2, Ruby 2.3.7, Python, R, PostgreSQL 9.6, React 0.17, AWS, Docker, RabbitMQ, Sidekiq, Snowflake
+                      
+                      reply
+                  
+      
+
+
+ | len: 1477 | rails,ruby,python,react,aws,docker,devops remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 INTERCOM | San Francisco (USA), Dublin (Ireland), and London (UK) | ONSITE | SaaS | https://intercom.engineering/
@@ -215,7 +445,7 @@ Questions? Want a chat? Get in touch at https://intercom.engineering/ or check o
       
 
 
- | len: 2934 | ruby,rails,javascript,frontend,mysql,mongodb,aws,web,react remote: false no email | Breakoutlist company!! Intercom
+ | len: 2934 | ruby,rails,javascript,frontend,mysql,mongodb,aws,web,react remote: false no email | Breakoutlist company!! true
 ,ago [-]
 
 Recursion Pharmaceuticals | Salt Lake City, Utah | Full-Time | www.recursionpharma.com/careers
@@ -252,4 +482,4 @@ Our team of 160 so far: http://www.recursionpharma.com/team
       
 
 
- | len: 3151 | go,devops,chef,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals
+ | len: 3151 | go,devops,chef,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! true

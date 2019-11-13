@@ -24,7 +24,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 289 
+delay 212 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -50,7 +50,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 243 
+delay 176 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -76,7 +76,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 273 
+delay 242 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -102,7 +102,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 264 
+delay 267 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -128,7 +128,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 175 
+delay 283 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -154,7 +154,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 186 
+delay 166 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -181,7 +181,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 224 
+delay 89 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -207,7 +207,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 105 
+delay 230 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -234,7 +234,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 128 
+delay 265 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -261,7 +261,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 127 
+delay 272 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -288,7 +288,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 136 
+delay 112 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -315,7 +315,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 72 
+delay 202 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -341,7 +341,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 291 
+delay 169 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -368,7 +368,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 161 
+delay 203 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -395,7 +395,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 75 
+delay 79 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -421,7 +421,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 186 
+delay 139 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -448,7 +448,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 256 
+delay 184 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -475,7 +475,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 74 
+delay 126 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -502,7 +502,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 247 
+delay 211 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -529,7 +529,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 208 
+delay 251 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -556,7 +556,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 150 
+delay 245 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -582,7 +582,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 292 
+delay 291 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -609,7 +609,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 288 
+delay 162 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -636,7 +636,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 93 
+delay 200 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -663,7 +663,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 160 
+delay 299 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -689,7 +689,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 82 
+delay 260 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -716,7 +716,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 137 
+delay 146 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -742,7 +742,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 219 
+delay 133 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -769,7 +769,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 287 
+delay 134 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -798,7 +798,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 280 
+delay 178 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -824,7 +824,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 115 
+delay 170 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -851,7 +851,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 114 
+delay 109 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -878,7 +878,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 174 
+delay 200 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -904,7 +904,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 234 
+delay 121 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -930,7 +930,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 86 
+delay 95 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -957,7 +957,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 112 
+delay 192 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -984,7 +984,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 157 
+delay 74 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1011,7 +1011,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 129 
+delay 244 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1038,7 +1038,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 255 
+delay 111 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1065,7 +1065,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 144 
+delay 225 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1092,7 +1092,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 199 
+delay 171 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1119,7 +1119,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 88 
+delay 107 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1146,7 +1146,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 217 
+delay 174 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1173,7 +1173,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 251 
+delay 226 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1200,7 +1200,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 74 
+delay 124 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1227,7 +1227,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 206 
+delay 256 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1253,34 +1253,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 119 
-
-tell application "Mail"
-	set newMessage to make new outgoing message with properties {visible:true} 
-	tell newMessage
-		make new to recipient at newMessage with properties {address:"talent+aus@octoenergy.com"}
-		set content to "Hi,
-
-I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
-I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
-I have previous experience with python, web, mobile and saw them in your post.
-
-You can find my resume at http://cv.kaustav.me or via my website: http://kaustav.me
-LinkedIn: khaldar | https://www.linkedin.com/in/khaldar
-Github: kaustavha | https://github.com/kaustavha
-
-I'm currently based out of Toronto, Canada. But open to relocation or remote. 
-Do you think I'd be a good fit for any open roles you have? 
-
-Thank you, 
-Kaustav Haldar 
-"
-		set subject to "SE opportunities[HN Who's Hiring 11/2019]"
-		set sender to "kaustav haldar <hi@kaustav.me>"
-	end tell
-	send newMessage
-end tell
-delay 202 
+delay 115 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1307,7 +1280,34 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 246 
+delay 64 
+
+tell application "Mail"
+	set newMessage to make new outgoing message with properties {visible:true} 
+	tell newMessage
+		make new to recipient at newMessage with properties {address:"talent+aus@octoenergy.com"}
+		set content to "Hi,
+
+I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
+I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
+I have previous experience with python, web, mobile and saw them in your post.
+
+You can find my resume at http://cv.kaustav.me or via my website: http://kaustav.me
+LinkedIn: khaldar | https://www.linkedin.com/in/khaldar
+Github: kaustavha | https://github.com/kaustavha
+
+I'm currently based out of Toronto, Canada. But open to relocation or remote. 
+Do you think I'd be a good fit for any open roles you have? 
+
+Thank you, 
+Kaustav Haldar 
+"
+		set subject to "SE opportunities[HN Who's Hiring 11/2019]"
+		set sender to "kaustav haldar <hi@kaustav.me>"
+	end tell
+	send newMessage
+end tell
+delay 215 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1334,7 +1334,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 150 
+delay 190 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1361,7 +1361,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 85 
+delay 243 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1388,7 +1388,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 253 
+delay 168 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1415,7 +1415,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 280 
+delay 235 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1441,7 +1441,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 185 
+delay 230 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1468,7 +1468,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 78 
+delay 72 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1494,7 +1494,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 292 
+delay 261 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1521,7 +1521,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 76 
+delay 235 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1547,7 +1547,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 238 
+delay 70 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1574,7 +1574,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 92 
+delay 96 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1601,7 +1601,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 174 
+delay 188 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1627,7 +1627,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 277 
+delay 213 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1653,7 +1653,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 133 
+delay 105 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1680,7 +1680,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 174 
+delay 137 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1706,7 +1706,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 196 
+delay 259 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1733,7 +1733,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 153 
+delay 70 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1760,7 +1760,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 110 
+delay 225 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1787,7 +1787,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 67 
+delay 275 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1814,7 +1814,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 109 
+delay 215 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1840,7 +1840,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 108 
+delay 120 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1867,7 +1867,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 151 
+delay 182 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1894,7 +1894,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 89 
+delay 158 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1921,7 +1921,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 276 
+delay 190 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1948,7 +1948,33 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 218 
+delay 78 
+
+tell application "Mail"
+	set newMessage to make new outgoing message with properties {visible:true} 
+	tell newMessage
+		make new to recipient at newMessage with properties {address:"careers@ought.org"}
+		set content to "Hi,
+
+I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
+I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
+
+You can find my resume at http://cv.kaustav.me or via my website: http://kaustav.me
+LinkedIn: khaldar | https://www.linkedin.com/in/khaldar
+Github: kaustavha | https://github.com/kaustavha
+
+I'm currently based out of Toronto, Canada. But open to relocation or remote. 
+Do you think I'd be a good fit for any open roles you have? 
+
+Thank you, 
+Kaustav Haldar 
+"
+		set subject to "SE opportunities[HN Who's Hiring 11/2019]"
+		set sender to "kaustav haldar <hi@kaustav.me>"
+	end tell
+	send newMessage
+end tell
+delay 152 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -1978,33 +2004,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 285 
-
-tell application "Mail"
-	set newMessage to make new outgoing message with properties {visible:true} 
-	tell newMessage
-		make new to recipient at newMessage with properties {address:"careers@ought.org"}
-		set content to "Hi,
-
-I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
-I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
-
-You can find my resume at http://cv.kaustav.me or via my website: http://kaustav.me
-LinkedIn: khaldar | https://www.linkedin.com/in/khaldar
-Github: kaustavha | https://github.com/kaustavha
-
-I'm currently based out of Toronto, Canada. But open to relocation or remote. 
-Do you think I'd be a good fit for any open roles you have? 
-
-Thank you, 
-Kaustav Haldar 
-"
-		set subject to "SE opportunities[HN Who's Hiring 11/2019]"
-		set sender to "kaustav haldar <hi@kaustav.me>"
-	end tell
-	send newMessage
-end tell
-delay 95 
+delay 226 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2031,7 +2031,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 296 
+delay 61 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2063,7 +2063,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 81 
+delay 291 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2090,7 +2090,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 181 
+delay 104 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2117,7 +2117,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 248 
+delay 299 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2143,7 +2143,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 68 
+delay 183 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2169,7 +2169,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 133 
+delay 93 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2196,7 +2196,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 98 
+delay 120 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2223,7 +2223,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 97 
+delay 150 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2250,7 +2250,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 86 
+delay 122 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2277,7 +2277,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 257 
+delay 168 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2304,7 +2304,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 259 
+delay 110 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2331,7 +2331,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 88 
+delay 197 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2384,7 +2384,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 279 
+delay 66 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2411,7 +2411,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 92 
+delay 261 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2438,7 +2438,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 280 
+delay 219 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2464,7 +2464,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 283 
+delay 203 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2491,7 +2491,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 68 
+delay 157 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2518,7 +2518,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 151 
+delay 292 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2545,7 +2545,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 162 
+delay 198 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2572,7 +2572,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 195 
+delay 261 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2599,7 +2599,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 259 
+delay 89 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2625,7 +2625,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 243 
+delay 258 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2651,7 +2651,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 242 
+delay 77 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2680,7 +2680,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 108 
+delay 239 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2707,7 +2707,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 80 
+delay 196 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2733,7 +2733,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 182 
+delay 269 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2760,7 +2760,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 240 
+delay 176 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2787,7 +2787,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 72 
+delay 147 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2813,7 +2813,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 82 
+delay 203 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2840,7 +2840,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 251 
+delay 85 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2867,7 +2867,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 81 
+delay 167 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2894,7 +2894,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 257 
+delay 106 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2921,7 +2921,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 213 
+delay 216 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2948,7 +2948,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 267 
+delay 150 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -2974,7 +2974,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 257 
+delay 259 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3001,7 +3001,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 271 
+delay 156 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3028,7 +3028,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 246 
+delay 162 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3054,7 +3054,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 107 
+delay 227 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3081,7 +3081,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 193 
+delay 65 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3108,7 +3108,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 113 
+delay 203 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3135,7 +3135,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 188 
+delay 220 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3162,7 +3162,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 299 
+delay 135 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3188,7 +3188,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 157 
+delay 275 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3214,7 +3214,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 279 
+delay 187 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3241,7 +3241,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 161 
+delay 236 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3268,7 +3268,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 167 
+delay 187 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3294,7 +3294,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 221 
+delay 254 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3321,7 +3321,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 178 
+delay 79 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3350,7 +3350,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 101 
+delay 213 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3376,7 +3376,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 102 
+delay 271 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3403,7 +3403,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 226 
+delay 201 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3430,7 +3430,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 147 
+delay 159 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3457,7 +3457,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 157 
+delay 196 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3487,7 +3487,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 274 
+delay 214 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3513,7 +3513,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 271 
+delay 276 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3539,7 +3539,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 183 
+delay 153 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3566,7 +3566,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 265 
+delay 185 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3592,7 +3592,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 113 
+delay 263 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3618,7 +3618,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 157 
+delay 274 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3644,7 +3644,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 208 
+delay 72 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3671,7 +3671,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 108 
+delay 257 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3698,7 +3698,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 100 
+delay 172 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3724,7 +3724,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 292 
+delay 226 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3751,7 +3751,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 277 
+delay 113 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3778,7 +3778,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 287 
+delay 113 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3805,7 +3805,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 109 
+delay 233 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3832,7 +3832,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 223 
+delay 232 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3859,7 +3859,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 130 
+delay 234 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3888,7 +3888,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 86 
+delay 177 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3914,7 +3914,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 213 
+delay 159 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3941,7 +3941,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 149 
+delay 141 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3967,7 +3967,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 135 
+delay 289 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -3994,7 +3994,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 121 
+delay 94 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4021,7 +4021,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 64 
+delay 116 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4047,7 +4047,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 283 
+delay 77 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4073,7 +4073,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 169 
+delay 237 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4100,7 +4100,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 95 
+delay 289 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4127,7 +4127,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 161 
+delay 117 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4153,7 +4153,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 197 
+delay 281 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4180,7 +4180,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 183 
+delay 203 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4209,7 +4209,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 159 
+delay 88 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4236,7 +4236,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 126 
+delay 284 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4263,7 +4263,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 232 
+delay 286 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4290,7 +4290,7 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 140 
+delay 60 
 
 tell application "Mail"
 	set newMessage to make new outgoing message with properties {visible:true} 
@@ -4316,4 +4316,4 @@ Kaustav Haldar
 	end tell
 	send newMessage
 end tell
-delay 136 
+delay 257 
