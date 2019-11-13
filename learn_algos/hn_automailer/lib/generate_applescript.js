@@ -1,5 +1,5 @@
 
-const {genRandDelay} = require('./utils');
+const { genRandDelay } = require('./utils');
 
 function getAppleScriptGenerator({ month, yr, stats }) {
 
@@ -178,8 +178,8 @@ function genAsAll(obj, genAS, minDelay, maxDelay) {
 	return c;
 }
 
-function getApplescriptSeriesGenerator({genAS, minDelay, maxDelay}) {
-    return (obj) => genAsAll(obj, genAS, minDelay, maxDelay)
+function getApplescriptSeriesGenerator({ genAS, minDelay, maxDelay }) {
+	return (obj) => genAsAll(obj, genAS, minDelay, maxDelay)
 }
 
 module.exports = {

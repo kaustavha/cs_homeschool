@@ -1,6 +1,6 @@
-const {dedupeArr} = require('./utils');
+const { dedupeArr } = require('./utils');
 
-module.exports = function getEmailParser({debug, emails, sentEmails}) {
+module.exports = function getEmailParser({ debug, emails, sentEmails }) {
     function parseEmailFromBlock(t, iteration) {
         let emailRx = /[a-z0-9\.\@\-\_\+\{\}\(\)]+/gi;
         let l = t.split('\n'),

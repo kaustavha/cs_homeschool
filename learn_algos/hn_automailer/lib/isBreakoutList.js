@@ -1,5 +1,5 @@
 /**
- * how to generate this list
+ * how to generate this list on the breakout list website: try this from console: 
  * out = []
  * outStr = []
  * $('.page').querySelectorAll('.box h3:first-of-type').forEach(ele => out.push(ele))
@@ -212,11 +212,11 @@ function isBLCo(blk) {
     let matchCo;
     list.some(co => {
         let re = new RegExp(co, 'gi')
-        if (blk && blk.substring(0, 11+co.length+1).match(re)) {
+        if (blk && blk.substring(0, 11 + co.length + 1).match(re)) {
             let str = blk.split('\n')[2];
             if (str) str = str.substring(0, str.indexOf('|'));
             if (str) str.trim();
-            
+
             if (str && co && str.length === co.length) {
                 matchCo = co;
                 bool = true;

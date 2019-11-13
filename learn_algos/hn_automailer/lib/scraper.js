@@ -1,23 +1,18 @@
 const https = require('https');
-
 const fs = require('fs');
-
 const jsdom = require('jsdom');
 $ = require('jquery')(new jsdom.JSDOM().window);
 
 module.exports = class Scraper {
-    constructor({debug=false, fetchFromHN=false, jobsListfs, hnurlid}) {
+    constructor({ debug = false, fetchFromHN = false, jobsListfs, hnurlid }) {
         this.jobsListfs = jobsListfs;
         this.fetchFromHN = fetchFromHN;
         this.debug = debug;
         this.hnurlid = hnurlid;
         if (this.debug) console.log(jobsListfs, fetchFromHN, debug, hnurlid)
-
     }
 
-    getAllHNPosts(pageN=1, oldDat = '', fullDat='') {
-        // let oldDat = '',
-        //     fullDat = '';
+    getAllHNPosts(pageN = 1, oldDat = '', fullDat = '') {
         return new Promise(res => {
             if (!this.fetchFromHN) return res();
 
@@ -96,32 +91,15 @@ module.exports = class Scraper {
         return new Promise(resolve => {
             let dat = '';
             https.get(url, res => {
-                // res.on('data', function(data) {dat += data})
-                // res.on('end', function() {return resolve(dat)})
                 res.on('data', data => dat += data)
                 res.on('end', () => {
-                    if (this.debug) console.log('incoming data l : '+dat.length, res.statusCode, res.statusMessage)
+                    if (this.debug) console.log('incoming data l : ' + dat.length, res.statusCode, res.statusMessage);
                     resolve(dat)
                 })
                 res.on('error', e => this.debug ? console.error('ERROR:', e) : null)
-            }).on('error', e =>  e => this.debug ? console.error(e) : null)
+            }).on('error', e => e => this.debug ? console.error(e) : null)
         })
     }
-
-    // _extractContent(url) {
-    //     let dat = '';
-    //     return new Promise(resolve => {
-    //         return https.get(url, res => {
-    //             res.on('data', function (data) {
-    //                 dat += data;
-    //             });
-    //             res.on('end', () => {
-    //                 if (this.debug) console.log('_extractContent', dat.length)
-    //                 resolve(dat);
-    //             })
-    //         });
-    //     })
-    // }
 
     _swapHtmlTextWithFullRefLinks(dat) {
         let links = $(dat).find('a');
