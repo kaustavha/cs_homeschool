@@ -1,0 +1,255 @@
+ago [-]
+
+Datadog | Software Engineers | ONSITE (Boston, NYC, Paris) and REMOTE | Full-time
+Datadog is a monitoring, tracing, and logs system for your infrastructure and services. We build our own tsdb, distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences for customers just like us and are growing fast!
+
+We write Go, Python, Java, and React, run on AWS, and are moving to k8s.
+
+We're looking for people who can build systems at scale as we process trillions of events per day. Let us know if that's you!
+https://www.datadoghq.com/jobs-engineering/
+                      
+                      reply
+                  
+      
+
+
+ | len: 675 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+,ago [-]
+
+Asana | San Francisco, Vancouver, and New York City | Onsite | https://asana.com/jobs
+Work productively ever after
+Asana helps more than 70,000 organizations and millions of users across 195 countries helps teams orchestrate their work, from daily tasks to strategic initiatives. Asana has been named a Top 5 Best Place to Work by FORTUNE three years in a row, and one of Glassdoor’s and Inc.’s Best Places to Work. Headquartered in San Francisco with offices in New York, Dublin, Sydney, Vancouver, and Reykjavík, Asana is always looking for curious, collaborative people to be a part of our inclusive culture and help us achieve our mission.
+
+Some open roles:
+
+* Head of Mobile Engineering in San Francisco: https://asana.com/jobs/apply/1347064/engineering-managerandroid
+
+* Software Engineer, Product in Vancouver: https://asana.com/jobs/apply/1284781/software-engineerproduct
+
+* Software Engineer, Infrastructure in San Francisco: https://asana.com/jobs/apply/721271/software-engineerinfrastructure
+* Engineering Manager, Product in New York City
+https://asana.com/jobs/apply/1300586/engineering-managerproduct* All open Engineering positions: https://asana.com/jobs/engineering#jobs-listings
+                      
+                      reply
+                  
+      
+
+
+ | len: 1284 | mobile remote: true no email | Breakoutlist company!! Asana
+,ago [-]
+
+Bolt | Software Engineer | San Francisco, CA | ONSITE | Fulltime | https://www.bolt.com
+Ecommerce infrastructure on the internet is fragmented and broken. Bolt is a world-class buying experience available for all online businesses. We're building a future where retailers can eliminate the massive operational overhead and technical debt associated with online checkout and payments, and where customers can buy instantly and securely across the internet. To solve such a large problem, we've put together an incredible team and are selectively adding to it. Play a mission-critical role in developing the future of online commerce.
+
+We are looking for someone excited to take on our ambitious product roadmap who exhibits passion, creativity and a love of building things. Companies and consumers alike will rely heavily on what you build. If this challenge excites you, get in touch with our team.
+Join us! More details here: https://www.bolt.com/jobs/software-engineer/81492e99-22f0-4c61-98a6-5e5bc7111829/
+                      
+                      reply
+                  
+      
+
+
+ | len: 1097 | no keyword match remote: false no email | Breakoutlist company!! Bolt
+,ago [-]
+
+Amazon Web Services | Software Dev Engineer | Seattle and Vancouver | ONSITEServerless Database 
+Amazon Aurora Serverless an on-demand, auto-scaling configuration for Amazon Aurora (MySQL-compatible edition), where the database will automatically start up, shut down, and scale capacity up or down based on your application's needs, with no down time. It enables you to run your database in the cloud without managing any database instances. With Amazon Aurora Serverless we aim to do nothing less than revolutionize the database business. Aurora Serverless builds on top of foundational AWS services such as EC2, S3 and DynamoDB and we are breaking new ground in the way that customers experience databases.
+Read more details and apply here
+
+Vancouver https://www.amazon.jobs/en/jobs/965513/senior-software-development-engineer
+Seattle https://www.amazon.jobs/en/jobs/973825/senior-software-development-engineer
+https://www.amazon.jobs/en/jobs/920217/software-development-engineer
+                      
+                      reply
+                  
+      
+
+
+ | len: 1069 | aws,web,mysql remote: true no email | Breakoutlist company!! Amazon Web Services
+,ago [-]
+
+GitLab | Remote only | Full time - It’s an exciting time to join GitLab. As a fast-growing, all-remote company, GitLab is a place where you can contribute and make an impact from anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration. We’re hiring solutions architects, engineering managers, security engineers, recruiters, support engineers, product managers, strategic account leaders, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/ Here’s an inside look at GitLab’s interview process from one of our new team members: https://about.gitlab.com/blog/2019/03/28/what-its-like-to-interview-at-gitlab/ Want to learn more? Check out our company handbook: https://about.gitlab.com/handbook/
+
+
+ | len: 811 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+,ago [-]
+
+Airtable | San Francisco, CA | Onsite or remote (USA only) | Software Engineer, Data Engineer, Data Scientist, SRE
+Airtable's mission is to expand human productivity by letting everyone create tools to organize their world. Our current product includes a real-time collaborative database and a rich set of components for building tools using this database. Unlike single-purpose apps, we think of Airtable as a toolkit of building blocks that people can repurpose to create their own applications. Our roadmap is filled with enhancements and additions to this toolkit that will push the boundaries of Airtable's capabilities.
+
+To see some of the ways people are already using Airtable, check out https://airtable.com/universe
+
+We're hiring software engineers for web (Javascript + Typescript, Node, React), iOS (Objective-C, Swift), and Android, as well as data engineering, data science, SRE, and many other roles.
+
+We're a small team, with backgrounds from Google, Facebook, Microsoft, etc. We believe in the power of highly motivated and capable individuals to accomplish great things in small teams, with end-to-end ownership of projects and rapid iteration. Read more about our engineering culture and values here: https://www.keyvalues.com/airtable
+Read about open positions and apply here: https://airtable.com/careers
+                      
+                      reply
+                  
+      
+
+
+ | len: 1413 | web,javascript,node,react remote: true no email | Breakoutlist company!! Airtable
+,ago [-]
+
+GitLab | Remote only | Full time
+It’s an exciting time to join GitLab. We’re a fast-growing, all-remote company where you can contribute and make an impact from almost anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration.
+
+We’re hiring throughout the company, including support engineers, product designers, engineering managers, security engineers, sales development representatives, technical writers, product managers, technical account managers, solutions architects, sales managers, and strategic account leaders. Browse our full list of open roles: https://about.gitlab.com/jobs/
+
+Find out more about all-remote work and how it works at GitLab: https://about.gitlab.com/company/culture/all-remote/
+Learn more about life at GitLab: https://about.gitlab.com/company/culture/#life-at-gitlab
+                      
+                      reply
+                  
+      
+
+
+ | len: 942 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+,ago [-]
+
+Nuro | Robotics Reliability Engineer | Mountain View, CA | Full-time | On-site | https://nuro.ai
+Nuro is a robotics start up whose mission is to accelerate the benefits of robotics for everyday life.
+
+We are building delivery robots and need engineers to help make them run securely, efficiently, and correctly. Robotics Reliability Engineers run the software that Nuro designs and builds, on the robots that Nuro designs and builds.
+
+This role is for people that love solving hard hardware/software problems under real-world conditions. The problems you will face vary wildly. One day you will be profiling the Linux kernel, another day you will be debugging a firmware problem, and the next day you will be writing code to validate sensor data. It's critical to have a firm grasp of programming and computers. Expertise in C++, writing firmware, building embedded hardware, networking, security, and the Linux kernel are a big plus.
+https://nuro.ai/careersitem?gh_jid=1630180
+                      
+                      reply
+                  
+      
+
+
+ | len: 1065 | linux remote: false no email | Breakoutlist company!! Nuro
+,ago [-]
+
+Samsara | San Francisco, Atlanta, and London | Onsite | https://www.samsara.com
+Samsara builds sensor systems that combine wireless sensors with easy-to-use software to help businesses of all sizes bring their physical operations online. We aim to make sensors easy to deploy and their data easy to consume, so our customers can deploy them by the millions and in places they've never been used before.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/samsara
+
+See all of our open roles: https://boards.greenhouse.io/samsara?t=fe045f341
+Tech Stack: We use Golang for our backend, Typescript and React for our web client, GraphQL to fetch data from our backend, and React Native for our mobile app. Direct experience with these technologies is not required.
+                      
+                      reply
+                  
+      
+
+
+ | len: 953 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! Samsara
+,ago [-]
+
+Carta | Software Engineer, Data Engineer, Product Manager | SF, Palo Alto, Seattle, New York, Rio | ONSITE, VISA | FULLTIME
+Carta is hiring experienced software engineers at the Senior, Staff, Senior Staff, and Principal levels in San Francisco, Palo Alto, Seattle, New York City, and Rio de Janeiro to build products and services powered by Carta’s ownership graph: the central registry of asset ownership across the globe.
+
+We offer competitive benefits:
+
+
+  * Health, dental, vision, and life insurance
+  * Competitive PTO and unlimited sick time
+  * US & Rio: 401k matching program
+  * Canada: RRSP matching
+  * US & Rio: Commuter benefits
+  * Catered lunch and unlimited snacks
+  * Cell phone stipend
+  * Unlimited reimbursement for work related books
+
+https://jobs.lever.co/carta?lever-via=qaXpJCYu-T
+
+
+ | len: 817 | no keyword match remote: true no email | Breakoutlist company!! Carta
+,ago [-]
+
+Segment | Engineering | San Francisco, CA; Vancouver, BC; New York, NY | Full-Time | Onsite
+Segment is building the customer data platform for everyone. We transform data and route to over 200 different integrations, adding new ones every day. We're processing billions of events daily and maintain the analytics infrastructure for companies like DigitalOcean, Instacart, New Relic, and Docker. Our goal is to help companies learn from how their users interact with the products to build even better products. We also like to share our work and what we learn, here are some recent examples:
+- https://segment.com/blog/the-10m-engineering-problem/
+
+- https://segment.com/blog/separating-our-data-and-control-planes-with-ctlstore/
+
+- https://segment.com/blog/autocomplete-for-your-analytics/
+
+- https://segment.com/blog/goodbye-microservices
+
+- https://open.segment.com
+We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, React, GraphQL, Kafka, and others! If any of this sounds interesting, we'd love to hear from you! Check out our open positions at https://segment.com/engineering#jobs If you have specific questions, feel free to reach out to me directly alan ⒜ segment.com (but please do apply on the site).
+                      
+                      reply
+                  
+      
+
+
+ | len: 1325 | docker,devops,go,aws,javascript,react,kafka remote: true no email | Breakoutlist company!! Segment
+,ago [-]
+
+INTERCOM | San Francisco (USA), Dublin (Ireland), and London (UK) | ONSITE | SaaS | https://intercom.engineering/
+Hello, world  With over 125 engineers spread across 3 locations, we’re truly a global team.  We’re changing how businesses talk to their customers all over the world, too. ️
+
+- SENIOR PRODUCT ENGINEER (SAN FRANCISCO): https://grnh.se/b3b658231
+
+- SECURITY ENGINEER (SAN FRANCISCO): https://grnh.se/de75a5391
+
+- PRODUCT ENGINEER (SAN FRANCISCO): https://grnh.se/4vldoi1
+
+- ENGINEERING MANAGER (DUBLIN): https://grnh.se/1d2d8eae1
+
+- ANDROID ENGINEER (DUBLIN) https://grnh.se/13b80b0c1
+
+- PRODUCT ENGINEER (DUBLIN): https://grnh.se/422cba2d1
+
+- SENIOR PRODUCT ENGINEER (LONDON): https://grnh.se/7b3779621
+
+- PRODUCT ENGINEER (LONDON): https://grnh.se/d16292b41
+WHAT IS INTERCOM? 
+Intercom is the world’s #1 business messenger and more.
+Whether our customers want to do more with less by leaning on our 100+ apps, we help out  customers’ customers self serve with articles and chat bots, or target chat to specific segments Intercom is customer messaging that fits their business. Intercom is also the best team inbox for sales and support AND the leading choice for targeted outbound messages that deliver. Valued at over $1bn, Intercom has been ranked among the best on the Crunchbase unicorn leaderboard since 2018. In our 8 year history, we’ve built world class sales, marketing and R&D functions, and published a number of books along the way (https://www.intercom.com/books).
+WHAT IS IT LIKE TO WORK FOR INTERCOM?
+Our culture is open and friendly and inclusive - and this is something we are proud of. We are optimistic, passionate and positive. We like people who can stay focused and work hard and who are confident, yet kind and humble. We like to experiment, sometimes inventing things for the first time, but we stay pragmatic, starting small and simple in everything we do. We love people who genuinely want to learn and grow and take bets on high potential engineers on rapid trajectories.
+We’re opinionated by default, for example we run LESS software (https://www.intercom.com/blog/run-less-software/) and ship continuously (https://www.intercom.com/blog/shipping-is-your-companys-heartbeat/). We’re technically conservative and like to keep it simple (https://www.intercom.com/blog/videos/build-boring-software/), but where it means building better products we’ll double down on new technology like machine learning (https://www.intercom.com/blog/podcasts/intercom-fergal-reid-ai-machine-learning/) in a pragmatic way.
+
+TECH: Ruby on Rails application with an Ember.js frontend. We use MySQL, MongoDB and Amazon’s DynamoDB for most of our storage. Our web messenger is built on React.
+Questions? Want a chat? Get in touch at https://intercom.engineering/ or check out our blog: https://www.intercom.com/blog/engineering/
+                      
+                      reply
+                  
+      
+
+
+ | len: 2934 | ruby,rails,javascript,frontend,mysql,mongodb,aws,web,react remote: false no email | Breakoutlist company!! Intercom
+,ago [-]
+
+Recursion Pharmaceuticals | Salt Lake City, Utah | Full-Time | www.recursionpharma.com/careers
+We have raised over $200M to apply machine learning to one of the most unique datasets in existence - over 12 billion images of cells under a huge number of biological and chemical perturbations, generated in our own labs - in order to find treatments for hundreds of diseases. Our long term mission is to decode biology to radically improve lives - we want to understand biology so well that we can fix most things that go wrong in our bodies. Among other awesome folks, Yoshua Bengio is one of our advisors, and helps our ML team come up with novel ways of tackling these problems.
+
+We’re looking for:
+
+* Software Engineering Manager (SLC, UT): Looking for an experienced Software Engineering Manager to join our team. You’ll lead and guide two of the most important aspects of our organization - our people and the definition/execution of our technical strategy.
+
+* Machine Learning Scientist (Anywhere): Looking for a highly experienced senior/principal-level Machine Learning Scientist who wants a challenging problem, lots of rich data, and knowledge that their breakthroughs will seriously help people. No bio background needed.
+
+* Sr. DevOps Engineer (SLC,UT): As a DevOps professional your contributions will benefit Biologists, Automation Scientists, and Data Scientists by building the infrastructure needed to decode human biology and reinvent drug discovery.
+
+* CyberSecurity Threat Analyst (SLC,UT): As you work closely with IT, engineering, and data science teams, you will help promote best practices and help guide us to workflows that are more secure.
+
+* Director of Data Science (SLC,UT): As a Director in data science, you'll work with, mentor, and develop our data scientists to grow and accomplish their missions to identify and answer questions and build systems to propel Recursion’s drug discovery engine forward.
+
+Additional roles we are hiring for:
+
+* Sr. Data Engineer, Sr. Full Stack Software Developer, Data Science Intern, Software Engineering Intern, Biologist, Computational Chemists, Automation Engineer, and Drug Discovery experts.
+
+http://www.recursionpharma.com/careers for more details and to apply.
+
+Logistics: Salt Lake City, Utah. Hiking/running/biking is literally out our back door, and it's half an hour to 6 ski resorts. Great competitive pay, health insurance, 401k, relocation assistance, equity, fully-paid gym membership, complementary chef-prepared meals everyday, two one-week paid company closures in addition to flexible, generous vacation, 70ft onsite rock climbing wall, commuter benefits,  a top-caliber team, and help make a massively positive human impact. Happy to sponsor/extend visas.
+
+Tech:
+
+Data Science: pydata stack (pandas, numpy, scikit-learn, matplotlib, bokeh, tensorflow w/keras, etc), a cluster of GPUs for all your research ideas
+Software Engineering: python, clojure[script], javascript, go, react.js, kafka, kubernetes (GKE), GCE, AWS
+Our team of 160 so far: http://www.recursionpharma.com/team
+                      
+                      reply
+                  
+      
+
+
+ | len: 3151 | go,devops,chef,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals

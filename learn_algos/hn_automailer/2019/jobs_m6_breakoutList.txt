@@ -1,0 +1,239 @@
+ago [-]
+
+Airtable | Software Engineer | San Francisco | REMOTE (US only)
+Airtable's mission is to expand human productivity by letting everyone create tools to organize their world. Our current product includes a real-time collaborative database and a rich set of components for building tools using this database. Unlike single-purpose apps, we think of Airtable as a toolkit of building blocks that people can repurpose to create their own applications. Our roadmap is filled with enhancements and additions to this toolkit that will push the boundaries of Airtable's capabilities.
+
+To see some of the ways people are already using Airtable, check out https://airtable.com/universe
+
+We're hiring engineers for web (Javascript + Flow, Node, React), iOS (Objective-C, Swift), and Android.
+
+We're a small team, with backgrounds from Google, Facebook, Microsoft, etc. We believe in the power of highly motivated and capable individuals to accomplish great things in small teams, with end-to-end ownership of projects and rapid iteration. Read more about our engineering culture and values here: https://www.keyvalues.com/airtable
+You can apply here: https://airtable.com/jobs
+                      
+                  
+      
+
+
+ | len: 1224 | web,javascript,node,react remote: true no email | Breakoutlist company!! Airtable
+,ago [-]
+
+Lyric | lyric.com | Multiple Engineering Positions| San Francisco, CA | Onsite | Full Time
+At Lyric™ we’re on a mission to design and operate accommodations for the modern business traveler.
+
+At Lyric™ we design spaces and technology to empower a more creative and connected world.  Our proprietary software and data platforms are the foundation of our company, driving Lyric’s best-in-class margins through optimal site location and advanced revenue management. It also allows us to deliver exceptional guest experiences through our premium and purposeful Creative Suites™. Informed by increasing levels of automation and personalization, these apartment-suites - set within inspired buildings in the most exciting neighborhoods in the country - combine the productivity of a workspace, the inspiration of an artistic studio, and the amenities of a luxury hotel. Whether you stay one or 200 nights, we’re building a network of spaces that make you feel at home everywhere. Our focus is on flexibility, purpose, and community to help you unlock possible.
+
+Open positions: https://boards.greenhouse.io/lyric
+Recent news: https://www.bloomberg.com/news/articles/2019-04-17/airbnb-leads-160-million-investment-in-business-travel-startup
+                      
+                  
+      
+
+
+ | len: 1293 | no keyword match remote: false no email | Breakoutlist company!! Lyric
+,ago [-]
+
+LightStep | Full-Stack Product Engineer Location: San Francisco, REMOTE https://lightstep.com/careers
+
+ | len: 111 | no keyword match remote: true no email | Breakoutlist company!! Lightstep
+,ago [-]
+
+Bolt | Software Engineer | San Francisco, CA | ONSITE | Fulltime | https://www.bolt.com
+Ecommerce infrastructure on the internet is fragmented and broken. Bolt is a world-class buying experience available for all online businesses. We're building a future where retailers can eliminate the massive operational overhead and technical debt associated with online checkout and payments, and where customers can buy instantly and securely across the internet. To solve such a large problem, we've put together an incredible team and are selectively adding to it. Play a mission-critical role in developing the future of online commerce.
+
+We are looking for someone excited to take on our ambitious product roadmap who exhibits passion, creativity and a love of building things. Companies and consumers alike will rely heavily on what you build. If this challenge excites you, get in touch with our team.
+Join us! More details here: https://www.bolt.com/jobs/software-engineer--sf
+                      
+                  
+      
+
+
+ | len: 1035 | no keyword match remote: false no email | Breakoutlist company!! Bolt
+,ago [-]
+
+Affirm | Engineers / Engineering Managers / Ops / Analytics / Sales / Product / HR / Recruiting / Design / Strategy | San Francisco / NYC New York / Pittsburgh, PA | Onsite | Fulltime / Interns
+Affirm offers services that empower consumers to advance their financial well-being. Affirm was started by Max Levchin (PayPal CTO, Chairman of Yelp, Founder of Slide , HVF) with the goal of revolutionizing the banking industry to be more accountable and accessible to consumers.
+Peloton, Casper, Warby Parker, Walmart, and countless other companies use us as their financing partner.
+
+Tech stack: Python, Flask, AWS, Javascript & React frontend, Spark, Java & ObjC/Swift for mobile
+
+Some perks / benefits:
+
+- competitive salary + equity
+
+- health/ dental/ vision insurance
+
+- unlimited time off (people take an average of 4 weeks off per year)
+
+- learning and development budget - transportation stipend
+
+- fitness stipend
+
+- phone stipend
+
+- stipend to use Affirm products so you know the experience from a user standpoint
+
+- 1 audiobook/month through an Audible subscription, plus 1 physical book per quarter
+
+- free lunch and dinner at the office
+
+Come help us build honest and transparent financial products that help people!
+Apply here: https://bit.ly/2NjlwAE
+                      
+                  
+      
+
+
+ | len: 1319 | python,aws,javascript,react,frontend,java,mobile remote: false no email | Breakoutlist company!! Affirm
+,ago [-]
+
+GitLab | Remote only | Full time
+It’s an exciting time to join GitLab. We’re a fast-growing, all-remote company where you can contribute and make an impact from almost anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration.
+
+We’re hiring engineering managers, security engineers, solutions architects, product managers, support engineers, mid-market account executives, strategic account leaders, recruiters, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/
+
+Explore a day in the life of GitLab team members from around the world: https://about.gitlab.com/2019/06/18/day-in-the-life-remote-worker/
+Want to learn more? Check out our company handbook: https://about.gitlab.com/handbook/
+                      
+                  
+      
+
+
+ | len: 856 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+,ago [-]
+
+Samsara | Hundreds of Roles | San Francisco, San Jose, Atlanta, and London
+IoT company that makes sense
+
+#16 Top Start Up according to LinkedIn [1]
+
+Top CEO in 2018 According to Glassdoor and 4.5 Glassdoor Rating [2]
+
+All funding rounds led by Andreessen Horowitz [3]
+
+Feel free to contact me, if you have any questions [4]
+
+>>> See all open positions and apply here: https://grnh.se/05fc18371
+
+1. https://www.linkedin.com/pulse/linkedin-top-startups-2018-50-most-sought-after-us-daniel-roth/
+
+2. https://www.glassdoor.com/Award/Top-CEOs-at-SMBs-2018-LST_KQ0,21.htm
+
+3. https://www.crunchbase.com/organization/samsara-2
+4. My profiler has instructions to find contact information.
+                      
+                  
+      
+
+
+ | len: 740 | no keyword match remote: false no email | Breakoutlist company!! Samsara
+,ago [-]
+
+Iterable | San Francisco, CA | Full-Time, Onsite & Remote | https://iterable.comIterable is the growth marketing platform that enables brands to create, execute and optimize campaigns to power world-class customer engagement across email, push, SMS, in-app and more with unparalleled data flexibility. We are an integrated, cross-channel solution — Iterable is built for marketers, trusted by engineers, and designed with intelligence. Learn more about our Engineering culture and interview process here:
+https://github.com/Iterable/how-we-work
+Here are our open roles:
+
+- Director of Product: https://iterable.com/company/job/?gh_jid=1073949
+
+- Engineering Manager-Product: https://iterable.com/company/job/?gh_jid=1475142
+
+- Senior Software Engineer - Product Engineer: https://iterable.com/company/job/?gh_jid=1374138
+
+- Software Engineer - Senior Data Infrastructure Engineer: https://iterable.com/company/job/?gh_jid=1321405
+
+- Software Engineer - Backend Engineer:https://iterable.com/company/job/?gh_jid=1683622
+- Software Engineer - Senior Backend Engineer: https://iterable.com/company/job/?gh_jid=1683679
+                      
+                  
+      
+
+
+ | len: 1174 | backend remote: true no email | Breakoutlist company!! Iterable
+,ago [-]
+
+Datadog | Software Engineers | ONSITE (Boston, NYC, Paris) and REMOTE | Full-time
+Datadog is a monitoring, tracing, and logs system for your infrastructure and services. We build our own tsdb, distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences for customers just like us and are growing fast!
+
+We write Go, Python, Java, and React, run on AWS, and are moving to k8s.
+
+We're looking for people who can build systems at scale as we process trillions of events per day. Let us know if that's you!
+https://www.datadoghq.com/jobs-engineering/
+                      
+                  
+      
+
+
+ | len: 647 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+,ago [-]
+
+Curai | Palo Alto, CA | Full-time, Onsite | https://curai.com/careersWe're hiring ML researchers, ML engineers, and software engineers and are working in the healthcare space.
+                      
+                  
+      
+
+
+ | len: 235 | no keyword match remote: false no email | Breakoutlist company!! Curai
+,ago [-]
+
+Samsara | San Francisco, Atlanta, San Jose, and London | Onsite | https://www.samsara.com
+Samsara builds sensor systems that combine wireless sensors with easy-to-use software to help businesses of all sizes bring their physical operations online. We aim to make sensors easy to deploy and their data easy to consume, so our customers can deploy them by the millions and in places they've never been used before.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/samsara
+
+Our open positions:
+
+* Manager, Engineering: https://boards.greenhouse.io/samsara/jobs/1470416?gh_src=fe045f341
+
+* Manager, Engineering: https://boards.greenhouse.io/samsara/jobs/870567?gh_src=fe045f341
+
+* Senior Software Engineer, Full-Stack: https://boards.greenhouse.io/samsara/jobs/1564516?gh_src=fe045f341
+
+* Software Engineer, Full-Stack: https://boards.greenhouse.io/samsara/jobs/1470413?gh_src=fe045f341
+
+* Software Engineer, Full-Stack: https://boards.greenhouse.io/samsara/jobs/1564444?gh_src=fe045f341
+
+* Software Engineer, Full-Stack: https://boards.greenhouse.io/samsara/jobs/946228?gh_src=fe045f341
+
+* (New Grad) Software Engineer, Full-Stack: https://boards.greenhouse.io/samsara/jobs/1585934?gh_src=fe045f341
+
+* Software Engineer, Applied Machine Learning: https://boards.greenhouse.io/samsara/jobs/1398271?gh_src=fe045f341
+
+* Software Engineer, Embedded Systems: https://boards.greenhouse.io/samsara/jobs/946181?gh_src=fe045f341
+Tech Stack: We use Golang for our backend, Typescript and React for our web client, GraphQL to fetch data from our backend, and React Native for our mobile app. Direct experience with these technologies is not required.
+                      
+                  
+      
+
+
+ | len: 1805 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! Samsara
+,ago [-]
+
+Recursion Pharmaceuticals | Salt Lake City, Utah | Onsite, Full-Time | www.recursionpharma.com/careers
+Take a glimpse at the industry's largest biological images dataset which we released June 28th to be used as part of the NeurIPS 2019 competition track. Generated entirely in-house at  Recursion, for the development of new ML algorithms for drug discovery.
+
+https://www.rxrx.ai/
+
+We have raised over $80M to apply machine learning to one of the most unique datasets in existence - over 12 billion images of cells under a huge number of biological and chemical perturbations, generated in our own labs - in order to find treatments for hundreds of diseases. Our long term mission is to decode biology to radically improve lives - we want to understand biology so well that we can fix most things that go wrong in our bodies. Among other awesome folks, Yoshua Bengio is one of our advisors, and helps our ML team come up with novel ways of tackling these problems.
+
+We’re looking for:
+
+* Data Scientists: Looking for experienced Data Scientists both for our Innovation and Assay Development as well as Image Analysis and Quality teams. You’ll work with our data, biology , high throughput screening (HTS), and engineering teams to identify and answer questions in high-dimensional data.
+
+* Data Engineer: Looking for a strong Software Engineer who thinks critically and uses data to measure results. Great opportunity for experienced engineers interested in coding for a meaningful purpose and a massive human impact.
+
+* ML Researcher: Looking for a highly experienced senior/principal-level Machine Learning Researcher who wants a challenging problem, lots of rich data, and knowledge that their breakthroughs will seriously help people. No bio background needed.
+
+* ML Engineer: Looking for experienced Machine Learning Engineer who values experimentation and the rigorous use of the scientific method, high collaboration across multiple functions, and intense curiosity driving them to keep our systems cutting edge.
+Additional roles we are hiring for: 
+* Biologist, Computational Chemists, Automation Engineer, and Drug Discovery experts.
+http://www.recursionpharma.com/careers for more details and to apply.
+Logistics: Salt Lake City, Utah. Hiking/running/biking is literally out our back door, and it's half an hour to 6 ski resorts. Great pay, health insurance, 401k, relocation assistance (onsite is required), equity, fully-paid gym membership, complementary chef-prepared meals everyday, two one-week paid company closures in addition to flexible, generous vacation, 70ft onsite rock climbing wall, commuter benefits,  a top-caliber team, and help make a massively positive impact. Happy to sponsor/extend visas, but you need to already be authorized to work in the US--we can’t handle the lottery at this stage.
+Tech: 
+Data Science: pydata stack (pandas, numpy, scikit-learn, matplotlib, bokeh, tensorflow w/keras, etc), a cluster of GPUs for all your research ideas
+Software Engineering: python, clojure[script], javascript, go, react.js, kafka, kubernetes (GKE), GCE, AWS
+Our team of 150 so far: http://www.recursionpharma.com/team
+                      
+                  
+      
+
+
+ | len: 3205 | go,chef,devops,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals

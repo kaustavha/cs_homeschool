@@ -1,0 +1,241 @@
+ago [-]
+
+GitLab | Remote only | Full time
+It’s an exciting time to join GitLab. We’re a fast-growing, all-remote company where you can contribute and make an impact from almost anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration.
+
+We’re hiring engineering managers, security engineers, solutions architects, product managers, support engineers, mid-market account executives, strategic account leaders, recruiters, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/
+
+We’re proud to share that we’re among Inc. Magazine’s Best Workplaces in 2019! Find out what our team members love about working here: https://about.gitlab.com/2019/05/16/building-an-award-winning-culture-at-gitlab/
+Want to learn more about GitLab? Check out our company handbook: https://about.gitlab.com/handbook/
+                      
+                  
+      
+
+
+ | len: 946 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+,ago [-]
+
+Instacart | Sr Full-stack Engineer, Sr Data Engineer, Data Scientist, Machine Learning Engineer, Sr iOS/Android Engineer | onsite in San Francisco | https://instacart.com
+Instacart (YC S12) is building the best way for people everywhere in the world to shop for groceries. Using your phone or the web, you can order groceries and have them delivered to your door in minutes. You can choose from a variety of local stores, as well as being able to mix items from multiple stores into one order.
+
+Every day, we solve incredibly hard problems to create an experience for our customers that is magical. We aim to give our customers back their invaluable time so they can spend it doing the things they love with the people they love.
+
+Hiring Process depends on the position, but will generally follow this flow: Phone screen + simple challenge / Take-home challenge / On-site. We're pretty flexible and can work with you on this.
+
+We care that you can ship product and enjoy taking ownership over what you're working on. We don't really care where you went to school or what companies you've worked for.
+
+Tech:
+
+
+  • Ruby (on Rails)
+  • ES6+ / TypeScript
+  • React / Redux
+  • PostgreSQL
+  • Elasticsearch
+  • Memcached / Redis
+
+
+Data Analysis & Data Science: SQL, R, Python
+Learn more about us and apply directly at:
+
+
+  • https://careers.instacart.com/
+  • http://tech.instacart.com
+  • http://stackshare.io/posts/the-tech-behind-instacarts-grocery-delivery-service
+
+
+ | len: 1474 | web,ruby,rails,react,elk,redis,sql,python remote: false no email | Breakoutlist company!! Instacart
+,ago [-]
+
+Forward | Software Engineer, Product Manager, Product Designer, Technical Program Manager | San Francisco, CA | Full-Time | Onsite | https://goforward.com/
+We’re on a mission to become the first healthcare system to serve a billion people. A mission to make care accessible to those most in need by building technology that scales. If you wake up in the morning with the same drive to do something bigger than yourself, then you might be a fit for Forward.
+
+We were founded in January 2016 by former executives and engineering leaders from Google and Uber. We are funded by some of the world’s best investors and entrepreneurs including Founder’s Fund, Khosla Ventures, First Round Capital, Eric Schmidt (Google/Alphabet Chairman), Marc Benioff (Salesforce Founder), Joe Lonsdale (Palantir Founder), Joshua Kushner (Oscar co-Founder) and Garrett Camp (Uber co-Founder).
+Apply now here: https://goforward.com/jobs
+                      
+                  
+      
+
+
+ | len: 972 | no keyword match remote: false no email | Breakoutlist company!! Forward
+,ago [-]
+
+Datadog | Software Engineers | ONSITE (Boston, NYC, Paris) and REMOTE | Full-time
+Datadog is a monitoring, tracing, and logs system for your infrastructure and services. We build our own tsdb, distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences for customers just like us and are growing fast!
+
+We write Go, Python, Java, and React, run on AWS, and are moving to k8s.
+
+We're looking for people who can build systems at scale as we process trillions of events per day. Let us know if that's you!
+https://www.datadoghq.com/jobs-engineering/
+                      
+                  
+      
+
+
+ | len: 647 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+,ago [-]
+
+Airtable | Software Engineer | San Francisco | REMOTE (US only)
+Airtable's mission is to expand human productivity by letting everyone create tools to organize their world. Our current product includes a real-time collaborative database and a rich set of components for building tools using this database. Unlike single-purpose apps, we think of Airtable as a toolkit of building blocks that people can repurpose to create their own applications. Our roadmap is filled with enhancements and additions to this toolkit that will push the boundaries of Airtable's capabilities.
+
+To see some of the ways people are already using Airtable, check out https://airtable.com/universe
+
+We're hiring engineers for web (Javascript + Flow, Node, React), iOS (Objective-C, Swift), and Android.
+
+We're a small team, with backgrounds from Google, Facebook, Microsoft, etc. We believe in the power of highly motivated and capable individuals to accomplish great things in small teams, with end-to-end ownership of projects and rapid iteration. Read more about our engineering culture and values here: https://www.keyvalues.com/airtable
+You can apply here: https://airtable.com/jobs
+                      
+                  
+      
+
+
+ | len: 1224 | web,javascript,node,react remote: true no email | Breakoutlist company!! Airtable
+,ago [-]
+
+HashiCorp | Product Security Engineer | US / UK / Canada / Netherlands / Germany | FULL-TIME | REMOTE
+We are looking for Product Security Engineers to help scale our product security function, which works closely with engineering & product management to ensure that security is appropriately addressed across the HashiCorp product suite.
+
+In this role, your responsibilities will include:
+
+* Plan & execute security assessments (dynamic testing, static testing, code review, etc) and threat modeling of HashiCorp’s products, services, and associated cloud infrastructure.
+
+* Build and implement security solutions across the product life-cycle, such as standalone security tools, CI/CD pipeline integrations, product security features/fixes, etc.
+
+* Monitor threats and vulnerabilities impacting HashiCorp products and services, develop proof-of-concepts as appropriate, identify mitigations and assess/communicate associated risk.
+
+We are looking for talented self-starters with 4+ years of security experience. We will consider experienced engineers with less security-specific experience but the desire to learn!
+More information and application at https://www.hashicorp.com/jobs/1664419.
+                      
+                  
+      
+
+
+ | len: 1251 | no keyword match remote: true no email | Breakoutlist company!! HashiCorp
+,ago [-]
+
+Segment | Engineering, Design, Sales, Success | San Francisco, Vancouver, Denver, New York, Dublin, London, Sydney | Full-Time | Onsite
+Segment is building the customer data platform for everyone. We transform data and route to over 200 different integrations, adding new ones every day. We're processing billions of events daily and maintain the analytics infrastructure for companies like DigitalOcean, Instacart, New Relic, and Docker. Our goal is to help companies learn from how their users interact with the products to build even better products. We also like to share our work and what we learn, here are some recent examples:
+
+
+  - https://segment.com/blog/show-hn-to-series-d
+
+  - https://segment.com/blog/we-test-in-production-you-should-too
+
+  - https://segment.com/blog/secure-access-to-100-aws-accounts
+
+  - https://segment.com/blog/why-status-codes-matter-in-data-delivery
+  
+  - https://segment.com/blog/goodbye-microservices
+
+  - https://open.segment.com
+
+We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, React, GraphQL, Kafka, Kubernetes and others! If any of this sounds interesting, we'd love to hear from you! Check out our open positions at https://segment.com/engineering#jobs
+FYI: Most of the international locations are for Sales/Success.
+If you have specific questions, feel free to reach out to me directly alan ⒜ segment.com (but please do apply on the site).
+                      
+                  
+      
+
+
+ | len: 1477 | docker,devops,aws,go,javascript,react,kafka,kubernetes remote: true no email | Breakoutlist company!! Segment
+,ago [-]
+
+Bolt | Software Engineer | San Francisco, CA | ONSITE | Fulltime | https://www.bolt.com
+Ecommerce infrastructure on the internet is fragmented and broken. Bolt is a world-class buying experience available for all online businesses. We're building a future where retailers can eliminate the massive operational overhead and technical debt associated with online checkout and payments, and where customers can buy instantly and securely across the internet. To solve such a large problem, we've put together an incredible team and are selectively adding to it. Play a mission-critical role in developing the future of online commerce.
+
+We are looking for someone excited to take on our ambitious product roadmap who exhibits passion, creativity and a love of building things. Companies and consumers alike will rely heavily on what you build. If this challenge excites you, get in touch with our team.
+Join us! More details here: https://www.bolt.com/jobs/software-engineer--sf
+                      
+                  
+      
+
+
+ | len: 1035 | no keyword match remote: false no email | Breakoutlist company!! Bolt
+,ago [-]
+
+GRAIL | Quality Engineer, Project Manager | Menlo Park, CA, | Onsite | https://grail.com
+GRAIL is a healthcare company whose mission is to detect cancer early, when it can be cured. GRAIL is focused on alleviating the global burden of cancer by developing pioneering technology to detect and identify multiple deadly cancer types early. The company is using the power of next-generation sequencing, population-scale clinical studies, and state-of-the-art computer science and data science to enhance the scientific understanding of cancer biology, and to develop its multi-cancer early detection blood test. GRAIL is located in Menlo Park, California. It is supported by leading global investors and pharmaceutical, technology, and healthcare companies.
+
+Quality Engineer: https://goo.gl/UP77fo
+Project Manager: https://goo.gl/Nv8t6y
+                      
+                  
+      
+
+
+ | len: 893 | no keyword match remote: false no email | Breakoutlist company!! Grail
+,ago [-]
+
+Cloudflare | SF, SJ, Austin, London | Onsite | https://cloudflare.com
+Cloudflare's Security team is hiring a variety of different skillsets. We are looking for people who can take ownership over the security of specific parts of our stack.
+
+
+    - Edge Security / Infrastructure Security
+    - Product Security / Application Security
+    - Technical Program Managers 
+    - Identity and Access Management
+    - much more.
+
+If you have any questions please reach out.
+
+
+ | len: 477 | no keyword match remote: false no email | Breakoutlist company!! Cloudflare
+,ago [-]
+
+Recursion Pharmaceuticals | Salt Lake City, Utah | Onsite, Full-Time | http://www.recursionpharma.com/careers
+We have raised over $80M to apply machine learning to one of the most unique datasets in existence - over 12 billion images of cells under a huge number of biological and chemical perturbations, generated in our own labs - in order to find treatments for hundreds of diseases. Our long term mission is to decode biology to radically improve lives - we want to understand biology so well that we can fix most things that go wrong in our bodies. Among other awesome folks, Yoshua Bengio is one of our advisors, and helps our ML team come up with novel ways of tackling these problems.
+
+We’re looking for:
+
+* Data Scientists: Looking for experienced Data Scientists both for our Innovation and Assay Development as well as Image Analysis and Quality teams. You’ll work with our data, biology, high throughput screening (HTS), and engineering teams to identify and answer questions in high-dimensional data.
+
+* Sr Full-Stack Engineer: Looking for a strong Full-Stack Engineer. Great opportunity for experienced engineers interested in coding for a meaningful purpose (and a massive human impact) and building distributed systems, web apps and tools for biologists.
+
+* ML Researcher: Looking for a highly experienced senior/principal-level Machine Learning Researcher who wants a challenging problem, lots of rich data, and knowledge that their breakthroughs will seriously help people. No bio background needed.
+
+* ML Engineer: Looking for experienced Machine Learning Engineer who values experimentation and the rigorous use of the scientific method, high collaboration across multiple functions, and intense curiosity driving them to keep our systems cutting edge.
+* Biologist, Computational Chemists, Automation Scientists, and Drug Discovery experts.
+http://www.recursionpharma.com/careers for more details and to apply.
+Logistics: Salt Lake City, Utah. Hiking/running/biking is literally out our back door, and it's half an hour to 6 ski resorts. Great pay, health insurance, 401k, relocation assistance (onsite is required), equity, fully-paid gym membership, complementary chef-prepared meals everyday, two one-week paid company closures in addition to flexible, generous vacation, 70ft onsite rock climbing wall, commuter benefits,  a top-caliber team, and help make a massively positive impact. Happy to sponsor/extend visas, but you need to already be authorized to work in the US--we can’t handle the lottery at this stage.
+
+Tech:
+
+Data Science: pydata stack (pandas, numpy, scikit-learn, matplotlib, bokeh, tensorflow w/keras, etc), a cluster of GPUs for all your research ideas
+
+Software Engineering: python, clojure[script], javascript, go, react.js, kafka, kubernetes (GKE), GCE, AWS
+Our team of 148 so far: http://www.recursionpharma.com/team
+                      
+                  
+      
+
+
+ | len: 2924 | go,web,chef,devops,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals
+,ago [-]
+
+Quora | {ML, ML infrastructure} {Engineer, Engineering Manager} | Mountain View, CA | Full-time, ONSITE
+Quora’s mission is to share and grow the world’s knowledge. We are a web-scale Library of Alexandria, a place where people go to learn about anything and share everything they know.
+
+At Quora, we use Machine Learning in almost every part of the product - feed ranking, answer ranking, search, topic and user recommendations, spam detection, etc. Within the past year we released a large question sincerity dataset [1], improved our statistical tests for ratio metrics [2], and introduced a new feature that allows people to curate collections and form communities around shared interests and tastes [3].
+
+As a Machine Learning expert, you will have a unique opportunity to have high impact by advancing these systems, as well as uncovering new opportunities to apply Machine Learning to the Quora product. As a ML Infrastructure Expert, you will play a key role in developing tools and abstractions that our other developers would build on top of.
+
+ML engineer: https://jobs.lever.co/quora/4ea5b0e2-b570-439f-a3a1-1f3010422273?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML infrastructure engineer: https://jobs.lever.co/quora/5ae871e6-12a7-40d2-829a-64041e24da42?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML eng manager: https://jobs.lever.co/quora/447265db-74b3-4970-bb46-11083af8e4d5?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML infrastructure eng manager: https://jobs.lever.co/quora/6be9efa2-49db-4fe1-bf42-fe45e5ae6cb9?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+You can apply online at one of the links above and mention my HN user name. Or email my HN username, with the underscore removed, at quora.com.
+
+[1] https://engineering.quora.com/Dataset-release-and-Kaggle-competition-Question-Sincerity
+
+[2] https://data.quora.com/A-Robust-Statistical-Test-for-Ratio-Metrics
+[3] https://blog.quora.com/Introducing-Spaces
+                      
+                  
+      
+
+
+ | len: 2027 | web,go remote: false no email | Breakoutlist company!! Quora

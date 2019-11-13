@@ -14,7 +14,7 @@ let postUrlIds = [
 	'21419536'
 ]
 let genStatsOverYear = () => {
-	for (let i=0; i<postUrlIds.length; i++) {
+	for (let i=1; i<=postUrlIds.length; i++) {
         let hnurlid = postUrlIds[i];
         console.log("current month: " + i);
 		console.log('current hn url id: ', hnurlid);

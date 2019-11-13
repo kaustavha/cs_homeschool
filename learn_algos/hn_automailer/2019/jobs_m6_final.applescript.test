@@ -1,0 +1,31 @@
+
+tell application "Mail"
+	set theContent to "Hi,
+
+I came across your post on Hacker News and wanted to inquire if you were still interviewing for any FT SE roles.
+I have experience with fullstack, ruby, rails, javascript, react, redis, docker, devops, kubernetes, aws and noticed them in the post.
+ 
+I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. 
+I worked on a prototype ethereum ui before mist, won a prize at EthWaterloo for prototyping an identity management / social network layer protocol for ethereum. 
+I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. 
+ 
+I'm a big proponent of open source with commits merged into 10+ projects including Pythons pip & FBs HHVM PHP compiler
+ 
+You can find my resume at https://bit.ly/khaldarcv
+LinkedIn: khaldar | https://www.linkedin.com/in/khaldar
+Github: kaustavha | https://github.com/kaustavha
+
+Please reach out if you think I'd be a good fit for anything you're looking for. 
+I'm Canadian and looking for work that's remote or in Toronto right now but open to other opportunities. 
+Looking forward to hearing back from you.
+
+Thanks, 
+Kaustav Haldar 
+"
+	set newMessage to make new outgoing message with properties {visible:true, subject:"HackerNews FT SE opportunities"} 
+	tell newMessage
+		set content to theContent
+		make new to recipient at newMessage with properties {address:"hi@kaustav.me"}
+	end tell
+	send newMessage
+end tell

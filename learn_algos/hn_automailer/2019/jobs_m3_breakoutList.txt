@@ -1,0 +1,304 @@
+ago [-]
+
+GitLab | Remote only | Full time
+It’s an exciting time to join GitLab. As a fast-growing, all-remote company, GitLab is a place where you can contribute and make an impact from anywhere in the world. You’ll be part of an ambitious, productive team that values transparency and collaboration.
+
+We’re hiring solutions architects, engineering managers, security engineers, recruiters, support engineers, product managers, strategic account leaders, and more roles in every department. Here’s our full list of vacancies: https://about.gitlab.com/jobs/
+
+Here’s an inside look at GitLab’s interview process from one of our new team members: https://about.gitlab.com/2019/03/28/what-its-like-to-interview-at-gitlab/
+Want to learn more? 
+Check out our company handbook: https://about.gitlab.com/handbook/
+                      
+                  
+      
+
+
+ | len: 856 | no keyword match remote: true no email | Breakoutlist company!! Gitlab
+,ago [-]
+
+Cloudflare | Engineers and Product Managers | Austin, TX | Full-time | Onsite
+You might have seen our Warp launch today! We're building all manner of new ways for people to both use the Internet and build things on it. Our culture is fundamentally defined by small teams with outsized responsibility, solving hard technological challenges, and a focus on shipping products to our users as quickly as we can.
+
+If you're interested I'm happy to answer questions and route to the right place: zack at cloudflare
+I'm writing about our Austin jobs although we also have positions in SF, London and several other locations. I'm sure you can also find several other Cloudflare listings on this very page!
+                      
+                  
+      
+
+
+ | len: 757 | no keyword match remote: false no email | Breakoutlist company!! Cloudflare
+,ago [-]
+
+Instacart | Sr Full-stack Engineer, Sr Data Engineer, Data Scientist, Machine Learning Engineer, Sr iOS/Android Engineer | onsite in San Francisco | https://instacart.com
+Instacart (YC S12) is building the best way for people everywhere in the world to shop for groceries. Using your phone or the web, you can order groceries and have them delivered to your door in minutes. You can choose from a variety of local stores, as well as being able to mix items from multiple stores into one order.
+
+Every day, we solve incredibly hard problems to create an experience for our customers that is magical. We aim to give our customers back their invaluable time so they can spend it doing the things they love with the people they love.
+
+Hiring Process depends on the position, but will generally follow this flow: Phone screen + simple challenge / Take-home challenge / On-site. We're pretty flexible and can work with you on this.
+
+We care that you can ship product and enjoy taking ownership over what you're working on. We don't really care where you went to school or what companies you've worked for.
+
+Tech:
+
+
+  • Ruby (on Rails)
+  • ES6+
+  • React / Redux
+  • PostgreSQL
+  • Elasticsearch
+  • Memcached / Redis
+
+
+Data Analysis & Data Science: SQL, R, Python
+Learn more about us and apply directly at:
+
+
+  • https://careers.instacart.com/
+  • http://tech.instacart.com
+  • http://stackshare.io/posts/the-tech-behind-instacarts-grocery-delivery-service
+
+
+ | len: 1461 | web,ruby,rails,react,elk,redis,sql,python remote: false no email | Breakoutlist company!! Instacart
+,ago [-]
+
+LightStep | Full-Stack Product Engineer Location: San Francisco, REMOTE
+
+ | len: 81 | no keyword match remote: true no email | Breakoutlist company!! Lightstep
+,ago [-]
+
+Segment | Engineering | San Francisco, CA | Full-Time | Onsite Segment is building the customer data platform for everyone. We transform data and route to over 200 different integrations, adding new ones every day. We're processing billions of events daily and maintain the analytics infrastructure for companies like DigitalOcean, Instacart, New Relic, and Docker. Our goal is to help companies learn from how their users interact with the products to build even better products. We also like to share our work and what we learn, here are some recent examples:
+  - https://segment.com/blog/we-test-in-production-you-should-too
+
+  - https://segment.com/blog/secure-access-to-100-aws-accounts
+
+  - https://segment.com/blog/why-status-codes-matter-in-data-delivery
+  
+  - https://segment.com/blog/goodbye-microservices
+
+  - https://open.segment.com
+We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, React, GraphQL, Kafka, and others! If any of this sounds interesting, we'd love to hear from you! Check out our open positions at https://segment.com/engineering#jobs If you have specific questions, feel free to reach out to me directly alan ⒜ segment.com (but please do apply on the site).
+
+
+ | len: 1227 | docker,devops,aws,go,javascript,react,kafka remote: false no email | Breakoutlist company!! Segment
+,ago [-]
+
+Asana | New York City, San Francisco, and Vancouver | Onsite | https://asana.com/jobs
+Build the future of teamwork.
+Asana helps teams organize and manage all of their work, from small projects to strategic initiatives. More than 60,000 organizations and millions of users across 195 countries rely on Asana to focus on the work that matters most, including Airbnb, Disney, KLM Air France, NASA, Uber and Vox Media. For the last three years, Asana has been named a Top 5 Best Place to Work by FORTUNE and one of Glassdoor’s Best Places to Work.
+
+Some open roles:
+
+* Software Engineer, Product, in Vancouver: https://grnh.se/17c436191
+
+* Software Engineer, Android in San Francisco: https://grnh.se/7682b4df1
+
+* Software Engineer, Infrastructure in San Francisco: https://grnh.se/0b5a502b1
+
+* Engineering Generalist in New York: https://grnh.se/4ffea1d61
+* All open Engineering positions: https://asana.com/jobs/engineering
+                      
+                  
+      
+
+
+ | len: 981 | no keyword match remote: true no email | Breakoutlist company!! Asana
+,ago [-]
+
+Stripe | Security Ecosystem Analyst / Integration Engineer / Technical Account Manager | Dublin, Singapore, New York, San Francisco | ONSITE, REMOTE, VISA
+We have a couple roles available that I can speak to, just fyi that the list of locations above is a superset for all roles!
+
+* Integration Engineer / Technical Account Manager *
+
+We’re especially keen to chat if you are:
+* Confident and comfortable with customers. We're expecting to see user facing roles in your past or present. 
+* A strong technical generalist. Many of us were engineers in prior jobs. 
+* Comfortable with code-level debugging (Stripe code and user code) 
+* Empathetic, collaborative, communicative, consultative 
+* Intellectually curious, with great problem solving skills
+Check out the Integration Engineering / Technical Account Manager roles here - https://stripe.com/jobs/search?t=product-and-technical.developer-experience
+
+* Security Ecosystem Analyst *
+
+We're especially keen to chat if you:
+* Have hands-on experience evaluating, implementing, and managing, information management, asset management, data classification, and vulnerability resolution tooling
+* Have experience managing and conducting audit readiness assessments within AWS (or similar) cloud security and infrastructure
+* Are an expert with assessing the configuration and implementation of security tools, related to network security,  endpoint security, encryption technology, vulnerability scans, access controls, etc.
+* Have experience with PCI and SOC compliance programs as well as their technical and security requirements
+* Are well versed with conducting technical and information security activities i.e security education; document and material classification and control and records management.
+Check out the Security Ecosystem Analyst role here - https://stripe.com/jobs/listing/security-ecosystem-analyst/1533388
+Have any questions about the above? Email me directly: f"dalan{chr(43)}hn-apr19{chr(64)}stripe{chr(46)}com"
+                      
+                  
+      
+
+
+ | len: 2045 | aws remote: true no email | Breakoutlist company!! Stripe
+,ago [-]
+
+Mixmax | San Francisco, CA and REMOTE | Full-Time | https://mixmax.com
+We're a fast-growing startup looking for full-stack Javascript engineers to join our web and platform teams.
+
+Mixmax is the future of email and external communications. Just like you use Slack to talk within your team, you use Mixmax to talk to people outside of your team. Primarily, we help sales and recruiting teams achieve more and with greater consistency by automating their most common workflows and integrating with their existing toolchain - Gmail, Salesforce, Slack, text messaging and more.
+
+You'll work on a modern cloud-based web app built on universal/isomorphic Javascript using open source technologies, including: React, Node, Mongo, Elasticsearch (more: http://stackshare.io/mixmax/mixmax-for-web).
+
+If interested, check out our careers page at https://mixmax.com/careers
+To learn more about Mixmax:
+
+ | len: 899 | javascript,web,react,node,mongo,elk,opensource remote: true no email | Breakoutlist company!! Mixmax
+,ago [-]
+
+Segment | Engineering | San Francisco, CA & Vancouver, BC | Full-Time | Onsite
+Segment is building the customer data platform for everyone. We transform data and route to over 200 different integrations, adding new ones every day. We're processing billions of events daily and maintain the analytics infrastructure for companies like DigitalOcean, Instacart, New Relic, and Docker. Our goal is to help companies learn from how their users interact with the products to build even better products. We also like to share our work and what we learn, here are some recent examples:
+
+- https://segment.com/blog/we-test-in-production-you-should-too
+
+- https://segment.com/blog/secure-access-to-100-aws-accounts
+
+- https://segment.com/blog/goodbye-microservices
+
+- https://segment.com/blog/2018-in-review/
+
+- https://open.segment.com
+We have a modern stack consisting of Go (golang), AWS ECS, Docker, Javascript, React, GraphQL, Kafka, and others! If any of this sounds interesting, we'd love to hear from you! Check out our open positions at https://segment.com/engineering#jobs If you have specific questions, feel free to reach out to me directly marta ⒜ segment.com (but please do apply on the site).
+                      
+                  
+      
+
+
+ | len: 1257 | docker,devops,aws,go,javascript,react,kafka remote: true no email | Breakoutlist company!! Segment
+,ago [-]
+
+Datadog | Software Engineers | ONSITE (Boston, NYC, Paris) and REMOTE | Full-time
+Datadog is a monitoring, tracing, and logs system for your infrastructure and services. We build our own tsdb, distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences for customers just like us and are growing fast!
+
+We write Go, Python, Java, and React, run on AWS, and are moving to k8s.
+
+We're looking for people who can build systems at scale as we process trillions of events per day. Let us know if that's you!
+https://www.datadoghq.com/jobs-engineering/
+                      
+                  
+      
+
+
+ | len: 647 | go,python,java,react,aws remote: true no email | Breakoutlist company!! Datadog
+,ago [-]
+
+Recursion Pharmaceuticals | SLC, Utah | Onsite, full-time | We have raised over $80M to apply machine learning to one of the most unique datasets in existence - over 12 billion images of cells under a huge number of biological and chemical perturbations, generated in our own labs - in order to find treatments for hundreds of diseases. Our long term mission is to decode biology to radically improve lives - we want to understand biology so well that we can fix most things that go wrong in our bodies. Among other awesome folks, Yoshua Bengio is one of our advisors, and helps our ML team come up with novel ways of tackling these problems.We’re looking for:
+Looking for Data Scientists both for our Innovation and Assay Development as well as Discovery and Advancement teams. You’ll work with our data, biology , high throughput screening (HTS), and engineering teams to identify and answer questions in high-dimensional data.
+Looking for a strong Data Engineer and Full-Stack Engineer. Great opportunity for experienced engineers interested in coding for a meaningful purpose (and a massive human impact) and building distributed systems, web apps and tools for biologists.
+
+* ML researcher: Looking for a highly experienced senior/principal-level machine learning researcher who wants a challenging problem, lots of rich data, and knowledge that their breakthroughs will seriously help people. No bio background needed.
+* Biologists, computational biologists, computational chemists, automation scientists, and drug discovery experts.
+http://www.recursionpharma.com/careers for more details and to apply.
+Logistics: Salt Lake City, Utah. Hiking/running/biking is literally out our back door, and it's half an hour to 6 ski resorts. Great pay, health insurance, 401k, relocation assistance (onsite is required), equity, fully-paid gym membership, complimentary chef-prepared meals, two one-week paid company closures in addition to flexible, generous vacation, 70ft rock climbing wall, commuter benefits,  a top-caliber team, and help make a massively positive impact. Happy to sponsor/extend visas, but you need to already be authorized to work in the US--we can’t handle the lottery at this stage.
+Tech: 
+Data science: pydata stack (pandas, numpy, scikit-learn, matplotlib, bokeh, tensorflow w/keras, etc), a cluster of GPUs for all your research ideas
+Software engineering: python, clojure[script], javascript, go, react.js, kafka, kubernetes (GKE), GCE, AWS
+Our team of 130 so far: http://www.recursionpharma.com/team
+                      
+                  
+      
+
+
+ | len: 2585 | go,web,chef,devops,python,javascript,react,kafka,kubernetes,aws remote: false no email | Breakoutlist company!! Recursion Pharmaceuticals
+,ago [-]
+
+Quora | {ML, ML infrastructure} {Engineer, Engineering Manager} | Mountain View, CA | Full-time, ONSITE
+Quora’s mission is to share and grow the world’s knowledge. We are a web-scale Library of Alexandria, a place where people go to learn about anything and share everything they know.
+
+At Quora, we use Machine Learning in almost every part of the product - feed ranking, answer ranking, search, topic and user recommendations, spam detection, etc. Within the past year we released a large question sincerity dataset [1], improved our statistical tests for ratio metrics [2], and introduced a new feature that allows people to curate collections and form communities around shared interests and tastes [3].
+
+As a Machine Learning expert, you will have a unique opportunity to have high impact by advancing these systems, as well as uncovering new opportunities to apply Machine Learning to the Quora product. As a ML Infrastructure Expert, you will play a key role in developing tools and abstractions that our other developers would build on top of.
+
+ML engineer: https://jobs.lever.co/quora/4ea5b0e2-b570-439f-a3a1-1f3010422273?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML infrastructure engineer: https://jobs.lever.co/quora/5ae871e6-12a7-40d2-829a-64041e24da42?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML eng manager: https://jobs.lever.co/quora/447265db-74b3-4970-bb46-11083af8e4d5?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+ML infrastructure eng manager: https://jobs.lever.co/quora/6be9efa2-49db-4fe1-bf42-fe45e5ae6cb9?lever-origin=applied&lever-source%5B%5D=ycombinator
+
+You can apply online at one of the links above and mention my HN user name. Or email my HN username, with the underscore removed, at quora.com.
+
+[1] https://engineering.quora.com/Dataset-release-and-Kaggle-competition-Question-Sincerity
+
+[2] https://data.quora.com/A-Robust-Statistical-Test-for-Ratio-Metrics
+[3] https://blog.quora.com/Introducing-Spaces
+                      
+                  
+      
+
+
+ | len: 2027 | web,go remote: false no email | Breakoutlist company!! Quora
+,ago [-]
+
+Looker | Security | Various | Onsite/Remote | Full-Time | https://looker.com
+Looker has LOTS of open positions on the security team. If you're interested, please reach out or directly apply using the links below. We are looking for curiously brilliant individuals who are passionate about security to join our team.
+
+
+ | len: 326 | no keyword match remote: true no email | Breakoutlist company!! Looker
+,ago [-]
+
+Iterable | San Francisco, CA | Full-Time, Onsite | https://iterable.com
+Iterable is the growth marketing platform that enables brands to create, execute and optimize campaigns to power world-class customer engagement across email, push, SMS, in-app and more with unparalleled data flexibility. We are an integrated, cross-channel solution — Iterable is built for marketers, trusted by engineers, and designed with intelligence.
+
+Here are our open roles:
+
+- Engineering Manager-Product: https://iterable.com/company/job/?gh_jid=1475142
+
+- Senior Software Engineer - Product Engineer: https://iterable.com/company/job/?gh_jid=1374138
+
+- Software Engineer - Infrastructure Engineer: https://iterable.com/company/job/?gh_jid=228990
+
+- Software Engineer - Machine Learning Engineer: https://iterable.com/company/job/?gh_jid=511439
+
+- Software Engineer - Mobile Engineer: https://iterable.com/company/job/?gh_jid=511410
+
+- Software Engineer - Senior Data Infrastructure Engineer: https://iterable.com/company/job/?gh_jid=1321405
+
+- Software Engineer - Senior Engineer, API's and Partnerships: https://iterable.com/company/job/?gh_jid=1536262
+
+- Software Engineer - Site Reliability Engineer: https://iterable.com/company/job/?gh_jid=1111156
+
+- Software Engineer - Site Reliability Engineer (remote): https://iterable.com/company/job/?gh_jid=1118621
+- Software Engineer  - Data Infrastructure: https://iterable.com/company/job/?gh_jid=1600606
+                      
+                  
+      
+
+
+ | len: 1495 | mobile remote: true no email | Breakoutlist company!! Iterable
+,ago [-]
+
+Samsara | San Francisco, Atlanta, San Jose, and London | Onsite | https://www.samsara.com
+Samsara builds sensor systems that combine wireless sensors with easy-to-use software to help businesses of all sizes bring their physical operations online. We aim to make sensors easy to deploy and their data easy to consume, so our customers can deploy them by the millions and in places they've never been used before.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/samsara
+
+Here are some of our open positions:
+
+* Director of Full-Stack (SF): https://boards.greenhouse.io/samsara/jobs/1254967?gh_src=d9387f701
+
+* Director of Full-Stack (ATL): https://boards.greenhouse.io/samsara/jobs/1470418?gh_src=5d66cb4c1
+
+* Engineering Manager (SF): https://boards.greenhouse.io/samsara/jobs/870567?gh_src=5a99136f1
+
+* Engineering Manager (ATL): https://boards.greenhouse.io/samsara/jobs/1470416?gh_src=b91f86491
+
+* Software Engineer, Reliability (LDN): https://boards.greenhouse.io/samsara/jobs/1392257?gh_src=890fd7db1
+
+* Software Engineer, Embedded Systems: https://boards.greenhouse.io/samsara/jobs/946181?gh_src=890fd7db1
+
+* Software Engineer, Full-Stack (SF): https://boards.greenhouse.io/samsara/jobs/946228?gh_src=0d2920b21
+
+* Software Engineer, Full-Stack (ATL): https://boards.greenhouse.io/samsara/jobs/1470413?gh_src=782386f71
+
+* Software Engineer, Full-Stack (SJ): https://boards.greenhouse.io/samsara/jobs/1271489?gh_src=79bc46e41
+Tech Stack: We use Golang for our backend, Typescript and React for our web client, GraphQL to fetch data from our backend, and React Native for our mobile app. Direct experience with these technologies is not required.
+                      
+                  
+      
+
+
+ | len: 1819 | go,backend,react,web,mobile remote: false no email | Breakoutlist company!! Samsara

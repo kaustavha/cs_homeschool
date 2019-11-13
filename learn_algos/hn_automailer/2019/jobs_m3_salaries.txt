@@ -1,0 +1,1538 @@
+$80=====ago [-]
+
+Root | Columbus, OH | Full-time | Onsite / partial remote | $80k-$150k |
+https://root.engineering/
+
+Root is an auto insurance carrier, like GEICO and Progressive. We use data science to identify and insure good drivers, reducing insurance premiums for good drivers significantly as a result.
+
+We're a startup — we're 500 people who have been working on this since March 2015. We've built an iOS and Android app that gathers data on how well people drive. We use that to set insurance prices. To build the best possible product and user experience, we went through the arduous process of starting an insurance carrier from scratch.
+
+We're focused on becoming a national insurance carrier and are now live in 24 states.
+
+We've raised $180M in Venture Capital since 2015 and we're scaling rapidly. To do that, we're looking to bring on more exceptionally talented engineers. Whether you're just getting started out in software development or someone who is looking to lend your experience in leadership to a rapidly scaling engineering organization, we plan on doubling our engineering team in the next year alone. So, you're in luck.
+
+Our tech stack involves Ruby / Rails and Javascript / React Native. However, we're not only looking for people with experience in our stack but rather we're looking for experienced technologists with sound engineering fundamentals using any technology.
+Email us at either chris.evans@joinroot.com or tim.hill@joinroot.com to apply and we'll respond to you promptly.
+                      
+                  
+      
+
+
+$300=====ago [-]
+
+Distru (https://www.distru.com) | Senior Software Engineer | Remote | Full-Time
+We are a 5 person engineering-focused team building logistics software for the cannabis industry. We've built the app from the ground up using Elixir & Phoenix and are excited about being apart of the Elixir ecosystem. On the front end, we use redux/react and are getting into some GraphQL. We are closing a seed round and are looking to expand our engineering team!
+
+Our software helps cannabis company's manage production of their cannabis products, deploy large scale sales team, invoice customers, fleet tracking, and more. We have over $300M in transactions per year passing through our platform and want to keep growing that number. We're looking for another engineer to join our passionate development team to take on critical feature development and help get us there!
+If you're interested in learning more, please email careers@distru.com your resume/linkedin and mention Hacker News!
+                      
+                  
+      
+
+
+$140 == MOKA Analytics | Front-End Engineering Lead | New York, NY | Full-time | $140-185K | Equity | ONSITE
+$30=====ago [-]
+
+Skool | Senior Backend & Frontend Engineers | Los Angeles (LA) | Full Time | Onsite | 155k-260k
+
+  * Problem: Education systems are gatekept, expensive, slow, outdated, unpersonalized.
+  * Mission: To democratize education, instill lifelong learning and collectively educate Earth.
+  * Product: Social learning network that incentivizes intelligence and contribution, not fame.
+  * Traction: Validated idea, early dev stage, CEO with $30m/y e-learning company, 6y exp.
+  * Funding: $10M bootstrapped.
+  * Stack: Golang backend, React frontend, various datastores.
+  * Values: Student obsession, laser-focus, high standards, long-term thinking, stay lean, scientific reasoning,
+    ALL in, full transparency, question everything, invent impossible.
+
+Want to join a team of thinker-doer engineers with a hatred of bureaucracy and a bias for building, on a quest to educate Earth? We’re looking for Senior Frontend (React) and Backend (Go) Engineers to join our small self-organizing team.
+Above market pay, ownership via RSU’s, superb benefits, relocation allowance, lots of sun.
+Interested? Send us an email hackernews@skool.com
+                      
+                  
+      
+
+
+$120 == Private Business Network | Go Engineer | Anywhere, REMOTE | FULL-TIME | https://privatebusiness.network | $120K-$150K USD
+$2=====ago [-]
+
+Klarna | Design, Engineering - React/JS, Java, Erlang | Stockholm, Sweden or Berlin, Germany | Full-time| Onsite | Visa support
+https://jobs.lever.co/klarna?lever-via=jBq-8WdKQZ
+
+Engineering we have backend focused jobs with Java or Node JS or Scala/Erlang. We also have frontend, design and mobile devs.
+Unicorns are real. And other facts.
+Klarna isn’t just a great place to work: it’s one of the world’s true unicorn companies.
+* We’re valued at over $2.5bn and we’re growing by 40% a year
+
+* We now have more than 2000 employees from more than 70 countries
+
+* We process more than a million transactions a day
+
+* About 10,000 people are buying with Klarna at any moment of any day
+We have developer centers in Stockholm, Berlin, and Linden
+If you‘re as excited about the future as we are, Join us! It’s a hell of a ride.
+                      
+                  
+      
+
+
+$100=====ago [-]
+
+Radix Labs (YC S18) | Software Developer (frontend, backend, compilers, distributed systems) | Cambridge, MA, USA | ONSITE  | Full time | $100k-150k + equity
+About Radix
+
+Radix Labs is a Series Seed startup with 2.5M raised. Our product brings compiler-like abstractions to the process of working in a biology lab.
+
+We are building the future of the biotechnology development  process with a first-principles approach, developing a programming language, compiler, and distributed runtime to  automatically turn lab protocols into robot or lab technician instructions. This means that the 60% of a PhD  biologists day that is spent doing manual labor can be reduced  drastically, pushing the means of biotech production down to biohackers  and streamlining the inefficiencies of large pharmaceutical companies  with one proven software solution.
+
+About the Role
+
+We're looking for Scala engineers. We are a 100% scala shop, JS, JVM, and Native. We leverage features of Scala to provide value to customers.
+
+If any of this sounds like something you want to work on - reach out to dhash@radix.bio. If it sounds like something you want to learn, or you only cover some of the skillset, still do reach out.
+
+
+    - Distributed systems - Akka/Kafka/Hashicorp stack
+    - Frontend Development - Scalajs-react
+      - Notebook computing interface for biologists to write lab protocols as programs
+    - Version control 
+      - We're bringing protocol + associated data versioning to users, and we'd love to work on a nice implementation for biologists.
+    - Compilers - Recursion-Schemes/Linear type system/functional interpreters
+      - Constraint-based solver integration (SMT/heuristic/MIP) based optimizer
+    - NP-complete problem solver CVC4(SyGuS)/Z3/CPLEX/OR-Tools/metaheuristics
+    - Synthetic Biology
+      - High-throughput screening
+      - DNA-based assays
+      - Process optimization
+
+
+$100 == Alpha | New York City/NYC SoHo | Fullstack Engineer, Machine Learning / NLP Engineer | ONSITE [Remote-US OK], FULL-TIME | $100 - $180k | https://alphahq.com
+$80=====ago [-]
+
+Top Hat | Software Engineers | Toronto, ON, Canada | ONSITE Full-time
+We are hiring for a variety of development roles including: DevOps Engineer, Sr Platform Developer, Sr Android, and Full-stack Web (Python, Django, Javascript, React.js/Flux, AWS, Ansible; recently we’ve been practicing Continuous Deployment on Lambda). Salary range based on experience from $80K to $120K.
+
+Top Hat helps professors make every lecture count by transforming mobile devices into powerful engagement tools, inside and outside the classroom. Recently, Top Hat has been building out interactive textbooks and creating a way for professors to collaborate on authoring new content and sharing it through our marketplace.
+
+We have a great dev culture and some really cool problems to work on! Check out our ongoing projects here: https://sites.google.com/tophatmonocle.com/engineeringattophat/home
+Apply here! https://tophat.com/company/work-with-us/
+                      
+                  
+      
+
+
+$110=====ago [-]
+
+Brain Corporation | San Diego, CA
+Brain Corp is a San Diego-based AI company that specializes in the development of self-driving technology. We are taking our proprietary BrainOS (robot operating system) and putting it on machines to turn them into self-driving, autonomous robots. We have raised $110m from SoftBank and Qualcomm Ventures.
+
+We have recently announced partnerships with Walmart and Softbank Robotics in Japan and have over 300 mobile, autonomous robots in commercial environments.
+
+We are hiring across all engineering functions (Research, Software, Electrical, Mechanical). Our full job board can be found here: https://braincorporation.applytojob.com/apply/
+
+Highlighted openings:
+
+* Machine Learning Engineers (Depth Perception, SLAM, Motion Planning projects)
+
+* C++ & Python Embedded Developers (Linux)
+
+* Robotics Software Engineers (Jr, Mid, & Sr levels)
+
+* Site Reliability Engineers
+
+* Software Test Automation Engineers/ SDETs
+All positions are posted on the website link above. 
+We have great benefits including lunch catered daily, unlimited snacks & drinks, unlimited vacation for exempt positions, and 4% 401k matching.
+Typical Interview Process: Code challenge, technical phone/skype screen, onsite, offer.
+
+Contact us at careers@braincorporation.com if you don't see a role that matches; feel free to send your resume over to us and let us know what you would be interested in.
+
+Thanks!
+-Rawson https://www.linkedin.com/in/rawsonleavitt/
+                      
+                  
+      
+
+
+$120=====Senior Full Stack / Frontend Engineers | $120k - $170k + Equity
+
+---> Uncountable is looking for an experienced engineer who can spear head the development of the Uncountable Web Platform. The position is an 70/30 mix of front-end and back-end with the primary challenge being overcoming UX challenges.
+
+
+$150=====Machine Learning Engineers | $150k - $220k + Equity
+
+---> Uncountable is building a world-class machine learning team that can push the boundaries of what is currently possible with Bayesian optimization. You will have the opportunity to innovate in machine learning at a small startup.
+
+---> This position requires both experience with statistical learning theory and software development.
+
+
+$70=====Enterprise Sales | $70k - $120k + Commission & Equity
+
+---> Uncountable is looking for resourceful, scrappy, and driven professionals to grow out our sales and business development team. As a sales representative, you will be responsible for generating leads, pitching Uncountable’s AI platform to Directors/VPs, and closing enterprise deals.
+
+These are all onsite, full-time positions in San Francisco, CA. Learn more: https://www.uncountable.com/careers
+Contact: jason@uncountable.com
+                      
+                  
+      
+
+
+$11=====ago [-]
+
+Thinknum | Full Time | Onsite | Visa Sponsorship | New York
+Thinknum is one of the fastest growing web data software startups in the world. Thinknum creates datasets from a broad array of public online sources, capturing ephemeral information on the products, operating markets and labor markets of 400,000+ global companies across sectors, and provides rich toolsets for extracting intelligence. We just closed a $11.6M round.
+
+Open roles:
+
+* Front-end Software Engineer - JavaScript SPAs (React, Angular, etc.)
+
+* Back-end Engineer - (Python, Django, AWS)
+
+* Web Crawling Engineer - (Python, Django, DOM)
+
+* VP of Marketing
+
+* Marketing Specialist
+
+* VP of Sales
+
+* SDR
+
+* Research Data Analyst
+
+* Investing Reporter
+
+If you’re interested, please apply here: https://careers.smartrecruiters.com/Thinknum/ or send your application to careers@thinknum.com
+Learn more: https://www.thinknum.com
+                      
+                  
+      
+
+
+$30=====ago [-]
+
+SimplePay | Ruby on Rails Developers | Cape Town, South Africa | REMOTE
+The story (skip this paragraph if you don't like stories in your job posts): I'm the founder of this company, and a developer myself. Almost a year ago, I left South Africa to move to Singapore. I used to be quite averse to the idea of remote workers, but seeing as just about everyone in our Cape Town office would be remote from my perspective, I decided that the company needed to focus on hiring for remote. It's been a good experience so far!
+
+SimplePay is online payroll software for South Africa, Ireland, Singapore and Hong Kong. Our software lets thousands of small business owners (and their accountants) run their payrolls without headaches, so they can focus on the challenge of building their businesses. You can read more about us here: https://www.simplepay.co.za/about
+
+We've been profitable for many years and have never had the need to raise capital. You'll be building on a stable platform, with a strong team.
+
+Do you believe most SPAs are a pile of steaming crap, but wouldn't mind digging into Vue.js for pages that will benefit from the increased interactivity? Do you laugh when people give up the power of PostgreSQL in favour of data stores that don't offer any benefits for their use case? If so, you may fit in well with our mindset.
+
+Experience: Due to our full pipeline, we can only hire developers who have a few years of Rails experience at this time, or polyglots who at least know Ruby. Previous experience with remote work would be a bonus - we need people who understand the challenges and can share what they've learnt.
+
+Location: GMT+1 to GMT+8. (Currently we have developers in South Africa, India, Lebanon and myself Singapore)
+
+Salary: $30k - $60k
+Please mail careers@simplepay.co.za and put "Hacker News" somewhere in the subject. I look forward to transforming the company to being more remote-friendly.
+                      
+                  
+      
+
+
+$3=====ago [-]
+
+Transcriptic (YC W15) | Backend, Full-stack engineers, Designers | Menlo Park, CA | https://transcriptic.com | FULL TIME; ONSITE
+Transcriptic is turning life science into an information technology by creating a fully automated cloud wet lab. Scientists anywhere can define and (reproducibly!) run experiments over the internet on-demand and without investing up-front in a lab facility.
+The Transcriptic Common Lab Environment (TCLE) takes Autoprotocol (http://autoprotocol.org/), a high-level JSON description of a biological protocol, and executes it on our custom-built robotic workcells. The protocols we handle routinely involve solving constraint programming models with thousands of variables and constraints in order to find the best plan that fulfills the scientist's biological intent.
+
+Scientists manage their experiments through our web application or via our API. We provide a single platform that controls scientific devices from many vendors in a unified way, and an interface to control our automated labs.
+
+Backend engineer (scheduling): https://www.transcriptic.com/hiring/?gh_jid=1092746 Full-stack engineer (web): https://www.transcriptic.com/hiring/?gh_jid=1236117 Front end engineer (web): https://www.transcriptic.com/hiring/?gh_jid=1535939
+
+Tech stack includes: Linux, Scala, RabbitMQ, Rails, Typescript, React, Ansible, Postgres
+Benefits include: full medical/dental/vision insurance; catered lunch and dinner, and a fully stocked kitchen; flexible vacation policy; 401(k) with matching; gym and commuter reimbursement; and education reimbursement up to $3,000/year.
+                      
+                  
+      
+
+
+$90=====ago [-]
+
+Zoba | backend engineer, principal engineer, machine learning, and more | Boston / Cambridge / Somerville, MA, USA | ONSITE | FULLTIME | $90-140k + equity
+Zoba is a platform for analyzing, visualizing, and optimizing spatial data. Our mission is to “improve the efficiency of cities and the lives of people that live in them.” Right now, our customers are primarily (micro)mobility companies interested in questions like “where should we place our vehicles” and “how should we rebalance our fleet?”
+
+Presently we’re a team of 6 people who believe hard in the power and importance of cities as engines of human well-being. We’re looking for a backend engineer with a few years of experience to work on our API, which is primarily used by data scientists at client companies. Our backend stack is Python, Django, Postgres/PostGIS, and AWS. Other tools we use include NodeJS, React, Julia, and Gurobi. Of course, we’re always looking for talented, thoughtful, kind people, so if you’re an engineer or data scientist interested in what we do, please get in touch!
+
+We work hard to make Zoba an actively great place to work. Perks include:
+
+- Sane working hours (e.g. since I joined last fall, I’ve yet to work a single night or weekend, though it may happen eventually)
+
+- Unlimited vacation policy, with a suggested minimum number of days (to avoid the slide to people trying to be tough by taking 0 days)
+
+- Roughly biweekly seminars on team members’ interests, typically not directly work related
+
+- Weekly team lunches
+
+- Have plenty of runway and backed by excellent investors including CRV, Founder Collective, Mark Cuban, and Kaggle founder Anthony Goldbloom
+
+To talk about any and all job opportunities or general questions, you can contact our cofounder Joseph at joseph@zoba.com. You can also check out a more formal job posting at zoba.com/careers. My role at Zoba is lead data scientist and, empirically, team baker [0]. I’m available at evan@zoba.com if you want to chat.
+[0] top rated recent work includes passion fruit bonbons, caramel pecan pie, and everything bagel flavored challah.
+                      
+                  
+      
+
+
+$100 == Lightbox | Senior Software Engineer | Oakland, CA | $100-130K | 5% Equity | Full-time | Onsite
+$60=====ago [-]
+
+Bagel Health (YC W19) First employee (Full-stack engineer) REMOTE
+Work at a YC startup trying to fix healthcare! Bagel is a new electronic health record for the growing direct primary care (DPC) movement. Read more about DPC at dpcnation.org. DPC cuts insurance out of primary care. It makes no sense to use insurance to pay for basic or routine medical services; do you use your car insurance to pay for an oil change? There are some seriously great knock-on benefits of getting rid of insurance too.
+
+Looking for someone who is willing to work below market (roughly ~$60k annualized) until we raise money in 6 months or so. Then the compensation can increase to market rates. Compensation also includes very generous first-employee equity (~4%, standard vesting)
+
+We're still in the early stages of implementation. You'll have a lot of responsibility over software design and architecture decisions.
+
+Here's the tentative stack: Typescript, React, Postgres, Express, Google Cloud, and some Neo4j sprinkled in. Don't worry if you haven't used Neo4j before. Ideally you'd be awesome at a few of these and competent in the rest.
+I'm Colin McDonnell, MIT grad, software engineer, the sole founder of Bagel, and nice person. If you're interested in working together, email me at colin(at)bagel(dot)md with a resume and a bit about you and why you're interested!
+                      
+                  
+      
+
+
+$73=====ago [-]
+
+Alto | San Francisco, CA | Perm, Onsite, Full-Time | https://alto.com
+Our mission at Alto is to fulfill medicine’s true purpose—to improve quality of life—for everyone who needs it. We build technology and use empathy to advance the pharmacy into the modern era and make high-quality healthcare accessible to all. We've raised $73M+ and are rapidly scaling the team in 2019 (15 engineers, doubling team in next 6 months).
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/alto
+
+Here are our open roles:
+
+- Software Engineer: https://grnh.se/e6c446df1
+
+- Engineering Manager: https://grnh.se/90216bc61
+
+- Lead Product Designer: https://boards.greenhouse.io/alto/jobs/1581210?gh_jid=1581210
+
+- Product Designer: https://grnh.se/61e375121
+Tech Stack: React Native, React, Ruby on Rails, Go
+                      
+                  
+      
+
+
+$22=====ago [-]
+
+Hungryroot | New York, NY | Software Engineer | Full-time | https://www.hungryroot.comHungryroot is an online, direct to consumer food product brand that sells all sorts of healthy foods from fresh-cut veggies to ready to eat sauces that you can eat and cook by themselves or pair together.
+We have raised over $22M from in VC funding, with https://lsvp.com as a lead investor
+We’re looking for a highly motivated, problem solving software engineer excited to play an integral role in our lean, rapidly growing Technology team.  If you have experience with Python/Django or with similar MVC-Style frameworks (Rails, etc..) lets chat.
+
+Your profile (nice to have's):
+
+
+  - Professional experience with Python and a framework such as Django or Flask.
+
+  - Proficiency in SQL is a big plus.
+
+  - A good understanding of general computer science concepts, design patterns and trade-offs.
+
+  - Experience with AWS or similar cloud services is a plus.
+
+  - Professional experience with HTML/CSS/Javascript
+
+Check out more here: https://www.hungryroot.com/careersOr email careers@hungryroot.com with HN in the subject.
+                      
+                  
+      
+
+
+$30=====ago [-]
+
+Mission Bio | SRE, Product Owner, Data Scientists | South San Francisco, CA | Onsite, Fulltime, Visa | https://missionbio.com
+Mission Bio is a pioneering biotech startup based in the SF Bay Area. We make the Tapestri platform to help researchers and clinicians unlock single-cell biology and enable the development of precision medicine. Funded by prominent VC firms, we recently completed a $30M Series B financing round and are actively hiring for the positions below:
+
+* SRE - https://bit.ly/mbio-sre
+
+* Informatics Product Owner - https://bit.ly/mbio-ipo
+
+* Sr Data Scientist - https://bit.ly/mbio-ds-sr
+
+* Data Scientist II - https://bit.ly/mbio-ds-2
+
+Small company, high impact, great benefits, friendly colleagues, flexible hours. And most importantly, make a real difference to real people by moving cancer diagnostics forward.
+Apply at the links above or email me at vissa@missionbio.com to learn more about these positions. Happy to chat with you and/or put you in touch with the hiring manager.
+                      
+                  
+      
+
+
+$2=====ago [-]
+
+SoFi | Engineering | San Francisco CA, Seattle WA, Salt Lake City UT, Claymont DE, Helena MT | On-Site | Full-Time | https://www.sofi.com/
+SoFi is a new kind of consumer finance company helping people achieve financial independence and realize their ambitions.
+
+We build products that help our more than half a million members Get Their Money Right. From SoFi Money — a modern take on the checking and savings account - to SoFi Invest - a new investment platform that includes our market-leading robo-advisor, online brokerage (stock and ETF trading) and crypto investment products - SoFi is addressing the biggest financial challenges of a new generation through a modern approach to lending and personal finance.
+
+SoFi has achieved significant scale. We've raised nearly $2 billion in funding since 2011, have over 700,000 members, lent out over $25 billion, and are one of the top ten issuers of asset-backed securities in the United States. But we are just getting started. We have ambitious plans ahead, but to be able to execute on them we will need the help of great talent like you!
+
+We're hiring for a range of engineering roles, from individual contributors to architects, managers, and directors. See here for the list of open Engineering positions: https://jobs.jobvite.com/sofi/search?d=Engineering+%28SoFi%29&p=0
+If you have any questions, feel free to reach out at cbellina@sofi.org
+                      
+                  
+      
+
+
+$2=====ago [-]
+
+Curebase | Software Engineer | San Francisco, CA | Full-time | ONSITE
+Biomedical R&D is at an all-time high, but clinical trials are still expensive, slow, and traditional. The reason is the limited pool of research hospitals which R&D sponsors (like pharmaceutical companies) can use to run their trials. The overhead and training required to do research constrains the supply of these research hospitals, and leads to massive inefficiency.
+
+Curebase takes a new approach. We empower every physician to be a researcher with streamlined software. This lets us run any trial in parallel, and enables sponsors to bring their inventions to market faster than ever.
+
+Today, we use our growing physician network to power studies in many exciting areas of medicine, such as smoking cessation, STD testing, and nutrition. We have also participated in Y Combinator S18 and raised $2.5MM in seed funding.
+I'm looking for self-motivated, generalist web engineers to join us early. If meaningful ownership of a healthcare product and helping to define an engineering culture sound interesting to you, please email me directly via matt (at) curebase.com, or read more and apply at https://angel.co/curebase/jobs/
+                      
+                  
+      
+
+
+$100 == Cooltrax | Software Engineering (Front-end, Full-stack, DevOps, IoT Architect) | Melbourne, AUSTRALIA | $100-120K AUD | Full-time | ONSITE but flexible
+$80=====ago [-]
+
+QuotaPath | Backend, Frontend or Full-stack Engineer | Philadelphia, PA or Austin, TX | $80K to $160K DOE | Full-Time | On-Site | https://www.quotapath.com/careers/ Happy new year, y’all! Sales compensation plans can be shockingly complex. Too often, salespeople are forced to use unfriendly accounting software or to pass around buggy Excel spreadsheets. At QuotaPath, we’re solving this problem in a new way by creating a platform that’s built for salespeople, not accountants. Our business model is unique, both consumer-facing and B2B (“B2BC”; think Slack). Good UX and beautiful design are at the core of our process. The demand for a product like this is intense and we’re working as hard as we can to deliver features to eager users.
+We’re looking for engineers to help us accelerate our development. If you’re interested in having a huge impact on a small team, this is a great opportunity. We’re well-funded, but we’re still only 9 people: 4 engineers, 1 designer and 4 others. I’m one of those 4 engineers, and I’m also the technical co-founder. Please ask me questions if you have any!
+Our stack is Python + Django on the backend, TypeScript + React on the frontend, but we’re more interested in working with people who are smart and capable than people from any particular background. If you have strong opinions about using different tech, we’ll hear you. Like most startups, we’re built on lots of open source tech and we plan on giving back. We value building a culture of inclusion and transparency. We care about diversity and hope you do too.
+Feel free to reach out to me directly: eric at quotapath dot com
+                      
+                  
+      
+
+
+$100=====ago [-]
+
+Checkr (YC S14) | San Francisco, CA | ONSITE | Senior Software Engineers
+For the unfamiliar, Checkr's a 5 year old company, redefining the way background checks are run today and how they influence the job market of the future. From the YC S14 class to raising a $100 million Series C in April 2018 to the profitable, fast-growing company we are today, it's been quite the ride.
+A little about our stack: Ruby/Sinatra/Rails, MySQL and Mongo, RabbitMQ and Kafka for queueing, React frontends, growing Golang and Python microservices, Kubernetes and Docker for deploying, Presto for our data warehouse, moving to gRPC for service communication.
+
+We are looking for:
+
+- Engineers: Backend, Frontend, Fullstack, DevOps, Data/ML, Security
+
+- Product: Designers, PMs, Program Managers
+
+Backend/Fullstack - https://grnh.se/sw604uyn1
+
+DevOps Engineer - https://grnh.se/e9b0b7fe1
+
+SRE - https://grnh.se/b05154951
+
+Sr PM - https://grnh.se/f97c45151
+If you have questions feel free to reach out to me at sean.mccann@checkr.com
+                      
+                  
+      
+
+
+$100 == PAXOS | NYC, London, Singapore | Onsite, Full-time | $100k - $200k | www.paxos.com/careers
+$90=====ago [-]
+
+Life360 | iOS Growth Engineer | San Francisco, CA | Onsite
+20 million monthly active users.
+
+Doubled userbase year-over-year.
+
+Tripled revenue year-over-year.
+
+Bringing peace of mind to families with technology.
+
+We're hiring an iOS engineer to join our newly-formed Growth team to help us scale up globally. If you know iOS, and have experience with different technologies like web / backend / Android, or are particularly hungry to learn, we want to work with you.
+
+With over 20 million active users and $90 million in venture funding, Life360 is the world’s largest mobile app for families. Today, we are focused on location sharing and safety, but our mission is to become the must-have Family Membership that gives families peace of mind anytime and anywhere. From personalized location-based alerts that help make daily coordination easier, to advanced sensor tech that can detect a car crash and automatically send you an ambulance, we are leveraging smartphones to their fullest extent to reinvent how families get through the day.
+
+- Full-time
+
+- Location: San Francisco, California
+
+- Competitive salary and stock options
+
+- $200/month Quality of Life perk
+
+- Great office in SOMA: dogs are welcome, tons of snacks, and great catered lunches
+
+- Autonomous team with lots of support from around the company
+Apply here: https://boards.greenhouse.io/life360/jobs/4247847002
+                      
+                  
+      
+
+
+$5=====ago [-]
+
+ETFLogic | Quantitative Research and Development | New York, NY | ONSITE | https://www.etflogic.io | Full Time
+ETFLogic is a fintech data analytics and quant tools company. We help our clients - ETF Issuers, Asset Managers, RIAs, FA and Corporates - make better investment decisions with Exchange Traded Funds and grow their assets. ETFs hold in excess of $5 trillion in assets globally. That number is projected to reach $30tr by 2030. Investor demand continues to drive innovation and complexity in the ETF landscape.
+
+We empower ETF ecosystem members to better understand what is “under the hood” and gain an edge in investment trading decisions. We are building quantitative tools, analytics and trading signals around ETFs and their underlying assets.
+
+This role would, in part, further researching and development in key areas: intraday fair-value pricing, portfolio construction, portfolio optimization, fixed-income pricing, factor analysis, liquidity analysis.
+
+Prior finance experience in these areas is preferred.
+
+Our tech stack is comprised of JS, React, Python, AWS, kdb+/q
+
+We are currently a team of five and looking to expand. We are well funded with a strategic VC.
+Please reach out with your resume: info at etflogic dot io.
+                      
+                  
+      
+
+
+$105 == Pex | Multiple positions | Downtown, Los Angeles | US-ONLY REMOTE or ONSITE, FULL-TIME | $105,000 Minimum Salary + Equity | https://angel.co/pexeso/jobs
+$14=====ago [-]
+
+Human Interest (YC S15) | San Francisco, CA | Onsite | https://humaninterest.com
+Human Interest (formerly Captain401) is a YC-backed Series A startup with $14M raised. Our product helps over 1,000 startups and small businesses all over the USA offer their employees a great 401(k) plan.
+We're incredibly proud of the progress that we've made, but know there's much left to do. Our team (currently 52 strong) is ambitious yet humble, and driven by an important social mission: helping everyone save for retirement.
+
+Our engineering team includes a former VP Engineering for an 80 person team, a former Google Chrome tech lead, and several startup veterans. We're built on Node.js, TypeScript, React, and Postgres. If you're experienced with other technologies but interested in working with those, that's fine. :)
+
+If you're an engineer and you want to help scale a rapidly growing business that helps small businesses in 47 states, drop us a line.
+
+See our jobs and apply here: https://humaninterest.com/careers
+Or reach out to me directly: paul [at] humaninterest [dot] com
+                      
+                  
+      
+
+
+$4=====ago [-]
+
+Michigan State University Federal Credit Union | Several Roles | East Lansing, MI | ONSITE | https://www.msufcu.org/
+MSUFCU is the largest University-Based Credit Union, and in the top 50 credit unions in the US with over $4 billion in assets. We have a large IT group compared to our peers, and do a lot of in house development and on-prem hosting.
+
+Network Engineer: https://recruiting.ultipro.com/MIC1007/JobBoard/24c0bd68-a7ff-5460-0b4e-fe75a81b0396/OpportunityDetail?opportunityId=6c655feb-b350-4975-b291-65f884e823bd
+
+Site Reliability Engineer: https://recruiting.ultipro.com/MIC1007/JobBoard/24c0bd68-a7ff-5460-0b4e-fe75a81b0396/OpportunityDetail?opportunityId=e5dd3753-868a-44c0-9141-52f1fd98f095
+
+Network Manager: https://recruiting.ultipro.com/MIC1007/JobBoard/24c0bd68-a7ff-5460-0b4e-fe75a81b0396/OpportunityDetail?opportunityId=6c886696-3222-4faf-910d-8804a7bdbc08
+DBA: https://recruiting.ultipro.com/MIC1007/JobBoard/24c0bd68-a7ff-5460-0b4e-fe75a81b0396/OpportunityDetail?opportunityId=0e95c801-29dc-42e4-a451-cad7c364e0e3
+                      
+                  
+      
+
+
+$16=====ago [-]
+
+Kard Financial | Senior Software Engineer, Senior DevOps Engineer | New York, NY | Full-Time | 150K + Equity | On-site
+Kard helps consumers maximize their credit card rewards programs while also helping our partners, card issuers, turn loyalty from an expensive, inefficient marketing channel into a profitable revenue channel. We are flipping an already $16B industry on its head, which comes with a host of interesting challenges, from refining our real-time recommendation algorithms, integrating with partner API's and building bank-level security and compliance tools.
+
+We are looking for several engineering and non-engineering roles including:
+- Senior Software Engineer 
+- Senior DevOps Engineer
+Check out our postings at: https://jobs.lever.co/getkard
+Perks to working with us at Kard
+•  Flexible health insurance, including dental/vision 
+•  Retirement plans 
+•  Unlimited vacation 
+•  Work from home (or anywhere you like!) on Fridays 
+•  We're dog friendly, and have a labradoodle (Kobi) in the office every dayCheck out our postings at: https://jobs.lever.co/getkard
+                      
+                  
+      
+
+
+$18=====ago [-]
+
+Scale | Backend/Full Stack and Frontend | SF or Remote
+We label data for your favorite computer vision teams. Our mission is to accelerate the development of AI applications - we believe building a high quality labelled dataset is the biggest bottleneck to deploying supervised deep learning systems, so that's what we're tackling first.
+
+We’ve had phenomenal breakout revenue, raised an $18 MM series B, and are looking to grow our team of 55.
+
+We’re looking for engineers to work on projects ranging from making labelling more efficient via front-end work/ML work to launching completely new product lines.
+If you are interested, please apply here: 
+Frontend - https://jobs.lever.co/scaleai/9fe1f405-647b-493c-9728-e2c38775bd38?lever-origin=applied&lever-source%5B%5D=HNBackend - https://jobs.lever.co/scaleai/c1443865-f64e-4467-bfdc-8980533a2ad3?lever-origin=applied&lever-source%5B%5D=HN
+                      
+                  
+      
+
+
+$120=====ago [-]
+
+FlowCommand (YC W16) | Full-Stack Engineer, Data Engineer, Sensor Engineer | San Francisco | Onsite | $120k - $150k + 0.5% - 1.0% | https://angel.co/flowcommand
+FlowCommand builds a new type of sensor and software system to monitor fluid infrastructure around the world for leaks, theft, spills, and performance. Fleets of our proprietary lightweight hardware generate raw acoustic data and then send that data directly to our server via cellular/satellite; we then use a mix of physics equations, signal processing, and anomaly detection to determine the behavior of fluid (volume and speed) in pipes.
+
+A few upcoming projects:
+
+We’re planning to send a robotic submarine 10,000 ft underwater to attach our sensors to pipelines sitting on the ocean floor, with the goal of detecting and stopping oil leaks that harm marine wildlife. Build the application that allows operators to monitor their pipeline for leaks and alert them to an impending environmental disaster.
+
+Our Houston office has a remotely operable flow loop (ie an obstacle course for fluids) that allows us to approximate field conditions and gather raw acoustic data. The digital signal processing specialists who write our firmware need to capture test data, but the sensor processes millions of measurements per second, making it difficult to store and process the test data. Build a system that allows them to efficiently test their latest DSP algorithms under a variety of flow conditions.
+Technologies we currently use:
+Web Apps: Python, Django, React 
+Data Pipeline: pandas, scikit-learn, Heroku/AWS 
+Sensor Firmware: C++, System VerilogPlease reach out at jobs@flowcommand.com
+                      
+                  
+      
+
+
+$150=====ago [-]
+
+Southeast USA including: Virginia (Arlington and Dulles), Maryland (Annapolis Junction), South Carolina (Greenville), Alabama (Huntsville), Florida (Melbourne and Indialantic), Texas (Austin and San Antonio), Pennsylvania (State College) and possibly others, all ONSITE. Citizenship is a job requirement.
+We do emulators, JIT, hypervisors, stuff similar to valgrind, debuggers, manual disassembly, binary static analysis, parsers, and assembly. We write our own low-level tools, frequently in C99 to run on Linux. We also use IDA Pro, qemu, Simics, JTAG debuggers, gdb, Coverity, KlocWork, LLVM, and so on. Easily transferable skills include those related to compilers, kernel drivers, embedded RTOSes, vectorizing, firmware, VxWorks BSP development, symbolic execution, boot loaders, software verification, concolic testing, abstract interpretation, satisfiability (SAT, SMT) solvers, and decompilers. We work with more than a dozen architectures including PowerPC/ppc, MIPS, ARM/Thumb/AArch64, x86/x64/Intel, DSPs, and microcontrollers. We hire from no-degree to PhD. Common degrees include Computer Science, Computer Engineering, Electrical Engineering, and Mathematics.
+
+We don't normally work overtime, and we get paid more if we do. We're never expected to take work home or be on call. Because of the citizenship requirement, there is no chance that the work will be outsourced. Flex-time is fairly extreme; some do randomish hours.
+
+Location hints: Pick Arlington for a car-free life, subway included. Pick Florida or Texas to live in a place with solid gun rights and no state income tax. Pick Florida for almost no traffic or commute, surfing, and a median house price of about $150,000.
+You can email me at users.sf.net, with account name albert.
+                      
+                  
+      
+
+
+$120=====ago [-]
+
+UsabilityHub | Melbourne, Australia | Senior Software Engineers | Full-time | Onsite
+UsabilityHub is hiring senior engineers to join our team in Melbourne. If you’re not familiar, we help businesses (including Amazon, NASA, and Reddit) be more human-centered by making user research easy to conduct and fun to participate in.
+
+We’re a bootstrapped, profitable, and sustainable company, with a focus on building great products, not chasing growth for the sake of it.
+
+Ideally you’re a generalist who is capable across back-end (Ruby, Rails, Postgres) and front-end (Typescript, React, Redux, Webpack), but if you specialize in one area and are still getting up to speed in the other, don’t let that dissuade you from applying. It’s more meaningful to us that you’re a great developer and a keen learner.
+
+We’re offering…
+
+- $120k AUD base salary (FTE) + super
+
+- the option to work 0.8, 0.9, or full time
+
+- the option to regularly work from home
+
+- generous paid parental leave (14 weeks primary / 6 weeks secondary)
+
+- profit share scheme among employees
+
+- a warm, friendly & relaxed team
+For more info, and to apply, see the full job listings: http://bit.ly/2MK9Zrk
+                      
+                  
+      
+
+
+$=====ago [-]
+
+ThreatMark | Software Engineer, Security, Machine Learning | Remote | Brno, Czech RepublicWhen someone steals your credentials, whether it is bank, crypto account or email, it is unpleasant experience.
+Our goal is to remove fraud and simplify authentication in online world.
+We develop threat detection (e.g. malware, phishing, scraping) with behaviour biometry which recognizes returning users by their mouse movements, keystroke timings and sensoric data. 
+We manage dozens of TB of data and provide realtime scoring in milliseconds driving authentication flow (log in / 2nd factor).
+Stack: python, javascript, sklearn, cassandra, kafka, redis, kafka, docker
+
+DevOps: linux, ansible, terraform, aws, openstack, prometheus, grafana
+
+Data: Random forests, gradient boosting, markov chains....
+We are three years on market, backed by two VCs and we are going to have about 4M$ revenue this year. Even that we work with top EU banks and goverment agencies we are NOT a corporate ourselves. 
+I still code with the team, we just have fun, solve hard problems and get stuff done !Are you tech/security enthusiast ? Do you often live "in the flow" and loose track of time ? 
+You know what happens, when EIP register points to address with 0xCC ?
+Could you implement O(n*log(n)) sort ? 
+We are looking for bright minds to join our engineering and data science team.
+We are looking for positions:
+
+- Software engineer (python)
+
+- DevOps engineer / Cloud operations engineer
+
+- Product reliability engineer
+
+- Data scientist
+If you are interested, please email me @ krystof.hilar@threatmark.com with subject "HN Who's Hiring April 2019"
+Krystof Hilar, Co-Founder & CTO
+                      
+                  
+      
+
+
+$3=====ago [-]
+
+Sourceress | Engineering: Machine Learning, Backend, Frontend, Managers | San Francisco | Full-time | Local or Remote | https://www.sourceress.com/jobs
+We already have significant machine learning expertise, so are happy to hire great engineers without prior ML experience who are willing to learn. We strongly value personal growth, and want to help you grow into a great engineer (or engineering leader), so this approach applies to our other engineering roles as well.
+
+Our mission is to help people find work that matters. We believe that the world is better when people understand the opportunities available to them. Our human-assisted AI platform delivers great results to our customers (customer quote: "I'd have a panic attack if you guys stopped existing").
+
+Because of this, we raised $3.5M from OpenAI researchers and Lightspeed at one of the highest ever valuations coming out of YC. Our team has previously sold companies, published machine learning research, has Dropbox's former Chief of Staff, and previously worked at Google, Airbnb, McKinsey, etc.
+
+Qualifications:
+
+- Do you understand the value of shipping quickly and of software craftsmanship, and have the judgment to know when to apply each?
+
+- Do you enjoy collaborating with other developers and helping them grow?
+
+- Do you share our values? https://www.sourceress.com/jobs#values
+
+Stack: Python 3, Typescript, React, AWS, PostgreSQL
+To Apply: https://jobs.lever.co/sourceress?team=Engineering
+                      
+                  
+      
+
+
+$600=====ago [-]
+
+ShareGrid | Full-Stack Rails/React Developer | Seattle, WA | ONSITE, Full-time, https://www.sharegrid.com/
+We're a 15 person, passionate, fun, profitable, VC funded startup dubbed "The AirBnb of Cameras"
+
+We help over 60,000 creatives share $600m of professional camera gear in the largest creative rental marketplace across the US (http://www.sharegrid.com).
+
+Looking for a talented full-stack Rails/React developer to join our development team here in beautiful Seattle.
+
+Stack: Rails 5, React / ES6, HAML/SCSS, MySQL, Sidekiq / Redis, ElasticSearch, Stripe, AWS
+
+This is a full-time opportunity in beautiful Seattle, WA with benefits and early equity in a fast-growing startup.
+Benefits: Macbook Pro, iPhone, Flexible Work Schedule and Vacation Policy, Healthcare, Stocked Kitchen, and casual working environment in the hip Fremont neighborhood of Seattle. Position and compensation DOE. Relocation available.
+                      
+                  
+      
+
+
+$15=====ago [-]
+
+Memrise | Software Engineers | London UK | Full-Time, Onsite, Visa sponsorship and relocation available | https://www.memrise.com Memrise gives people learning superpowers!
+We've got:
+
+* An impactful mission - Memrise helps users achieve confident, real-world language skills & connect with new cultures.
+
+* Exciting technical challenges for you to work on. We build for scalability & high availability; use machine learning powering real-world, user-facing features; have big data to process and feed into our adaptive learning algorithms; and smooth, refined user interfaces to build that our users will adore.
+
+* Funding - we closed our Series B at $15.5M!
+
+* A large user base - we now have about 40M users!
+
+* An awesome team - https://www.youtube.com/watch?v=wORv8J1n0y8
+
+We're looking for:
+
+* Backend Engineer
+
+* Frontend Engineers (React) - Mid-level and Senior
+
+* DevOps Engineer
+
+* Data Scientist
+Apply at https://www.memrise.com/jobs/
+                      
+                  
+      
+
+
+$1=====ago [-]
+
+RealScout | Senior Software Engineer - Data Integration | REMOTE (minimum 5-hour overlap with Pacific US Timezone) | Full-Time
+RealScout’s goal is to provide better transparency between real estate agents, brokers, home sellers, and home buyers to bring efficiency to the $1 trillion residential real estate marketplace. We're in almost every major metropolitan market in the country and have many of the largest NYC brokerages on board as part of a Buyer Graph[1] initiative -- an unprecedented effort for a real estate startup.
+A typical week will entail:
+
+- Ensuring perfect replication of 100+ real estate data feeds with as little lag as possible
+
+- Scaling a daily emailer from 100k to 1m personalized sends
+
+- Augmenting listing data with computer vision, geospatial data, and other unique insights
+
+THE REQUIREMENTS
+
+- Experience with medium-to-large data pipelines: implementing, testing, and deploying
+
+- Familiarity with Python+Go (bonus points for Ruby)
+
+- Familiarity with automated unit and integration testing
+
+- Experience with wide variety of data stores such as PostgreSQL, ElasticSearch, and Redshift
+
+- Experience with one major cloud provider (Google, Azure, AWS). AWS a plus.
+
+THE TEAM
+
+We strive to cultivate thought diversity with candor, empathy, and respect. We welcome people of different backgrounds, abilities and perspectives.
+
+We look forward to hearing from you! Contact me at anthony at realscout dot com and visit http://learn.realscout.com/about for more info.
+[1] https://nycbuyergraph.com/
+                      
+                  
+      
+
+
+$20=====ago [-]
+
+Nova Credit (YC W12) | San Francisco, CA | Onsite | https://www.novacredit.com
+Despite having built substantial credit in their home countries, millions of immigrants have difficulty accessing credit cards, loans, mortgages, and leases without domestic credit. Nova Credit enables newcomers to share their credit history from their home country with financial service providers and others, unlocking new consumers for lenders, and new futures for immigrants. The team is 30 people and has raised $20m+ in funding from Index, General Catalyst, First Round Capital, Nyca, and Y Combinator.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/nova-credit
+
+Here are our open roles:
+
+- Software Engineer: https://jobs.lever.co/neednova/d94c4bb0-5129-48ee-ae18-d65b7e228c81?lever-origin=applied&lever-source%5B%5D=KeyValues
+
+- Dev Ops Engineer: https://jobs.lever.co/neednova/a9203b93-9fd2-42ca-8f17-16cba4d9fa20?lever-origin=applied&lever-source%5B%5D=KeyValues
+
+- Quality Automation Engineer: https://jobs.lever.co/neednova/2e04923d-dd27-474f-8415-8da86561e9c5?lever-origin=applied&lever-source%5B%5D=KeyValues
+Tech Stack: Node.js, Postgres, AWS, Terraform, Ansible, React
+                      
+                  
+      
+
+
+$7=====ago [-]
+
+Darkstore | Multiple roles in Engineering, Product Management, & Design | Full Time | San Francisco | Onsite
+Darkstore is changing the way ecommerce products are delivered. Fulfillment and logistics is complicated, which is why we started Darkstore to make it simple and easy. We've created a nationwide logistics network to enable same-day delivery of products for companies like Nike.
+
+Darkstore works by exploiting excess capacity in storage facilities, malls and bodegas and enables them to be fulfillment centers with just a smartphone. The idea is that brands without local inventory can store it in a Darkstore and then ship out same-day. Darkstore charges brands across three areas: fulfillment, storage and delivery.
+
+We closed a $7.5M Series A in January 2019 and are hiring multiple people for Eng, Product, & Design.
+If you're interested, please apply here: https://jobs.lever.co/darkstore?lever-via=N-sw6B_q5A
+                      
+                  
+      
+
+
+$200 == Cobalt Robotics | San Mateo, CA | Full-time | Onsite https://cobaltrobotics.com/Cobalt builds autonomous security robots that keep buildings safe by combining the reliability of machines and the friendly face of human-in-the-loop “Robot Specialists.” Security costs U.S. companies over $200B a year and is a very difficult task for humans to perform because of long monotonous hours.
+$13=====ago [-]
+
+Tulip | https://tulip.co/careers | Boston, MA | Full time | Onsite Do you want to help transform manufacturing? We are building the best team in the industry to bring consumer-grade user experiences to a space dominated by ancient enterprise technology. Our platform enables our customers to create apps without code and to connect their apps to machines, sensors and smart tools. These augmented production lines would otherwise rely on paper to share information. We’re based in Somerville, MA and have raised $13m from NEA, Pitango, and other leading investors. Our customers include some of the largest manufacturers in the world across numerous verticals of the manufacturing industry. If you are looking to join a fast-growing, mission-driven company, and want to make a lasting impact on our organization and the manufacturing industry, we'd love to talk to you. We'd love to talk to anyone interested, but in particular we are looking to bring folks on in: - SRE/DevOps: Kubernetes-admin, scalable monitoring across the firewall, hybrid cloud/on-prem deployment
+- SRE/DevOps: Azure cloud architect, ideally with container service/AKS experience - will consider contractors as well as F/T, depending on interest and experience
+- Web Development: React+Redux frontend, NodeJS+Mongo+Postgres+Redis backend, syncing data with Meteor, delivering useful, real-time experiences in the browser and on Electron
+
+- Data & Pipeline Engineering: planning, implementing, and finding insights with our next generation of process & sensor analytics
+
+- IoT/Embedded Software: delivering a reliable, extensible HW platform across arm and x86, all manner of bus/IO tech
+Apply at https://tulip.co/careers or email us at jobs@tulip.co
+                      
+                  
+      
+
+
+$5=====ago [-]
+
+Thanx | SF, DEN, Remote | Principal Engineer | ONSITE/REMOTE, Full-time | https://www.thanx.com/careers/job/1466586/
+Americans spend more than $5 trillion on restaurants, retail, and services each year. Nearly 90% of those transactions happen in a physical store. Data is king. Online  it powers personalized customer experiences and product recommendations. Offline, however, it’s still 1999. Brands are blind to their customers, causing them to spend more and more money on “megaphone” marketing. No wonder brick-and-mortar stores are being left behind.
+In a nutshell, Thanx ingests data, provides insights, enables actions to drive growth in the business. Thanx is backed by some of the best investors in the world — Sequoia Capital, Icon Ventures, and Andy Rachleff (CEO Wealthfront, cofounder Benchmark Capital), to name a few.
+Thanx Engineering
+Yes, we have an app you can download. The power of Thanx is massively scalable data pipelines, microservices that power four 9s uptime, intelligent purchase normalization, and matching algorithms  — we don’t show that stuff off publicly.
+Here’s more on who we are:
+
+• Team: early engineers at AWS, Cloudera, Climate, Zenefits, Okta. Experience from startups and successful product companies like Google, Facebook, Intuit, Disney. This is an elite Eng team, period.
+
+• Growth: 10x YOY data growth; $100M+ delivered to merchants; 200% team growth; modern, rapidly-evolving platform.
+
+• Tech: scalable, reliable, high-throughput, low-latency backend systems; beautiful, performant, responsive UIs; user-friendly mobile apps.
+• Culture: data-driven decision-making, risk-taking, no hierarchy, collaboration & shared responsibility, testing, and continuous improvement. As a remote-friendly team, we have flexible work hours.
+                      
+                  
+      
+
+
+$120=====ago [-]
+
+Interdax | Senior Blockchain Engineer | Worldwide, London | REMOTE | Full-time | https://www.interdax.com
+Interdax is a 3rd generation exchange for blockchain-based assets (bitcoin, ethereum, and other cryptocurrencies). Our team comes from top HFTs and exchanges like Nasdaq and NYSE, as well as from well known firms in the blockchain space.
+
+If you want to join a team of enthusiastic engineers (60% of us coming from HN) and believe in the long-term promise of crypto, don’t hesitate to reach out.
+
+What we offer:
+
+
+  Competitive Salary ($120k-$180k/year)
+
+  Profit Sharing (0.15 - 0.25%)
+
+  Fully remote position
+
+  Startup Culture
+
+  Unlimited Vacation Policy
+
+  Team getaways
+
+Apply at https://interdax.breezy.hr/p/38ee3f63e69f01-senior-blockchain-engineer
+
+
+$11=====ago [-]
+
+Buster | Jr. Full Stack Software Engineer | Full-Time | ONSITE | New York, NY
+Buster is an online platform for booking group ground transportation. We have a sophisticated pricing and booking tool built and a big pool of quality vendors taking our trips. We’re in the midst of bringing a technology solution to an $11 billion industry that’s basically offline without our platform. We have a small team of developers with lots of work to go around. As we grow, you’ll, by default, find yourself as a leader in a multi-million dollar company.
+
+Our tech stack is Ruby on Rails, vanilla JS/jquery, and built on Heroku (although we’re migrating to AWS).
+
+Our offices are in New York, NY and Chicago, IL.
+Apply here: https://buster.freshteam.com/jobs/hTx36rmFpsaH/jr-full-stack-developer?source=YComb_3000052931&medium=Advertisement_3000049059
+                      
+                  
+      
+
+
+$50=====ago [-]
+
+98point6 | Seattle, WA | Onsite | Multiple Positions | https://www.98point6.com/
+At 98point6 we are reimagining the future of primary care through in-app messaging and by pairing physician experience with AI and automation. We've recently raised a $50m Series-C and launched in all 50 US states plus D.C.
+
+We're moving quickly in the digital health space and hiring for numerous positions. Open engineering roles include:
+
+- Software Engineer, Data Engineering
+
+- Senior Software Engineer, Machine Learning
+
+- Manual Test Engineer
+
+- Mobile Software Engineer - iOS/Android
+
+- Back End Software Engineer
+
+- Senior Back End Software Engineer
+
+- Front End Software Engineer
+
+- Senior Front End Software Engineer
+
+- DevOps Manager
+
+- Security Engineer
+
+- Senior Software Engineer, Infrastructure
+
+- Site Reliability Engineer (SRE)
+If you're interested please email us careers [AT] 98point6.com or apply directly at our careers page: https://www.98point6.com/about/careers/.
+                      
+                  
+      
+
+
+$2=====ago [-]
+
+Streak | YC S11 | Senior Backend & Frontend Engineers | Vancouver, BC | Full Time | Onsite
+
+  * Problem: Make Gmail powerful for all businesses
+  * Product: We build a sales/hiring/fundraising/dealflow tool all inside Gmail. We believe these workflows belong entirely in your inbox because thats where people spend their entire day.
+  * Traction: Product market fit, hundreds of thousands of users, tens of thousands of paying users
+  * Funding: $2M seed, profitable and growing ever since
+  * Stack: Java, Kotlin, Golang, React, all the modern JS tooling - built on GCP, largest user of Google Cloud Spanner 
+
+We just opened our Vancouver engineering office and its fully integrated into our SF office. We're looking to grow the team significantly in Vancouver and offer really competitive compensation and amazing benefits.Interested? Visit and apply at www.streak.com/offices/vancouver
+                      
+                  
+      
+
+
+$375=====ago [-]
+
+Butterfly Network | New York | | Full-time | ONSITE | VISA |https://www.butterflynetwork.com/Butterfly Network has created and brought to market the Butterfly IQ – the first FDA-cleared, portable device that puts ultrasound technology on a semiconductor chip.  Pairing ultrasound-on-a-chip with the cloud and AI, we are doing something never done before, and bringing ultrasound to new domains around the world.
+Since inception, Butterfly has raised over $375million. If you have a passion for doing innovative work that makes a difference in the world, you will love working with us.
+Now hiring:
+
+Site Reliability/DevOps Engineers (Docker, Kubernetes)
+
+Full-stack Engineers (Python, Node, React)
+
+iOS Engineers (Swift)
+
+Android Engineers (Kotlin)
+
+Data Engineers and Data Scientists (Python)
+
+ML Software Engineer (Python, C++)
+
+Embedded Engineers
+
+Product and Visual Designers
+
+Imaging Scientists and software engineers
+For more information and to apply send an email to maria@butterflynetinc.com
+                      
+                  
+      
+
+
+$100 == BlindData | Software Engineer | New York | Full-Time | $100k-150k
+$9=====ago [-]
+
+Lightstream | Chicago | Full-time | ONSITE, REMOTE for strong candidates | https://www.golightstream.com/
+We’re building the future of live streaming.  We empower streamers on Twitch, Mixer, etc. to be successful with creative tools and analytics.  We’ve got a ton of momentum including a $9M Series A, a strategic partnership with Microsoft and acquisition of analytics company https://arsenal.gg
+
+We build with TypeScript, React, Node, C++, Kubernetes and great technical operations are critical to our success.
+
+Job postings are here: https://www.golightstream.com/our-story/#jobs
+Interested in us but don’t see what you like? Hit us up at jobs@golightstream.com
+                      
+                  
+      
+
+
+$20=====ago [-]
+
+Second Measure (YC S15) | SF Bay Area - San Mateo, CA (downtown) | ONSITE | https://secondmeasure.com
+----
+
+Second Measure analyzes billions of credit card transactions to answer real-time questions about consumer behavior.
+
+Through our self-service analytics platform, we help our clients – some of the world’s largest brands and investment firms – answer questions like:
+
+
+  - Is Lyft gaining or losing market share in NYC? [1]
+  - How many Tesla Model 3 preorders have been refunded? [2]
+  - How dependent is Stitch Fix on its biggest spenders? [3]
+  - (Check out our research blog [3])
+
+We’re 60 people today — mostly senior engineers and data scientists — and recently closed a $20M round Series A (Bessemer, Goldman Sachs, Citi, and YC).
+We’re looking for other strong builders, especially those who can grow into leadership roles:
+
+
+  - Senior Data Engineer
+  - Senior Data Scientist
+  - (more)
+
+I'm a founder (mike@). Apply directly [4] or email jobs@ and CC me.
+[1] http://www.sfchronicle.com/business/article/Lyft-gets-boost-from-Uber-s-travails-11262651.php
+
+[2] https://www.recode.net/2018/6/4/17414496/nearly-a-quarter-of-teslas-model-3-reservation-deposits-in-the-u-s-have-supposedly-been-refunded
+
+[3] https://secondmeasure.com/datapoints/
+[4] https://secondmeasure.com/jobs/
+                      
+                  
+      
+
+
+$100=====ago [-]
+
+Gecko Robotics (YC W16) | Fullstack Software Engineer, Software Engineer, Data Analyst | Pittsburgh, PA | Onsite | Full-time | https://www.geckorobotics.com/
+At Gecko Robotics, we do predictive maintenance inspections on tanks, boilers, and other industrial infrastructure with wall-climbing robots. Every year, over $100 billion is spent on industrial maintenance. Gecko has developed wall-climbing robots that increase inspection coverage and dramatically reduce plant downtime, resulting in millions saved. Our Toka series of robots is the first to climb and inspect boiler walls using ultrasound transducers and an array of sensors and cameras. We raised a $7M Series A round this fall led by investors like the Founders Fund, Justin Kan, and Mark Cuban and are looking to rapidly grow our engineering team.
+
+We’re currently hiring software engineers for our data processing and visualization platform. At the end of the day, software and data is Gecko’s true product. Our engineers are building an industry-leading platform that gives our customers a comprehensive and interactive view of their industrial assets over time, as well as a suite of software tools for advanced robot control systems.
+
+We’re looking for people with experience in any of the following areas:
+
+* React.js / Web development and design (UI/UX)
+
+* Python (Django) / backend development & 3D visualization and mapping libraries (Three.js, D3, etc.)
+
+* Data processing for batch and stream workloads (e.g., Apache Beam)
+
+* Signal processing for ultrasound and other sensing technologies
+
+Tech Stack: Python (Bokeh, Django, Flask, Pandas), JavaScript, React, Google Cloud Platform (GCP), Postgres, BigQuery
+Apply for openings at https://www.geckorobotics.com/company/careers
+                      
+                  
+      
+
+
+$90=====ago [-]
+
+Replicated | Backend Engineer - All Levels | $90k - $160k + equity | Los Angeles ONSITE | https://www.replicated.com
+At Replicated we are building modern deployment frameworks that make it simple for SaaS vendors to deliver to enterprise customers. We are looking for hackers and engineers with a passion for crafting developer tools and solving challenging technical problems. At Replicated you will be working with a talented and experienced team, writing code in Golang & Typescript, and contributing to the growing Docker & Kubernetes ecosystem. These roles will be exclusively onsite in Los Angeles.
+
+If you are interested please email austin (at) replicated (dot) com
+Those interested in technical customer success, quality assurance, or support roles are invited to get in touch as well.
+                      
+                  
+      
+
+
+$150=====ago [-]
+
+Guilded (YC S17) | Full Time | Full-stack software engineer | $150,000+ | Remote (U.S. only)
+Guilded connects esports teams. You'll be a very early engineer (first 7) at a quickly growing, engineering-led startup, where you'll be using modern processes and tools to build features that teams need and love.
+
+We're a fully remote team. We know that many engineers are the happiest and do their best work when they're empowered to build on their own schedule. If that sounds like you, we'd love to hear from you: drop us a line at jobs@guilded.gg. No recruiters or agencies, please.
+
+Required experience: 5+ years software development, 2+ years directly building and shipping consumer products
+
+Required expertise: JavaScript, React, SQL
+More info at https://www.guilded.gg/jobs
+                      
+                  
+      
+
+
+$55=====ago [-]
+
+Sysco LABS | Data Platform Engineer, DevOps Engineer, Director of Software Engineering, Full Stack Engineer, Performance Test Engineer, Search Engineer | Austin, TX | Onsite | Fulltime
+Sysco LABS is a technology-focused division within Sysco Foods (distributes to 500k restaurants globally, $55bil/yr revenue), dedicated to reimagining foodservice through innovation. An extension of Sysco’s longstanding commitment to deliver exceptional products and services to the foodservice industry, Sysco LABS leverages customer and market intelligence, data-driven insights and agile technology development to rethink the entire foodservice ecosystem. Sysco LABS’ innovations will improve everything from the ordering process, delivery, inventory, pricing and automation to the in-restaurant customer experience. Operating with the mindset of a startup and backed by the authoritative expertise of an industry leader, Sysco LABS’ mission is to enhance the Sysco customer experience and consistently deliver revenue growth, cost savings and new innovations through technology.
+
+Please contact me at eric.adleman@sysco.com with any questions.
+
+Data Platform Engineer - http://app.jobvite.com/m?3NcAmkwK
+
+DevOps Engineer - http://app.jobvite.com/m?3NcAmkwK
+
+Director of Software Engineering - http://app.jobvite.com/m?3NcAmkwK
+
+Full-Stack Engineer - http://app.jobvite.com/m?3NcAmkwK
+
+Performance Test Engineer - http://app.jobvite.com/m?3NcAmkwK
+Search Engineer - http://app.jobvite.com/m?3NcAmkwK
+                      
+                  
+      
+
+
+$90=====ago [-]
+
+PRIVACY.COM | Software Engineer | NEW YORK (NYC) | $90-140K, 0.1 - 1% equity | ONSITE, FULL-TIME
+We’ve built a secure way to pay online without giving away your personally identifiable information (PII) or credit card number. We're a small team of 16, moving millions in transaction volume, generating significant revenue, and backed by top-tier investors. In two years since launching, we've saved users over $250 million in unauthorized and unwanted transactions.
+
+A few things we're working on now:
+
+
+  -  Improving our fraud modeling and ML classifiers that detect anomalous behavior and prevent fraud
+  -  Updates to our real-time transaction processing engine
+  -  Building out growth hooks, A/B testing and supporting growth and retention efforts
+  -  Unstructured data challenges around improving our browser extension performance
+
+When looking for new team members, we try to focus on the following:
+
+  -  2+ years of experience shipping code in a production environment
+  -  Proficiency in at least one language - we use NodeJS / Python / C++ / Java / SQL
+  -  An understanding of the balance between perfection and shipping quickly
+  -  An understanding that code is written as much for humans to read and maintain as it is for machines to interpret
+  -  Proven ownership of the features from start to finish
+  -  Deep understanding of algorithms, systems, and design
+
+Why apply?
+
+  -  Competitive compensation and meaningful equity 
+  -  Medical / dental / vision coverage 
+  -  Snacks, stocked fridge, and pantry 
+  -  Choose your own Apple equipment 
+  -  Commuter Benefits 
+  -  Flexible vacation policy; take time when you need it 
+  -  Our office is located in a beautiful loft in Chinatown near most trains 
+  -  3% cash back on all purchases with Privacy cards
+
+If this piques your interest, drop me a line: bo@privacy.com or apply via https://angel.co/privacy-com/jobs/172194-software-engineer
+
+
+$4=====ago [-]
+
+TileDB, Inc.  |  Full-Time |  REMOTE | Cambridge, USA | Athens, Greece | https://tiledb.io
+TileDB is a disruptive technology for storing and managing enormous volumes of structured data. TileDB efficiently stores data generated from variety of domains (genomics, finance, imaging, geospatial, etc) in a novel unified format as sparse or dense multidimensional arrays.  Users can efficiently access this data via a growing number of language APIs, interfaces and our upcoming web service. TileDB, Inc. has raised $4M in seed funding over the past 18 months.
+
+We are looking for frontend web developers to take ownership of the front end and help launch a scalable service to make data storage, management, and computations easier for practicing data scientists. A few features on the roadmap include designing a web admin console for advanced data management, monitoring resources in real time, integration with JupyterLab and handling user profiles and billing.
+
+We are primarily seeking:
+
+
+  - Senior UI / UX  Engineer (Javascript / Vue.js / Golang / K8s)
+
+
+* TileDB GitHub organization: https://github.com/TileDB-Inc
+* TileDB has been featured on HN: https://news.ycombinator.com/item?id=15547749
+
+* TileDB recent blog post: http://bit.ly/2SjkeYR
+
+* TileDB talk at PyData 2018: http://bit.ly/2BfbyJ3
+
+Our headquarters are located in Cambridge, MA. The candidates must be US citizens or permanent residents located in the US, or Greek citizens to be located at our subsidiary in Athens, Greece.
+Apply today at https://tiledb.workable.com !
+                      
+                  
+      
+
+
+$1=====ago [-]
+
+Gitcoin ( https://gitcoin.co ) | Software Engineer(s) - Product | Remote | https://gitcoin.co/about#jobs | https://gitcoin.co/explorer
+Gitcoin's mission is to "Grow Open Source". Gitcoin is a toolbox of Ethereum-based smart-contracts that help open source repo maintainers fund, incentivize, and manage work in Open Source Software.
+We don't have an ICO or token; We are a team of 11 funded by ConsenSys, and have distributed about $1mm to the ecosystem since launch in November 2017.
+                      
+                  
+      
+
+
+$130=====ago [-]
+
+Poynt | Palo Alto, CA | Onsite | Full Time | https://poynt.com
+We build smart payments hardware and software to enable a global open commerce platform. We're trying to bring the same kind of superpowers to merchants that the iPhone did to consumers. We've raised over $130M (including $100M from Alipay) and are growing fast after launching all over the world (https://poynt.com/press/).
+
+We're hiring all kinds of people, with special interest in Android, Node.js, server and data engineers.
+Drop me a line at c@poynt.com – let's chat!
+                      
+                  
+      
+
+
+$16=====ago [-]
+
+Trulia | SF | Full Time, On-site
+Hi, I talk a lot here about the side business I’ve built, Cronitor, but I’m also the director of Growth Engineering at Trulia.
+
+I would love to hire other product-focused maker engineers to work on growth experiments, personalization, communications and seo. If you’re a maker I can teach you over lunch anything you want to learn about how I’ve bootstrapped Cronitor over nights and weekends to $16k a month MRR.
+
+For communications work, we are using hbase, Kafka, java and data science models to only send emails we think people are likely to open.
+
+For seo, we are doing world class technical seo at the scale of 100 million pages indexed.
+
+On the front end we are building with GraphQL, NextJS and React
+Contact me Shane at Trulia.com
+                      
+                  
+      
+
+
+$1=====ago [-]
+
+4C Insights | Chicago, IL, Seattle, WA | Full-Time | Onsite
+- Full-stack (SDE): https://app.jobvite.com/j?cj=o3Zx8fwr&s=HN
+
+- Frontend (SDE): https://app.jobvite.com/j?cj=oUOG9fwh&s=HN
+
+- Backend/Data Science (SDE): https://app.jobvite.com/j?cj=oxEk9fwo&s=HN
+
+4C is a global leader in data science and media technology with solutions for multi-screen marketing. With more than $1 billion in annualized media spend running through its software-as-a-service platform, 4C offers activation on Facebook, Twitter, LinkedIn, Pinterest, Instagram, Snapchat, Amazon, and NBCUniversal as well as TV Synced Ads across display, search, social, and video.
+
+4C is building the next generation of marketing technology and data science. A little about our team: we are a full-stack team of experts in frontend, backend, product and design. We care deeply about our stack and tools, focusing on the best to get the job done. We work on hard problems of scale and performance, while making sure our users can be as successful as possible on our platform. Our stack is mainly Python and Javascript (ES6). We leverage React, Flask, Celery, Kubernetes, GraphQL, MySQL, Mongo, Redis, and other technologies to help us get the job done.
+
+Our Headquarters is in beautiful Chicago in the Loop with sweeping views of the Chicago River. In Seattle, our office is located in the heart of downtown with easy access to all things great about the Pacific Northwest (and is a dog friendly office!).
+We are looking for colleagues who are agile, creative, smart and generally amazing. 4C is committed to diversity and inclusion, and we are proud to have a team from multiple locations, cultures, and backgrounds. This is what makes 4C great. Find out more at https://www.4cinsights.com/careers/
+                      
+                  
+      
+
+
+$150 == Honeylove | Head of Marketing | REMOTE | $150k-$190k + equity
+$=====ago [-]
+
+Extreme Networks | multiple roles | Shannon, Ireland | Full Time | https://www.extremenetworks.com/company/careers/We're a young startup that has been around since ...1996! 
+We build network/wireless gear and software solutions for analytics, management and security. We're bootstrapping a new engineering base in Shannon, Ireland, to help us transform into a software company. We are a flat organization, and this operation starts with a blank slate (languages, architecture, ideas), so join the team and help us get to the mission of being a 2B$ company in 2020.
+* Software Manager - https://www.extremenetworks.com/company/careers/?p=job%2FoSbx9fwt
+
+This is the first hire at this new operation, you will be responsible for growing your team (large headcount already budgeted), nurturing innovation, help build products and provide leadership. This is one-of-a-kind opportunity.
+
+*  Software Engineers (Cloud) - multiple positions - https://www.extremenetworks.com/company/careers/?p=job%2Fos4D9fw2
+
+You'll be working on a brand new project with the aim of building a cloud-based successor of our famous network management platform. We build on serverless stack on AWS and GCP. If you have programmed in any of Go, Java, Rust, Python, JavaScript, C, C++, we would love to hear from you.
+
+* Machine Learning / Data Science Engineers - multiple positions - (link tbd, sorry)
+
+You'll be joining a brand new team of ML and Data Science engineers, that will be extending our analytics and security products. We run analytics for massive customers, both in the cloud and at the edge. Tech we use: GCP BigQuery+PubSub+Dataproc, AWS GreenGrass, both Tensorflow and PyTorch. Lots of ideas to experiments with.
+Feel free to get in touch with me directly (mail in profile) for any question.
+                      
+                  
+      
+
+
+$75=====ago [-]
+
+WinIt | Software Engineer | Flatiron, NYC | ONSITE | Full-time | Visa Available | $75k-$115k & Equity | Healthcare & Benefits | https://angel.co/winit-app/jobs/68416-software-engineer
+About Us: WinIt is the industry leader helping drivers fight their parking & traffic tickets. Our long term goal is to become a one-stop solution to assist drivers with their automotive related challenges. This includes helping drivers finding the best price on auto insurance, leasing & financing options, mechanics etc. We've bootstrapped the company and have dismissed over $10 million worth of fines.
+Our team: We are a small development team with members who take on multiple roles across the stack. We strive to always be improving our process and code bases, to use the correct tools for the tasks at hand, and to help grow our collective skills.
+
+Your Role: We’re looking for a full-stack engineer driven to solve challenging problems with a clean and maintainable approach. You will write modular, high-quality code while actively contributing to peer code reviews. You are an intelligent, passionate, and innovative developer that can formulate new ideas and execute them within an existing development environment. Ideally, you enjoy a hands on approach in determining how you and the team can develop technology to meet the company’s business needs.
+
+Skills: We’re seeking developers with full stack skills and experience. Our primary web application is written in Angular, however, we consider ourselves to be a React team. We’re developing new projects in React, and are actively transitioning our web app to React as well. We use Node.js on the backend, with MongoDB as the datastore for our primary products. We appreciate developers with an array of backend skills, but experience using Node in a backend environment is a must. Mobile experience is a plus, but we are not hiring strictly mobile devs at this time. Our applications are native Android and iOS applications, written in Java and Swift/ObjC respectively.
+Experience: Ideally you have previous startup experience, writing production level code, or experience deploying your own projects to a userbase.
+                      
+                  
+      
+
+
+$5=====|New York, NY | Full-time |We are seeking:
+Software Engineer
+Senior Software Engineer
+Android Engineer
+Senior Android Engineer
+Senior iOS Engineer
+Data Engineer
+Apply here: http://grnh.se/3rolbe1
+
+Stash is investing, simplified. With a mission to bring financial education and literacy to everyone--regardless of income--the Stash team has built an investing platform where they can "learn by doing" with as little as $5.
+
+www.stashinvest.com
+No agencies, please!
+                      
+                  
+      
+
+
+$18=====ago [-]
+
+Narmi (Techstars NYC '17)| Senior Full Stack Engineer | New York, NY (NYC) | ONSITE | https://www.narmi.com
+Narmi is helping reinvent banking in the United States. We create a more accessible and useful financial ecosystem by powering the online banking, mobile banking, and open banking APIs for the 10,000 credit unions and community banks in the United States. You'll be working on production software that has a real impact on the average American's life everyday. Our software helps them save money on their bills, understand their financial story, protect their families and move money.
+
+Narmi was founded by two Georgetown University alums who previously worked as CEO and CTO of an $18 million credit union and also at some of the largest banks in the world.
+
+Even if you don't think you are an exact fit for one of our current openings, we'd still love to talk. We are always looking for well-rounded engineers to join our team in NYC. Having expertise in python (django and django-rest-framework), vue.js, react native, ansbile, terraform, visual design/UI/UX, and/or security are all pluses!
+
+Senior Full Stack Engineer: https://angel.co/narmi/jobs/180510-senior-full-stack-enginee
+
+The interview process entails an intro call to get to know each other, a remote pair coding session, and finally an in-person half-day.
+
+Some keywords: * Senior Full Stack Engineer, Senior Full-stack Engineer, Senior Full Stack Developer, Senior Full-stack Developer * Senior Front End Engineer, Senior Front-end Engineer, Senior Front End Developer, Senior Software Engineer, Senior Product Engineer * Banking, finance, online banking, mobile banking, open banking APIs, * New York City, New York, NY, NYC, Manhattan
+
+You can learn more on our website and apply via email: jobs @ our domain. Make sure to mention you found us on Hacker News. You can also apply via AngelList[1] Also please feel free to reach out directly to me chris @ our domain.
+[1] https://angel.co/narmi/jobs
+                      
+                  
+      
+
+
+$11=====ago [-]
+
+Polarr | Everything | Sponsor Visa
+Polarr is San Jose based (remote compatible) computational photography company and we work on all kind of efficient A.I. on the edge.
+
+We're looking for iOS / Android / Web / Frontend / Backend / A.I. Researcher / A.I. Engineer as well as engineering leaders and leadership roles.
+
+We just closed a $11.5m series A led by the same investor of Twitter, Tesla, SpaceX.
+See https://www.polarr.co/careers for more details.
+                      
+                  
+      
+
+
+$100 == Early Warning | DevOps(AWS and on-prem), Big Data, Automation, Software Development, and more | Phoenix, AZ | ONSITE or REMOTE | $100k+ | FTE or CTH
+$15=====ago [-]
+
+Luma | Part-Time Assistant and Programming Mentor | New Jersey | Hourly ($15-$35) | Part-Time | Remote
+Hi!
+
+I'm looking for a part-time assitant to join my team. I am happy to help you learn programming on projects as we can, but for the most part the role will consist of you assisting me with various tasks as well as periodic reporting. Tasks can range from research I need completed to demoing software, to anything else a small business needs.
+Email: ryan at luma.im to learn more!
+                      
+                  
+      
+
+
+$60=====ago [-]
+
+bevi | Boston, MA | Full-time | ONSITE | https://www.bevi.co/
+We’re a small and fun software team looking for Senior Java Backend, JavaScript, and Android developers. Our customers love our product and you will play a crucial role in making them even happier. If you love thinking through new ideas and interactions, how to execute them in an innovative way, and have a deep respect for user experience, come join our team!
+Bevi is a Series C, hardware IoT startup that has raised over $60 million to bring customizable, healthy hydration to offices and facilities across the US and Canada. We’re on a mission is to eliminate plastic bottles by making the best drinks instantly available, using purified tap water, CO2, and natural flavors. Since our founding in 2013, we’ve saved over 60 million plastic bottles. We’re disrupting the traditional bottled beverage supply chain by bringing point-of-use beverage creation to the next level.
+Software Engineering Intern: https://bevicareers.workable.com/j/66EDAC9911
+Senior Java Backend Engineer: https://bevicareers.workable.com/j/6DF4E74A5A
+Senior Software Developer, Javascript: https://bevicareers.workable.com/j/E92F27F73E
+Senior Software Developer, Android: https://bevicareers.workable.com/j/C602628A37
+                      
+                  
+      
+
+
+$70=====ago [-]
+
+LendKey | New York or Ohio (Cincinnati) | Full-time | ONSITE | $70k - $150k+ | Software Engineer/Senior Engineer/Lead Software Engineer, Platform Engineer, Associate Product Manager/Product Manager | https://www.lendkey.com/
+Come help us build the next generation Lending as a Service platform. We're in an exciting transition phase where we need some key people to push our platform into a new and more extensible direction. LendKey is a growth-stage lending technology firm that partners with credit unions and community banks to allow them to offer some of the most borrower-friendly loans in the industry (mostly in student loan / student loan re-fi space). LendKey enables these community financial institutions to bring loans to consumers online, making the end-to-end lending process easy & simple for both borrowers and lenders. Because we're growth stage (founded in 2009, Series C) the team has the advantage of being at a stable company but still have elements of a start-up (115 employees currently). Also just named in American Banker’s ‘Best FinTechs to Work For’ based on employee feedback reflecting our culture.
+
+What we offer:
+
+• Competitive Salary
+
+• Stock options
+
+• Unlimited Vacation Policy
+
+• Flexible work environment
+
+• Startup culture
+
+• Employee events/activities
+
+• Good benefits
+
+We're looking for top tech talent in software, platform, and product areas. What we're seeking in all of these roles: Team-members who are open to learning new technologies. Brave enough to implement solutions to challenging problems. Can be hands-on but also strategic. Willing to speak your mind but kind to others when doing it. For product roles ideally consumer-facing experience, bonus for strong technical skills.
+
+We're Ruby on Rails, Linux, Docker/k8s, and adding Java and Go. We're building microservices on AWS with kubernetes, and are actively pushing towards automated deployments all the way to production.
+I'm a technical lead and will answer any questions I can. Shoot me an email at tony (dot) baron at-sign lendkey.com with resume or questions! Don't quite fit and things sound interesting? Let's see if we can work something out, anyway.
+                      
+                  
+      
+
+
+$375 == Oscar Health (hioscar.com) is a startup using technology, data & design to change the way people find and access care. We are disrupting the healthcare industry by putting people first, not business and cost. We just received $375 million from Alphabet in August - come join the family! We're currently hiring for a variety of full-time onsite roles.
+$10=====ago [-]
+
+Kabbage, Inc | Full-Stack, Backend, QA/SDET, iOS, DBA, Data Engineers | Atlanta, GA and New York City (NYC) | Full-time ONSITE | kabbage.com
+Kabbage is a leading FinTech company changing the way small businesses solve cash-flow challenges. Fully automated and deeply connected with its 160,000+ customers, Kabbage provides access to funding in minutes, extends more than $10 million every day to small businesses, and powers borrowing experiences for some of the largest companies in the world. While we've received numerous awards and recognition—such as Entrepreneur's Top Company Cultures, Inc Magazine's Top Private Companies, GlassDoor’s Best Places to Work, and Forbes FinTech 50 — it is our people, our culture, and our leaders that make Kabbage such a great place to work.
+
+Our Technology teams are growing fast and we're hiring for the following roles:
+
+* iOS Developer: https://www.kabbage.com/company/careers/job/1582281
+
+* Software Engineer: https://www.kabbage.com/company/careers/job/1475102
+
+* Senior Software Engineer: https://www.kabbage.com/company/careers/job/1488822
+
+* Software Engineering Manager: https://www.kabbage.com/company/careers/job/1593159
+
+* Software Development Engineer in Test: https://www.kabbage.com/company/careers/job/1487682
+
+* Data Platform Engineer: https://www.kabbage.com/company/careers/job/1515789
+
+* Database Administrator: https://www.kabbage.com/company/careers/job/1593607
+See all of our job postings at: https://www.kabbage.com/company/careers/
+                      
+                  
+      
+
+
+$80=====ago [-]
+
+Recursion Pharmaceuticals | SLC, Utah | Onsite, full-time | We have raised over $80M to apply machine learning to one of the most unique datasets in existence - over 12 billion images of cells under a huge number of biological and chemical perturbations, generated in our own labs - in order to find treatments for hundreds of diseases. Our long term mission is to decode biology to radically improve lives - we want to understand biology so well that we can fix most things that go wrong in our bodies. Among other awesome folks, Yoshua Bengio is one of our advisors, and helps our ML team come up with novel ways of tackling these problems.We’re looking for:
+Looking for Data Scientists both for our Innovation and Assay Development as well as Discovery and Advancement teams. You’ll work with our data, biology , high throughput screening (HTS), and engineering teams to identify and answer questions in high-dimensional data.
+Looking for a strong Data Engineer and Full-Stack Engineer. Great opportunity for experienced engineers interested in coding for a meaningful purpose (and a massive human impact) and building distributed systems, web apps and tools for biologists.
+
+* ML researcher: Looking for a highly experienced senior/principal-level machine learning researcher who wants a challenging problem, lots of rich data, and knowledge that their breakthroughs will seriously help people. No bio background needed.
+* Biologists, computational biologists, computational chemists, automation scientists, and drug discovery experts.
+http://www.recursionpharma.com/careers for more details and to apply.
+Logistics: Salt Lake City, Utah. Hiking/running/biking is literally out our back door, and it's half an hour to 6 ski resorts. Great pay, health insurance, 401k, relocation assistance (onsite is required), equity, fully-paid gym membership, complimentary chef-prepared meals, two one-week paid company closures in addition to flexible, generous vacation, 70ft rock climbing wall, commuter benefits,  a top-caliber team, and help make a massively positive impact. Happy to sponsor/extend visas, but you need to already be authorized to work in the US--we can’t handle the lottery at this stage.
+Tech: 
+Data science: pydata stack (pandas, numpy, scikit-learn, matplotlib, bokeh, tensorflow w/keras, etc), a cluster of GPUs for all your research ideas
+Software engineering: python, clojure[script], javascript, go, react.js, kafka, kubernetes (GKE), GCE, AWS
+Our team of 130 so far: http://www.recursionpharma.com/team
+                      
+                  
+      
+
+
+$120 == DataGrail | Senior / Software Engineer | San Francisco, CA | $120k - $180k + 0.25% - %1 | ONSITE DataGrail provides privacy as a service.
+$100=====ago [-]
+
+Talend - different positions (see below) | Nantes or Paris, France or Bonn, Germany | Full-time | ONSITE
+Talend is a cloud and big data integration software company with deep open-source roots. With over $100 million raised to date and continued rapid growth, Talend is one of the largest open-source companies in the world.
+
+What we offer you: Join a passionate team and work with the latest technologies (Hadoop, K8s, Terraform, AWS, GCP to name a few) A challenging but rewarding environment with international scope Top modern offices with ideal locations Regular team events and company celebrations, as well as free drinks and fruits
+1) Senior Security Architect
+STACK: Security Architecture, AWS, Java, Linux
+We are looking for a Senior Security Architect to join our Architect team. You will work closely with the Development team and the Cloud Operations team on all aspects of Software Development and SaaS Operations related security and be responsible, amongst others, for coaching on secure programming practices and related code reviews and documenting the software development lifecycle from a security standpoint. All details: https://app.jobvite.com/j?cj=okyW7fwF&s=HackerNews2) Data Security Engineer
+STACK: Python, AWS
+We are looking for a Data Security Engineer to join our growing team. In this role, you’ll be responsible for the security of our Talend Cloud service. You will work with the SRE team to develop critical frameworks that control access to production systems, encrypt sensitive data and create audit trails
+https://app.jobvite.com/j?cj=o6CD9fwe&s=HackerNews3) Senior Java Backend Developer (Suresnes/France only)
+STACK: Java 8 / 11, MongoDB, Spring, AWS
+https://app.jobvite.com/j?cj=oxIK8fwR&s=HackerNews4) Senior Product Owner ESB (Bonn/Germany or Nantes/France only)
+STACK: ESB, SOA, Web Services, Messaging tools, AWS
+https://app.jobvite.com/j?cj=oIMC7fwX&s=HackerNews5) Backend Developer Java/AWS (Nantes/France only)
+STACK: Java/Scala/Akka, Docker, AWS
+https://app.jobvite.com/j?cj=oJd28fwQ&s=HackerNews6) Fullstack Developer Java/ReactJS (Nantes/France only)
+STACK: ReactJS, Java, Webservices, AWS
+https://app.jobvite.com/j?cj=oaf28fwj&s=HackerNews
+                      
+                  
+      
+
+
+$180=====ago [-]
+
+Aquabyte | San Francisco, CA | Full Time | Backend Engineer, Deep Learning Engineer, Edge (Systems) Engineer, Full-Stack Engineer, Senior Backend Engineer || Part Time | Deep Learning Engineer (contract) | ONSITE, VISA https://jobs.lever.co/aquabyte/
+Aquabyte (https://www.aquabyte.ai, backed by NEA and Costanoa, top tier investors) is looking for software engineers with experience shipping production code.
+
+Building software for fish farms using underwater IOT cameras and analyzing fish weight with deep learning. Good for the environment and travel to Norway!
+
+Our company is based in SF with offices in Norway and code is primarily in Python, Go, and Node.js.
+
+We are one of the few companies applying machine learning / computer vision to directly solve the world’s food sustainability issues. By improving fish farm efficiency (#1 growing sector of food production, $180B globally), we help close the world’s impending protein deficit.
+
+We work on very challenging infrastructure problems in IOT and machine learning - our team represents engineering graduates from Princeton and Stanford. If interested, please apply at https://jobs.lever.co/aquabyte/
+
+Learn more about Aquabyte at https://www.aquabyte.ai. Email jobs@aquabyte.ai with any questions!
+
+We're Hiring:
+
+• Backend Engineer: https://jobs.lever.co/aquabyte/557f4987-5ed6-4aae-b8c7-b0d3011e59eb
+
+• Deep Learning Engineer: https://jobs.lever.co/aquabyte/738c2aa4-faf3-4783-bda4-d14af2199bf0
+
+• Deep Learning engineer (contract): https://jobs.lever.co/aquabyte/443839eb-8a49-42c7-b953-2a0ffbb3f2e1
+
+• Edge (Systems) Engineer: https://jobs.lever.co/aquabyte/59b53335-e773-4003-86a7-a008dd474292
+
+• Full-stack engineer: https://jobs.lever.co/aquabyte/c4fa7f35-bc53-400a-a830-4fe1bdabfa47
+
+• Senior Backend Engineer: https://jobs.lever.co/aquabyte/ce704fb7-3d7a-40b8-93e3-9d21f23cea07
+• And more: https://jobs.lever.co/aquabyte/
+                      
+                  
+      
+
+
+$135 == Expensify | Full-Stack, PHP, Java, C++, iOS, Android, and/or Infrastructure Engineer | San Francisco, Portland, Michigan, London | REMOTE, VISA welcome | Full-time | we.are.expensify.com | $135K+
+$100=====ago [-]
+
+Preferred Networks | Deep Learning Researchers & Engineers | Tokyo | ONSITE, VISA, https://www.preferred-networks.jp/en/We are a startup with ~200 members based in Tokyo, focusing on developing technology for Autonomous Driving, Robotics, and Bio-Healthcare. We love open source and are actively developing CuPy and the deep learning framework Chainer: https://github.com/cupy/cupy
+https://github.com/chainer/chainer
+Recently, we unveiled a personal robot system at CEATEC Japan 2018, exhibiting fully-autonomous tidying-up robots. https://www.preferred-networks.jp/en/news/pr20181015We have one of the world’s largest private GPU clusters, with 1024 NVIDIA Tesla P100 and 512 V100 32Gb GPUs, and we are expanding it further with 1,024 NVIDIA V100 Tensor Core GPUs in July (https://www.preferred-networks.jp/en/news/pr20190318), and using our own custom DL chip MN-Core in 2020: https://www.preferred-networks.jp/en/news/pr20181212. Using our cluster we achieved the world record at that time of training on ImageNet in 15 minutes: https://www.preferred-networks.jp/en/news/pr20171110 
+Recently, we got the 2nd prize out of 454 teams in the Google AI Open Images - Object Detection Track challenge on Kaggle: https://www.preferred-networks.jp/en/news/pr20180907
+We have a strong emphasis on research, and our technical advisors are Pieter Abbeel (UC Berkeley), Takeo Igarashi (the University of Tokyo) and Kenji Fukumizu (the Institute of Statistical Mathematics). We continuously publish at top conferences like ICRA, ICCV, CVPR, ICLR, ICML, NIPS, NAACL, CHI, UIST, etc. Learn more about our research activities here: https://www.preferred-networks.jp/en/activities
+
+So far we have raised over $100 million from Toyota, FANUC, Hakuhodo DYHD, Hitachi, Mizuho Bank, Mitsui & Co, Chugai Pharmaceutical and Tokyo Electron.
+We have a western-style working environment with attractive salaries and benefits in the heart of Tokyo. Ability to communicate in either English or Japanese is OK.
+We are looking for talented individuals with skills in various areas related to cutting-edge deep learning applications in many industries. Find out more, and apply for all positions here: https://www.preferred-networks.jp/en/jobs
+                      
+                  
+      
+
+
+$17=====ago [-]
+
+Chargefox | Melbourne, AU | Mid to senior software engineer | ONSITE | https://www.linkedin.com/jobs/view/1196426058
+Full time opportunity for a full-stack developer with expertise in React Native.
+
+ABOUT CHARGEFOX
+
+Chargefox is committed to sustainable mobility. We're Australia's largest open, electric vehicle (EV) network for modern EV's. As part of that, Chargefox raised $17 million to build a network of ultra-rapid chargers to connect major cities across the country, but that's only a fraction of what we do. We have an unwavering focus on simplifying the EV charging experience for everyone - be they drivers, fleet managers, charge station owners, car manufacturers, energy retailers or more.
+
+Our customers can find, use and pay for electric vehicle charging using their mobile. We’re continually adding new stations to the Chargefox network. So far we've processed over 20,000 charging sessions on more than 500 plugs across Australia and New Zealand, dispensing a total of over 165MWh of electricity. That's enough electricity to power the average household for two decades, and we're still growing fast. We're excited!
+
+Our apps are built in React Native, and we're looking for someone to join the team to help. Values really matter (really!), so we’re looking for someone who’s a great fit for these - (Customer Focus, Sustainability, Safety, Transparency, Integrity and Collaboration).
+
+WHO WE'RE LOOKING FOR
+We're looking for someone with a deep expertise in React Native (experts in React or Android/iOS will be considered as well) who will be able to provide both technical leadership for the team and to also deliver features. At the same time you will be working and contributing on a variety of tasks including development and support of Ruby APIs, web applications and AWS infrastructure.
+Remember our value on Customer Focus above? We want to see empathy for the driver and their experience along the way too.
+We expect you to know how to build scalable and well architected software solutions. We're looking for engineers, rather than coders. At Chargefox, we are big believers in a pragmatic and agile approach to software development. You will be participating in team rituals including stand-ups, retrospectives, occasional pair-programming and on-call support. We are based in Melbourne, so you will be working in our office in the CBD.
+SO, WHY US?
+A chance to join a growing and dynamic start-up enabling the uptake of electric vehicles in Australia. This is a unique opportunity to be an integral part of something that is of true value to society.
+We are fully funded and offer a competitive salary package.
+A collaborative and supportive environment that will stretch you, but give you a chance to learn from and teach others.
+We'll supply you with a new company laptop (if you need one).
+If you think that we sound like a great place to work and you fit the bill, then please get in touch and send through your details.
+We look forward to hearing from you.
+                      
+                  
+      
+
+
+$120=====ago [-]
+
+Synthetic Minds (YC S18) | SF + Seattle | $120k+ | Engineer #5: commensurate equity | ONSITE, Full Time
+The ideal candidate has a master/phd in systems, compilers, programming languages, or distributed systems. Synthetic Minds will allow you to leverage your technical chops.
+
+Synthetic Minds is building program synthesizers, i.e., automation that can write code. We have a system in production that reads/writes smart contracts in Ethereum's Solidity language, and we use it to ensure our customer's code is secure and correct. Eventually, we plan on going far beyond smart contracts. Think of what we are building as a compiler that takes code and translates it to theorem proving, so that we can build automation that can understand code almost as close to a human. If it can understand code, with sufficient compute it can even synthesize it.
+
+In Oct 2018, we raised a $5.6M seed round from Y Combinator, Khosla Ventures and Pantera Capital [3]. We have paying customers and a backlog waiting to be on-boarded. This is the founder’s second startup and they have a PhD in the area. The 1st employee was the first hire at Parse (YC S11) and has 10 yrs at Google. We are currently hiring engineer #5, and aim to be a 15 person all-engineering team in 2019.
+
+Roles/Openings [1]:
+
+* Systems/infrastructure engineer — You’ll be working on distributing heavy CPU processes on AWS. Making sure processes run reliably over many days. Ensure robustness of the infrastructure across node/process/memory/algorithm failures.
+
+* Compilers/verification/synthesis engineer — You’ll be working on developing new algorithms that analyze and generate code [2]. You’ll identify when an engineering solution is needed (i.e., throw across a cluster of machines), or when an algorithmic improvement is required. You might even play with the Z3 theorem prover. And if you’re really into it, you can improve Z3.
+
+* Smart contract engineer — You'll be working on the front-end of the compiler, which reads in smart contracts languages (e.g., Solidity) and makes it accessible to the backend (the part that does semantic analysis).
+
+Contact: saurabhs@synthetic-minds.com - Saurabh, Founder
+
+[1] Synthetic Minds Jobs: https://synthetic-minds.com/pages/jobs.html
+
+[2] Program synthesis: https://medium.com/@vidiborskiy/software-writes-software-program-synthesis-101-294a9a35177
+[3] Forbes funding article: https://www.forbes.com/sites/darrynpollock/2018/10/22/investment-boost-for-synthetic-minds-helps-build-automated-smarter-smart-contracts/#72f772f92a63
+                      
+                  
+      
+
+
+$15=====ago [-]
+
+Billtrust | Lawrenceville, NJ / Denver, CO / Woodbridge, NJ | Onsite | https://www.billtrust.com
+Billtrust helps businesses accelerate invoice-to-cash. We provide a flexible, automated, cloud-based product portfolio that speeds cash application through tailored invoice delivery, secure multi-channel payment enablement, and intelligent matching and payment posting. Backed by Goldman Sachs, Riverwood Capital & Bain Capital, our platforms process $15B+ annually and help companies like Kraft Foods, New Balance Athletics, and Ferguson Enterprises get paid faster and more efficiently.
+
+To learn more about who we are, our engineering culture, and whether this is the right place for you, read our Key Values profile: https://www.keyvalues.com/billtrust
+
+Our open positions:
+
+* Test Automation Engineer: https://careers-billtrust.icims.com/jobs/2048/test-automation-engineer/job
+
+* Associate Data Engineer: https://careers-billtrust.icims.com/jobs/2043/associate-data-engineer/job
+
+* Senior Software Developer: https://careers-billtrust.icims.com/jobs/2054/senior-software-developer/job
+
+* Director, Product: https://careers-billtrust.icims.com/jobs/2075/director%2c-product/job
+
+Tech Stack: Across our product portfolio we leverage a variety of languages, frameworks and tooling. Much of code is written in C#/.NET Core 2.x along with handful of other languages such as C++, PHP, Node.js and Java. For frontend, Angular 6+ on the newer products, and a few mature products leveraging Javascript and JQuery. Many databases to store our 200TB+ of production data including MySQL, SQL Server, MongoDB, DynamoDB & RDS.
+
+We have some monolithic applications though new products & platforms are built using microservices running Docker containers on AWS ECS with some footprint in Azure. We leverage many AWS services – Lambda, CloudWatch, S3, EC2, Route53, IAM, SQS, SNS and more. We also use Terraform for configuring infrastructure, Jenkins for CI, and Git/GitLab for source code. These are flexible (they can and will change) and what a candidate knows for stack is not as important as their ability to think creatively – we can train languages, it’s much harder to train curiosity and intellectual drive.
+Apply or reach out directly to Marc Spiron (Lead Talent Acquisition Partner) at mspiron@billtrust.com.
+                      
+                  
+      
+
