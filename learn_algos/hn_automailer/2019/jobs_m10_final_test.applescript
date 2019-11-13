@@ -7,7 +7,7 @@ tell application "Mail"
 
 I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
 I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
-I have previous experience with java, web, javascript, aws, devops, opensource and saw them in your post.
+I have previous experience with web, backend, sql, go, zookeeper, elk, docker, devops and saw them in your post.
  
 I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. 
 I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. 

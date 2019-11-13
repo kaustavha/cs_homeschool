@@ -741,23 +741,6 @@ Apply here: https://ought.org/careers/engineering-lead
       
 
 
-$3=====ago [-]
-
-Elementus | Data Scientist | New York | Full-time | Onsite | https://elementus.io
-Elementus is the universal blockchain query engine. We develop tools for financial institutions, law enforcement, and regulators to help them see past the raw blockchain data and understand the social and economic interactions taking place on-chain.
-
-We are hiring for a creative, curious data scientist who is comfortable in rapidly changing, highly ambiguous environments. The role will involve developing new methods and algorithms to extract insights from on-chain data (bitcoin, ethereum, and others).
-
-We use Nodejs, C++, Python. Some background in graph theory, blockchain tech is a plus, but not required.
-
-We recently closed a $3.5m seed round that included Morgan Creek, Fidelity, and Stage 1.
-If this sounds interesting, we'd love to chat. Please contact me at max at elementus.io.
-                      
-                      reply
-                  
-      
-
-
 $51=====ago [-]
 
 Superhuman | Fullstack Engineer | San Francisco & Vancouver | Full-time |
@@ -779,6 +762,23 @@ You can apply here https://superhuman.com/roles?gh_jid=260350 or shoot me questi
 
 – Conrad
 PS: Check out our blog https://blog.superhuman.com/
+                      
+                      reply
+                  
+      
+
+
+$3=====ago [-]
+
+Elementus | Data Scientist | New York | Full-time | Onsite | https://elementus.io
+Elementus is the universal blockchain query engine. We develop tools for financial institutions, law enforcement, and regulators to help them see past the raw blockchain data and understand the social and economic interactions taking place on-chain.
+
+We are hiring for a creative, curious data scientist who is comfortable in rapidly changing, highly ambiguous environments. The role will involve developing new methods and algorithms to extract insights from on-chain data (bitcoin, ethereum, and others).
+
+We use Nodejs, C++, Python. Some background in graph theory, blockchain tech is a plus, but not required.
+
+We recently closed a $3.5m seed round that included Morgan Creek, Fidelity, and Stage 1.
+If this sounds interesting, we'd love to chat. Please contact me at max at elementus.io.
                       
                       reply
                   

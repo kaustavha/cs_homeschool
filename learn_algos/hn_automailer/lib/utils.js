@@ -65,11 +65,19 @@ function isRemote(blk, debug, torontoAndRemoteOnly, includeCanada, includeusa) {
     return false;
 }
 
+// check if 2 arrs have matching elements
+function matchArrs(a1, a2) {
+    for (var i = 0; i < a1.length; i++) {
+        if (a2.indexOf(a1[i]) > -1) return true;
+    }
+    return false;
+}
 
 module.exports = {
     genRandDelay: genRandDelay,
     getIsRemoteParser: getIsRemoteParser,
     dedupeArr: dedupeArr,
     isRemote: isRemote,
-    grabSalary: grabSalary
+    grabSalary: grabSalary,
+    matchArrs: matchArrs
 }

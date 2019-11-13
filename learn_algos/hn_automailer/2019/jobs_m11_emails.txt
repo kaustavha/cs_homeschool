@@ -31,12 +31,12 @@ harsh.v@browserstack.com
 matt@culturebiosciences.com
 luca.bonmassar@coinbase.com
 cmcaboy@datechnologies.co
-edingley@lyft.com
 andrew_mulhern@cable.comcast.com
-rachelle@girlfriend.ly
+edingley@lyft.com
 max@lateral.io
 wotto+hackernews@predictiveindex.com
 jonchui@gloo.us
+rachelle@girlfriend.ly
 amandeep.shergill@lendable.co.uk
 savio@workpath.com
 pauline@dathuis.nl
@@ -46,8 +46,8 @@ pedro.tabio@stridehealth.com
 ahurst@synopsys.com
 shehrina.kamal@dhl.com
 sfleming@attentivemobile.com
-talent+aus@octoenergy.com
 careers@feedforwardai.com
+talent+aus@octoenergy.com
 angeline@fivetran.com
 ritchie.tendencia@mixpanel.com
 cv@hexagonalconsulting.com
@@ -82,8 +82,8 @@ yan-yin.choy@servicenow.com
 jobs@bluecanvas.io
 hello@motionarray.com
 careers@skytap.com
-jan.bernhart@adyen.com
 hacker-news-referrals@freenome.com
+jan.bernhart@adyen.com
 wassaf.farooqi@manifold.ai
 neil@loaneco.net
 jobs-researcher@redballoonsecurity.com,jobs-software@redballoonsecurity.com,jobs-business@redballoonsecurity.com,jobs-sdet@redballoonsecurity.com

@@ -14,11 +14,12 @@ let postUrlIds = [
 	'21419536'
 ]
 let genStatsOverYear = () => {
-	for (let i = 1; i <= postUrlIds.length; i++) {
+	for (let i = 0; i < postUrlIds.length; i++) {
 		let hnurlid = postUrlIds[i];
-		console.log("current month: " + i);
+		let curMonth = i + 1;
+		console.log("current month: " + curMonth);
 		console.log('current hn url id: ', hnurlid);
-		let child = execSync(`node main.js ${hnurlid} ${i}`, { encoding: 'utf8' });
+		let child = execSync(`node main.js ${hnurlid} ${curMonth}`, { encoding: 'utf8' });
 		console.log(child);
 	}
 }

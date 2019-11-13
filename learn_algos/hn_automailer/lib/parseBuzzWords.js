@@ -1,6 +1,8 @@
-const { dedupeArr } = require('./utils');
+const { dedupeArr, matchArrs } = require('./utils');
 
 module.exports = function parseBuzzwords(txt) {
+    let keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi); // returns an array of keywords
+
     let keywords = [
         "python", "ruby", "java", "c++", "lua", "bash", "shell", "scripting",
         "mongo", "mongodb", "mysql", "sql", "hadoop", "hive",
@@ -43,5 +45,9 @@ module.exports = function parseBuzzwords(txt) {
 
     // match open source
     if (txt.match(/open source/gi)) out.push('opensource');
+
+    if (matchArrs(out, keth)) out.push('blockchain')
+
+
     return dedupeArr(out);
 }

@@ -21,14 +21,6 @@
  *  -- jobs where we managed to parse a salary
  * - Running the applescript will automatically send out emails to everyone specified
  */
-const fs = require('fs');
-
-const { getAppleScriptGenerator, getApplescriptSeriesGenerator } = require('./lib/generate_applescript');
-const getEmailParser = require('./lib/parseEmailFromBlock');
-const isBLCo = require('./lib/isBreakoutList');
-const parseBuzzwords = require('./lib/parseBuzzWords');
-const { getIsRemoteParser, grabSalary } = require('./lib/utils')
-const Scraper = require('./lib/scraper');
 
 // Used by statgen - cli flags
 let argHnUrlId, genStats, curMonth;
@@ -47,20 +39,28 @@ const remoteOnly = false; // only pull in remote jobs + foll. flags
 const torontoAndRemoteOnly = false; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
 const includeusa = true; // same as above but city keywords for the states
-const fetchFromHN = false; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
+const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
 const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
 
-let stats = {
-	py: 0,
-	js: 0,
-	eth: 0
-}
+// Dependencies
+const fs = require('fs');
+
+const { getAppleScriptGenerator, getApplescriptSeriesGenerator } = require('./lib/generate_applescript');
+const getEmailParser = require('./lib/parseEmailFromBlock');
+const isBLCo = require('./lib/isBreakoutList');
+const parseBuzzwords = require('./lib/parseBuzzWords');
+const { getIsRemoteParser, grabSalary } = require('./lib/utils')
+const Scraper = require('./lib/scraper');
+const getStatGenerator = require('./lib/getStats');
+
 
 // Dates for creating filenames
 const date = new Date(),
 	month = curMonth ? curMonth : date.getMonth() + 1,
 	yr = date.getFullYear();
 
+
+// FS names
 const jobsList = `${yr}/jobs_m${month}`,
 	jobsListfs = jobsList + '.txt',
 	// jobsListfs = '2018/jobstest.txt',
@@ -73,6 +73,7 @@ const jobsList = `${yr}/jobs_m${month}`,
 	remoteFs = jobsList + '_remotes.txt',
 	remoteJobsRejectsFs = jobsList + '_remotes_rejects.txt',
 	breakoutListFs = jobsList + '_breakoutList.txt';
+
 
 // Delay min max for applescript
 let oneMin = 60,
@@ -99,7 +100,7 @@ let block = false,
 	postername,
 	matcheskeywords = 0;
 
-const { scraper, parseEmailFromBlock, genAS, genAsAll, isRemote } = setup();
+const { scraper, parseEmailFromBlock, genAS, genAsAll, isRemote, stats, setStats } = setup();
 start();
 
 
@@ -157,11 +158,13 @@ function setup() {
 		sentEmails = [];
 	}
 
+	const { stats, setStats } = getStatGenerator();
+
 	const genAS = getAppleScriptGenerator({
 		month: month,
-		yr: yr,
-		stats: stats
+		yr: yr
 	});
+
 
 	return {
 		scraper: new Scraper({
@@ -175,7 +178,6 @@ function setup() {
 			emails: emails,
 			sentEmails: sentEmails
 		}),
-		genAS: genAS,
 		genAsAll: getApplescriptSeriesGenerator({
 			genAS: genAS,
 			minDelay: minDelay,
@@ -186,7 +188,10 @@ function setup() {
 			includeCanada: includeCanada,
 			includeusa: includeusa,
 			debug: debug
-		})
+		}),
+		genAS: genAS,
+		stats: stats,
+		setStats: setStats
 	}
 }
 
@@ -209,8 +214,7 @@ function populateBlocks() {
 
 				if (genStats) {
 					// how many jobs w/ matching keywords
-					if (keywords.indexOf('python') > -1) stats.py++;
-					if (keywords.indexOf('javascript') > -1) stats.js++;
+					setStats(keywords)
 				}
 
 				// prioritize jobs that list salary

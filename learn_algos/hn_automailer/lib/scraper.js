@@ -1,6 +1,8 @@
 const https = require('https');
 const fs = require('fs');
 const jsdom = require('jsdom');
+
+// @ts-ignore
 $ = require('jquery')(new jsdom.JSDOM().window);
 
 module.exports = class Scraper {

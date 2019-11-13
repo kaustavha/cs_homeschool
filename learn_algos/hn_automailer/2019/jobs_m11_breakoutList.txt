@@ -61,7 +61,7 @@ Apply here: https://consensys.net/open-roles/?discipline=61666
       
 
 
- | len: 1054 | ethereum,opensource remote: true no email | Breakoutlist company!! true
+ | len: 1054 | ethereum,opensource,blockchain remote: true no email | Breakoutlist company!! true
 ,ago [-]
 
 Stevens Capital Management LP | https://www.scm-lp.com | Developer | Philadelphia, PA | ONSITE | Full-time | VISA

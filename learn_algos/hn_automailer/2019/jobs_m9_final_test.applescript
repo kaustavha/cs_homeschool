@@ -7,7 +7,7 @@ tell application "Mail"
 
 I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  
 I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. 
-I have previous experience with go, java, backend, devops and saw them in your post.
+I have previous experience with opensource and saw them in your post.
  
 I've been in the blockchain space since 2013 and received a full scholarship to attend Devcon in 2018 from the Ethereum Foundation. 
 I've also helped organize and run workshops at ethereum developer meetups at UWaterloo and worked on hyperledger projects and patents within IBM. 
@@ -24,7 +24,7 @@ Do you think I'd be a good fit for any open roles you have?
 Thank you, 
 Kaustav Haldar 
 "
-		set subject to "SE opportunities[HN Who's Hiring 6/2019]"
+		set subject to "SE opportunities[HN Who's Hiring 9/2019]"
 		set sender to "kaustav haldar <hi@kaustav.me>"
 	end tell
 	send newMessage

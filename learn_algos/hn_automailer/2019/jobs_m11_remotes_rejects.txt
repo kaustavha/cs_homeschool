@@ -172,7 +172,7 @@ Apply here: https://consensys.net/open-roles/?discipline=61666
       
 
 
- | len: 1054 | ethereum,opensource remote: true no email | Breakoutlist company!! true
+ | len: 1054 | ethereum,opensource,blockchain remote: true no email | Breakoutlist company!! true
 
 ago [-]
 
@@ -2086,35 +2086,6 @@ Hiring:
 
 ago [-]
 
-dnsfilter.com| remote, full-time | https://dnsfilter.breezy.hr/p/9cf550668503-devops-engineer  | 
-Are you a  looking for a  to take a ride on as a DevOps Engineer?
-If this is you, you might be interested in the opportunity to join DNSFilter!
-
-DNSFilter (a TechStars 2018 company) is a fast-growing SaaS startup with over 1700+ customers and is cash-flow positive. We are a proven product in a proven market.
-
-Typical responsibilities will include:
-- Work closely with our CTO 
-- Perform OS/kernel upgrades on Ubuntu 16.04/18.04 and CoreOS virtual and dedicated instances.
-- Maintain Production, Development, Staging, QA environments, including some Windows instances for debugging.
-- Document DevOps processes and state - in infrastructure as code, with commits to github where possible.
-- Assist QA and developers 
-- Increase the resiliency of services by developing master/slave and load balanced solutions.
-- Further enhance monitoring of servers and services, the performance of services.What we're looking for:
-- 3+ Years of DevOps or Linux server administration 
-  experience
-- 1+ Years of Experience with Docker Containers and 
-  Ansible
-- 3+ Years of Experience with LinuxGet more unique information about your rocket start  at DNSFilter !
-                      
-                      reply
-                  
-      
-
-
- | len: 1335 | devops,linux,docker,ansible remote: true no email | Not blco 
-
-ago [-]
-
 Stacker | FULL-TIME | REMOTE ONLY (limited to Europe!) .
 We're on a mission to let anyone create software, by building a platform to let you build apps without code.
 
@@ -2158,6 +2129,35 @@ Apply at https://stacker.app/hiring . Again, hiring within Europe, and as always
 
 ago [-]
 
+dnsfilter.com| remote, full-time | https://dnsfilter.breezy.hr/p/9cf550668503-devops-engineer  | 
+Are you a  looking for a  to take a ride on as a DevOps Engineer?
+If this is you, you might be interested in the opportunity to join DNSFilter!
+
+DNSFilter (a TechStars 2018 company) is a fast-growing SaaS startup with over 1700+ customers and is cash-flow positive. We are a proven product in a proven market.
+
+Typical responsibilities will include:
+- Work closely with our CTO 
+- Perform OS/kernel upgrades on Ubuntu 16.04/18.04 and CoreOS virtual and dedicated instances.
+- Maintain Production, Development, Staging, QA environments, including some Windows instances for debugging.
+- Document DevOps processes and state - in infrastructure as code, with commits to github where possible.
+- Assist QA and developers 
+- Increase the resiliency of services by developing master/slave and load balanced solutions.
+- Further enhance monitoring of servers and services, the performance of services.What we're looking for:
+- 3+ Years of DevOps or Linux server administration 
+  experience
+- 1+ Years of Experience with Docker Containers and 
+  Ansible
+- 3+ Years of Experience with LinuxGet more unique information about your rocket start  at DNSFilter !
+                      
+                      reply
+                  
+      
+
+
+ | len: 1335 | devops,linux,docker,ansible remote: true no email | Not blco 
+
+ago [-]
+
 IOHK | Scala Developer | Remote | Full-time | https://iohk.io
 We are a fully remote company working mainly on blockchain and cryptocurrencies, we have lots of researchers and have a formal methods team, our main programming languages are Haskell, Scala, and Rust, this position is Scala specific.
 
@@ -2182,7 +2182,7 @@ We don't have an ICO or token; We are a team of 13 funded by ConsenSys, and have
       
 
 
- | len: 558 | ethereum,opensource remote: true no email | Not blco 
+ | len: 558 | ethereum,opensource,blockchain remote: true no email | Not blco 
 
 ago [-]
 
