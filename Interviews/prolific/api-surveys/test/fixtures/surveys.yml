@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  survey_name: MyString
+  available_places: 1
+  user: one
+
+two:
+  survey_name: MyString
+  available_places: 1
+  user: two
