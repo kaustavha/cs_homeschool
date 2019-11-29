@@ -1,21 +1,28 @@
 class SurveysController < ApplicationController
-  before_action :set_survey, only: [:show, :update, :destroy]
+  before_action only: [:show, :index, :create]
 
   # GET /surveys
   def index
-    @surveys = Survey.all
+    if (params.has_key?(:user_id))
+      set_user
+      @surveys = @user.surveys
+    else
+      @surveys = Survey.all
+    end
 
     render json: @surveys
   end
 
   # GET /surveys/1
   def show
+    set_survey
     render json: @survey
   end
 
   # POST /surveys
   def create
-    @survey = Survey.new(survey_params)
+    set_user
+    @survey = @user.surveys.build(survey_params)
 
     if @survey.save
       render json: @survey, status: :created, location: @survey
@@ -39,13 +46,18 @@ class SurveysController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_survey
-      @survey = Survey.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def survey_params
-      params.require(:survey).permit(:survey_name, :available_places, :user_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_survey
+    @survey = Survey.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def survey_params
+    params.permit(:survey_name, :available_places, :user_id)
+  end
+
+  def set_user
+    @user = User.where(id: params[:user_id]).first_or_create!(id: params[:user_id])
+  end
 end
