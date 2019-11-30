@@ -10,7 +10,7 @@ class SurveysController < ApplicationController
       @surveys = Survey.all
     end
 
-    render json: @surveys
+    json_response @surveys, :ok
   end
 
   # GET /surveys/1
@@ -22,13 +22,14 @@ class SurveysController < ApplicationController
   # POST /surveys
   def create
     set_user
-    @survey = @user.surveys.build(survey_params)
 
-    if @survey.save
-      render json: @survey, status: :created, location: @survey
-    else
-      render json: @survey.errors, status: :unprocessable_entity
+    if survey_params[:user_id].nil? || survey_params[:available_places].nil? || survey_params[:survey_name].nil?
+      json_response nil, :unprocessable_entity
+      return
     end
+
+    @survey = @user.surveys.create!(survey_params)
+    json_response @survey, :created
   end
 
   # PATCH/PUT /surveys/1

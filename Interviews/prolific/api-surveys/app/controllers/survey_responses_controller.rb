@@ -36,14 +36,11 @@ class SurveyResponsesController < ApplicationController
     if (@survey.available_places > 0)
       @survey.available_places -= 1
       @survey_response = @survey.survey_responses.create!(survey_response_params)
-      if @survey.save
-        json_response @survey_response, :created
-      else
-        json_response @survey.errors, :unprocessable_entity
-      end
-    else
-      json_response nil, :not_acceptable
+      @survey.save!
+      json_response @survey_response, :created
+      return
     end
+    json_response nil, :not_acceptable
   end
 
   # PATCH/PUT /survey_responses/1
