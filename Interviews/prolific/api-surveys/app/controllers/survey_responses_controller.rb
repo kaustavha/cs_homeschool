@@ -20,7 +20,7 @@ class SurveyResponsesController < ApplicationController
       @survey_responses = SurveyResponse.all
     end
 
-    render json: @survey_responses
+    json_response @survey_responses, :ok
   end
 
   # GET /survey_responses/1
@@ -37,12 +37,12 @@ class SurveyResponsesController < ApplicationController
       @survey.available_places -= 1
       @survey_response = @survey.survey_responses.create!(survey_response_params)
       if @survey.save
-        render json: @survey_response, status: :created, location: @survey_response
+        json_response @survey_response, :created
       else
-        render json: @survey.errors, status: :unprocessable_entity
+        json_response @survey.errors, :unprocessable_entity
       end
     else
-      render json: @survey, status: :unprocessable_entity
+      json_response nil, :not_acceptable
     end
   end
 
@@ -64,7 +64,7 @@ class SurveyResponsesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_survey_response
-    @survey_response = SurveyResponse.find!(params[:id])
+    @survey_response = SurveyResponse.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
@@ -77,6 +77,6 @@ class SurveyResponsesController < ApplicationController
   end
 
   def set_user
-    @user = User.where(id: params[:user_id]).first_or_create(id: params[:user_id])
+    @user = User.where(id: params[:user_id]).first_or_create!(id: params[:user_id])
   end
 end
