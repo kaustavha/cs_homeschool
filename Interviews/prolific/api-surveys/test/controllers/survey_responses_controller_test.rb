@@ -20,11 +20,11 @@ class SurveyResponsesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create survey_response till out of space" do
     assert_difference("SurveyResponse.count") do
-      post surve
+      post survey_responses_url, params: { survey_id: @survey_response.survey_id, user_id: @survey_response.user_id }, as: :json
       post survey_responses_url, params: { survey_id: @survey_response.survey_id, user_id: @survey_response.user_id }, as: :json
     end
 
-    assert_response 201
+    assert_response 406
   end
 
   test "should show survey_response" do
