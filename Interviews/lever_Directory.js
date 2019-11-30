@@ -99,24 +99,17 @@ Directory.prototype.resolve = function (path) {
     let parts = path.split('/');
     let curPart = parts.shift();
 
-    if (curPart === '.') {
-        return this;
-    }
-
-    // handle parent
-    if (curPart === '..') {
-        if (!this.parent) return fileNotFounderr;
-        return this.parent;
-    }
-
     if (parts.length === 0) {
+        if (curPart === '..' && this.parent) return this.parent;
+        if (curPart === '.') return this;
         if (this.directories[curPart]) return this.directories[curPart];
         if (this.files[curPart]) return this.files[curPart];
-
         return fileNotFounderr;
     }
 
-    if (this.directories[curPart]) {
+    if (curPart === '..' && this.parent) {
+        return this.parent.resolve(parts.join('/'))
+    } else if (this.directories[curPart] || curPart === '.') {
         return this.directories[curPart].resolve(parts.join('/'))
     }
 
