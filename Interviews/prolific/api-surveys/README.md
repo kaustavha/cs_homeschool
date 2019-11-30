@@ -51,7 +51,7 @@ Below are some examples using curl based on the requirements document.
 - List all surveys  
   `curl localhost:3000/surveys`
 - Create a new survey  
-  `curl -X POST -d="&survey_name=A&user_id=1&available_places=5" /surveys `
+  `curl -X POST -d="&survey_name=C&user_id=3&available_places=5" localhost:3000/surveys `
 - Create a new survey response  
   `curl -X POST -d="&user_id=2&survey_id=1" localhost:3000/survey_responses`
 - List all surveys belonging to a user  
@@ -64,6 +64,10 @@ Below are some examples using curl based on the requirements document.
 Returned results from `/surveys` will have the survey_id marked as id.  
 Results from `/survey_responses` have the response id marked by id.  
 Both endpoints will return the creation, update times.  
+
+# Demo
+
+![Demo gif](./prolific.gif)
 
 # Arch
 
