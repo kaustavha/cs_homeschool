@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2019_11_29_181225) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "survey_responses", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "survey_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "survey_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["survey_id"], name: "index_survey_responses_on_survey_id"
@@ -24,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_11_29_181225) do
   create_table "surveys", force: :cascade do |t|
     t.string "survey_name"
     t.integer "available_places"
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_surveys_on_user_id"
