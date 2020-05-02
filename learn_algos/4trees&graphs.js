@@ -116,7 +116,7 @@ class Graph {
 	findAPVia_findBridges(set) {
 		let aps = [];
 		const neighbours = (at) => this.graph[at].length;
-		const postDfsCB = (at, to, low, ids) => (low[to] >= ids[at] && neighbours(at) > 1) ? aps.push(at) : console.log(at, to, low, ids);
+		const postDfsCB = (at, to, low, ids) => (low[to] >= ids[at] && neighbours(at) > 1) ? aps.push(at) : console.log('fap',at, to, low, ids);
 		this.findBridges(set, postDfsCB);
 		return aps;
 	}
