@@ -4,16 +4,19 @@ module.exports = function parseBuzzwords(txt) {
     let keth = "blockchain ethereum hyperledger solidity truffle".match(/[a-z]+/gi); // returns an array of keywords
 
     let keywords = [
-        "python", "ruby", "java", "c++", "lua", "bash", "shell", "scripting",
+        "python", "ruby", "java", "scala", "c++", "lua", "bash", "shell", "scripting", "c#",
         "mongo", "mongodb", "mysql", "sql", "hadoop", "hive",
-        "kafka", "grafana", "zookeeper",
+        "kafka", "sidekiq",
+        "grafana", "datadog",
+        "zookeeper", "terraform",
         "chef", "ansible", "travis", "jenkins", "kubernetes",
         "rails", "coffeescript",
         "bootstrap", "nodejs",
-        "blockchain", "ethereum", "solidity", "hyperledger",
+        "blockchain", "ethereum", "solidity", "hyperledger", "defi",
         "redis", "node", "php", "rails",
         "backend", "web", "mobile", "REST", "cassandra", "frontend", "fullstack",
-        "linux", "nginx", "apache", "open source"
+        "linux", "nginx", "apache", "open source",
+        "databricks", "jupyter", "airflow", "mlflow", "tensorflow", "fast.ai", "spark"
     ];
 
     let keywordsMap = {
@@ -25,7 +28,7 @@ module.exports = function parseBuzzwords(txt) {
         'frontend': ['front-end', 'frontend'],
         'go': ['golang', 'go'],
         'elk': ['kibana', 'logstash', 'elasticsearch'],
-        'devops': ['devops', 'chef', 'ansible', 'travis', 'jenkins', 'kubernetes', 'docker', 'terraform', 'kubernetes']
+        'devops': ['devops', 'chef', 'ansible', 'travis', 'jenkins', 'kubernetes', 'docker', 'terraform', 'kubernetes', 'circleci', 'circle-ci']
     }
 
     let words = txt.replace('-', '').match(/[a-z]+/gi),

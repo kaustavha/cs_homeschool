@@ -31,6 +31,8 @@
   * # or
   * 
   * node main.js <hn job url num> <month>
+  * 
+  * # then run the applescript
   * ```
 */
 
@@ -45,14 +47,15 @@ if (myArgs.length > 0) {
 }
 
 // manual inputs and flags that affect each run
-const hnurlid = argHnUrlId ? argHnUrlId : '21419536'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = argHnUrlId ? argHnUrlId : '25266288'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
-const remoteOnly = false; // only pull in remote jobs + foll. flags
-const torontoAndRemoteOnly = false; // strict mode
+const remoteOnly = true; // only pull in remote jobs + foll. flags
+const torontoAndRemoteOnly = true; // strict mode
 const includeCanada = true; // needs the above flag to be true, also adds in jobs in canada
-const includeusa = true; // same as above but city keywords for the states
+const includeusa = false; // same as above but city keywords for the states
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
-const keywordMatchOnly = false; // Only write applescript emails for jobs where we have keyword matches
+const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
+const validateEmails = false; // Use the deep-email-validator dep to validate emails
 
 // Dependencies
 const fs = require('fs');
@@ -64,6 +67,7 @@ const parseBuzzwords = require('./lib/parseBuzzWords');
 const { getIsRemoteParser, grabSalary } = require('./lib/utils')
 const Scraper = require('./lib/scraper');
 const getStatGenerator = require('./lib/getStats');
+const stripInvalidEmails  = require('./lib/validateEmail');
 
 
 // Dates for creating filenames
@@ -118,14 +122,19 @@ start();
 
 function start() {
 	if (fetchFromHN) {
-		scraper.getAllHNPosts(1).then(x => main());
+		scraper.getAllHNPosts(1).then(_ => {
+			populateBlocks().then(blocks => main(blocks));
+		});
 	} else {
-		main();
+		populateBlocks().then(blocks => main(blocks));
 	}
 }
 
-function main() {
-	populateBlocks();
+function main(input_blocks) {
+	if (input_blocks) {
+		blocks = input_blocks;
+	}
+
 	let asc = genAsAll(blocks);
 	console.log('emails ', emails.length);
 	console.log('rejects ', rejects.length);
@@ -144,7 +153,7 @@ function main() {
 	fs.writeFileSync(salariesFs, salaries.join("\n"));
 	fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
 	fs.writeFileSync(remoteJobsRejectsFs, remoteJobsRejects.join("\n"));
-	fs.writeFileSync(breakoutListFs, breakoutlist);
+	fs.writeFileSync(breakoutListFs, breakoutlist.join('\n'));
 
 	if (genStats) {
 		console.log(stats)
@@ -207,9 +216,10 @@ function setup() {
 	}
 }
 
-function populateBlocks() {
+const populateBlocks = async () => {
 	let txt = fs.readFileSync(jobsListfs, 'utf8');
 	let lines = txt.split('\n');
+	let blocks = [];
 	for (var i = 0; i < lines.length; i++) {
 		let tl = lines[i];
 		if (tl.indexOf('ago [-]') > -1 || i == lines.length - 1 || tl.indexOf('|') > -1) {
@@ -218,8 +228,12 @@ function populateBlocks() {
 				block = true;
 			} else if (blockbuf.length > 10) {
 				// new block
-				let etxt = parseEmailFromBlock(blockbuf),
+				let emailsArr = parseEmailFromBlock(blockbuf),
 					keywords = parseBuzzwords(blockbuf);
+
+				if (validateEmails) {
+					emailsArr = await stripInvalidEmails(emailsArr, debug)
+				}					
 
 				// generate keyword match stats
 				if (keywords.length) matcheskeywords++;
@@ -234,7 +248,7 @@ function populateBlocks() {
 				if (slr) salaries.push(slr);
 
 				// if (etxt[0] == 'null') console.log(blockbuf);
-				if (etxt.length > 0 && etxt[0] != 'null' && etxt[0] != 'blacklist' &&
+				if (emailsArr.length > 0 && emailsArr[0] != 'null' && emailsArr[0] != 'blacklist' &&
 					// desperate for remote jobs, but dont apply to others if we dont have keyword match
 					(keywordMatchOnly ? keywords.length > 0 : true) &&
 					// remote only search flag
@@ -243,14 +257,14 @@ function populateBlocks() {
 					// grab and prioritize remote jobs
 					if (isRemote(blockbuf)) remoteJobs.push(blockbuf);
 
-					emails.push(etxt.join(","));
+					emails.push(emailsArr.join(","));
 					if (roles.length > 0) {
 						roles = roles[0];
 						roles = roles.split(',');
 						allroles = allroles.concat(roles);
 					}
 					blocks.push({
-						e: etxt,
+						e: emailsArr,
 						txt: 'blockbuf',
 						r: roles,
 						n: postername,
@@ -263,7 +277,7 @@ function populateBlocks() {
 						blockbuf.length ? ` | len: ${blockbuf.length} | ` : '| empty block |',
 						keywords.length > 0 ? keywords : 'no keyword match',
 						(isRemote(blockbuf) === false ? ' remote: false ' : ' remote: true '),
-						etxt && etxt.length > 0 ? etxt : 'no email',
+						emailsArr && emailsArr.length > 0 ? emailsArr : 'no email',
 						itIsBLCo ? ' | Breakoutlist company!! ' + itIsBLCo : ' | Not blco ',
 						'\n'
 					);
@@ -271,11 +285,11 @@ function populateBlocks() {
 
 					// grab and prioritize remote jobs we missed for manual
 					if (isRemote(blockbuf) !== false
-						&& ((!etxt || etxt.length === 0 || etxt[0] == 'null') && etxt[0] !== 'blacklist')
+						&& ((!emailsArr || emailsArr.length === 0 || emailsArr[0] == 'null') && emailsArr[0] !== 'blacklist')
 						&& (keywordMatchOnly ? keywords.length > 0 : true)) {
 						remoteJobsRejects.push(blockStats);
 					}
-					if (itIsBLCo && (etxt.length === 0 || etxt[0] !== 'blacklist')) {
+					if (itIsBLCo && (emailsArr.length === 0 || emailsArr[0] !== 'blacklist')) {
 						breakoutlist.push(blockStats);
 					}
 				}
@@ -291,4 +305,5 @@ function populateBlocks() {
 			if (tl.match(/\|/)) roles.push(tl);
 		}
 	}
+	return blocks;
 }

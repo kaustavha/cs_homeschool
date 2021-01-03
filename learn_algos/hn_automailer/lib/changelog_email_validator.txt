@@ -1,0 +1,231 @@
+- Added email validator 
+- On avg only 50% of old thread emails are valid 
+- Much slower
+Example with validation: 
+
+$ node statGen.js 
+current month: 1
+current hn url id:  18807017
+emails  412
+rejects  428
+keyword matches  669
+remote  140
+remote rejects 152
+breakout list companies 28
+{ py: 217, js: 194, ruby: 81, go: 128, java: 88, eth: 21 }
+Done
+
+current month: 2
+current hn url id:  19055166
+emails  270
+rejects  522
+keyword matches  630
+remote  24
+remote rejects 151
+breakout list companies 26
+{ py: 210, js: 166, ruby: 78, go: 119, java: 88, eth: 17 }
+Done
+
+current month: 3
+current hn url id:  19281834
+emails  376
+rejects  457
+keyword matches  657
+remote  147
+remote rejects 195
+breakout list companies 21
+{ py: 222, js: 180, ruby: 86, go: 116, java: 82, eth: 22 }
+Done
+
+current month: 4
+current hn url id:  19543940
+emails  393
+rejects  431
+keyword matches  655
+remote  140
+remote rejects 173
+breakout list companies 26
+{ py: 202, js: 165, ruby: 65, go: 109, java: 83, eth: 20 }
+Done
+
+current month: 5
+current hn url id:  19797594
+emails  409
+rejects  489
+keyword matches  699
+remote  152
+remote rejects 179
+breakout list companies 27
+{ py: 215, js: 176, ruby: 60, go: 126, java: 83, eth: 18 }
+Done
+
+current month: 6
+current hn url id:  20083795
+emails  340
+rejects  382
+keyword matches  573
+remote  131
+remote rejects 164
+breakout list companies 24
+{ py: 180, js: 153, ruby: 63, go: 102, java: 71, eth: 18 }
+Done
+
+current month: 7
+current hn url id:  20325925
+emails  385
+rejects  464
+keyword matches  648
+remote  145
+remote rejects 181
+breakout list companies 23
+{ py: 205, js: 174, ruby: 72, go: 125, java: 92, eth: 19 }
+Done
+
+current month: 8
+current hn url id:  20584311
+emails  375
+rejects  458
+keyword matches  625
+remote  162
+remote rejects 173
+breakout list companies 20
+{ py: 194, js: 193, ruby: 61, go: 97, java: 70, eth: 16 }
+Done
+
+current month: 9
+current hn url id:  20867123
+emails  310
+rejects  386
+keyword matches  562
+remote  118
+remote rejects 152
+breakout list companies 23
+{ py: 167, js: 140, ruby: 59, go: 93, java: 70, eth: 18 }
+Done
+
+current month: 10
+current hn url id:  21126014
+emails  356
+rejects  449
+keyword matches  632
+remote  146
+remote rejects 169
+breakout list companies 26
+{ py: 181, js: 178, ruby: 68, go: 114, java: 73, eth: 20 }
+Done
+
+current month: 11
+current hn url id:  21419536
+emails  161
+rejects  560
+keyword matches  541
+remote  32
+remote rejects 152
+breakout list companies 25
+{ py: 149, js: 159, ruby: 65, go: 88, java: 72, eth: 15 }
+Done
+
+
+Example without validation: 
+
+$ node statGen.js 
+current month: 1
+current hn url id:  18807017
+Unexpected error, empty return buffer from scrape
+
+current month: 2
+current hn url id:  19055166
+block ret:  94
+emails  94
+rejects  696
+keyword matches  631
+remote  94
+remote rejects 102
+breakout list companies 49
+{ py: 208, js: 166, ruby: 78, go: 119, java: 88, eth: 17 }
+Done
+
+current month: 3
+current hn url id:  19281834
+block ret:  107
+emails  107
+rejects  725
+keyword matches  657
+remote  107
+remote rejects 129
+breakout list companies 33
+{ py: 222, js: 180, ruby: 86, go: 116, java: 82, eth: 22 }
+Done
+
+current month: 4
+current hn url id:  19543940
+Unexpected error, empty return buffer from scrape
+
+current month: 5
+current hn url id:  19797594
+Unexpected error, empty return buffer from scrape
+
+current month: 6
+current hn url id:  20083795
+Unexpected error, empty return buffer from scrape
+
+current month: 7
+current hn url id:  20325925
+block ret:  100
+emails  100
+rejects  745
+keyword matches  648
+remote  100
+remote rejects 124
+breakout list companies 37
+{ py: 204, js: 174, ruby: 72, go: 123, java: 92, eth: 19 }
+Done
+
+current month: 8
+current hn url id:  20584311
+block ret:  113
+emails  113
+rejects  720
+keyword matches  625
+remote  113
+remote rejects 113
+breakout list companies 35
+{ py: 194, js: 193, ruby: 61, go: 97, java: 70, eth: 16 }
+Done
+
+current month: 9
+current hn url id:  20867123
+block ret:  87
+emails  87
+rejects  604
+keyword matches  557
+remote  87
+remote rejects 107
+breakout list companies 36
+{ py: 164, js: 139, ruby: 58, go: 92, java: 70, eth: 18 }
+Done
+
+current month: 10
+current hn url id:  21126014
+block ret:  107
+emails  107
+rejects  698
+keyword matches  637
+remote  107
+remote rejects 119
+breakout list companies 42
+{ py: 181, js: 178, ruby: 68, go: 114, java: 73, eth: 20 }
+Done
+
+current month: 11
+current hn url id:  21419536
+block ret:  82
+emails  82
+rejects  644
+keyword matches  550
+remote  82
+remote rejects 104
+breakout list companies 43
+{ py: 150, js: 161, ruby: 67, go: 88, java: 75, eth: 15 }
+Done
+

@@ -73,11 +73,16 @@ function matchArrs(a1, a2) {
     return false;
 }
 
+const asyncFilter = async (arr, predicate) => Promise.all(arr.map(predicate))
+.then((results) => arr.filter((_v, index) => results[index]));
+
+
 module.exports = {
     genRandDelay: genRandDelay,
     getIsRemoteParser: getIsRemoteParser,
     dedupeArr: dedupeArr,
     isRemote: isRemote,
     grabSalary: grabSalary,
-    matchArrs: matchArrs
+    matchArrs: matchArrs,
+    asyncFilter: asyncFilter
 }

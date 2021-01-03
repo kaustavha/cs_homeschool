@@ -52,8 +52,8 @@ function getAppleScriptGenerator({ month, yr }) {
 		// End
 		addline("Hi,");
 		addline("");
-		addline("I saw your post on HN Who's Hiring. Are you still interviewing for any full time software engineering or related roles?  ");
-		addline("I'm a generalist software engineer with 6 years of experience overall. Including startups and large enterprise companies. ")
+		addline("I saw your post on HN Who's Hiring. ");
+		addline("I'm a generalist software engineer with 7 years of experience overall. Including startups and large enterprise companies. ")
 
 		addKeyWords();
 
