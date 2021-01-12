@@ -24,8 +24,8 @@ module.exports = class Scraper {
                     if (this.debug) console.log('got all posts from hn and trimmed', fullDat.length);
                     this._writeOutputFile(fullDat)
                     return res(fullDat);
-                } else if (dat.length === 0) {
-                    return console.error("Unexpected error, empty return buffer from scrape")
+                } else if (dat.length === 0 && fullDat.length === 0) {
+                    return console.error("Scraper.js: getAllHNPosts: Unexpected error, empty return buffer from scrape ", this.hnurlid)
                 }
                 fullDat += dat;
                 oldDat = dat;
