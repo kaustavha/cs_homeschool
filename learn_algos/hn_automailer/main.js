@@ -235,9 +235,7 @@ const populateBlocks = async () => {
 					keywords = parseBuzzwords(blockbuf);
 
 				if (validateEmails) {
-          console.log(emailsArr)
           emailsInfoObj = await stripInvalidEmails(emailsArr, debug);
-          console.log(emailsInfoObj)
 					emailsArr = emailsInfoObj.validEmails;
 					invalidEmails.concat(emailsInfoObj.invalidEmails);
 				}
