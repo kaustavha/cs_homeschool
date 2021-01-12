@@ -47,7 +47,7 @@ if (myArgs.length > 0) {
 }
 
 // manual inputs and flags that affect each run
-const hnurlid = argHnUrlId ? argHnUrlId : '25266288'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
+const hnurlid = argHnUrlId ? argHnUrlId : '25632982'; // e.g. https://news.ycombinator.com/item?id=18499843 i.e https://news.ycombinator.com/item?id=${hnurlid}
 const debug = false; // output console logs at different steps
 const remoteOnly = true; // only pull in remote jobs + foll. flags
 const torontoAndRemoteOnly = true; // strict mode
@@ -55,7 +55,7 @@ const includeCanada = true; // needs the above flag to be true, also adds in job
 const includeusa = false; // same as above but city keywords for the states
 const fetchFromHN = true; // Run a fresh fetch from HN, otherwise we expect a file to exist from an old run
 const keywordMatchOnly = true; // Only write applescript emails for jobs where we have keyword matches
-const validateEmails = false; // Use the deep-email-validator dep to validate emails
+const validateEmails = true; // Use the deep-email-validator dep to validate emails
 
 // Dependencies
 const fs = require('fs');
@@ -67,7 +67,7 @@ const parseBuzzwords = require('./lib/parseBuzzWords');
 const { getIsRemoteParser, grabSalary } = require('./lib/utils')
 const Scraper = require('./lib/scraper');
 const getStatGenerator = require('./lib/getStats');
-const stripInvalidEmails  = require('./lib/validateEmail');
+const stripInvalidEmails = require('./lib/validateEmail');
 
 
 // Dates for creating filenames
@@ -88,7 +88,8 @@ const jobsList = `${yr}/jobs_m${month}`,
 	salariesFs = jobsList + '_salaries.txt',
 	remoteFs = jobsList + '_remotes.txt',
 	remoteJobsRejectsFs = jobsList + '_remotes_rejects.txt',
-	breakoutListFs = jobsList + '_breakoutList.txt';
+	breakoutListFs = jobsList + '_breakoutList.txt',
+	invalidEmailsFs = jobsList + '_invalidEmails.txt';
 
 
 // Delay min max for applescript
@@ -102,6 +103,7 @@ let oneMin = 60,
 // data stores for outputs
 let blocks = [],
 	emails = [],
+	invalidEmails = [],
 	allroles = [],
 	salaries = [],
 	remoteJobs = [],
@@ -136,7 +138,8 @@ function main(input_blocks) {
 	}
 
 	let asc = genAsAll(blocks);
-	console.log('emails ', emails.length);
+  console.log('emails ', emails.length);
+  console.log('invalid emails ', invalidEmails.length);
 	console.log('rejects ', rejects.length);
 	console.log('keyword matches ', matcheskeywords);
 	console.log('remote ', remoteJobs.length);
@@ -154,6 +157,7 @@ function main(input_blocks) {
 	fs.writeFileSync(remoteFs, remoteJobs.join('\n'));
 	fs.writeFileSync(remoteJobsRejectsFs, remoteJobsRejects.join("\n"));
 	fs.writeFileSync(breakoutListFs, breakoutlist.join('\n'));
+	fs.writeFileSync(invalidEmailsFs, invalidEmails.join('\n'));
 
 	if (genStats) {
 		console.log(stats)
@@ -185,7 +189,6 @@ function setup() {
 		month: month,
 		yr: yr
 	});
-
 
 	return {
 		scraper: new Scraper({
@@ -232,8 +235,12 @@ const populateBlocks = async () => {
 					keywords = parseBuzzwords(blockbuf);
 
 				if (validateEmails) {
-					emailsArr = await stripInvalidEmails(emailsArr, debug)
-				}					
+          console.log(emailsArr)
+          emailsInfoObj = await stripInvalidEmails(emailsArr, debug);
+          console.log(emailsInfoObj)
+					emailsArr = emailsInfoObj.validEmails;
+					invalidEmails.concat(emailsInfoObj.invalidEmails);
+				}
 
 				// generate keyword match stats
 				if (keywords.length) matcheskeywords++;
